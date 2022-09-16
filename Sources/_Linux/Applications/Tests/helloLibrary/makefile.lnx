@@ -1,0 +1,7 @@
+build :
+	@mkdir -p $(CONFIG)
+	make -f makeprj.lnx CONFIG=$(CONFIG)
+
+clean :
+	make clean -f makeprj.lnx CONFIG=debug
+	make clean -f makeprj.lnx CONFIG=release

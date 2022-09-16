@@ -1,0 +1,52 @@
+kind: pipeline
+type: docker
+name: default
+
+trigger:
+  event:
+    - push
+
+steps:
+- name: build
+  image: pubhub.codefirst.ddns.net/thbellem/codefirst-drone-cppcheck:latest
+  volumes:
+    - name: work
+      path: /work
+  commands:
+    - find . -iname "*.cpp" | xargs cppcheck -v --enable=all --xml-version=2 --xml 2> /work/cppcheck.xml
+    - cd Sources/_Linux/
+    - make -f makefile.lnx release
+
+- name: code analysis
+  image: aosapps/drone-sonar-plugin
+  volumes:
+    - name: work
+      path: /work
+  settings:
+      sonar_host: https://codefirst.ddns.net/sonar/
+      sonar_token: 96864ed9ef8d6343007881fc9ef30eb70eaf846d
+      java_binaries: target/classes
+      level: DEBUG
+      sources: .
+  depends_on: [ build ]
+
+- name: generate-and-deploy-docs
+  image: pubhub.codefirst.ddns.net/thbellem/codefirst-docdeployer
+  volumes:
+    - name: docs
+      path: /docs
+  commands:
+    - cd Documentation/doxygen
+    - doxygen Doxyfile
+    - /entrypoint.sh
+  when:
+    branch:
+      - master
+  depends_on: [ build ]
+
+# image_pull_secrets:
+#  - DOCKERCONFIG
+  
+volumes:
+- name: work
+  temp: {}

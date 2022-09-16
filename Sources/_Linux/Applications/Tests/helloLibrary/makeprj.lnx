@@ -1,0 +1,34 @@
+CC = /usr/bin/g++
+CFLAGS = -c -Wall -ansi
+EXE = helloLibrary_Tests
+SUFFIX = d
+
+ifeq (debug,$(CONFIG))
+	CFLAGS += -O2 -DNDEBUG
+    SUFFIX = d
+else
+    CFLAGS += -g -D_DEBUG
+    SUFFIX = 
+endif
+
+INCPATH = -I../../../../include
+SRCDIR = ../../../../Applications/Tests/helloLibrary
+BINDIR = ../../../../bin
+INC := $(wildcard *.h) $(wildcard *.inl)
+INC := $(notdir $(INC))
+SRC := $(wildcard $(SRCDIR)/*.cpp)
+SRC := $(notdir $(SRC))
+OBJDIR := $(CONFIG)
+OBJ := $(SRC:%.cpp=$(OBJDIR)/%.o)
+
+all : $(EXE)
+
+$(OBJDIR)/%.o : $(SRCDIR)/%.cpp
+	$(CC) -o $@ $(INCPATH) $(CFLAGS) $< 
+
+clean :
+	rm -f $(OBJDIR)/*.o
+
+$(EXE) : $(OBJ)
+	$(CC) $(OBJ) -L$(BINDIR) -lhelloLibrary$(SUFFIX) -o $(BINDIR)/$(EXE)$(SUFFIX)
+
