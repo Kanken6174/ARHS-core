@@ -49,7 +49,9 @@ namespace ui{
     }
 
     void UiDrawer::drawStartupSequence(){
+        cout << "opening external ressources" << endl;
         VideoCapture cap("./media/hud_startup.gif");
+        cout << "opened video"<< endl;
         Mat overlay = imread("./media/hud_fixed.png",-1);
         cout << "read overlay" << endl;
         ui::UiDrawer::OverlayMat = overlay;

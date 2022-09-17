@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/bin/c++ CMakeFiles/prog.dir/main.cpp.o -o /home/kanken/code/project-/Sources/src/bin/prog  hw/libhw.a ui/libui.a psvr/libpsvr.a cameras/libcameras.a `pkg-config --cflags --libs opencv4` threadweaver/libthreadweaver.a /home/kanken/code/project-/Sources/src/Visnode/ihidapi/libihiadpi.a -L/home/kanken/code/project-/Sources/src/Visnode/ihidapi/ -ltbb -l:libhidapi-hidraw.so.0 -lopencv_core -lopencv_imgcodecs -lopencv_imgproc -lopencv_highgui -lopencv_videoio -std=c++17

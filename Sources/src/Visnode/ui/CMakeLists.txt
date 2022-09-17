@@ -12,8 +12,13 @@ SET("OpenCV_DIR" "/usr/local/lib/")
 
 find_package( OpenCV REQUIRED )
 
+MESSAGE(STATUS "OpenCV_INCLUDE_DIRS : ${OpenCV_INCLUDE_DIRS}")
+MESSAGE(STATUS "Opencv_LINK_DIRS : ${Opencv_LINK_DIRS}")
 
 add_library(ui ${ui_source_files})
 
 target_link_libraries(ui Opencv)
+target_link_libraries(ui psvr)
+target_link_libraries(ui cameras)
+
 MESSAGE(STATUS "Done building ui")
