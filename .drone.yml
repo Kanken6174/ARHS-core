@@ -1,6 +1,9 @@
 kind: pipeline
 type: docker
-name: default
+name: amd-64
+
+platform:
+  arch: amd64
 
 trigger:
   event:
