@@ -6,7 +6,7 @@ set(cameras_source_files
 MESSAGE(STATUS "building cameras")
 add_library(cameras ${cameras_source_files})
 
-SET("OpenCV_DIR" "/usr/local/lib/")
+#SET("OpenCV_DIR" "/usr/local/lib/")
 
 find_package( OpenCV REQUIRED )
 

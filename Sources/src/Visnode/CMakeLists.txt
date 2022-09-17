@@ -2,11 +2,11 @@ cmake_minimum_required(VERSION 3.22)
 
 set(CMAKE_CXX_STANDARD 17)
 
-project( visnode )
+project(visnode)
 
 find_package(OpenCV REQUIRED)
 
-SET("OpenCV_DIR" "/usr/local/lib/")
+#SET("OpenCV_DIR" "/usr/local/lib/")
 include_directories(${OpenCV_INCLUDE_DIRS} )
 link_directories(${Opencv_LINK_DIRS})
 
@@ -23,6 +23,8 @@ add_subdirectory(hw)
 set(main_source_files main.cpp main.hpp)
 
 add_executable(prog ${main_source_files})
+
+MESSAGE(STATUS "CMAKE FLAGS : ${LINK_OPTIONS}")
 
 target_link_libraries(prog hw)
 
