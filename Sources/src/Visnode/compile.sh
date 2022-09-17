@@ -12,13 +12,13 @@ LIBRARY_PATHS="-L/lib/aarch64-linux-gnu/ -L/usr/local/lib/"
 
 if [[ -z $VERSION ]]
 then
-    echo "libhidapi is not installed, installing now"
-    sudo apt install libhidapi-dev
+    echo "libhidapi is missing!!!"
+    #sudo apt install libhidapi-dev
 elif [[ $VERSION != " 0.11.2-1" ]]
 then
     echo "|"$VERSION"|"
-    echo "libhidapi is not the right version, updating now"
-    sudo apt --only-upgrade install libhidapi-dev
+    echo "libhidapi is not the right version!!!"
+    #sudo apt --only-upgrade install libhidapi-dev
 else
     echo "libhidapi is installed"
 fi
