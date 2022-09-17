@@ -8,7 +8,7 @@ trigger:
 
 steps:
 - name: build
-  image: pubhub.codefirst.ddns.net/thbellem/codefirst-drone-cppcheck:latest
+  image: hub.codefirst.iut.uca.fr/thomas.bellembois/codefirst-drone-cppcheck:latest
   volumes:
     - name: work
       path: /work
@@ -23,7 +23,7 @@ steps:
     - name: work
       path: /work
   settings:
-      sonar_host: https://codefirst.ddns.net/sonar/
+      sonar_host: hub.codefirst.iut.uca.fr/sonar/
       sonar_token: 96864ed9ef8d6343007881fc9ef30eb70eaf846d
       java_binaries: target/classes
       level: DEBUG
@@ -31,7 +31,7 @@ steps:
   depends_on: [ build ]
 
 - name: generate-and-deploy-docs
-  image: pubhub.codefirst.ddns.net/thbellem/codefirst-docdeployer
+  image: hub.codefirst.iut.uca.fr/thomas.bellembois/codefirst-docdeployer
   volumes:
     - name: docs
       path: /docs
