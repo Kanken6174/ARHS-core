@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/Sources/src/Visnode",
+    "cmake.configureOnOpen": false
+}

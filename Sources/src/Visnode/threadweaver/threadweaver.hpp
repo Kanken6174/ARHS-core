@@ -1,5 +1,6 @@
 #include <thread>
 #include <vector>
+#include "./debugging.hpp"
 
 //main thread manager
 class Threadweaver{
