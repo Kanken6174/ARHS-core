@@ -8,6 +8,8 @@ project(visnode)
 #set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/../bin)
 set(CMAKE_BINARY_DIR /home/kanken/code/project-/Sources/src/Visnode/)
 find_package(OpenCV REQUIRED)
+find_package(TBB REQUIRED)
+
 
 #SET("OpenCV_DIR" "/usr/local/lib/")
 include_directories(${OpenCV_INCLUDE_DIRS} )
@@ -30,7 +32,7 @@ add_executable(prog ${main_source_files})
 
 MESSAGE(STATUS "CMAKE FLAGS : ${LINK_OPTIONS}")
 
-target_link_libraries(prog hw)
+target_link_libraries(prog hw tbb)
 
 SET(GCC_COVERAGE_COMPILE_FLAGS "-L/usr/local/lib")
 add_definitions(${GCC_COVERAGE_COMPILE_FLAGS})

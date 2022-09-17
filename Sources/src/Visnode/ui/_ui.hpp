@@ -7,7 +7,7 @@
 
 #include "../cameras/_cam.hpp"
 #include "../psvr/_psvr.hpp"
-#include <opencv4/opencv2/imgcodecs/imgcodecs.hpp>
+#include <opencv2/imgcodecs/imgcodecs.hpp>
 
 #define DEFAULT_UI_WINDOW_AMOUNT 2  //2 windows, one for each eye
 #define DEFAULT_UI_OFFSET_X 0    //1080

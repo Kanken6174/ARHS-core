@@ -17,7 +17,7 @@ MESSAGE(STATUS "Opencv_LINK_DIRS : ${Opencv_LINK_DIRS}")
 
 add_library(ui ${ui_source_files})
 
-target_link_libraries(ui Opencv)
+target_link_libraries(ui ${OpenCV_LIBS})
 target_link_libraries(ui psvr)
 target_link_libraries(ui cameras)
 

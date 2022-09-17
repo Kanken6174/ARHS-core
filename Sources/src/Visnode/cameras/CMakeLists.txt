@@ -13,6 +13,6 @@ MESSAGE(STATUS "Opencv_LINK_DIRS : ${Opencv_LINK_DIRS}")
 
 find_package( OpenCV REQUIRED )
 
-target_link_libraries(cameras OpenCV)
+target_link_libraries(cameras ${OpenCV_LIBS})
 target_link_libraries(cameras threadweaver)
 MESSAGE(STATUS "Done building cameras")
