@@ -29,30 +29,23 @@ SerialPortManager::init();
 ui::UiController::exitCalled = false;
 ui::UiController::runIntro = false;
 int i = 0,count = 1;
-_Float64 avgr=0,avgl=0;
+_Float64 avgr=0;
 
 while(!ui::UiController::exitCalled){
     #ifdef DBGMODE
     auto start = std::chrono::steady_clock::now();
     #endif
-    std::future<void> uiL = std::async (ui::UiDrawer::drawUiL);
-    std::future<void> uiR = std::async (ui::UiDrawer::drawUiR);
-    uiL.get();
+    std::future<void> uiF = std::async (ui::UiDrawer::drawUi);
+    uiF.get();
     #ifdef DBGMODE
     auto end1 = since(start).count();
     #endif
-    uiR.get();
     #ifdef DBGMODE
-    auto end2 = since(start).count();
-    #endif
-    #ifdef DBGMODE
-    std::cout << "Elapsed(ms)=" << end1 << "," << end2 << std::endl;
+    std::cout << "Elapsed(ms)=" << end1 << std::endl;
     if(avgr == 0){
         avgr = end1;
-        avgl = end2;
     }else{
         avgr = (avgr+end1)/count;
-        avgl = (avgl+end2)/count;
     }
 
     if(i > 100){

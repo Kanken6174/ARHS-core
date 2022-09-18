@@ -9,43 +9,35 @@ std::mutex ui::UiDrawer::OsMatLock;
 
 namespace ui{
     //draws the UI for the left screen of the psvr
-    void UiDrawer::drawUiL(){
-            Mat UiMat = prepareUiMat();                 //prepare black background
+    void UiDrawer::drawUi(){
+            Mat UiMat = prepareUiMat();               //prepare black background 960*1080
+            DEBUG_LOG("prepared UI mat")
             cameraManager::accessLocks[0]->lock();      //lock the capture access
-            Mat surface = cameraManager::captures[0];   //retreive latest camera frame
+            Mat cameraFrame = cameraManager::captures[0];   //retreive latest camera frame
             cameraManager::accessLocks[0]->unlock();    //unlock capture access
-            if(surface.rows <= 0 || surface.cols <= 0) return;  //check for empty frame
-            surface = resizeIn(surface);                //resize the frame to the standard format
+            DEBUG_LOG("retreived camera frame")
+            if(cameraFrame.rows <= 0 || cameraFrame.cols <= 0) return;  //check for empty frame
+            cameraFrame = resizeIn(cameraFrame);                //resize the frame to the standard format
+            DEBUG_LOG("resized camera frame")
             //Copy the frame in the center of the background
-            surface.copyTo(UiMat(cv::Rect((UiMat.cols/2)-(surface.cols/2),(UiMat.rows/2)-(surface.rows/2),surface.cols, surface.rows)));
+            cameraFrame.copyTo(UiMat(cv::Rect((UiMat.cols/2)-(cameraFrame.cols/2),(UiMat.rows/2)-(cameraFrame.rows/2),cameraFrame.cols, cameraFrame.rows)));
+            DEBUG_LOG("copied camera frame")
             UiMat = OverlayBlackMask(UiMat, OverlayMat);    //add the fixed overlay
+            DEBUG_LOG("overlayed camera frame")
             if(UiController::showMenu){
                 UiDrawer::drawMenu();
                 OsMatLock.lock();
-                UiMat = OverlayBlackMask(UiMat, OsMat, ui::UiController::menuPos.x,ui::UiController::menuPos.y);         //add the OS ui overlay
+                //UiMat = OverlayBlackMask(UiMat, OsMat, ui::UiController::menuPos.x,ui::UiController::menuPos.y);         //add the OS ui overlay
+                UiMat = OverlayBlackMask(UiMat, OsMat); 
                 OsMatLock.unlock();
             }
-            UiManager::managedUIs[0]->drawSurface = UiMat;  //write the final image to the psvr UI buffer
+            DEBUG_LOG("drawn menu")
+            Mat finished(cv::Size(1920, 1080), CV_8UC3,Scalar(0,0,0));;
+            Mat mats[] = {UiMat,UiMat};
+            cv::hconcat(mats,2,finished);
+            DEBUG_LOG("concated mats")
+            UiManager::managedUIs[0]->drawSurface = finished;  //write the final image to the psvr UI buffer
             UiManager::managedUIs[0]->draw();               //send the image to the psvr
-    }
-
-    void UiDrawer::drawUiR(){
-            Mat UiMat = prepareUiMat();
-            cameraManager::accessLocks[0]->lock();
-            Mat surface = cameraManager::captures[0];
-            cameraManager::accessLocks[0]->unlock();
-            if(surface.rows <= 0 || surface.cols <= 0) return;
-            surface = resizeIn(surface);
-            surface.copyTo(UiMat(cv::Rect((UiMat.cols/2)-(surface.cols/2),(UiMat.rows/2)-(surface.rows/2),surface.cols, surface.rows)));
-            UiMat = OverlayBlackMask(UiMat, OverlayMat);
-            if(UiController::showMenu){
-                UiDrawer::drawMenu();
-                OsMatLock.lock();
-                UiMat = OverlayBlackMask(UiMat, OsMat, ui::UiController::menuPos.x,ui::UiController::menuPos.y);         //add the OS ui overlay
-                OsMatLock.unlock();
-            }
-            UiManager::managedUIs[1]->drawSurface = UiMat;
-            UiManager::managedUIs[1]->draw();
     }
 
     void UiDrawer::drawStartupSequence(){
@@ -64,7 +56,6 @@ namespace ui{
         {
             frame = OverlayBlackMask(frame, overlay);
             imshow(ui::UiManager::managedUIs.at(0)->myWindow, frame);
-            imshow(ui::UiManager::managedUIs.at(1)->myWindow, frame);
             if(waitKey(30) >= 0) break;
         }
         cap.release();
@@ -102,7 +93,10 @@ namespace ui{
     ///if a non transparent picture is supplied (3 channels), it will be made transparent by using black as a mask
     Mat UiDrawer::OverlayBlackMask(Mat input, Mat toOverlay, int x, int y){
         //return input;
-        if(input.cols < toOverlay.cols || input.rows < toOverlay.rows) return input;
+        if(input.cols < toOverlay.cols || input.rows < toOverlay.rows){
+            cerr << "Wrong size for inout file!!! overlay was bigger" << endl;
+        return input;
+        }
 
         Mat toOverlayGRAY, mask;
         vector<Mat> Bands;

@@ -14,6 +14,7 @@ namespace ui{
             namedWindow(newUI->myWindow);
             moveWindow(newUI->myWindow,DEFAULT_UI_OFFSET_X+i*960,DEFAULT_UI_OFFSET_Y);
             resizeWindow(newUI->myWindow,DEFAULT_UI_SIZE_X,DEFAULT_UI_SIZE_Y);
+            setWindowProperty(newUI->myWindow, cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
 
             cout << "window: " << newUI->myWindow << " created at " << DEFAULT_UI_OFFSET_X+i*960 << " , " << DEFAULT_UI_OFFSET_Y << endl;
 
