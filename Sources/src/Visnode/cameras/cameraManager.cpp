@@ -40,7 +40,8 @@ int cameraManager::init(){
             if(!vs.isOpened() && !vs.open(camID))
             {
                 cout << "opening camera " << camIdx << " failed" <<endl;
-            }
+                vs.release();
+            }else{
             vs.release();
             camera* cam = new camera();
             cam->source = new VideoCapture(camID);
@@ -48,7 +49,8 @@ int cameraManager::init(){
             videoSources.push_back(cam);    //valid camera added
             cout << "added camera with path /dev/video" << cam->path << endl;
             Mat m;
-            captures.push_back(std::move(m));
+            captures.push_back(std::move(m));             
+            }
         }
         catch(exception e){
             cout << e.what() << endl;
