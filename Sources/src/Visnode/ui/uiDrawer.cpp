@@ -103,6 +103,7 @@ namespace ui{
 
     ///if a non transparent picture is supplied (3 channels), it will be made transparent by using black as a mask
     Mat UiDrawer::OverlayBlackMask(Mat input, Mat toOverlay, int x, int y){
+        //return input;
         if(input.cols < toOverlay.cols || input.rows < toOverlay.rows) return input;
 
         Mat toOverlayGRAY, mask;
@@ -122,7 +123,7 @@ namespace ui{
     }
 
     Mat UiDrawer::OverlayHISHMask(Mat input, Mat toOverlay){
-                if(input.cols < toOverlay.cols || input.rows < toOverlay.rows) return input;
+        if(input.cols < toOverlay.cols || input.rows < toOverlay.rows) return input;
 
         Mat toOverlayGRAY, mask;
         vector<Mat> Bands;
