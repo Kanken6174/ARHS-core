@@ -60,9 +60,8 @@ namespace ui{
             //return;
         }
         Mat frame;
-        for(;;)
+        while(cap.read(frame))
         {
-            if(!cap.read(frame)) break;
             frame = OverlayBlackMask(frame, overlay);
             imshow(ui::UiManager::managedUIs.at(0)->myWindow, frame);
             imshow(ui::UiManager::managedUIs.at(1)->myWindow, frame);
@@ -97,10 +96,9 @@ namespace ui{
 
     Mat UiDrawer::resizeIn(Mat input){
         Mat output;
-        resize(input, output, Size(960, 1080), InterpolationFlags::INTER_LINEAR);
+        resize(input, output, Size(960, 1080), InterpolationFlags::INTER_NEAREST);
         return output;
     }
-
     ///if a non transparent picture is supplied (3 channels), it will be made transparent by using black as a mask
     Mat UiDrawer::OverlayBlackMask(Mat input, Mat toOverlay, int x, int y){
         //return input;

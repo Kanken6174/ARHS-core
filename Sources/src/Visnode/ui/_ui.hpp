@@ -61,6 +61,7 @@ namespace ui {
         static vector<std::string> menuItemNames;
         static bool showMenu;
         static bool exitCalled;
+        static bool runIntro;
         static string menuTitle;
         static cv::Size2i menuSize;
         static cv::Point2i menuPos;

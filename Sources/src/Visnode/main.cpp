@@ -19,6 +19,7 @@ int main(int argc, char* argv[])
 ui::UiManager::init();
 std::future<int> fobj = std::async (cameraManager::init);   //asynchronous camera manager start
 ui::UiController::init();
+ui::UiController::runIntro = true;
 std::future<void> menudraw = std::async (ui::UiDrawer::drawMenu);
 ui::UiDrawer::drawStartupSequence();    //show startup sequence while camera manager is starting
 menudraw.get();
@@ -26,7 +27,7 @@ fobj.get();
 cameraManager::runCapture();
 SerialPortManager::init();
 ui::UiController::exitCalled = false;
-
+ui::UiController::runIntro = false;
 int i = 0,count = 1;
 _Float64 avgr=0,avgl=0;
 

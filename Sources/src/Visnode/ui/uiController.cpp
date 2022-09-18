@@ -2,6 +2,7 @@
 
 bool ui::UiController::showMenu;
 bool ui::UiController::exitCalled;
+bool ui::UiController::runIntro;
 cv::Size2i ui::UiController::menuSize;
 cv::Point2i ui::UiController::menuPos;
 unsigned int ui::UiController::selectedIndex;
