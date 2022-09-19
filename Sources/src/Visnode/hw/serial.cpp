@@ -44,14 +44,17 @@ void SerialPortManager::init(){
         printf("Error %i from tcsetattr: %s\n", errno, strerror(errno));
         return;
     }
-    shouldRun = true;
+    shouldRun = false;
     cout << "starting hardware watcher thread" << endl;
     std::thread* t = new std::thread(SerialPortManager::runPort);
     cout << "done" << endl;
+    Threadweaver::stick_this_thread_to_core(t,3);
     Threadweaver::hardwareWatcherThread = t;
+    shouldRun = true;
 }
 
 void SerialPortManager::runPort(){
+    while(!shouldRun){}
     char read_buf [256];
     int n = 0;
     while(shouldRun){
