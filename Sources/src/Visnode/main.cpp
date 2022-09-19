@@ -1,5 +1,6 @@
 #include "main.hpp"
 #include <future>
+#include <sched.h>
 using namespace psvr;
 
 template <
@@ -15,6 +16,11 @@ auto since(std::chrono::time_point<clock_t, duration_t> const& start)
 
 int main(int argc, char* argv[])
 {
+cpu_set_t  mask;
+CPU_ZERO(&mask);
+CPU_SET(0, &mask);
+sched_setaffinity(0, sizeof(mask), &mask);
+
 //psvr::Psvr::open();
 ui::UiManager::init();
 std::future<int> fobj = std::async (cameraManager::init);   //asynchronous camera manager start
