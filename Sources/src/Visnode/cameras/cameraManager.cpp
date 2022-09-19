@@ -1,7 +1,7 @@
 #include "_cam.hpp"
 
 vector<camera*> cameraManager::videoSources;
-std::vector<Mat> cameraManager::captures;
+std::vector<UMat> cameraManager::captures;
 bool cameraManager::runCaptureThread;
 std::vector<std::mutex*> cameraManager::accessLocks;
 
@@ -15,7 +15,7 @@ void cameraManager::runCaptureForCamera(camera* c, uint index){
         } 
 
         if(c->source->grab()){
-            Mat surface;
+            UMat surface;
             c->source->retrieve(surface);
             cameraManager::accessLocks[index]->lock();
             cameraManager::captures[index] = surface;
@@ -48,7 +48,7 @@ int cameraManager::init(){
             cam->path = camID;
             videoSources.push_back(cam);    //valid camera added
             cout << "added camera with path /dev/video" << cam->path << endl;
-            Mat m;
+            UMat m;
             captures.push_back(std::move(m));             
             }
         }

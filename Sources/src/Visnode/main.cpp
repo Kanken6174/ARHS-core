@@ -8,6 +8,8 @@ int main(int argc, char* argv[])
 unsigned num_cpus = std::thread::hardware_concurrency();
 cout << num_cpus <<" cores detected" << endl;
 
+
+
 //psvr::Psvr::open();
 ui::UiManager::init();
 std::future<int> fobj = std::async (cameraManager::init);   //asynchronous camera manager start

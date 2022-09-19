@@ -26,7 +26,7 @@ namespace ui {
     //Defines a single ui window (by default two will be displayed)
     class Ui{
         public:
-        Mat drawSurface; //Current frame 
+        UMat drawSurface; //Current frame 
         std::string myWindow;
         void draw();
     };
@@ -36,14 +36,14 @@ namespace ui {
         static void drawStartupSequence();
         static void drawMenu();
         static void runDrawUi();
-        static Mat OverlayMat;  //drawn at each frame
-        static Mat OsMat;   //drawn on certain events
+        static UMat OverlayMat;  //drawn at each frame
+        static UMat OsMat;   //drawn on certain events
         static std::mutex OsMatLock;
         private:
-        static Mat prepareUiMat();
-        static Mat resizeIn(Mat input);
-        static Mat OverlayBlackMask(Mat input, Mat toOverlay, int x = 0, int y = 0);
-        static Mat OverlayHISHMask(Mat input, Mat toOverlay);
+        static UMat prepareUiMat();
+        static UMat resizeIn(UMat input);
+        static UMat OverlayBlackMask(UMat input, UMat toOverlay, int x = 0, int y = 0);
+        static UMat OverlayHISHMask(UMat input, UMat toOverlay);
     };
         class UiManager{ //manager is static because we only ever need one
         public:

@@ -1,6 +1,6 @@
 #include "_ui.hpp"
-Mat ui::UiDrawer::OverlayMat;
-Mat ui::UiDrawer::OsMat;   //drawn on certain events
+UMat ui::UiDrawer::OverlayMat;
+UMat ui::UiDrawer::OsMat;   //drawn on certain events
 std::mutex ui::UiDrawer::OsMatLock;
 
             //UiMat = prepareUiMat();
@@ -10,10 +10,10 @@ std::mutex ui::UiDrawer::OsMatLock;
 namespace ui{
     //draws the UI for the left screen of the psvr
     void UiDrawer::drawUi(){
-            Mat UiMat = prepareUiMat();               //prepare black background 960*1080
+            UMat UiMat = prepareUiMat();               //prepare black background 960*1080
             DEBUG_LOG("prepared UI mat")
             cameraManager::accessLocks[0]->lock();      //lock the capture access
-            Mat cameraFrame = cameraManager::captures[0];   //retreive latest camera frame
+            UMat cameraFrame = cameraManager::captures[0];   //retreive latest camera frame
             cameraManager::accessLocks[0]->unlock();    //unlock capture access
             DEBUG_LOG("retreived camera frame")
             if(cameraFrame.rows <= 0 || cameraFrame.cols <= 0) return;  //check for empty frame
@@ -33,10 +33,11 @@ namespace ui{
             }
             DEBUG_LOG("drawn menu")
             Mat finished(cv::Size(1920, 1080), CV_8UC3,Scalar(0,0,0));;
-            Mat mats[] = {UiMat,UiMat};
+            Mat mats[] = {(Mat)UiMat.getMat(ACCESS_READ),(Mat)UiMat.getMat(ACCESS_READ)};
+            
             cv::hconcat(mats,2,finished);
             DEBUG_LOG("concated mats")
-            UiManager::managedUIs[0]->drawSurface = finished;  //write the final image to the psvr UI buffer
+            UiManager::managedUIs[0]->drawSurface = (UMat)finished.getUMat(ACCESS_READ);  //write the final image to the psvr UI buffer
             UiManager::managedUIs[0]->draw();               //send the image to the psvr
     }
 
@@ -46,15 +47,15 @@ namespace ui{
         cout << "opened video"<< endl;
         Mat overlay = imread("./media/hud_fixed.png",-1);
         cout << "read overlay" << endl;
-        ui::UiDrawer::OverlayMat = overlay;
+        ui::UiDrawer::OverlayMat = overlay.getUMat(ACCESS_READ);
         if(!cap.isOpened()){
             cout << "failed to open hud start media" << endl;
             //return;
         }
-        Mat frame;
+        UMat frame;
         while(cap.read(frame))
         {
-            frame = OverlayBlackMask(frame, overlay);
+            frame = OverlayBlackMask(frame, overlay.getUMat(ACCESS_READ));
             imshow(ui::UiManager::managedUIs.at(0)->myWindow, frame);
             if(waitKey(30) >= 0) break;
         }
@@ -65,7 +66,7 @@ namespace ui{
         int& wd = UiController::menuSize.width;
         int& he = UiController::menuSize.height;
         unsigned int stackerIndex = 0;
-        Mat MenuMat(cv::Size(wd, he), CV_8UC3,Scalar(0,0,0));
+        UMat MenuMat(cv::Size(wd, he), CV_8UC3,Scalar(0,0,0));
         cv::rectangle(MenuMat, cv::Rect2i(0,0,wd, he), Scalar(255,0,0), 5, 8, 0);
         ui::UiController::update();
         cv::putText(MenuMat, UiController::menuTitle, Point2i(5,stackerIndex+=20), HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255,255,255), 1, 8, false);
@@ -88,53 +89,53 @@ namespace ui{
         }
     }
 
-    Mat UiDrawer::prepareUiMat(){
-        Mat blk960x1080(cv::Size(960, 1080), CV_8UC3,Scalar(0,0,0));
+    UMat UiDrawer::prepareUiMat(){
+        UMat blk960x1080(cv::Size(960, 1080), CV_8UC3,Scalar(0,0,0));
         return blk960x1080;
     }
 
-    Mat UiDrawer::resizeIn(Mat input){
-        Mat output;
+    UMat UiDrawer::resizeIn(UMat input){
+        UMat output;
         resize(input, output, Size(960, 1080), InterpolationFlags::INTER_NEAREST);
         return output;
     }
     ///if a non transparent picture is supplied (3 channels), it will be made transparent by using black as a mask
-    Mat UiDrawer::OverlayBlackMask(Mat input, Mat toOverlay, int x, int y){
+    UMat UiDrawer::OverlayBlackMask(UMat input, UMat toOverlay, int x, int y){
         //return input;
         if(input.cols < toOverlay.cols || input.rows < toOverlay.rows){
             cerr << "Wrong size for inout file!!! overlay was bigger" << endl;
         return input;
         }
 
-        Mat toOverlayGRAY, mask;
-        vector<Mat> Bands;
+        UMat toOverlayGRAY, mask;
+        vector<UMat> Bands;
 
         if(toOverlay.channels() == 3){           //non transparent image, use black as mask
             cvtColor(toOverlay,toOverlayGRAY, COLOR_BGR2GRAY);          //picture to greyscale
             threshold(toOverlayGRAY, mask, 0, 255, THRESH_BINARY);      //greyscale to alpha (black or not)
         } else if (toOverlay.channels() == 4){   //transparent, use alpha layer as mask
             split(toOverlay,Bands);                                   // seperate channels
-            Mat channels[3] = { Bands[0],Bands[1],Bands[2] };
-            merge(channels,3,toOverlay);                                       // glue together again
+            vector<UMat> channels{ Bands[0],Bands[1],Bands[2] };
+            merge(channels,toOverlay);                                       // glue together again
             mask = Bands[3];                                         // png's alpha channel used as mask
         }
         toOverlay.copyTo(input(cv::Rect(x,y,toOverlay.cols, toOverlay.rows)),mask);
         return input;
     }
 
-    Mat UiDrawer::OverlayHISHMask(Mat input, Mat toOverlay){
+    UMat UiDrawer::OverlayHISHMask(UMat input, UMat toOverlay){
         if(input.cols < toOverlay.cols || input.rows < toOverlay.rows) return input;
 
-        Mat toOverlayGRAY, mask;
-        vector<Mat> Bands;
+        UMat toOverlayGRAY, mask;
+        vector<UMat> Bands;
 
         if(toOverlay.channels() == 3){           //non transparent image, use black as mask
             cvtColor(toOverlay,toOverlayGRAY, COLOR_BGR2GRAY);          //picture to greyscale
             threshold(toOverlayGRAY, mask, 0, 255, THRESH_BINARY);      //greyscale to alpha (black or not)
         } else if (toOverlay.channels() == 4){   //transparent, use alpha layer as mask
             split(toOverlay,Bands);                                   // seperate channels
-            Mat channels[3] = { Bands[0],Bands[1],Bands[2] };
-            merge(channels,3,toOverlay);                                       // glue together again
+            vector<UMat> channels{ Bands[0],Bands[1],Bands[2] };
+            merge(channels,toOverlay);                                       // glue together again
             mask = Bands[3];                                         // png's alpha channel used as mask
         }
         toOverlay.copyTo(input(cv::Rect(0,0,toOverlay.cols, toOverlay.rows)),mask);

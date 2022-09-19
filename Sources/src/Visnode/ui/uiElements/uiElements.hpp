@@ -9,19 +9,19 @@ using namespace cv;
 struct UiElement{
     unsigned int xPosPixels;
     unsigned int yPosPixels;
-    void drawSelf(Mat &input);
+    void drawSelf(UMat &input);
 };
 //sized ui element  (abstract)
 struct SizedUiElement : UiElement{
     unsigned int widthPixels;
     unsigned int heightPixels;
-    void drawSelf(Mat &input);
+    void drawSelf(UMat &input);
 };
 
 struct UiRect : SizedUiElement{
     unsigned int borderColor;
     unsigned int fillingColor;
-    void drawSelf(Mat &input);
+    void drawSelf(UMat &input);
 };
 
 struct UiText : UiElement{
@@ -32,7 +32,7 @@ struct UiText : UiElement{
     unsigned int thickness;
     unsigned int lineType = 0;
     bool leftOrigin = false;
-    void drawSelf(cv::Mat &input){
+    void drawSelf(cv::UMat &input){
     putText(input, UiText::text, Point(xPosPixels,yPosPixels), cv::FONT_HERSHEY_DUPLEX, fontSize, textColor, thickness, lineType, leftOrigin);
     }
 };

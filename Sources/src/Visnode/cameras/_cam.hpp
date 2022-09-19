@@ -35,7 +35,7 @@ class camera{
 class cameraManager{
     public:
     static std::vector<camera*> videoSources;
-    static std::vector<Mat> captures;
+    static std::vector<UMat> captures;
     static std::vector<std::mutex*> accessLocks;
     static bool runCaptureThread;
     static int init();
