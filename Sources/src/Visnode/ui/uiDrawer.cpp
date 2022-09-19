@@ -80,6 +80,14 @@ namespace ui{
         OsMatLock.unlock();
     }
 
+    void UiDrawer::runDrawUi(){
+        cout << "starting ui drawer thread" << endl;
+        ui::UiController::exitCalled = false;
+        while(!ui::UiController::exitCalled){
+            ui::UiDrawer::drawUi();
+        }
+    }
+
     Mat UiDrawer::prepareUiMat(){
         Mat blk960x1080(cv::Size(960, 1080), CV_8UC3,Scalar(0,0,0));
         return blk960x1080;

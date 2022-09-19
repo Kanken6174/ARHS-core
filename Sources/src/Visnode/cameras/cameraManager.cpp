@@ -73,6 +73,7 @@ void cameraManager::runCapture(){
         std::thread* t = new std::thread(cameraManager::runCaptureForCamera,c,i);
         i++;
         cout << "moving thread" << endl;
+        Threadweaver::stick_this_thread_to_core(t,i);
         Threadweaver::captureThreads.push_back(t);
         cout << "done" << endl;
     }

@@ -35,6 +35,7 @@ namespace ui {
         static void drawUi();
         static void drawStartupSequence();
         static void drawMenu();
+        static void runDrawUi();
         static Mat OverlayMat;  //drawn at each frame
         static Mat OsMat;   //drawn on certain events
         static std::mutex OsMatLock;

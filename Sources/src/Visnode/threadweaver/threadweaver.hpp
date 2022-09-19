@@ -1,5 +1,7 @@
 #include <thread>
 #include <vector>
+#include <unistd.h>
+#include <sched.h>
 #include "./debugging.hpp"
 
 //main thread manager
@@ -8,4 +10,6 @@ class Threadweaver{
     static std::vector<std::thread*> captureThreads;
     static std::thread* hardwareWatcherThread;
     static std::thread* osUiDrawerThread;
+
+    static void stick_this_thread_to_core(std::thread* t,int core_id);
 };

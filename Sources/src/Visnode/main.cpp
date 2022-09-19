@@ -3,23 +3,10 @@
 #include <sched.h>
 using namespace psvr;
 
-template <
-    class result_t   = std::chrono::milliseconds,
-    class clock_t    = std::chrono::steady_clock,
-    class duration_t = std::chrono::milliseconds
->
-
-auto since(std::chrono::time_point<clock_t, duration_t> const& start)
-{
-    return std::chrono::duration_cast<result_t>(clock_t::now() - start);
-}
-
 int main(int argc, char* argv[])
 {
-cpu_set_t  mask;
-CPU_ZERO(&mask);
-CPU_SET(0, &mask);
-sched_setaffinity(0, sizeof(mask), &mask);
+unsigned num_cpus = std::thread::hardware_concurrency();
+cout << num_cpus <<" cores detected" << endl;
 
 //psvr::Psvr::open();
 ui::UiManager::init();
@@ -34,33 +21,16 @@ cameraManager::runCapture();
 SerialPortManager::init();
 ui::UiController::exitCalled = false;
 ui::UiController::runIntro = false;
-int i = 0,count = 1;
-_Float64 avgr=0;
+
+std::thread* t = new std::thread(ui::UiDrawer::runDrawUi);
+Threadweaver::stick_this_thread_to_core(t,0);
+Threadweaver::osUiDrawerThread = t;
 
 while(!ui::UiController::exitCalled){
-    #ifdef DBGMODE
-    auto start = std::chrono::steady_clock::now();
-    #endif
-    std::future<void> uiF = std::async (ui::UiDrawer::drawUi);
-    uiF.get();
-    #ifdef DBGMODE
-    auto end1 = since(start).count();
-    #endif
-    #ifdef DBGMODE
-    std::cout << "Elapsed(ms)=" << end1 << std::endl;
-    if(avgr == 0){
-        avgr = end1;
-    }else{
-        avgr = (avgr+end1)/count;
-    }
-
-    if(i > 100){
-        //std::cout << "\nAVERAGES " << 1000/(avgr*10000) << "," << 1000/(avgl*10000) << std::endl;
-        i=0;
-    }
-    i++;
-    count++;
-    #endif
+    sleep(5);
 }
+
+t->join();
+
 return 0;
 }
