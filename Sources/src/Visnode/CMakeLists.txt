@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.15)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -13,6 +13,8 @@ set(CMAKE_BINARY_DIR /home/kanken/code/project-/Sources/src/Visnode/)
 find_package(OpenCV REQUIRED)
 find_package(TBB REQUIRED)
 
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
 
 #SET("OpenCV_DIR" "/usr/local/lib/")
 include_directories(${OpenCV_INCLUDE_DIRS} )
@@ -35,7 +37,7 @@ add_executable(prog ${main_source_files})
 
 MESSAGE(STATUS "CMAKE FLAGS : ${LINK_OPTIONS}")
 
-target_link_libraries(prog hw tbb)
+target_link_libraries(prog hw tbb Threads::Threads)
 
 SET(GCC_COVERAGE_COMPILE_FLAGS "-L/usr/local/lib")
 add_definitions(${GCC_COVERAGE_COMPILE_FLAGS})
