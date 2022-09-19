@@ -19,6 +19,7 @@ std::future<void> menudraw = std::async (ui::UiDrawer::drawMenu);
 ui::UiDrawer::drawStartupSequence();    //show startup sequence while camera manager is starting
 menudraw.get();
 fobj.get();
+
 cameraManager::runCapture();
 SerialPortManager::init();
 ui::UiController::exitCalled = false;
@@ -26,13 +27,13 @@ ui::UiController::runIntro = false;
 
 std::thread* t = new std::thread(ui::UiDrawer::runDrawUi);
 Threadweaver::stick_this_thread_to_core(t,1);
-Threadweaver::osUiDrawerThread = t;
+Threadweaver::gfxPipelineThread = t;
 
 while(!ui::UiController::exitCalled){
     sleep(5);
 }
 
-t->join();
+Threadweaver::gfxPipelineThread->join();
 
 return 0;
 }

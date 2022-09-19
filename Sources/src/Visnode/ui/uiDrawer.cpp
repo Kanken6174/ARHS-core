@@ -37,8 +37,10 @@ namespace ui{
             
             cv::hconcat(mats,finished);
             DEBUG_LOG("concated mats")
+
+            UiManager::accessLocks.at(0)->lock();
             UiManager::managedUIs[0]->drawSurface = finished;  //write the final image to the psvr UI buffer
-            UiManager::managedUIs[0]->draw();               //send the image to the psvr
+            UiManager::accessLocks.at(0)->unlock();
     }
 
     void UiDrawer::drawStartupSequence(){

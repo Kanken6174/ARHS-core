@@ -26,7 +26,9 @@ namespace ui {
     //Defines a single ui window (by default two will be displayed)
     class Ui{
         public:
+        UMat drawBuffer;
         UMat drawSurface; //Current frame 
+        int id;
         std::string myWindow;
         void draw();
     };
@@ -47,9 +49,12 @@ namespace ui {
     };
         class UiManager{ //manager is static because we only ever need one
         public:
+        static vector<mutex*> accessLocks;
         static vector<Ui*> managedUIs;
+        static bool uiShouldRun;
         static void init();
-        static void cleanup();       
+        static void cleanup();
+        static void beginDrawRoutineForUi(Ui* u);     
     };
         class UiController{
         public:

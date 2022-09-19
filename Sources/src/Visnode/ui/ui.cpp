@@ -3,6 +3,10 @@
 void ui::Ui::draw(){
    if(drawSurface.empty())
       return;
-   imshow(this->myWindow, this->drawSurface);
-   waitKey(1);
+   UiManager::accessLocks.at(this->id)->lock();   
+   drawBuffer = drawSurface;
+   UiManager::accessLocks.at(this->id)->unlock(); 
+   
+   imshow(this->myWindow, this->drawBuffer);
+   waitKey(17);
 }
