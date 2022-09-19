@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
 {
 unsigned num_cpus = std::thread::hardware_concurrency();
 cout << num_cpus <<" cores detected" << endl;
-
+std::cout << cv::getBuildInformation() << std::endl;
 
 
 //psvr::Psvr::open();
