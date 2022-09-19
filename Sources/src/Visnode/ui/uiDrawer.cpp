@@ -32,12 +32,12 @@ namespace ui{
                 OsMatLock.unlock();
             }
             DEBUG_LOG("drawn menu")
-            Mat finished(cv::Size(1920, 1080), CV_8UC3,Scalar(0,0,0));;
-            Mat mats[] = {(Mat)UiMat.getMat(ACCESS_READ),(Mat)UiMat.getMat(ACCESS_READ)};
+            UMat finished(cv::Size(1920, 1080), CV_8UC3,Scalar(0,0,0));
+            vector<UMat> mats{UiMat,UiMat};
             
-            cv::hconcat(mats,2,finished);
+            cv::hconcat(mats,finished);
             DEBUG_LOG("concated mats")
-            UiManager::managedUIs[0]->drawSurface = (UMat)finished.getUMat(ACCESS_READ);  //write the final image to the psvr UI buffer
+            UiManager::managedUIs[0]->drawSurface = finished;  //write the final image to the psvr UI buffer
             UiManager::managedUIs[0]->draw();               //send the image to the psvr
     }
 
@@ -45,9 +45,9 @@ namespace ui{
         cout << "opening external ressources" << endl;
         VideoCapture cap("./media/hud_startup.gif");
         cout << "opened video"<< endl;
-        Mat overlay = imread("./media/hud_fixed.png",-1);
+        UMat overlay = imread("./media/hud_fixed.png",-1).getUMat(ACCESS_READ);
         cout << "read overlay" << endl;
-        ui::UiDrawer::OverlayMat = overlay.getUMat(ACCESS_READ);
+        ui::UiDrawer::OverlayMat = overlay;
         if(!cap.isOpened()){
             cout << "failed to open hud start media" << endl;
             //return;
@@ -55,7 +55,7 @@ namespace ui{
         UMat frame;
         while(cap.read(frame))
         {
-            frame = OverlayBlackMask(frame, overlay.getUMat(ACCESS_READ));
+            frame = OverlayBlackMask(frame, overlay);
             imshow(ui::UiManager::managedUIs.at(0)->myWindow, frame);
             if(waitKey(30) >= 0) break;
         }
