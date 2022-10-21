@@ -12,7 +12,7 @@
 [![Vulnerabilities](https://codefirst.ddns.net/sonar/api/project_badges/measure?project=yorick.geoffre%3Aproject-&metric=vulnerabilities)](https://codefirst.ddns.net/sonar/dashboard?id=yorick.geoffre%3Aproject-)  
 
 
-# project-
+# ARHS_core
 
 ARHS [Augmented Reality Headset System] is an augmented reality project aiming to use existing hardware to produce a low cost and flexible platform for on-the-go computer vision.
 
