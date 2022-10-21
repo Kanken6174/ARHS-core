@@ -1,3 +1,5 @@
+<image src="./rsrc/lAD6wdR8_4x.png" width="400" height="400">
+
 # ARHS_core
 
 ARHS [Augmented Reality Headset System] is an augmented reality project aiming to use existing hardware to produce a low cost and flexible platform for on-the-go computer vision.
