@@ -1,5 +1,5 @@
 #include "_cam.hpp"
-
+#include <signal.h>
 vector<camera*> cameraManager::videoSources;
 std::vector<UMat> cameraManager::captures;
 bool cameraManager::runCaptureThread;
@@ -39,7 +39,7 @@ int cameraManager::init(){
             VideoCapture vs(camID);
             if(!vs.isOpened() && !vs.open(camID))
             {
-                cout << "opening camera " << camIdx << " failed" <<endl;
+                cout << "\x1B[31opening camera " << camIdx << " failed\033[0m" <<endl;
                 vs.release();
             }else{
             vs.release();
@@ -62,7 +62,7 @@ int cameraManager::init(){
 }
 
 void cameraManager::runCapture(){
-    cout << "enabling capture thread for " << videoSources.size() << " cameras" << endl;
+    cout << "cameraManager::runCapture------------------------------------------------\n" << "enabling capture thread for " << videoSources.size() << " cameras" << endl;
     uint i = 0;
     runCaptureThread = true;
     for(camera* c : videoSources){
@@ -73,7 +73,7 @@ void cameraManager::runCapture(){
         std::thread* t = new std::thread(cameraManager::runCaptureForCamera,c,i);
         i++;
         cout << "moving thread" << endl;
-        Threadweaver::stick_this_thread_to_core(t,i+1);
+        Threadweaver::stick_this_thread_to_core(t,2);
         Threadweaver::captureThreads.push_back(t);
         cout << "done" << endl;
     }

@@ -5,6 +5,7 @@
 #include <ctime>
 #include <functional>
 
+#include "../perfcheckers/framerate.hpp"
 #include "../cameras/_cam.hpp"
 #include "../psvr/_psvr.hpp"
 #include <opencv2/imgcodecs/imgcodecs.hpp>
@@ -42,6 +43,7 @@ namespace ui {
         static UMat OsMat;   //drawn on certain events
         static std::mutex OsMatLock;
         private:
+        static framerateChecker* fpsCounter;
         static UMat prepareUiMat();
         static UMat resizeIn(UMat input);
         static UMat OverlayBlackMask(UMat input, UMat toOverlay, int x = 0, int y = 0);

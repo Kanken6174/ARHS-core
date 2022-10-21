@@ -2,6 +2,7 @@
 UMat ui::UiDrawer::OverlayMat;
 UMat ui::UiDrawer::OsMat;   //drawn on certain events
 std::mutex ui::UiDrawer::OsMatLock;
+framerateChecker* ui::UiDrawer::fpsCounter = new framerateChecker();
 
             //UiMat = prepareUiMat();
             //surface.copyTo(UiMat(cv::Rect((UiMat.cols/2)-(surface.cols/2),(UiMat.rows/2)-(surface.rows/2),surface.cols, surface.rows)));
@@ -10,6 +11,7 @@ std::mutex ui::UiDrawer::OsMatLock;
 namespace ui{
     //draws the UI for the left screen of the psvr
     void UiDrawer::drawUi(){
+            fpsCounter->tickBegin();
             UMat UiMat = prepareUiMat();               //prepare black background 960*1080
             DEBUG_LOG("prepared UI mat")
             cameraManager::accessLocks[0]->lock();      //lock the capture access
@@ -41,6 +43,7 @@ namespace ui{
             UiManager::accessLocks.at(0)->lock();
             UiManager::managedUIs[0]->drawSurface = finished;  //write the final image to the psvr UI buffer
             UiManager::accessLocks.at(0)->unlock();
+            fpsCounter->tickUpdate();
     }
 
     void UiDrawer::drawStartupSequence(){
@@ -52,7 +55,7 @@ namespace ui{
         ui::UiDrawer::OverlayMat = overlay;
         if(!cap.isOpened()){
             cout << "failed to open hud start media" << endl;
-            //return;
+            return;
         }
         UMat frame;
         while(cap.read(frame))
@@ -65,6 +68,7 @@ namespace ui{
     }
 
     void UiDrawer::drawMenu(){
+        try{
         int& wd = UiController::menuSize.width;
         int& he = UiController::menuSize.height;
         unsigned int stackerIndex = 0;
@@ -77,17 +81,28 @@ namespace ui{
         std::string str =  iter->first;
         cv::putText(MenuMat, str, Point2i(5,stackerIndex+=20), HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255,255,255), 1, 8, false);
         }
+        //cv::putText(MenuMat, cv::format("Frames per second: %d - %ld", fpsCounter->fps, fpsCounter->frameCounter), Point2i(5,stackerIndex+=20), HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255,255,255), 1, 8, false);
         cv::rectangle(MenuMat, cv::Rect2i(0,((20*ui::UiController::selectedIndex)+20)+5,wd, 20), Scalar(200,0,0), 3, 8, 0);
         OsMatLock.lock();
         OsMat = MenuMat;
         OsMatLock.unlock();
+        } catch(...){
+            cerr << "\033[1;31m caught DrawUi::drawMenu thread exception \033[0m" << endl;
+            exit(1);
+        }
     }
 
     void UiDrawer::runDrawUi(){
+        try{
         cout << "starting ui drawer thread" << endl;
         ui::UiController::exitCalled = false;
-        while(!ui::UiController::exitCalled){
+        while(true){
+            DEBUG_LOG("drawing");
             ui::UiDrawer::drawUi();
+        }
+        } catch(...){
+            cerr << "\033[1;31m caught DrawUi thread exception \033[0m" << endl;
+            exit(1);
         }
     }
 

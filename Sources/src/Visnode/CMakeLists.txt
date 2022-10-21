@@ -9,7 +9,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-Ofast")
 project(visnode)
 
 #set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/../bin)
-set(CMAKE_BINARY_DIR /home/kanken/code/project-/Sources/src/Visnode/)
+set(CMAKE_BINARY_DIR /home/kanken/code/ARHS_core/Sources/src/Visnode)
 find_package(OpenCV REQUIRED)
 find_package(TBB REQUIRED)
 
@@ -24,6 +24,7 @@ MESSAGE(STATUS "Opencv_LINK_DIRS : ${Opencv_LINK_DIRS}")
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
+add_subdirectory(perfcheckers)
 add_subdirectory(threadweaver)
 add_subdirectory(ihidapi)
 add_subdirectory(cameras)

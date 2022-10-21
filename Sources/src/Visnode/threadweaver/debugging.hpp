@@ -5,7 +5,7 @@
 #define DBGCOMM
 
 #ifdef DBGMODE
-#define DEBUG_LOG(x) std::cout << x << std::endl;
+#define DEBUG_LOG(x) std::cout << "-DEBUG: " << x << std::endl;
 #else
 #define DEBUG_LOG(x)
 #endif
