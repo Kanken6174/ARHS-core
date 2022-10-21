@@ -52,6 +52,7 @@ namespace ui{
         VideoCapture cap("./media/hud_startup.gif");
         cout << "opened video"<< endl;
         UMat overlay = imread("./media/hud_fixed.png",-1).getUMat(ACCESS_READ);
+    
         cout << "read overlay" << endl;
         ui::UiDrawer::OverlayMat = overlay;
         if(!cap.isOpened()){

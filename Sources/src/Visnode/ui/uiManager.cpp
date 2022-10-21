@@ -12,6 +12,31 @@ namespace ui{
         }
     }
 
+    void on_opengl(void* param)
+{
+    glLoadIdentity();
+    glTranslated(0.0, 0.0, -1.0);
+    glRotatef( 55, 1, 0, 0 );
+    glRotatef( 45, 0, 1, 0 );
+    glRotatef( 0, 0, 0, 1 );
+    static const int coords[6][4][3] = {
+        { { +1, -1, -1 }, { -1, -1, -1 }, { -1, +1, -1 }, { +1, +1, -1 } },
+        { { +1, +1, -1 }, { -1, +1, -1 }, { -1, +1, +1 }, { +1, +1, +1 } },
+        { { +1, -1, +1 }, { +1, -1, -1 }, { +1, +1, -1 }, { +1, +1, +1 } },
+        { { -1, -1, -1 }, { -1, -1, +1 }, { -1, +1, +1 }, { -1, +1, -1 } },
+        { { +1, -1, +1 }, { -1, -1, +1 }, { -1, -1, -1 }, { +1, -1, -1 } },
+        { { -1, -1, +1 }, { +1, -1, +1 }, { +1, +1, +1 }, { -1, +1, +1 } }
+    };
+    for (int i = 0; i < 6; ++i) {
+                glColor3ub( i*20, 100+i*10, i*42 );
+                glBegin(GL_QUADS);
+                for (int j = 0; j < 4; ++j) {
+                        glVertex3d(0.2 * coords[i][j][0], 0.2 * coords[i][j][1], 0.2 * coords[i][j][2]);
+                }
+                glEnd();
+    }
+}
+
     //initializes the ui manager, following default values
     void UiManager::init(){
         uiShouldRun = false;
@@ -23,16 +48,15 @@ namespace ui{
             #ifdef OGLWIN
                 DEBUG_LOG("created opengl window")
                 namedWindow(newUI->myWindow,WINDOW_OPENGL);
+                cv::setOpenGlContext(newUI->myWindow);
+                setOpenGlDrawCallback(newUI->myWindow, on_opengl);
             #else
                 DEBUG_LOG("created cpu-based window")
                 namedWindow(newUI->myWindow);
             #endif
             moveWindow(newUI->myWindow,DEFAULT_UI_OFFSET_X+i*960,DEFAULT_UI_OFFSET_Y);
             resizeWindow(newUI->myWindow,DEFAULT_UI_SIZE_X,DEFAULT_UI_SIZE_Y);
-            setWindowProperty(newUI->myWindow, cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
-            #ifdef OGLWIN
-            cv::setOpenGlContext(newUI->myWindow);
-            #endif
+            //setWindowProperty(newUI->myWindow, cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
 
             cout << "window: " << newUI->myWindow << " created at " << DEFAULT_UI_OFFSET_X+i*960 << " , " << DEFAULT_UI_OFFSET_Y << endl;
 

@@ -5,6 +5,8 @@
 #include <ctime>
 #include <functional>
 
+#include <GL/glut.h>
+
 #include "../cameras/_cam.hpp"
 #include "../psvr/_psvr.hpp"
 #include <opencv2/imgcodecs/imgcodecs.hpp>

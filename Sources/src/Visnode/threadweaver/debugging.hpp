@@ -10,5 +10,3 @@
 #else
 #define DEBUG_LOG(x)
 #endif
-
-//#define DBGPRINT(x) do { if (DBGMODE) { std::cerr << x << std::endl; }} while (0)
