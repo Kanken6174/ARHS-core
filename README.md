@@ -18,4 +18,4 @@ ARHS [Augmented Reality Headset System] is an augmented reality project aiming t
 
 This repository hosts the code for ARHS-core, which is the code used by the headset and hence "core" part of the system.
 
-You'll need opencv and hidapi if you want to test it out.
+You'll need opencv and hidapi if you want to test it out. A quick installation script is provided for that purpose, as `./install.sh`.
