@@ -3,6 +3,7 @@
 
 //#define DBGMODE
 #define DBGCOMM
+#define OGLWIN
 
 #ifdef DBGMODE
 #define DEBUG_LOG(x) std::cout << "-DEBUG: " << x << std::endl;

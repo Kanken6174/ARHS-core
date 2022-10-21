@@ -7,6 +7,7 @@ std::vector<std::mutex*> cameraManager::accessLocks;
 
 void cameraManager::runCaptureForCamera(camera* c, uint index){
     while(runCaptureThread){
+        fcheckManager::fcCam.tickBegin();
         if(!c->source->isOpened()){
             cout << "camera " << c->path << " is closed, opening..." << endl;
             if(!c->source->open(c->path,cv::CAP_ANY)){
@@ -23,6 +24,7 @@ void cameraManager::runCaptureForCamera(camera* c, uint index){
         } else {
             cout << "read error grabbing from camera " << c->path << endl;
         }
+        fcheckManager::fcCam.tickUpdate();
     }
 }
 

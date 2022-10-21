@@ -1,5 +1,6 @@
 
 #include <ctime>
+#include <atomic>
 
 class framerateChecker{
     private:
@@ -7,9 +8,16 @@ class framerateChecker{
 
     public:
     std::time_t tBegin, tEnd;
-    int tick, fps = 0;
+    std::atomic<int> tick,fps = 0;
     long frameCounter = 0;
 
     void tickBegin();
     void tickUpdate();
+};
+
+class fcheckManager{
+    public:
+    static framerateChecker fcUI;
+    static framerateChecker fcShow;
+    static framerateChecker fcCam;
 };

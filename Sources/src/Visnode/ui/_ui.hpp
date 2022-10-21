@@ -5,11 +5,11 @@
 #include <ctime>
 #include <functional>
 
-#include "../perfcheckers/framerate.hpp"
 #include "../cameras/_cam.hpp"
 #include "../psvr/_psvr.hpp"
 #include <opencv2/imgcodecs/imgcodecs.hpp>
 #include <opencv2/core.hpp>
+#include <opencv2/core/opengl.hpp>
 
 #define DEFAULT_UI_WINDOW_AMOUNT 1  //2 windows, one for each eye
 #define DEFAULT_UI_OFFSET_X 1080    //1080
@@ -21,6 +21,7 @@ int runtest();
 
 using namespace std;
 using namespace cv;
+using namespace cv::ogl;
 using namespace psvr;
 
 namespace ui {
@@ -29,6 +30,7 @@ namespace ui {
         public:
         UMat drawBuffer;
         UMat drawSurface; //Current frame 
+        cv::ogl::Texture2D drawTexture;
         int id;
         std::string myWindow;
         void draw();
@@ -39,8 +41,9 @@ namespace ui {
         static void drawStartupSequence();
         static void drawMenu();
         static void runDrawUi();
-        static UMat OverlayMat;  //drawn at each frame
-        static UMat OsMat;   //drawn on certain events
+        static UMat OverlayMat;  //drawn at each frame (screen)
+        static UMat OsMat;   //drawn on certain events (menu)
+        static cv::ogl::Texture2D OvTexture;
         static std::mutex OsMatLock;
         private:
         static framerateChecker* fpsCounter;

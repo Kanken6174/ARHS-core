@@ -1,6 +1,7 @@
 #include "_ui.hpp"
 UMat ui::UiDrawer::OverlayMat;
 UMat ui::UiDrawer::OsMat;   //drawn on certain events
+cv::ogl::Texture2D OvTexture;
 std::mutex ui::UiDrawer::OsMatLock;
 framerateChecker* ui::UiDrawer::fpsCounter = new framerateChecker();
 
@@ -11,7 +12,7 @@ framerateChecker* ui::UiDrawer::fpsCounter = new framerateChecker();
 namespace ui{
     //draws the UI for the left screen of the psvr
     void UiDrawer::drawUi(){
-            fpsCounter->tickBegin();
+            fcheckManager::fcUI.tickBegin();
             UMat UiMat = prepareUiMat();               //prepare black background 960*1080
             DEBUG_LOG("prepared UI mat")
             cameraManager::accessLocks[0]->lock();      //lock the capture access
@@ -43,7 +44,7 @@ namespace ui{
             UiManager::accessLocks.at(0)->lock();
             UiManager::managedUIs[0]->drawSurface = finished;  //write the final image to the psvr UI buffer
             UiManager::accessLocks.at(0)->unlock();
-            fpsCounter->tickUpdate();
+            fcheckManager::fcUI.tickUpdate();
     }
 
     void UiDrawer::drawStartupSequence(){
@@ -58,10 +59,18 @@ namespace ui{
             return;
         }
         UMat frame;
+        #ifdef OGLWIN
+        cv::ogl::Texture2D frameOGL = Texture2D();
+        #endif
         while(cap.read(frame))
         {
             frame = OverlayBlackMask(frame, overlay);
-            imshow(ui::UiManager::managedUIs.at(0)->myWindow, frame);
+#ifdef OGLWIN
+            frameOGL.copyFrom(frame);
+            cv::imshow(ui::UiManager::managedUIs.at(0)->myWindow, frameOGL);
+#else
+            cv::imshow(ui::UiManager::managedUIs.at(0)->myWindow, frame);
+#endif
             if(waitKey(30) >= 0) break;
         }
         cap.release();
@@ -81,7 +90,14 @@ namespace ui{
         std::string str =  iter->first;
         cv::putText(MenuMat, str, Point2i(5,stackerIndex+=20), HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255,255,255), 1, 8, false);
         }
-        //cv::putText(MenuMat, cv::format("Frames per second: %d - %ld", fpsCounter->fps, fpsCounter->frameCounter), Point2i(5,stackerIndex+=20), HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255,255,255), 1, 8, false);
+        int uiFps,Drawfps,camFPS = 0;
+        uiFps = fcheckManager::fcUI.fps;
+        Drawfps = fcheckManager::fcShow.fps;
+        camFPS = fcheckManager::fcCam.fps;
+        cv::putText(MenuMat, cv::format("Eps Ui drawer: %d", uiFps), Point2i(5,stackerIndex+=20), HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255,255,255), 1, 8, false);
+        cv::putText(MenuMat, cv::format("Eps imshow: %d", Drawfps), Point2i(5,stackerIndex+=20), HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255,255,255), 1, 8, false);
+        cv::putText(MenuMat, cv::format("Eps Camera 0: %d", camFPS), Point2i(5,stackerIndex+=20), HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255,255,255), 1, 8, false);
+        
         cv::rectangle(MenuMat, cv::Rect2i(0,((20*ui::UiController::selectedIndex)+20)+5,wd, 20), Scalar(200,0,0), 3, 8, 0);
         OsMatLock.lock();
         OsMat = MenuMat;

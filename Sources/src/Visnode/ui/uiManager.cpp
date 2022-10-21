@@ -20,11 +20,19 @@ namespace ui{
             Ui* newUI = new Ui();
             cout << "creating UI n°" << to_string(i) << endl;
             newUI->myWindow = "project- UI"+std::to_string(i);
-            
-            namedWindow(newUI->myWindow);
+            #ifdef OGLWIN
+                DEBUG_LOG("created opengl window")
+                namedWindow(newUI->myWindow,WINDOW_OPENGL);
+            #else
+                DEBUG_LOG("created cpu-based window")
+                namedWindow(newUI->myWindow);
+            #endif
             moveWindow(newUI->myWindow,DEFAULT_UI_OFFSET_X+i*960,DEFAULT_UI_OFFSET_Y);
             resizeWindow(newUI->myWindow,DEFAULT_UI_SIZE_X,DEFAULT_UI_SIZE_Y);
-            setWindowProperty(newUI->myWindow, cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
+            //setWindowProperty(newUI->myWindow, cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
+            #ifdef OGLWIN
+            cv::setOpenGlContext(newUI->myWindow);
+            #endif
 
             cout << "window: " << newUI->myWindow << " created at " << DEFAULT_UI_OFFSET_X+i*960 << " , " << DEFAULT_UI_OFFSET_Y << endl;
 

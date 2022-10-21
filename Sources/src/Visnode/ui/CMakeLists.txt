@@ -19,7 +19,6 @@ add_library(ui ${ui_source_files})
 
 target_link_libraries(ui ${OpenCV_LIBS})
 target_link_libraries(ui psvr)
-target_link_libraries(ui perfcheckers)
 target_link_libraries(ui cameras)
 
 MESSAGE(STATUS "Done building ui")
