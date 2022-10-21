@@ -59,14 +59,17 @@ namespace ui{
             return;
         }
         UMat frame;
+        UMat finished;
         #ifdef OGLWIN
         cv::ogl::Texture2D frameOGL = Texture2D();
         #endif
         while(cap.read(frame))
         {
             frame = OverlayBlackMask(frame, overlay);
+            vector<UMat> mats{frame,frame};
+            cv::hconcat(mats,finished);
 #ifdef OGLWIN
-            frameOGL.copyFrom(frame);
+            frameOGL.copyFrom(finished);
             cv::imshow(ui::UiManager::managedUIs.at(0)->myWindow, frameOGL);
 #else
             cv::imshow(ui::UiManager::managedUIs.at(0)->myWindow, frame);
