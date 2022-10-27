@@ -9,7 +9,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-Ofast")
 project(visnode)
 
 #set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/../bin)
-set(CMAKE_BINARY_DIR /home/kanken/code/ARHS_core/Sources/src/Visnode)
+set(CMAKE_BINARY_DIR /home/kanken/code/AHRS_core/Sources/src/Visnode)
 find_package(OpenCV REQUIRED)
 find_package(TBB REQUIRED)
 

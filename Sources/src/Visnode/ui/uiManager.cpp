@@ -47,9 +47,9 @@ namespace ui{
             newUI->myWindow = "project- UI"+std::to_string(i);
             #ifdef OGLWIN
                 DEBUG_LOG("created opengl window")
-                namedWindow(newUI->myWindow,WINDOW_OPENGL);
-                cv::setOpenGlContext(newUI->myWindow);
-                setOpenGlDrawCallback(newUI->myWindow, on_opengl);
+                
+                //cv::setOpenGlContext(newUI->myWindow);
+                //setOpenGlDrawCallback(newUI->myWindow, on_opengl);
             #else
                 DEBUG_LOG("created cpu-based window")
                 namedWindow(newUI->myWindow);
@@ -67,7 +67,7 @@ namespace ui{
             accessLocks.at(i)->unlock();
             std::thread* t = new std::thread(ui::UiManager::beginDrawRoutineForUi,newUI);
             Threadweaver::stick_this_thread_to_core(t,0);
-            Threadweaver::osUiDrawerThread = t; //TODO fix?
+            Threadweaver::osUiDrawerThread = t;
         }
         uiShouldRun = true;
     }

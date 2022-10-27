@@ -6,6 +6,10 @@ using namespace psvr;
 int main(int argc, char* argv[])
 {
 try{
+char tmp[256];
+getcwd(tmp, 256);
+std::cout << "Current working directory: " << tmp << std::endl;
+
 unsigned num_cpus = std::thread::hardware_concurrency();
 cout << num_cpus <<" cores detected" << endl;
 std::cout << cv::getBuildInformation() << std::endl;
@@ -17,7 +21,7 @@ std::future<int> fobj = std::async (cameraManager::init);   //asynchronous camer
 ui::UiController::init();
 ui::UiController::runIntro = true;
 std::future<void> menudraw = std::async (ui::UiDrawer::drawMenu);
-ui::UiDrawer::drawStartupSequence();    //show startup sequence while camera manager is starting
+sleep(3);
 menudraw.get();
 fobj.get();
 
@@ -26,7 +30,7 @@ SerialPortManager::init();
 ui::UiController::exitCalled = false;
 ui::UiController::runIntro = false;
 
-
+ui::UiDrawer::runDrawUi();
 std::thread* t = new std::thread(ui::UiDrawer::runDrawUi);
 Threadweaver::stick_this_thread_to_core(t,1);
 Threadweaver::gfxPipelineThread = t;

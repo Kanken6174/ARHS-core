@@ -30,10 +30,10 @@ namespace ui {
     //Defines a single ui window (by default two will be displayed)
     class Ui{
         public:
-        UMat drawBuffer;
         UMat drawSurface; //Current frame 
-        cv::ogl::Texture2D drawTexture;
+        cv::ogl::Texture2D drawTexture = Texture2D();
         int id;
+        bool inited = false;
         std::string myWindow;
         void draw();
     };

@@ -12,21 +12,22 @@ framerateChecker* ui::UiDrawer::fpsCounter = new framerateChecker();
 namespace ui{
     //draws the UI for the left screen of the psvr
     void UiDrawer::drawUi(){
+                DEBUG_LOG("\nBegan new pipeline cycle-------------------------------")
             fcheckManager::fcUI.tickBegin();
             UMat UiMat = prepareUiMat();               //prepare black background 960*1080
-            DEBUG_LOG("prepared UI mat")
+                DEBUG_LOG("prepared UI mat")
             cameraManager::accessLocks[0]->lock();      //lock the capture access
             UMat cameraFrame = cameraManager::captures[0];   //retreive latest camera frame
             cameraManager::accessLocks[0]->unlock();    //unlock capture access
-            DEBUG_LOG("retreived camera frame")
+                DEBUG_LOG("retreived camera frame")
             if(cameraFrame.rows <= 0 || cameraFrame.cols <= 0) return;  //check for empty frame
             cameraFrame = resizeIn(cameraFrame);                //resize the frame to the standard format
-            DEBUG_LOG("resized camera frame")
+                DEBUG_LOG("resized camera frame")
             //Copy the frame in the center of the background
             cameraFrame.copyTo(UiMat(cv::Rect((UiMat.cols/2)-(cameraFrame.cols/2),(UiMat.rows/2)-(cameraFrame.rows/2),cameraFrame.cols, cameraFrame.rows)));
-            DEBUG_LOG("copied camera frame")
+                DEBUG_LOG("copied camera frame")
             UiMat = OverlayBlackMask(UiMat, OverlayMat);    //add the fixed overlay
-            DEBUG_LOG("overlayed camera frame")
+                DEBUG_LOG("overlayed camera frame")
             if(UiController::showMenu){
                 UiDrawer::drawMenu();
                 OsMatLock.lock();
