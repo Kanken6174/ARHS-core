@@ -1,0 +1,2 @@
+/usr/bin/ar qc libihidapi.a CMakeFiles/ihidapi.dir/hidapi_functions.cpp.o
+/usr/bin/ranlib libihidapi.a

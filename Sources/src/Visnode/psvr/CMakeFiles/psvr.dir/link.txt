@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpsvr.a CMakeFiles/psvr.dir/psvr.cpp.o
+/usr/bin/ranlib libpsvr.a
