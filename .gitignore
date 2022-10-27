@@ -62,7 +62,6 @@ Temporary Items
 .apdisk
 
 #Cmake stuff
-CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
