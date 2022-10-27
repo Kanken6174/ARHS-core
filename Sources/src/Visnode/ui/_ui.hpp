@@ -33,7 +33,6 @@ namespace ui {
         UMat drawSurface; //Current frame 
         cv::ogl::Texture2D drawTexture = Texture2D();
         int id;
-        bool inited = false;
         std::string myWindow;
         void draw();
     };

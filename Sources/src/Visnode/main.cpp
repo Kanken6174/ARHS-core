@@ -21,7 +21,7 @@ std::future<int> fobj = std::async (cameraManager::init);   //asynchronous camer
 ui::UiController::init();
 ui::UiController::runIntro = true;
 std::future<void> menudraw = std::async (ui::UiDrawer::drawMenu);
-sleep(3);
+sleep(5);
 menudraw.get();
 fobj.get();
 

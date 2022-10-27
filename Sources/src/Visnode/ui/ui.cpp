@@ -1,15 +1,6 @@
 #include "_ui.hpp"
 
 void ui::Ui::draw(){
-   if(!inited){
-      namedWindow(myWindow,WINDOW_OPENGL);
-      setWindowProperty(myWindow, cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
-      cv::setOpenGlContext(myWindow);
-      moveWindow(myWindow,DEFAULT_UI_OFFSET_X+960,DEFAULT_UI_OFFSET_Y);
-      resizeWindow(myWindow,DEFAULT_UI_SIZE_X,DEFAULT_UI_SIZE_Y);
-      inited = true;
-      ui::UiDrawer::drawStartupSequence();
-   }
    try{
    DEBUG_LOG("\nBegin drawing--------------")
    fcheckManager::fcShow.tickBegin();
@@ -20,7 +11,7 @@ void ui::Ui::draw(){
    }
    #ifdef OGLWIN
       DEBUG_LOG("Assigning opengl buffer")
-      UMat drawBuffer = drawSurface;
+      UMat drawBuffer = drawSurface;   //required copy?
       DEBUG_LOG("Done assigning opengl buffer")
    #else
       UMat drawBuffer = drawSurface;
@@ -28,7 +19,7 @@ void ui::Ui::draw(){
    UiManager::accessLocks.at(this->id)->unlock();
    DEBUG_LOG("Buffer retreived")
    #ifdef OGLWIN
-         drawTexture.copyFrom(drawBuffer);
+      drawTexture.copyFrom(drawBuffer);
       imshow(this->myWindow, this->drawTexture);
    #else
       imshow(this->myWindow, drawBuffer);

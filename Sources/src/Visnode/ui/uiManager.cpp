@@ -6,6 +6,14 @@ namespace ui{
     bool UiManager::uiShouldRun;
 
     void UiManager::beginDrawRoutineForUi(Ui* u){
+        #ifdef OGLWIN
+        namedWindow(u->myWindow,WINDOW_OPENGL);
+        setWindowProperty(u->myWindow, cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
+        cv::setOpenGlContext(u->myWindow);
+        moveWindow(u->myWindow,DEFAULT_UI_OFFSET_X+960,DEFAULT_UI_OFFSET_Y);
+        resizeWindow(u->myWindow,DEFAULT_UI_SIZE_X,DEFAULT_UI_SIZE_Y);
+        ui::UiDrawer::drawStartupSequence();
+        #endif
         while(!ui::UiManager::uiShouldRun){}
         while(ui::UiManager::uiShouldRun){
             u->draw();
