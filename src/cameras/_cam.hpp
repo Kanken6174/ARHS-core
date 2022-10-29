@@ -13,6 +13,7 @@
 #include <mutex> 
 #include <chrono>
 #include <opencv2/opencv.hpp>
+#include <opencv2/videoio/videoio_c.h>
 #include "../threadweaver/threadweaver.hpp"
 #include "../perfcheckers/framerate.hpp"
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/src
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers//CMakeFiles/progress.marks
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles 0
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles /home/kanken/code/AHRS_core/src/perfcheckers//CMakeFiles/progress.marks
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/clean
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 perfcheckers/CMakeFiles/perfcheckers.dir/rule:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/CMakeFiles/perfcheckers.dir/rule
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/CMakeFiles/perfcheckers.dir/rule
 .PHONY : perfcheckers/CMakeFiles/perfcheckers.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ perfcheckers: perfcheckers/CMakeFiles/perfcheckers.dir/rule
 
 # fast build rule for target.
 perfcheckers/fast:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/build
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/build
 .PHONY : perfcheckers/fast
 
 fcheckManager.o: fcheckManager.cpp.o
@@ -135,7 +135,7 @@ fcheckManager.o: fcheckManager.cpp.o
 
 # target to build an object file
 fcheckManager.cpp.o:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o
 .PHONY : fcheckManager.cpp.o
 
 fcheckManager.i: fcheckManager.cpp.i
@@ -143,7 +143,7 @@ fcheckManager.i: fcheckManager.cpp.i
 
 # target to preprocess a source file
 fcheckManager.cpp.i:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.i
 .PHONY : fcheckManager.cpp.i
 
 fcheckManager.s: fcheckManager.cpp.s
@@ -151,7 +151,7 @@ fcheckManager.s: fcheckManager.cpp.s
 
 # target to generate assembly for a file
 fcheckManager.cpp.s:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.s
 .PHONY : fcheckManager.cpp.s
 
 framerate.o: framerate.cpp.o
@@ -159,7 +159,7 @@ framerate.o: framerate.cpp.o
 
 # target to build an object file
 framerate.cpp.o:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.o
 .PHONY : framerate.cpp.o
 
 framerate.i: framerate.cpp.i
@@ -167,7 +167,7 @@ framerate.i: framerate.cpp.i
 
 # target to preprocess a source file
 framerate.cpp.i:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.i
 .PHONY : framerate.cpp.i
 
 framerate.s: framerate.cpp.s
@@ -175,7 +175,7 @@ framerate.s: framerate.cpp.s
 
 # target to generate assembly for a file
 framerate.cpp.s:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.s
 .PHONY : framerate.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

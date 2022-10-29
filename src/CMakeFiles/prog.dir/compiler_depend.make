@@ -621,6 +621,10 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/local/include/opencv4/opencv2/video.hpp \
   /usr/local/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+  /usr/local/include/opencv4/opencv2/videoio/videoio_c.h \
+  /usr/local/include/opencv4/opencv2/core/core_c.h \
+  /usr/local/include/opencv4/opencv2/core/types_c.h \
+  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
   threadweaver/threadweaver.hpp \
   /usr/include/c++/11/filesystem \
   /usr/include/c++/11/bits/fs_fwd.h \
@@ -655,6 +659,10 @@ ihidapi/_hidapi.hpp:
 /usr/include/c++/11/bits/fs_fwd.h:
 
 threadweaver/threadweaver.hpp:
+
+/usr/local/include/opencv4/opencv2/core/types_c.h:
+
+/usr/local/include/opencv4/opencv2/core/core_c.h:
 
 /usr/local/include/opencv4/opencv2/video/tracking.hpp:
 
@@ -1096,6 +1104,8 @@ threadweaver/threadweaver.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h:
 
+/usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h:
+
 /usr/include/c++/11/pstl/parallel_impl.h:
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
@@ -1107,6 +1117,8 @@ threadweaver/threadweaver.hpp:
 /usr/include/oneapi/tbb/detail/_export.h:
 
 /usr/include/oneapi/tbb/detail/_template_helpers.h:
+
+/usr/local/include/opencv4/opencv2/videoio/videoio_c.h:
 
 main.hpp:
 

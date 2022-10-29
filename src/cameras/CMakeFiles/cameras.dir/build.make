@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/src
 
 # Include any dependencies generated for this target.
 include cameras/CMakeFiles/cameras.dir/depend.make
@@ -72,30 +72,30 @@ include cameras/CMakeFiles/cameras.dir/flags.make
 cameras/CMakeFiles/cameras.dir/camEnum.cpp.o: cameras/CMakeFiles/cameras.dir/flags.make
 cameras/CMakeFiles/cameras.dir/camEnum.cpp.o: cameras/camEnum.cpp
 cameras/CMakeFiles/cameras.dir/camEnum.cpp.o: cameras/CMakeFiles/cameras.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cameras/CMakeFiles/cameras.dir/camEnum.cpp.o"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT cameras/CMakeFiles/cameras.dir/camEnum.cpp.o -MF CMakeFiles/cameras.dir/camEnum.cpp.o.d -o CMakeFiles/cameras.dir/camEnum.cpp.o -c /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras/camEnum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cameras/CMakeFiles/cameras.dir/camEnum.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT cameras/CMakeFiles/cameras.dir/camEnum.cpp.o -MF CMakeFiles/cameras.dir/camEnum.cpp.o.d -o CMakeFiles/cameras.dir/camEnum.cpp.o -c /home/kanken/code/AHRS_core/src/cameras/camEnum.cpp
 
 cameras/CMakeFiles/cameras.dir/camEnum.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cameras.dir/camEnum.cpp.i"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras/camEnum.cpp > CMakeFiles/cameras.dir/camEnum.cpp.i
+	cd /home/kanken/code/AHRS_core/src/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/cameras/camEnum.cpp > CMakeFiles/cameras.dir/camEnum.cpp.i
 
 cameras/CMakeFiles/cameras.dir/camEnum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cameras.dir/camEnum.cpp.s"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras/camEnum.cpp -o CMakeFiles/cameras.dir/camEnum.cpp.s
+	cd /home/kanken/code/AHRS_core/src/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/cameras/camEnum.cpp -o CMakeFiles/cameras.dir/camEnum.cpp.s
 
 cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o: cameras/CMakeFiles/cameras.dir/flags.make
 cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o: cameras/cameraManager.cpp
 cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o: cameras/CMakeFiles/cameras.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o -MF CMakeFiles/cameras.dir/cameraManager.cpp.o.d -o CMakeFiles/cameras.dir/cameraManager.cpp.o -c /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras/cameraManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o -MF CMakeFiles/cameras.dir/cameraManager.cpp.o.d -o CMakeFiles/cameras.dir/cameraManager.cpp.o -c /home/kanken/code/AHRS_core/src/cameras/cameraManager.cpp
 
 cameras/CMakeFiles/cameras.dir/cameraManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cameras.dir/cameraManager.cpp.i"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras/cameraManager.cpp > CMakeFiles/cameras.dir/cameraManager.cpp.i
+	cd /home/kanken/code/AHRS_core/src/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/cameras/cameraManager.cpp > CMakeFiles/cameras.dir/cameraManager.cpp.i
 
 cameras/CMakeFiles/cameras.dir/cameraManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cameras.dir/cameraManager.cpp.s"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras/cameraManager.cpp -o CMakeFiles/cameras.dir/cameraManager.cpp.s
+	cd /home/kanken/code/AHRS_core/src/cameras && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/cameras/cameraManager.cpp -o CMakeFiles/cameras.dir/cameraManager.cpp.s
 
 # Object files for target cameras
 cameras_OBJECTS = \
@@ -109,19 +109,19 @@ cameras/libcameras.a: cameras/CMakeFiles/cameras.dir/camEnum.cpp.o
 cameras/libcameras.a: cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o
 cameras/libcameras.a: cameras/CMakeFiles/cameras.dir/build.make
 cameras/libcameras.a: cameras/CMakeFiles/cameras.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcameras.a"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras && $(CMAKE_COMMAND) -P CMakeFiles/cameras.dir/cmake_clean_target.cmake
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cameras.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcameras.a"
+	cd /home/kanken/code/AHRS_core/src/cameras && $(CMAKE_COMMAND) -P CMakeFiles/cameras.dir/cmake_clean_target.cmake
+	cd /home/kanken/code/AHRS_core/src/cameras && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cameras.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 cameras/CMakeFiles/cameras.dir/build: cameras/libcameras.a
 .PHONY : cameras/CMakeFiles/cameras.dir/build
 
 cameras/CMakeFiles/cameras.dir/clean:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras && $(CMAKE_COMMAND) -P CMakeFiles/cameras.dir/cmake_clean.cmake
+	cd /home/kanken/code/AHRS_core/src/cameras && $(CMAKE_COMMAND) -P CMakeFiles/cameras.dir/cmake_clean.cmake
 .PHONY : cameras/CMakeFiles/cameras.dir/clean
 
 cameras/CMakeFiles/cameras.dir/depend:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanken/code/AHRS_core/Sources/src/Visnode /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras /home/kanken/code/AHRS_core/Sources/src/Visnode /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras /home/kanken/code/AHRS_core/Sources/src/Visnode/cameras/CMakeFiles/cameras.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanken/code/AHRS_core/src /home/kanken/code/AHRS_core/src/cameras /home/kanken/code/AHRS_core/src /home/kanken/code/AHRS_core/src/cameras /home/kanken/code/AHRS_core/src/cameras/CMakeFiles/cameras.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cameras/CMakeFiles/cameras.dir/depend
 

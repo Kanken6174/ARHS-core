@@ -592,6 +592,10 @@ ui/CMakeFiles/ui.dir/ui.cpp.o: ui/ui.cpp \
   /usr/local/include/opencv4/opencv2/video.hpp \
   /usr/local/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+  /usr/local/include/opencv4/opencv2/videoio/videoio_c.h \
+  /usr/local/include/opencv4/opencv2/core/core_c.h \
+  /usr/local/include/opencv4/opencv2/core/types_c.h \
+  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
   threadweaver/threadweaver.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -1208,6 +1212,10 @@ ui/CMakeFiles/ui.dir/uiController.cpp.o: ui/uiController.cpp \
   /usr/local/include/opencv4/opencv2/video.hpp \
   /usr/local/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+  /usr/local/include/opencv4/opencv2/videoio/videoio_c.h \
+  /usr/local/include/opencv4/opencv2/core/core_c.h \
+  /usr/local/include/opencv4/opencv2/core/types_c.h \
+  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
   threadweaver/threadweaver.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -1824,6 +1832,10 @@ ui/CMakeFiles/ui.dir/uiDrawer.cpp.o: ui/uiDrawer.cpp \
   /usr/local/include/opencv4/opencv2/video.hpp \
   /usr/local/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+  /usr/local/include/opencv4/opencv2/videoio/videoio_c.h \
+  /usr/local/include/opencv4/opencv2/core/core_c.h \
+  /usr/local/include/opencv4/opencv2/core/types_c.h \
+  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
   threadweaver/threadweaver.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -2854,6 +2866,10 @@ ui/CMakeFiles/ui.dir/uiManager.cpp.o: ui/uiManager.cpp \
   /usr/local/include/opencv4/opencv2/video.hpp \
   /usr/local/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+  /usr/local/include/opencv4/opencv2/videoio/videoio_c.h \
+  /usr/local/include/opencv4/opencv2/core/core_c.h \
+  /usr/local/include/opencv4/opencv2/core/types_c.h \
+  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
   threadweaver/threadweaver.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -2907,6 +2923,12 @@ ihidapi/_hidapi.hpp:
 /usr/include/unistd.h:
 
 threadweaver/threadweaver.hpp:
+
+/usr/local/include/opencv4/opencv2/core/types_c.h:
+
+/usr/local/include/opencv4/opencv2/core/core_c.h:
+
+/usr/local/include/opencv4/opencv2/videoio/videoio_c.h:
 
 /usr/local/include/opencv4/opencv2/video/tracking.hpp:
 
@@ -3279,6 +3301,8 @@ ui/uiManager.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h:
+
+/usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h:
 
 /usr/include/c++/11/pstl/parallel_impl.h:
 

@@ -585,6 +585,10 @@ cameras/CMakeFiles/cameras.dir/camEnum.cpp.o: cameras/camEnum.cpp \
   /usr/local/include/opencv4/opencv2/video.hpp \
   /usr/local/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+  /usr/local/include/opencv4/opencv2/videoio/videoio_c.h \
+  /usr/local/include/opencv4/opencv2/core/core_c.h \
+  /usr/local/include/opencv4/opencv2/core/types_c.h \
+  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
   threadweaver/threadweaver.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -1187,6 +1191,10 @@ cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o: cameras/cameraManager.cpp \
   /usr/local/include/opencv4/opencv2/video.hpp \
   /usr/local/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+  /usr/local/include/opencv4/opencv2/videoio/videoio_c.h \
+  /usr/local/include/opencv4/opencv2/core/core_c.h \
+  /usr/local/include/opencv4/opencv2/core/types_c.h \
+  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
   threadweaver/threadweaver.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -1238,8 +1246,6 @@ cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o: cameras/cameraManager.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
@@ -1273,6 +1279,14 @@ cameras/cameraManager.cpp:
 /usr/include/unistd.h:
 
 threadweaver/threadweaver.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/usr/local/include/opencv4/opencv2/core/types_c.h:
+
+/usr/local/include/opencv4/opencv2/core/core_c.h:
+
+/usr/local/include/opencv4/opencv2/videoio/videoio_c.h:
 
 /usr/local/include/opencv4/opencv2/video/tracking.hpp:
 
@@ -1585,6 +1599,8 @@ threadweaver/threadweaver.hpp:
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h:
+
+/usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h:
 
 /usr/include/c++/11/pstl/parallel_impl.h:
 

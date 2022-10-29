@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kanken/code/AHRS_core/Sources/src/Visnode/ihidapi/hidapi_functions.cpp" "ihidapi/CMakeFiles/ihidapi.dir/hidapi_functions.cpp.o" "gcc" "ihidapi/CMakeFiles/ihidapi.dir/hidapi_functions.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/ihidapi/hidapi_functions.cpp" "ihidapi/CMakeFiles/ihidapi.dir/hidapi_functions.cpp.o" "gcc" "ihidapi/CMakeFiles/ihidapi.dir/hidapi_functions.cpp.o.d"
   )
 
 # Targets to which this target links.

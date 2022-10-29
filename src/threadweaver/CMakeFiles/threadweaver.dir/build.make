@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/src
 
 # Include any dependencies generated for this target.
 include threadweaver/CMakeFiles/threadweaver.dir/depend.make
@@ -72,16 +72,16 @@ include threadweaver/CMakeFiles/threadweaver.dir/flags.make
 threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.o: threadweaver/CMakeFiles/threadweaver.dir/flags.make
 threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.o: threadweaver/threadweaver.cpp
 threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.o: threadweaver/CMakeFiles/threadweaver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.o"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.o -MF CMakeFiles/threadweaver.dir/threadweaver.cpp.o.d -o CMakeFiles/threadweaver.dir/threadweaver.cpp.o -c /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver/threadweaver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/threadweaver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.o -MF CMakeFiles/threadweaver.dir/threadweaver.cpp.o.d -o CMakeFiles/threadweaver.dir/threadweaver.cpp.o -c /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.cpp
 
 threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/threadweaver.dir/threadweaver.cpp.i"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver/threadweaver.cpp > CMakeFiles/threadweaver.dir/threadweaver.cpp.i
+	cd /home/kanken/code/AHRS_core/src/threadweaver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.cpp > CMakeFiles/threadweaver.dir/threadweaver.cpp.i
 
 threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/threadweaver.dir/threadweaver.cpp.s"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver/threadweaver.cpp -o CMakeFiles/threadweaver.dir/threadweaver.cpp.s
+	cd /home/kanken/code/AHRS_core/src/threadweaver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.cpp -o CMakeFiles/threadweaver.dir/threadweaver.cpp.s
 
 # Object files for target threadweaver
 threadweaver_OBJECTS = \
@@ -93,19 +93,19 @@ threadweaver_EXTERNAL_OBJECTS =
 threadweaver/libthreadweaver.a: threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.o
 threadweaver/libthreadweaver.a: threadweaver/CMakeFiles/threadweaver.dir/build.make
 threadweaver/libthreadweaver.a: threadweaver/CMakeFiles/threadweaver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libthreadweaver.a"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver && $(CMAKE_COMMAND) -P CMakeFiles/threadweaver.dir/cmake_clean_target.cmake
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threadweaver.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libthreadweaver.a"
+	cd /home/kanken/code/AHRS_core/src/threadweaver && $(CMAKE_COMMAND) -P CMakeFiles/threadweaver.dir/cmake_clean_target.cmake
+	cd /home/kanken/code/AHRS_core/src/threadweaver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threadweaver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 threadweaver/CMakeFiles/threadweaver.dir/build: threadweaver/libthreadweaver.a
 .PHONY : threadweaver/CMakeFiles/threadweaver.dir/build
 
 threadweaver/CMakeFiles/threadweaver.dir/clean:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver && $(CMAKE_COMMAND) -P CMakeFiles/threadweaver.dir/cmake_clean.cmake
+	cd /home/kanken/code/AHRS_core/src/threadweaver && $(CMAKE_COMMAND) -P CMakeFiles/threadweaver.dir/cmake_clean.cmake
 .PHONY : threadweaver/CMakeFiles/threadweaver.dir/clean
 
 threadweaver/CMakeFiles/threadweaver.dir/depend:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanken/code/AHRS_core/Sources/src/Visnode /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver /home/kanken/code/AHRS_core/Sources/src/Visnode /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver /home/kanken/code/AHRS_core/Sources/src/Visnode/threadweaver/CMakeFiles/threadweaver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanken/code/AHRS_core/src /home/kanken/code/AHRS_core/src/threadweaver /home/kanken/code/AHRS_core/src /home/kanken/code/AHRS_core/src/threadweaver /home/kanken/code/AHRS_core/src/threadweaver/CMakeFiles/threadweaver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : threadweaver/CMakeFiles/threadweaver.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/src
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles /home/kanken/code/AHRS_core/Sources/src/Visnode/psvr//CMakeFiles/progress.marks
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psvr/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles 0
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles /home/kanken/code/AHRS_core/src/psvr//CMakeFiles/progress.marks
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psvr/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psvr/clean
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psvr/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psvr/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psvr/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psvr/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psvr/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 psvr/CMakeFiles/psvr.dir/rule:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psvr/CMakeFiles/psvr.dir/rule
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psvr/CMakeFiles/psvr.dir/rule
 .PHONY : psvr/CMakeFiles/psvr.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ psvr: psvr/CMakeFiles/psvr.dir/rule
 
 # fast build rule for target.
 psvr/fast:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/build
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/build
 .PHONY : psvr/fast
 
 psvr.o: psvr.cpp.o
@@ -135,7 +135,7 @@ psvr.o: psvr.cpp.o
 
 # target to build an object file
 psvr.cpp.o:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/psvr.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/psvr.cpp.o
 .PHONY : psvr.cpp.o
 
 psvr.i: psvr.cpp.i
@@ -143,7 +143,7 @@ psvr.i: psvr.cpp.i
 
 # target to preprocess a source file
 psvr.cpp.i:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/psvr.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/psvr.cpp.i
 .PHONY : psvr.cpp.i
 
 psvr.s: psvr.cpp.s
@@ -151,7 +151,7 @@ psvr.s: psvr.cpp.s
 
 # target to generate assembly for a file
 psvr.cpp.s:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/psvr.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/psvr.cpp.s
 .PHONY : psvr.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

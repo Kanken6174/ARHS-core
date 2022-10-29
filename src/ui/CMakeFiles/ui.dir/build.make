@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/src
 
 # Include any dependencies generated for this target.
 include ui/CMakeFiles/ui.dir/depend.make
@@ -72,72 +72,72 @@ include ui/CMakeFiles/ui.dir/flags.make
 ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.o: ui/CMakeFiles/ui.dir/flags.make
 ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.o: ui/uiElements/uiElements.cpp
 ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.o: ui/CMakeFiles/ui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.o"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.o -MF CMakeFiles/ui.dir/uiElements/uiElements.cpp.o.d -o CMakeFiles/ui.dir/uiElements/uiElements.cpp.o -c /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiElements/uiElements.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.o -MF CMakeFiles/ui.dir/uiElements/uiElements.cpp.o.d -o CMakeFiles/ui.dir/uiElements/uiElements.cpp.o -c /home/kanken/code/AHRS_core/src/ui/uiElements/uiElements.cpp
 
 ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ui.dir/uiElements/uiElements.cpp.i"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiElements/uiElements.cpp > CMakeFiles/ui.dir/uiElements/uiElements.cpp.i
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/ui/uiElements/uiElements.cpp > CMakeFiles/ui.dir/uiElements/uiElements.cpp.i
 
 ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ui.dir/uiElements/uiElements.cpp.s"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiElements/uiElements.cpp -o CMakeFiles/ui.dir/uiElements/uiElements.cpp.s
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/ui/uiElements/uiElements.cpp -o CMakeFiles/ui.dir/uiElements/uiElements.cpp.s
 
 ui/CMakeFiles/ui.dir/ui.cpp.o: ui/CMakeFiles/ui.dir/flags.make
 ui/CMakeFiles/ui.dir/ui.cpp.o: ui/ui.cpp
 ui/CMakeFiles/ui.dir/ui.cpp.o: ui/CMakeFiles/ui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ui/CMakeFiles/ui.dir/ui.cpp.o"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ui/CMakeFiles/ui.dir/ui.cpp.o -MF CMakeFiles/ui.dir/ui.cpp.o.d -o CMakeFiles/ui.dir/ui.cpp.o -c /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/ui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ui/CMakeFiles/ui.dir/ui.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ui/CMakeFiles/ui.dir/ui.cpp.o -MF CMakeFiles/ui.dir/ui.cpp.o.d -o CMakeFiles/ui.dir/ui.cpp.o -c /home/kanken/code/AHRS_core/src/ui/ui.cpp
 
 ui/CMakeFiles/ui.dir/ui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ui.dir/ui.cpp.i"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/ui.cpp > CMakeFiles/ui.dir/ui.cpp.i
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/ui/ui.cpp > CMakeFiles/ui.dir/ui.cpp.i
 
 ui/CMakeFiles/ui.dir/ui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ui.dir/ui.cpp.s"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/ui.cpp -o CMakeFiles/ui.dir/ui.cpp.s
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/ui/ui.cpp -o CMakeFiles/ui.dir/ui.cpp.s
 
 ui/CMakeFiles/ui.dir/uiController.cpp.o: ui/CMakeFiles/ui.dir/flags.make
 ui/CMakeFiles/ui.dir/uiController.cpp.o: ui/uiController.cpp
 ui/CMakeFiles/ui.dir/uiController.cpp.o: ui/CMakeFiles/ui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ui/CMakeFiles/ui.dir/uiController.cpp.o"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ui/CMakeFiles/ui.dir/uiController.cpp.o -MF CMakeFiles/ui.dir/uiController.cpp.o.d -o CMakeFiles/ui.dir/uiController.cpp.o -c /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ui/CMakeFiles/ui.dir/uiController.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ui/CMakeFiles/ui.dir/uiController.cpp.o -MF CMakeFiles/ui.dir/uiController.cpp.o.d -o CMakeFiles/ui.dir/uiController.cpp.o -c /home/kanken/code/AHRS_core/src/ui/uiController.cpp
 
 ui/CMakeFiles/ui.dir/uiController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ui.dir/uiController.cpp.i"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiController.cpp > CMakeFiles/ui.dir/uiController.cpp.i
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/ui/uiController.cpp > CMakeFiles/ui.dir/uiController.cpp.i
 
 ui/CMakeFiles/ui.dir/uiController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ui.dir/uiController.cpp.s"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiController.cpp -o CMakeFiles/ui.dir/uiController.cpp.s
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/ui/uiController.cpp -o CMakeFiles/ui.dir/uiController.cpp.s
 
 ui/CMakeFiles/ui.dir/uiDrawer.cpp.o: ui/CMakeFiles/ui.dir/flags.make
 ui/CMakeFiles/ui.dir/uiDrawer.cpp.o: ui/uiDrawer.cpp
 ui/CMakeFiles/ui.dir/uiDrawer.cpp.o: ui/CMakeFiles/ui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ui/CMakeFiles/ui.dir/uiDrawer.cpp.o"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ui/CMakeFiles/ui.dir/uiDrawer.cpp.o -MF CMakeFiles/ui.dir/uiDrawer.cpp.o.d -o CMakeFiles/ui.dir/uiDrawer.cpp.o -c /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiDrawer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ui/CMakeFiles/ui.dir/uiDrawer.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ui/CMakeFiles/ui.dir/uiDrawer.cpp.o -MF CMakeFiles/ui.dir/uiDrawer.cpp.o.d -o CMakeFiles/ui.dir/uiDrawer.cpp.o -c /home/kanken/code/AHRS_core/src/ui/uiDrawer.cpp
 
 ui/CMakeFiles/ui.dir/uiDrawer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ui.dir/uiDrawer.cpp.i"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiDrawer.cpp > CMakeFiles/ui.dir/uiDrawer.cpp.i
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/ui/uiDrawer.cpp > CMakeFiles/ui.dir/uiDrawer.cpp.i
 
 ui/CMakeFiles/ui.dir/uiDrawer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ui.dir/uiDrawer.cpp.s"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiDrawer.cpp -o CMakeFiles/ui.dir/uiDrawer.cpp.s
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/ui/uiDrawer.cpp -o CMakeFiles/ui.dir/uiDrawer.cpp.s
 
 ui/CMakeFiles/ui.dir/uiManager.cpp.o: ui/CMakeFiles/ui.dir/flags.make
 ui/CMakeFiles/ui.dir/uiManager.cpp.o: ui/uiManager.cpp
 ui/CMakeFiles/ui.dir/uiManager.cpp.o: ui/CMakeFiles/ui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ui/CMakeFiles/ui.dir/uiManager.cpp.o"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ui/CMakeFiles/ui.dir/uiManager.cpp.o -MF CMakeFiles/ui.dir/uiManager.cpp.o.d -o CMakeFiles/ui.dir/uiManager.cpp.o -c /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ui/CMakeFiles/ui.dir/uiManager.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ui/CMakeFiles/ui.dir/uiManager.cpp.o -MF CMakeFiles/ui.dir/uiManager.cpp.o.d -o CMakeFiles/ui.dir/uiManager.cpp.o -c /home/kanken/code/AHRS_core/src/ui/uiManager.cpp
 
 ui/CMakeFiles/ui.dir/uiManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ui.dir/uiManager.cpp.i"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiManager.cpp > CMakeFiles/ui.dir/uiManager.cpp.i
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/ui/uiManager.cpp > CMakeFiles/ui.dir/uiManager.cpp.i
 
 ui/CMakeFiles/ui.dir/uiManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ui.dir/uiManager.cpp.s"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/uiManager.cpp -o CMakeFiles/ui.dir/uiManager.cpp.s
+	cd /home/kanken/code/AHRS_core/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/ui/uiManager.cpp -o CMakeFiles/ui.dir/uiManager.cpp.s
 
 # Object files for target ui
 ui_OBJECTS = \
@@ -157,19 +157,19 @@ ui/libui.a: ui/CMakeFiles/ui.dir/uiDrawer.cpp.o
 ui/libui.a: ui/CMakeFiles/ui.dir/uiManager.cpp.o
 ui/libui.a: ui/CMakeFiles/ui.dir/build.make
 ui/libui.a: ui/CMakeFiles/ui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libui.a"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && $(CMAKE_COMMAND) -P CMakeFiles/ui.dir/cmake_clean_target.cmake
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ui.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libui.a"
+	cd /home/kanken/code/AHRS_core/src/ui && $(CMAKE_COMMAND) -P CMakeFiles/ui.dir/cmake_clean_target.cmake
+	cd /home/kanken/code/AHRS_core/src/ui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ui/CMakeFiles/ui.dir/build: ui/libui.a
 .PHONY : ui/CMakeFiles/ui.dir/build
 
 ui/CMakeFiles/ui.dir/clean:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/ui && $(CMAKE_COMMAND) -P CMakeFiles/ui.dir/cmake_clean.cmake
+	cd /home/kanken/code/AHRS_core/src/ui && $(CMAKE_COMMAND) -P CMakeFiles/ui.dir/cmake_clean.cmake
 .PHONY : ui/CMakeFiles/ui.dir/clean
 
 ui/CMakeFiles/ui.dir/depend:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanken/code/AHRS_core/Sources/src/Visnode /home/kanken/code/AHRS_core/Sources/src/Visnode/ui /home/kanken/code/AHRS_core/Sources/src/Visnode /home/kanken/code/AHRS_core/Sources/src/Visnode/ui /home/kanken/code/AHRS_core/Sources/src/Visnode/ui/CMakeFiles/ui.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanken/code/AHRS_core/src /home/kanken/code/AHRS_core/src/ui /home/kanken/code/AHRS_core/src /home/kanken/code/AHRS_core/src/ui /home/kanken/code/AHRS_core/src/ui/CMakeFiles/ui.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ui/CMakeFiles/ui.dir/depend
 

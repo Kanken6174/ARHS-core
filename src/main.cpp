@@ -32,7 +32,7 @@ ui::UiController::runIntro = false;
 
 ui::UiDrawer::runDrawUi();
 std::thread* t = new std::thread(ui::UiDrawer::runDrawUi);
-Threadweaver::stick_this_thread_to_core(t,1);
+Threadweaver::stick_this_thread_to_core(t,GFXCORE);
 Threadweaver::gfxPipelineThread = t;
 DEBUG_LOG("Entering sleep while")
 while(!ui::UiController::exitCalled){

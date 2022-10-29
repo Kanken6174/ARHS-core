@@ -74,7 +74,7 @@ namespace ui{
             accessLocks.push_back(new mutex());
             accessLocks.at(i)->unlock();
             std::thread* t = new std::thread(ui::UiManager::beginDrawRoutineForUi,newUI);
-            Threadweaver::stick_this_thread_to_core(t,0);
+            Threadweaver::stick_this_thread_to_core(t,DISPLAYCORE);
             Threadweaver::osUiDrawerThread = t;
         }
         uiShouldRun = true;

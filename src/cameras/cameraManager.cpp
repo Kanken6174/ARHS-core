@@ -13,7 +13,7 @@ void cameraManager::runCaptureForCamera(camera* c, uint index){
             if(!c->source->open(c->path,cv::CAP_ANY)){
                 cout << "couldn't open camera with index " << c->path << endl;
             }
-        } 
+        }
 
         if(c->source->grab()){
             UMat surface;
@@ -46,7 +46,10 @@ int cameraManager::init(){
             }else{
             vs.release();
             camera* cam = new camera();
-            cam->source = new VideoCapture(camID);
+            cam->source = new VideoCapture(camID, CAP_ANY);
+            cam->source->set(CV_CAP_PROP_FOURCC, CV_FOURCC('M', 'J', 'P', 'G'));
+            cam->source->set(CV_CAP_PROP_FPS , 120);
+
             cam->path = camID;
             videoSources.push_back(cam);    //valid camera added
             cout << "added camera with path /dev/video" << cam->path << endl;
@@ -75,7 +78,7 @@ void cameraManager::runCapture(){
         std::thread* t = new std::thread(cameraManager::runCaptureForCamera,c,i);
         i++;
         cout << "moving thread" << endl;
-        Threadweaver::stick_this_thread_to_core(t,2);
+        Threadweaver::stick_this_thread_to_core(t,CAMCORE);
         Threadweaver::captureThreads.push_back(t);
         cout << "done" << endl;
     }

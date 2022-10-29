@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/src
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles /home/kanken/code/AHRS_core/Sources/src/Visnode/ui//CMakeFiles/progress.marks
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles 0
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles /home/kanken/code/AHRS_core/src/ui//CMakeFiles/progress.marks
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/clean
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ui/CMakeFiles/ui.dir/rule:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/CMakeFiles/ui.dir/rule
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/CMakeFiles/ui.dir/rule
 .PHONY : ui/CMakeFiles/ui.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ ui: ui/CMakeFiles/ui.dir/rule
 
 # fast build rule for target.
 ui/fast:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/build
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/build
 .PHONY : ui/fast
 
 ui.o: ui.cpp.o
@@ -135,7 +135,7 @@ ui.o: ui.cpp.o
 
 # target to build an object file
 ui.cpp.o:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/ui.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/ui.cpp.o
 .PHONY : ui.cpp.o
 
 ui.i: ui.cpp.i
@@ -143,7 +143,7 @@ ui.i: ui.cpp.i
 
 # target to preprocess a source file
 ui.cpp.i:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/ui.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/ui.cpp.i
 .PHONY : ui.cpp.i
 
 ui.s: ui.cpp.s
@@ -151,7 +151,7 @@ ui.s: ui.cpp.s
 
 # target to generate assembly for a file
 ui.cpp.s:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/ui.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/ui.cpp.s
 .PHONY : ui.cpp.s
 
 uiController.o: uiController.cpp.o
@@ -159,7 +159,7 @@ uiController.o: uiController.cpp.o
 
 # target to build an object file
 uiController.cpp.o:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiController.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiController.cpp.o
 .PHONY : uiController.cpp.o
 
 uiController.i: uiController.cpp.i
@@ -167,7 +167,7 @@ uiController.i: uiController.cpp.i
 
 # target to preprocess a source file
 uiController.cpp.i:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiController.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiController.cpp.i
 .PHONY : uiController.cpp.i
 
 uiController.s: uiController.cpp.s
@@ -175,7 +175,7 @@ uiController.s: uiController.cpp.s
 
 # target to generate assembly for a file
 uiController.cpp.s:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiController.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiController.cpp.s
 .PHONY : uiController.cpp.s
 
 uiDrawer.o: uiDrawer.cpp.o
@@ -183,7 +183,7 @@ uiDrawer.o: uiDrawer.cpp.o
 
 # target to build an object file
 uiDrawer.cpp.o:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiDrawer.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiDrawer.cpp.o
 .PHONY : uiDrawer.cpp.o
 
 uiDrawer.i: uiDrawer.cpp.i
@@ -191,7 +191,7 @@ uiDrawer.i: uiDrawer.cpp.i
 
 # target to preprocess a source file
 uiDrawer.cpp.i:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiDrawer.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiDrawer.cpp.i
 .PHONY : uiDrawer.cpp.i
 
 uiDrawer.s: uiDrawer.cpp.s
@@ -199,7 +199,7 @@ uiDrawer.s: uiDrawer.cpp.s
 
 # target to generate assembly for a file
 uiDrawer.cpp.s:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiDrawer.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiDrawer.cpp.s
 .PHONY : uiDrawer.cpp.s
 
 uiElements/uiElements.o: uiElements/uiElements.cpp.o
@@ -207,7 +207,7 @@ uiElements/uiElements.o: uiElements/uiElements.cpp.o
 
 # target to build an object file
 uiElements/uiElements.cpp.o:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.o
 .PHONY : uiElements/uiElements.cpp.o
 
 uiElements/uiElements.i: uiElements/uiElements.cpp.i
@@ -215,7 +215,7 @@ uiElements/uiElements.i: uiElements/uiElements.cpp.i
 
 # target to preprocess a source file
 uiElements/uiElements.cpp.i:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.i
 .PHONY : uiElements/uiElements.cpp.i
 
 uiElements/uiElements.s: uiElements/uiElements.cpp.s
@@ -223,7 +223,7 @@ uiElements/uiElements.s: uiElements/uiElements.cpp.s
 
 # target to generate assembly for a file
 uiElements/uiElements.cpp.s:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.s
 .PHONY : uiElements/uiElements.cpp.s
 
 uiManager.o: uiManager.cpp.o
@@ -231,7 +231,7 @@ uiManager.o: uiManager.cpp.o
 
 # target to build an object file
 uiManager.cpp.o:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiManager.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiManager.cpp.o
 .PHONY : uiManager.cpp.o
 
 uiManager.i: uiManager.cpp.i
@@ -239,7 +239,7 @@ uiManager.i: uiManager.cpp.i
 
 # target to preprocess a source file
 uiManager.cpp.i:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiManager.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiManager.cpp.i
 .PHONY : uiManager.cpp.i
 
 uiManager.s: uiManager.cpp.s
@@ -247,7 +247,7 @@ uiManager.s: uiManager.cpp.s
 
 # target to generate assembly for a file
 uiManager.cpp.s:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiManager.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiManager.cpp.s
 .PHONY : uiManager.cpp.s
 
 # Help Target
@@ -285,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

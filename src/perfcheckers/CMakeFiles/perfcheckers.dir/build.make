@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_SOURCE_DIR = /home/kanken/code/AHRS_core/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/Sources/src/Visnode
+CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/src
 
 # Include any dependencies generated for this target.
 include perfcheckers/CMakeFiles/perfcheckers.dir/depend.make
@@ -72,30 +72,30 @@ include perfcheckers/CMakeFiles/perfcheckers.dir/flags.make
 perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.o: perfcheckers/CMakeFiles/perfcheckers.dir/flags.make
 perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.o: perfcheckers/framerate.cpp
 perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.o: perfcheckers/CMakeFiles/perfcheckers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.o"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.o -MF CMakeFiles/perfcheckers.dir/framerate.cpp.o.d -o CMakeFiles/perfcheckers.dir/framerate.cpp.o -c /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers/framerate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.o -MF CMakeFiles/perfcheckers.dir/framerate.cpp.o.d -o CMakeFiles/perfcheckers.dir/framerate.cpp.o -c /home/kanken/code/AHRS_core/src/perfcheckers/framerate.cpp
 
 perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/perfcheckers.dir/framerate.cpp.i"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers/framerate.cpp > CMakeFiles/perfcheckers.dir/framerate.cpp.i
+	cd /home/kanken/code/AHRS_core/src/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/perfcheckers/framerate.cpp > CMakeFiles/perfcheckers.dir/framerate.cpp.i
 
 perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/perfcheckers.dir/framerate.cpp.s"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers/framerate.cpp -o CMakeFiles/perfcheckers.dir/framerate.cpp.s
+	cd /home/kanken/code/AHRS_core/src/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/perfcheckers/framerate.cpp -o CMakeFiles/perfcheckers.dir/framerate.cpp.s
 
 perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o: perfcheckers/CMakeFiles/perfcheckers.dir/flags.make
 perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o: perfcheckers/fcheckManager.cpp
 perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o: perfcheckers/CMakeFiles/perfcheckers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o -MF CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o.d -o CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o -c /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers/fcheckManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o -MF CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o.d -o CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o -c /home/kanken/code/AHRS_core/src/perfcheckers/fcheckManager.cpp
 
 perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/perfcheckers.dir/fcheckManager.cpp.i"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers/fcheckManager.cpp > CMakeFiles/perfcheckers.dir/fcheckManager.cpp.i
+	cd /home/kanken/code/AHRS_core/src/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/perfcheckers/fcheckManager.cpp > CMakeFiles/perfcheckers.dir/fcheckManager.cpp.i
 
 perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/perfcheckers.dir/fcheckManager.cpp.s"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers/fcheckManager.cpp -o CMakeFiles/perfcheckers.dir/fcheckManager.cpp.s
+	cd /home/kanken/code/AHRS_core/src/perfcheckers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/perfcheckers/fcheckManager.cpp -o CMakeFiles/perfcheckers.dir/fcheckManager.cpp.s
 
 # Object files for target perfcheckers
 perfcheckers_OBJECTS = \
@@ -109,19 +109,19 @@ perfcheckers/libperfcheckers.a: perfcheckers/CMakeFiles/perfcheckers.dir/framera
 perfcheckers/libperfcheckers.a: perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o
 perfcheckers/libperfcheckers.a: perfcheckers/CMakeFiles/perfcheckers.dir/build.make
 perfcheckers/libperfcheckers.a: perfcheckers/CMakeFiles/perfcheckers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/Sources/src/Visnode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libperfcheckers.a"
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers && $(CMAKE_COMMAND) -P CMakeFiles/perfcheckers.dir/cmake_clean_target.cmake
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/perfcheckers.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libperfcheckers.a"
+	cd /home/kanken/code/AHRS_core/src/perfcheckers && $(CMAKE_COMMAND) -P CMakeFiles/perfcheckers.dir/cmake_clean_target.cmake
+	cd /home/kanken/code/AHRS_core/src/perfcheckers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/perfcheckers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 perfcheckers/CMakeFiles/perfcheckers.dir/build: perfcheckers/libperfcheckers.a
 .PHONY : perfcheckers/CMakeFiles/perfcheckers.dir/build
 
 perfcheckers/CMakeFiles/perfcheckers.dir/clean:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers && $(CMAKE_COMMAND) -P CMakeFiles/perfcheckers.dir/cmake_clean.cmake
+	cd /home/kanken/code/AHRS_core/src/perfcheckers && $(CMAKE_COMMAND) -P CMakeFiles/perfcheckers.dir/cmake_clean.cmake
 .PHONY : perfcheckers/CMakeFiles/perfcheckers.dir/clean
 
 perfcheckers/CMakeFiles/perfcheckers.dir/depend:
-	cd /home/kanken/code/AHRS_core/Sources/src/Visnode && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanken/code/AHRS_core/Sources/src/Visnode /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers /home/kanken/code/AHRS_core/Sources/src/Visnode /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers /home/kanken/code/AHRS_core/Sources/src/Visnode/perfcheckers/CMakeFiles/perfcheckers.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanken/code/AHRS_core/src /home/kanken/code/AHRS_core/src/perfcheckers /home/kanken/code/AHRS_core/src /home/kanken/code/AHRS_core/src/perfcheckers /home/kanken/code/AHRS_core/src/perfcheckers/CMakeFiles/perfcheckers.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : perfcheckers/CMakeFiles/perfcheckers.dir/depend
 
