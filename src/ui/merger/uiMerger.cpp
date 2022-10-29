@@ -11,10 +11,15 @@ namespace ui
         {
             cout << "starting ui merger thread" << endl;
             ui::UiController::exitCalled = false;
+            std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
+            std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
             while (true)
             {
+                begin = std::chrono::steady_clock::now();
                 DEBUG_LOG("drawing");
                 ui::UiMerger::mergeUI();
+                end = std::chrono::steady_clock::now();
+                std::this_thread::sleep_for (std::chrono::milliseconds((1000/FPS_LIMIT_MERGE)-std::chrono::duration_cast<std::chrono::milliseconds>(end-begin).count()));
             }
         }
         catch (...)

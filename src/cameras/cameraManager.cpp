@@ -48,7 +48,7 @@ int cameraManager::init(){
             camera* cam = new camera();
             cam->source = new VideoCapture(camID, CAP_ANY);
             cam->source->set(CV_CAP_PROP_FOURCC, CV_FOURCC('M', 'J', 'P', 'G'));
-            cam->source->set(CV_CAP_PROP_FPS , 120);
+            cam->source->set(CV_CAP_PROP_FPS , FPS_LIMIT_PSEYE);
 
             cam->path = camID;
             videoSources.push_back(cam);    //valid camera added

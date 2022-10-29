@@ -19,7 +19,7 @@ void ui::Ui::draw(){
       imshow(this->myWindow, drawBuffer);
    #endif
 
-   waitKey(10);
+   waitKey(1);
    fcheckManager::fcShow.tickUpdate();
    DEBUG_LOG("Done draw cycle-----------------")
    }

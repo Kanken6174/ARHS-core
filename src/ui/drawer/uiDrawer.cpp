@@ -72,9 +72,14 @@ namespace ui{
         try{
         cout << "starting ui drawer thread" << endl;
         ui::UiController::exitCalled = false;
+        std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
+        std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
         while(true){
             DEBUG_LOG("drawing");
+            begin = std::chrono::steady_clock::now();
             ui::UiDrawer::drawMenu();
+            end = std::chrono::steady_clock::now();
+            std::this_thread::sleep_for (std::chrono::milliseconds((1000/FPS_LIMIT_DRAW)-std::chrono::duration_cast<std::chrono::milliseconds>(end-begin).count()));
         }
         } catch(...){
             cerr << "\033[1;31m caught DrawUi thread exception \033[0m" << endl;

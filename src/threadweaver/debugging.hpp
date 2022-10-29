@@ -10,10 +10,15 @@
 #define CAMCORE 2
 #define MERGECORE 3
 
+#define FPS_LIMIT_MERGE 160
+#define FPS_LIMIT_DRAW 160
+
+#define FPS_LIMIT_PSEYE 90
+
 #define QU(x) #x
 #define QUH(x) QU(x)
 
-#define VERSION_d 0.3
+#define VERSION_d 0.4
 #define VERSION QUH(VERSION_d)
 
 #ifdef DBGMODE
