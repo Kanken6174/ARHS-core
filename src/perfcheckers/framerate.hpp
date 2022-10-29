@@ -17,7 +17,8 @@ class framerateChecker{
 
 class fcheckManager{
     public:
-    static framerateChecker fcUI;
+    static framerateChecker fcDrawMenu;
+    static framerateChecker fcMergeUI;
     static framerateChecker fcShow;
     static framerateChecker fcCam;
 };

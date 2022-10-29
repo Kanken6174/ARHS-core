@@ -32,7 +32,7 @@ add_subdirectory(psvr)
 add_subdirectory(ui)
 add_subdirectory(hw)
 
-set(main_source_files main.cpp main.hpp)
+set(main_source_files main.cpp main.hpp topLevelManager.cpp)
 
 add_executable(prog ${main_source_files})
 

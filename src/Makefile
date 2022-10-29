@@ -244,6 +244,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+topLevelManager.o: topLevelManager.cpp.o
+.PHONY : topLevelManager.o
+
+# target to build an object file
+topLevelManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/topLevelManager.cpp.o
+.PHONY : topLevelManager.cpp.o
+
+topLevelManager.i: topLevelManager.cpp.i
+.PHONY : topLevelManager.i
+
+# target to preprocess a source file
+topLevelManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/topLevelManager.cpp.i
+.PHONY : topLevelManager.cpp.i
+
+topLevelManager.s: topLevelManager.cpp.s
+.PHONY : topLevelManager.s
+
+# target to generate assembly for a file
+topLevelManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/topLevelManager.cpp.s
+.PHONY : topLevelManager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -263,6 +287,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... topLevelManager.o"
+	@echo "... topLevelManager.i"
+	@echo "... topLevelManager.s"
 .PHONY : help
 
 

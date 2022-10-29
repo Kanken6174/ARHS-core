@@ -27,7 +27,7 @@ using namespace cv::ogl;
 using namespace psvr;
 
 namespace ui {
-    //Defines a single ui window (by default two will be displayed)
+    /// @brief this class represents a single window, there should only ever be one if the app is in opengl mode.
     class Ui{
         public:
         UMat drawSurface; //Current frame 
@@ -36,24 +36,36 @@ namespace ui {
         std::string myWindow;
         void draw();
     };
-    class UiDrawer{ //drawer is static because we only ever need one
+    class UiSupport{
         public:
-        static void drawUi();
-        static void drawStartupSequence();
-        static void drawMenu();
-        static void runDrawUi();
-        static UMat OverlayMat;  //drawn at each frame (screen)
-        static UMat OsMat;   //drawn on certain events (menu)
-        static cv::ogl::Texture2D OvTexture;
-        static std::mutex OsMatLock;
-        private:
-        static framerateChecker* fpsCounter;
+        static UMat makeMatStereo(UMat toStereo);
         static UMat prepareUiMat();
         static UMat resizeIn(UMat input);
         static UMat OverlayBlackMask(UMat input, UMat toOverlay, int x = 0, int y = 0);
-        static UMat OverlayHISHMask(UMat input, UMat toOverlay);
     };
-        class UiManager{ //manager is static because we only ever need one
+    /// @brief this class is used to draw the UI from the UiController's current state
+    class UiDrawer{
+        public:
+        static void drawStartupSequence();
+        static void drawMenu();
+        static void runDrawMenu();
+        static UMat output;
+        static std::mutex outputLock;
+        static framerateChecker* fpsCounter;
+        private:
+        static void drawUi();
+    };
+    /// @brief this class is used to merge the camera's frame and the UI mat
+    class UiMerger{
+        public: 
+        static void runMerge();
+        static UMat output;
+        static std::mutex outputLock;
+        private:
+        static void mergeUI();
+    };
+    /// @brief this class manages the UI(s) [windows] used by the application, right now only one should ever be used, especially in opengl mode
+    class UiManager{
         public:
         static vector<mutex*> accessLocks;
         static vector<Ui*> managedUIs;
@@ -62,7 +74,8 @@ namespace ui {
         static void cleanup();
         static void beginDrawRoutineForUi(Ui* u);     
     };
-        class UiController{
+    /// @brief this class is used to process view logic and interaction [model]
+    class UiController{
         public:
         static void init();
         static void selectedUp();

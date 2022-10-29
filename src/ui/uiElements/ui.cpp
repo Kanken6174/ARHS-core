@@ -1,4 +1,4 @@
-#include "_ui.hpp"
+#include "../_ui.hpp"
 
 void ui::Ui::draw(){
    try{
@@ -9,13 +9,7 @@ void ui::Ui::draw(){
       UiManager::accessLocks.at(this->id)->unlock();
       return;
    }
-   #ifdef OGLWIN
-      DEBUG_LOG("Assigning opengl buffer")
-      UMat drawBuffer = drawSurface;   //required copy?
-      DEBUG_LOG("Done assigning opengl buffer")
-   #else
-      UMat drawBuffer = drawSurface;
-   #endif
+   UMat drawBuffer = drawSurface;
    UiManager::accessLocks.at(this->id)->unlock();
    DEBUG_LOG("Buffer retreived")
    #ifdef OGLWIN

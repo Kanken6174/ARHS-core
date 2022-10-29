@@ -15,7 +15,6 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/videoio/videoio_c.h>
 #include "../threadweaver/threadweaver.hpp"
-#include "../perfcheckers/framerate.hpp"
 
 #define DEBUG_ELAPSED_START std::chrono::steady_clock::time_point bgd = std::chrono::steady_clock::now();
 #define DEBUG_ELAPSED_END std::chrono::steady_clock::time_point bge = std::chrono::steady_clock::now();

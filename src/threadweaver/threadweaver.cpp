@@ -4,6 +4,7 @@ std::vector<std::thread*> Threadweaver::captureThreads;
 std::thread* Threadweaver::hardwareWatcherThread;
 std::thread* Threadweaver::osUiDrawerThread;
 std::thread* Threadweaver::gfxPipelineThread;
+std::thread* Threadweaver::mergerThread;
 
 void Threadweaver::stick_this_thread_to_core(std::thread* t,int core_id){
     unsigned num_cpus = std::thread::hardware_concurrency();

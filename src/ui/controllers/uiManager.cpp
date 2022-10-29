@@ -1,4 +1,4 @@
-#include "_ui.hpp"
+#include "../_ui.hpp"
 
 namespace ui{
     vector<Ui*> UiManager::managedUIs;
@@ -12,6 +12,8 @@ namespace ui{
         cv::setOpenGlContext(u->myWindow);
         moveWindow(u->myWindow,DEFAULT_UI_OFFSET_X+960,DEFAULT_UI_OFFSET_Y);
         resizeWindow(u->myWindow,DEFAULT_UI_SIZE_X,DEFAULT_UI_SIZE_Y);
+        ui::UiDrawer::drawStartupSequence();
+        #else
         ui::UiDrawer::drawStartupSequence();
         #endif
         while(!ui::UiManager::uiShouldRun){}
@@ -53,18 +55,12 @@ namespace ui{
             Ui* newUI = new Ui();
             cout << "creating UI n°" << to_string(i) << endl;
             newUI->myWindow = "project- UI"+std::to_string(i);
-            #ifdef OGLWIN
-                DEBUG_LOG("created opengl window")
-                
-                //cv::setOpenGlContext(newUI->myWindow);
-                //setOpenGlDrawCallback(newUI->myWindow, on_opengl);
-            #else
+            #ifndef OGLWIN
                 DEBUG_LOG("created cpu-based window")
                 namedWindow(newUI->myWindow);
             #endif
             moveWindow(newUI->myWindow,DEFAULT_UI_OFFSET_X+i*960,DEFAULT_UI_OFFSET_Y);
             resizeWindow(newUI->myWindow,DEFAULT_UI_SIZE_X,DEFAULT_UI_SIZE_Y);
-            //setWindowProperty(newUI->myWindow, cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
 
             cout << "window: " << newUI->myWindow << " created at " << DEFAULT_UI_OFFSET_X+i*960 << " , " << DEFAULT_UI_OFFSET_Y << endl;
 

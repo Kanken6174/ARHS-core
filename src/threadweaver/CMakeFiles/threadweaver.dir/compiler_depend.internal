@@ -236,4 +236,8 @@ threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.o
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /usr/include/c++/11/iostream
+ /home/kanken/code/AHRS_core/src/perfcheckers/framerate.hpp
+ /usr/include/c++/11/atomic
+ /usr/include/c++/11/bits/atomic_base.h
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h
 

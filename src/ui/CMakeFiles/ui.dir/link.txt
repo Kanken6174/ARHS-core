@@ -1,2 +1,2 @@
-/usr/bin/ar qc libui.a CMakeFiles/ui.dir/uiElements/uiElements.cpp.o CMakeFiles/ui.dir/ui.cpp.o CMakeFiles/ui.dir/uiController.cpp.o CMakeFiles/ui.dir/uiDrawer.cpp.o CMakeFiles/ui.dir/uiManager.cpp.o
+/usr/bin/ar qc libui.a CMakeFiles/ui.dir/support/UiSupport.cpp.o CMakeFiles/ui.dir/uiElements/uiElements.cpp.o CMakeFiles/ui.dir/uiElements/ui.cpp.o CMakeFiles/ui.dir/drawer/uiDrawer.cpp.o CMakeFiles/ui.dir/merger/uiMerger.cpp.o CMakeFiles/ui.dir/controllers/uiController.cpp.o CMakeFiles/ui.dir/controllers/uiManager.cpp.o
 /usr/bin/ranlib libui.a

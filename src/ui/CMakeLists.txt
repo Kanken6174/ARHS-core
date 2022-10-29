@@ -1,10 +1,12 @@
 set(ui_source_files
+    ./support/UiSupport.cpp
     ./uiElements/uiElements.cpp
     ./uiElements/uiElements.hpp
-    ui.cpp
-    uiController.cpp
-    uiDrawer.cpp
-    uiManager.cpp
+    ./uiElements/ui.cpp
+    ./drawer/uiDrawer.cpp
+    ./merger/uiMerger.cpp
+    ./controllers/uiController.cpp
+    ./controllers/uiManager.cpp
     _ui.hpp
 )
 MESSAGE(STATUS "building ui")

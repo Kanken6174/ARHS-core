@@ -1,4 +1,4 @@
-#include "_ui.hpp"
+#include "../_ui.hpp"
 
 bool ui::UiController::showMenu;
 bool ui::UiController::exitCalled;
@@ -31,7 +31,7 @@ void ui::UiController::init(){
 void ui::UiController::update(){
     time_t now = time(0);
     menutime = ctime(&now);
-    menuTitle = std::string("P-OS V0.1 ") + menutime;
+    menuTitle = std::string("P-OS ") + VERSION + " " + menutime;
 }
 
 void ui::UiController::selectedUp(){

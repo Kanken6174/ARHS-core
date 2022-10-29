@@ -1,5 +1,6 @@
 #include "framerate.hpp"
 
-framerateChecker fcheckManager::fcUI;
+framerateChecker fcheckManager::fcDrawMenu;
 framerateChecker fcheckManager::fcShow;
 framerateChecker fcheckManager::fcCam;
+framerateChecker fcheckManager::fcMergeUI;

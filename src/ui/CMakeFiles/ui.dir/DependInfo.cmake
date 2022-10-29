@@ -8,11 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kanken/code/AHRS_core/src/ui/ui.cpp" "ui/CMakeFiles/ui.dir/ui.cpp.o" "gcc" "ui/CMakeFiles/ui.dir/ui.cpp.o.d"
-  "/home/kanken/code/AHRS_core/src/ui/uiController.cpp" "ui/CMakeFiles/ui.dir/uiController.cpp.o" "gcc" "ui/CMakeFiles/ui.dir/uiController.cpp.o.d"
-  "/home/kanken/code/AHRS_core/src/ui/uiDrawer.cpp" "ui/CMakeFiles/ui.dir/uiDrawer.cpp.o" "gcc" "ui/CMakeFiles/ui.dir/uiDrawer.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/ui/controllers/uiController.cpp" "ui/CMakeFiles/ui.dir/controllers/uiController.cpp.o" "gcc" "ui/CMakeFiles/ui.dir/controllers/uiController.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/ui/controllers/uiManager.cpp" "ui/CMakeFiles/ui.dir/controllers/uiManager.cpp.o" "gcc" "ui/CMakeFiles/ui.dir/controllers/uiManager.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/ui/drawer/uiDrawer.cpp" "ui/CMakeFiles/ui.dir/drawer/uiDrawer.cpp.o" "gcc" "ui/CMakeFiles/ui.dir/drawer/uiDrawer.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/ui/merger/uiMerger.cpp" "ui/CMakeFiles/ui.dir/merger/uiMerger.cpp.o" "gcc" "ui/CMakeFiles/ui.dir/merger/uiMerger.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/ui/support/UiSupport.cpp" "ui/CMakeFiles/ui.dir/support/UiSupport.cpp.o" "gcc" "ui/CMakeFiles/ui.dir/support/UiSupport.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/ui/uiElements/ui.cpp" "ui/CMakeFiles/ui.dir/uiElements/ui.cpp.o" "gcc" "ui/CMakeFiles/ui.dir/uiElements/ui.cpp.o.d"
   "/home/kanken/code/AHRS_core/src/ui/uiElements/uiElements.cpp" "ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.o" "gcc" "ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.o.d"
-  "/home/kanken/code/AHRS_core/src/ui/uiManager.cpp" "ui/CMakeFiles/ui.dir/uiManager.cpp.o" "gcc" "ui/CMakeFiles/ui.dir/uiManager.cpp.o.d"
   )
 
 # Targets to which this target links.

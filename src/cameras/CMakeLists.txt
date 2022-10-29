@@ -15,5 +15,4 @@ find_package( OpenCV REQUIRED )
 
 target_link_libraries(cameras ${OpenCV_LIBS})
 target_link_libraries(cameras threadweaver)
-target_link_libraries(cameras perfcheckers)
 MESSAGE(STATUS "Done building cameras")

@@ -130,77 +130,149 @@ ui/fast:
 	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/build
 .PHONY : ui/fast
 
-ui.o: ui.cpp.o
-.PHONY : ui.o
+controllers/uiController.o: controllers/uiController.cpp.o
+.PHONY : controllers/uiController.o
 
 # target to build an object file
-ui.cpp.o:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/ui.cpp.o
-.PHONY : ui.cpp.o
+controllers/uiController.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/controllers/uiController.cpp.o
+.PHONY : controllers/uiController.cpp.o
 
-ui.i: ui.cpp.i
-.PHONY : ui.i
+controllers/uiController.i: controllers/uiController.cpp.i
+.PHONY : controllers/uiController.i
 
 # target to preprocess a source file
-ui.cpp.i:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/ui.cpp.i
-.PHONY : ui.cpp.i
+controllers/uiController.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/controllers/uiController.cpp.i
+.PHONY : controllers/uiController.cpp.i
 
-ui.s: ui.cpp.s
-.PHONY : ui.s
+controllers/uiController.s: controllers/uiController.cpp.s
+.PHONY : controllers/uiController.s
 
 # target to generate assembly for a file
-ui.cpp.s:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/ui.cpp.s
-.PHONY : ui.cpp.s
+controllers/uiController.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/controllers/uiController.cpp.s
+.PHONY : controllers/uiController.cpp.s
 
-uiController.o: uiController.cpp.o
-.PHONY : uiController.o
+controllers/uiManager.o: controllers/uiManager.cpp.o
+.PHONY : controllers/uiManager.o
 
 # target to build an object file
-uiController.cpp.o:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiController.cpp.o
-.PHONY : uiController.cpp.o
+controllers/uiManager.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/controllers/uiManager.cpp.o
+.PHONY : controllers/uiManager.cpp.o
 
-uiController.i: uiController.cpp.i
-.PHONY : uiController.i
+controllers/uiManager.i: controllers/uiManager.cpp.i
+.PHONY : controllers/uiManager.i
 
 # target to preprocess a source file
-uiController.cpp.i:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiController.cpp.i
-.PHONY : uiController.cpp.i
+controllers/uiManager.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/controllers/uiManager.cpp.i
+.PHONY : controllers/uiManager.cpp.i
 
-uiController.s: uiController.cpp.s
-.PHONY : uiController.s
+controllers/uiManager.s: controllers/uiManager.cpp.s
+.PHONY : controllers/uiManager.s
 
 # target to generate assembly for a file
-uiController.cpp.s:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiController.cpp.s
-.PHONY : uiController.cpp.s
+controllers/uiManager.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/controllers/uiManager.cpp.s
+.PHONY : controllers/uiManager.cpp.s
 
-uiDrawer.o: uiDrawer.cpp.o
-.PHONY : uiDrawer.o
+drawer/uiDrawer.o: drawer/uiDrawer.cpp.o
+.PHONY : drawer/uiDrawer.o
 
 # target to build an object file
-uiDrawer.cpp.o:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiDrawer.cpp.o
-.PHONY : uiDrawer.cpp.o
+drawer/uiDrawer.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/drawer/uiDrawer.cpp.o
+.PHONY : drawer/uiDrawer.cpp.o
 
-uiDrawer.i: uiDrawer.cpp.i
-.PHONY : uiDrawer.i
+drawer/uiDrawer.i: drawer/uiDrawer.cpp.i
+.PHONY : drawer/uiDrawer.i
 
 # target to preprocess a source file
-uiDrawer.cpp.i:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiDrawer.cpp.i
-.PHONY : uiDrawer.cpp.i
+drawer/uiDrawer.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/drawer/uiDrawer.cpp.i
+.PHONY : drawer/uiDrawer.cpp.i
 
-uiDrawer.s: uiDrawer.cpp.s
-.PHONY : uiDrawer.s
+drawer/uiDrawer.s: drawer/uiDrawer.cpp.s
+.PHONY : drawer/uiDrawer.s
 
 # target to generate assembly for a file
-uiDrawer.cpp.s:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiDrawer.cpp.s
-.PHONY : uiDrawer.cpp.s
+drawer/uiDrawer.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/drawer/uiDrawer.cpp.s
+.PHONY : drawer/uiDrawer.cpp.s
+
+merger/uiMerger.o: merger/uiMerger.cpp.o
+.PHONY : merger/uiMerger.o
+
+# target to build an object file
+merger/uiMerger.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/merger/uiMerger.cpp.o
+.PHONY : merger/uiMerger.cpp.o
+
+merger/uiMerger.i: merger/uiMerger.cpp.i
+.PHONY : merger/uiMerger.i
+
+# target to preprocess a source file
+merger/uiMerger.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/merger/uiMerger.cpp.i
+.PHONY : merger/uiMerger.cpp.i
+
+merger/uiMerger.s: merger/uiMerger.cpp.s
+.PHONY : merger/uiMerger.s
+
+# target to generate assembly for a file
+merger/uiMerger.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/merger/uiMerger.cpp.s
+.PHONY : merger/uiMerger.cpp.s
+
+support/UiSupport.o: support/UiSupport.cpp.o
+.PHONY : support/UiSupport.o
+
+# target to build an object file
+support/UiSupport.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/support/UiSupport.cpp.o
+.PHONY : support/UiSupport.cpp.o
+
+support/UiSupport.i: support/UiSupport.cpp.i
+.PHONY : support/UiSupport.i
+
+# target to preprocess a source file
+support/UiSupport.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/support/UiSupport.cpp.i
+.PHONY : support/UiSupport.cpp.i
+
+support/UiSupport.s: support/UiSupport.cpp.s
+.PHONY : support/UiSupport.s
+
+# target to generate assembly for a file
+support/UiSupport.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/support/UiSupport.cpp.s
+.PHONY : support/UiSupport.cpp.s
+
+uiElements/ui.o: uiElements/ui.cpp.o
+.PHONY : uiElements/ui.o
+
+# target to build an object file
+uiElements/ui.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiElements/ui.cpp.o
+.PHONY : uiElements/ui.cpp.o
+
+uiElements/ui.i: uiElements/ui.cpp.i
+.PHONY : uiElements/ui.i
+
+# target to preprocess a source file
+uiElements/ui.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiElements/ui.cpp.i
+.PHONY : uiElements/ui.cpp.i
+
+uiElements/ui.s: uiElements/ui.cpp.s
+.PHONY : uiElements/ui.s
+
+# target to generate assembly for a file
+uiElements/ui.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiElements/ui.cpp.s
+.PHONY : uiElements/ui.cpp.s
 
 uiElements/uiElements.o: uiElements/uiElements.cpp.o
 .PHONY : uiElements/uiElements.o
@@ -226,30 +298,6 @@ uiElements/uiElements.cpp.s:
 	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiElements/uiElements.cpp.s
 .PHONY : uiElements/uiElements.cpp.s
 
-uiManager.o: uiManager.cpp.o
-.PHONY : uiManager.o
-
-# target to build an object file
-uiManager.cpp.o:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiManager.cpp.o
-.PHONY : uiManager.cpp.o
-
-uiManager.i: uiManager.cpp.i
-.PHONY : uiManager.i
-
-# target to preprocess a source file
-uiManager.cpp.i:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiManager.cpp.i
-.PHONY : uiManager.cpp.i
-
-uiManager.s: uiManager.cpp.s
-.PHONY : uiManager.s
-
-# target to generate assembly for a file
-uiManager.cpp.s:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/uiManager.cpp.s
-.PHONY : uiManager.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,21 +307,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ui"
-	@echo "... ui.o"
-	@echo "... ui.i"
-	@echo "... ui.s"
-	@echo "... uiController.o"
-	@echo "... uiController.i"
-	@echo "... uiController.s"
-	@echo "... uiDrawer.o"
-	@echo "... uiDrawer.i"
-	@echo "... uiDrawer.s"
+	@echo "... controllers/uiController.o"
+	@echo "... controllers/uiController.i"
+	@echo "... controllers/uiController.s"
+	@echo "... controllers/uiManager.o"
+	@echo "... controllers/uiManager.i"
+	@echo "... controllers/uiManager.s"
+	@echo "... drawer/uiDrawer.o"
+	@echo "... drawer/uiDrawer.i"
+	@echo "... drawer/uiDrawer.s"
+	@echo "... merger/uiMerger.o"
+	@echo "... merger/uiMerger.i"
+	@echo "... merger/uiMerger.s"
+	@echo "... support/UiSupport.o"
+	@echo "... support/UiSupport.i"
+	@echo "... support/UiSupport.s"
+	@echo "... uiElements/ui.o"
+	@echo "... uiElements/ui.i"
+	@echo "... uiElements/ui.s"
 	@echo "... uiElements/uiElements.o"
 	@echo "... uiElements/uiElements.i"
 	@echo "... uiElements/uiElements.s"
-	@echo "... uiManager.o"
-	@echo "... uiManager.i"
-	@echo "... uiManager.s"
 .PHONY : help
 
 

@@ -234,8 +234,14 @@ threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.o: threadweaver/thread
   /usr/include/c++/11/bits/fs_dir.h \
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
-  /usr/include/c++/11/iostream
+  /usr/include/c++/11/iostream \
+  perfcheckers/framerate.hpp \
+  /usr/include/c++/11/atomic \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h
 
+
+perfcheckers/framerate.hpp:
 
 /usr/include/c++/11/bits/fs_ops.h:
 
@@ -262,6 +268,8 @@ threadweaver/CMakeFiles/threadweaver.dir/threadweaver.cpp.o: threadweaver/thread
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
@@ -390,6 +398,8 @@ threadweaver/threadweaver.hpp:
 /usr/include/c++/11/iosfwd:
 
 /usr/include/features.h:
+
+/usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
@@ -554,6 +564,8 @@ threadweaver/threadweaver.cpp:
 /usr/include/c++/11/codecvt:
 
 /usr/include/c++/11/exception:
+
+/usr/include/c++/11/atomic:
 
 /usr/include/c++/11/bits/exception_defines.h:
 
