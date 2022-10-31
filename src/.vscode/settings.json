@@ -1,6 +1,6 @@
 {
     "files.exclude": {
-        "**/CMakeFiles/**"
-        
+        "**/.vscode/": true,
+        "**/media/": true
     }
 }
