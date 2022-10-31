@@ -1,4 +1,6 @@
 set(pipeline_src
+    ./abstract/pipelineNode.cpp
+    ./abstract/pipelineNode.hpp
     ./members/cameraPickerNode.cpp
     ./members/cameraPickerNode.hpp
     ./members/displayOutputNode.cpp
@@ -7,8 +9,6 @@ set(pipeline_src
     ./members/uiDrawerNode.hpp
     ./members/uiMergerNode.cpp
     ./members/uiMergerNode.hpp
-    ./abstract/pipelineNode.cpp
-    ./abstract/pipelineNode.hpp
     ./pipeline.cpp
     ./pipeline.hpp)
 MESSAGE(STATUS "building pipeline")

@@ -69,10 +69,24 @@ include pipeline/CMakeFiles/pipelineLib.dir/progress.make
 # Include the compile flags for this target's objects.
 include pipeline/CMakeFiles/pipelineLib.dir/flags.make
 
+pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
+pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o: pipeline/abstract/pipelineNode.cpp
+pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/pipeline && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o -MF CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o.d -o CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.cpp
+
+pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.i"
+	cd /home/kanken/code/AHRS_core/src/pipeline && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.cpp > CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.i
+
+pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.s"
+	cd /home/kanken/code/AHRS_core/src/pipeline && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.cpp -o CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.s
+
 pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
 pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o: pipeline/members/cameraPickerNode.cpp
 pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o"
 	cd /home/kanken/code/AHRS_core/src/pipeline && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o -MF CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o.d -o CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.cpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.i: cmake_force
@@ -86,7 +100,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.s: cmake_force
 pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
 pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o: pipeline/members/displayOutputNode.cpp
 pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o"
 	cd /home/kanken/code/AHRS_core/src/pipeline && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o -MF CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o.d -o CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.cpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.i: cmake_force
@@ -100,7 +114,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.s: cmake_force
 pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
 pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o: pipeline/members/uiDrawerNode.cpp
 pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o"
 	cd /home/kanken/code/AHRS_core/src/pipeline && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o -MF CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o.d -o CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.cpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.i: cmake_force
@@ -114,7 +128,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.s: cmake_force
 pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
 pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o: pipeline/members/uiMergerNode.cpp
 pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o"
 	cd /home/kanken/code/AHRS_core/src/pipeline && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o -MF CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o.d -o CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.cpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.i: cmake_force
@@ -124,20 +138,6 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.i: cmake_force
 pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.s"
 	cd /home/kanken/code/AHRS_core/src/pipeline && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.cpp -o CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.s
-
-pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
-pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o: pipeline/abstract/pipelineNode.cpp
-pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o"
-	cd /home/kanken/code/AHRS_core/src/pipeline && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o -MF CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o.d -o CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.cpp
-
-pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.i"
-	cd /home/kanken/code/AHRS_core/src/pipeline && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.cpp > CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.i
-
-pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.s"
-	cd /home/kanken/code/AHRS_core/src/pipeline && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.cpp -o CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.s
 
 pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
 pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o: pipeline/pipeline.cpp
@@ -155,21 +155,21 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.s: cmake_force
 
 # Object files for target pipelineLib
 pipelineLib_OBJECTS = \
+"CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o" \
 "CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o" \
 "CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o" \
 "CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o" \
 "CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o" \
-"CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o" \
 "CMakeFiles/pipelineLib.dir/pipeline.cpp.o"
 
 # External object files for target pipelineLib
 pipelineLib_EXTERNAL_OBJECTS =
 
+pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o
-pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/build.make
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/link.txt

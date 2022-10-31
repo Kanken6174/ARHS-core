@@ -1,5 +1,10 @@
 #include "pipelineNode.hpp"
 
+PipelineNode::PipelineNode()
+{
+
+}
+
 bool PipelineNode::isRunning()
 {
     return this->shouldRun;

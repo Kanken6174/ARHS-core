@@ -8,6 +8,7 @@
 
 class PipelineNode{
     public:
+        PipelineNode();
         std::atomic_int fpsLimit = 60;
         framerateChecker localES;
         cv::UMat getOutput();
@@ -18,10 +19,10 @@ class PipelineNode{
         //virtual ~PipelineNode();
         float cost = 1;
     protected:
-        virtual void processFrame();
         std::mutex outputLock;
         cv::UMat output;
         std::atomic_bool shouldRun;
         std::atomic_bool  disabled;
         PipelineNode* previous;
+        virtual void processFrame()=0;
 };
