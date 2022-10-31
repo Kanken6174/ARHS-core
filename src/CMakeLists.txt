@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.15)
 set(CMAKE_CXX_STANDARD 17)
 
 #set(CMAKE_CXX_FLAGS "-Wall -Wextra")
-set(CMAKE_CXX_FLAGS_DEBUG "-g -Ofast")
-set(CMAKE_CXX_FLAGS_RELEASE "-Ofast")
+set(CMAKE_CXX_FLAGS_DEBUG "-g -Ofast -fPIC")
+set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -fPIC")
 
 project(visnode)
 
@@ -24,14 +24,18 @@ MESSAGE(STATUS "Opencv_LINK_DIRS : ${Opencv_LINK_DIRS}")
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
-add_subdirectory(perfcheckers)
 add_subdirectory(threadweaver)
-add_subdirectory(hardware/ihidapi)
-add_subdirectory(hardware/cameras)
-add_subdirectory(hardware/psvr)
-add_subdirectory(hardware/hw)
+add_subdirectory(model/perfcheckers)
+add_subdirectory(model/hardware/ihidapi)
+add_subdirectory(model/hardware/cameras)
+add_subdirectory(model/hardware/psvr)
+add_subdirectory(model/hardware/hw)
+add_subdirectory(model/controllers)
+add_subdirectory(model/patterns/observer)
 add_subdirectory(processing/zbar)
-add_subdirectory(ui)
+add_subdirectory(model/windows)
+add_subdirectory(ui/support)
+add_subdirectory(pipeline)
 
 set(main_source_files main.cpp main.hpp topLevelManager.cpp)
 
@@ -39,7 +43,7 @@ add_executable(prog ${main_source_files})
 
 MESSAGE(STATUS "CMAKE FLAGS : ${LINK_OPTIONS}")
 
-target_link_libraries(prog hw tbb Threads::Threads)
+target_link_libraries(prog pipelineLib tbb Threads::Threads)
 
 SET(GCC_COVERAGE_COMPILE_FLAGS "-L/usr/local/lib")
 add_definitions(${GCC_COVERAGE_COMPILE_FLAGS})

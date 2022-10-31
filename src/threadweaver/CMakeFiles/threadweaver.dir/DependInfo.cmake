@@ -13,7 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/kanken/code/AHRS_core/src/perfcheckers/CMakeFiles/perfcheckers.dir/DependInfo.cmake"
+  "/home/kanken/code/AHRS_core/src/model/perfcheckers/CMakeFiles/perfcheckers.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

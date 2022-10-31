@@ -3,7 +3,6 @@
 
 void cameraManager::runCaptureForCamera(camera* c, uint index){
     while(runCaptureThread){
-        fcheckManager::fcCam.tickBegin();
         if(!c->source->isOpened()){
             cout << "camera " << c->path << " is closed, opening..." << endl;
             if(!c->source->open(c->path)){
@@ -17,13 +16,12 @@ void cameraManager::runCaptureForCamera(camera* c, uint index){
         if(c->source->grab()){
             UMat surface;
             c->source->retrieve(surface);
-            cameraManager::accessLocks[index]->lock();
-            cameraManager::captures[index] = surface;
-            cameraManager::accessLocks[index]->unlock();
+            accessLocks[index]->lock();
+            captures[index] = surface;
+            accessLocks[index]->unlock();
         } else {
             cout << "read error grabbing from camera " << c->path << endl;
         }
-        fcheckManager::fcCam.tickUpdate();
     }
 }
 
@@ -74,11 +72,11 @@ void cameraManager::runCapture(){
         accessLocks.push_back(mlock);
         cout << "enabling camera " << i << endl;
         c->source->release();
-        std::thread* t = new std::thread(cameraManager::runCaptureForCamera,c,i);
+        std::thread* t = new std::thread(&cameraManager::runCaptureForCamera,this,c,i);   //TODO fix thread handling
         i++;
         cout << "moving thread" << endl;
         Threadweaver::stick_this_thread_to_core(t,CAMCORE);
-        Threadweaver::captureThreads.push_back(t);
+        //Threadweaver::captureThreads.push_back(t);
         cout << "done" << endl;
     }
     cout << "done enabling threads" << endl;
@@ -86,11 +84,11 @@ void cameraManager::runCapture(){
 
 void cameraManager::stopCapture(){
     runCaptureThread = false;
-    for(std::thread* t : Threadweaver::captureThreads){
+    /*for(std::thread* t : Threadweaver::captureThreads){
         t->join();
         delete t;
-    }
-    Threadweaver::captureThreads.clear();
+    }*/
+    //Threadweaver::captureThreads.clear();
     for(std::mutex* mlock : accessLocks){
         mlock->unlock();
         delete mlock;

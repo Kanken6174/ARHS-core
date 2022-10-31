@@ -1,4 +1,4 @@
-
+#pragma once
 #include <ctime>
 #include <atomic>
 
@@ -13,12 +13,4 @@ class framerateChecker{
 
     void tickBegin();
     void tickUpdate();
-};
-
-class fcheckManager{
-    public:
-    static framerateChecker fcDrawMenu;
-    static framerateChecker fcMergeUI;
-    static framerateChecker fcShow;
-    static framerateChecker fcCam;
 };

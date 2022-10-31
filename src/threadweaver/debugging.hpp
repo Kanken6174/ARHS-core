@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "../model/perfcheckers/framerate.hpp"
+//#include "../model/perfcheckers/framerate.hpp"
 
 //#define DBGMODE
 #define DBGCOMM
@@ -19,7 +19,7 @@
 #define QU(x) #x
 #define QUH(x) QU(x)
 
-#define VERSION_d 0.4
+#define VERSION_d 0.5
 #define VERSION QUH(VERSION_d)
 
 #ifdef DBGMODE

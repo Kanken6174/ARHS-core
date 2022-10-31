@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles /home/kanken/code/AHRS_core/src/perfcheckers//CMakeFiles/progress.marks
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/all
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles /home/kanken/code/AHRS_core/src/model/perfcheckers//CMakeFiles/progress.marks
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/perfcheckers/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/clean
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/perfcheckers/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/perfcheckers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/perfcheckers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,49 +117,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-perfcheckers/CMakeFiles/perfcheckers.dir/rule:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers/CMakeFiles/perfcheckers.dir/rule
-.PHONY : perfcheckers/CMakeFiles/perfcheckers.dir/rule
+model/perfcheckers/CMakeFiles/perfcheckers.dir/rule:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/perfcheckers/CMakeFiles/perfcheckers.dir/rule
+.PHONY : model/perfcheckers/CMakeFiles/perfcheckers.dir/rule
 
 # Convenience name for target.
-perfcheckers: perfcheckers/CMakeFiles/perfcheckers.dir/rule
+perfcheckers: model/perfcheckers/CMakeFiles/perfcheckers.dir/rule
 .PHONY : perfcheckers
 
 # fast build rule for target.
 perfcheckers/fast:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/build
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/perfcheckers/CMakeFiles/perfcheckers.dir/build.make model/perfcheckers/CMakeFiles/perfcheckers.dir/build
 .PHONY : perfcheckers/fast
-
-fcheckManager.o: fcheckManager.cpp.o
-.PHONY : fcheckManager.o
-
-# target to build an object file
-fcheckManager.cpp.o:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.o
-.PHONY : fcheckManager.cpp.o
-
-fcheckManager.i: fcheckManager.cpp.i
-.PHONY : fcheckManager.i
-
-# target to preprocess a source file
-fcheckManager.cpp.i:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.i
-.PHONY : fcheckManager.cpp.i
-
-fcheckManager.s: fcheckManager.cpp.s
-.PHONY : fcheckManager.s
-
-# target to generate assembly for a file
-fcheckManager.cpp.s:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/fcheckManager.cpp.s
-.PHONY : fcheckManager.cpp.s
 
 framerate.o: framerate.cpp.o
 .PHONY : framerate.o
 
 # target to build an object file
 framerate.cpp.o:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/perfcheckers/CMakeFiles/perfcheckers.dir/build.make model/perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.o
 .PHONY : framerate.cpp.o
 
 framerate.i: framerate.cpp.i
@@ -167,7 +143,7 @@ framerate.i: framerate.cpp.i
 
 # target to preprocess a source file
 framerate.cpp.i:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/perfcheckers/CMakeFiles/perfcheckers.dir/build.make model/perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.i
 .PHONY : framerate.cpp.i
 
 framerate.s: framerate.cpp.s
@@ -175,7 +151,7 @@ framerate.s: framerate.cpp.s
 
 # target to generate assembly for a file
 framerate.cpp.s:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/perfcheckers/CMakeFiles/perfcheckers.dir/build.make model/perfcheckers/CMakeFiles/perfcheckers.dir/framerate.cpp.s
 .PHONY : framerate.cpp.s
 
 # Help Target
@@ -187,9 +163,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... perfcheckers"
-	@echo "... fcheckManager.o"
-	@echo "... fcheckManager.i"
-	@echo "... fcheckManager.s"
 	@echo "... framerate.o"
 	@echo "... framerate.i"
 	@echo "... framerate.s"

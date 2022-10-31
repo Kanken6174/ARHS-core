@@ -1,10 +1,15 @@
 #include "pipeline.hpp"
-#include "../../model/windows/windowManager.hpp"
+#include "./../model/windows/windowManager.hpp"
+#include "../model/hardware/hw/serial.hpp"
 
 Pipeline::Pipeline(){
     WindowManager* wm = new WindowManager();
     cameraManager* cm = new cameraManager();
-    UiController* uc = new UiController();
+    psvr::Psvr* hmd = new psvr::Psvr();
+    UiController* uc = new UiController(hmd);
+    SerialPortManager* sp = new SerialPortManager();
+    
+    sp->Attach(uc);
 
     nodes.push_back(new cameraPickerNode(cm));
     nodes.push_back(new UiDrawerNode());

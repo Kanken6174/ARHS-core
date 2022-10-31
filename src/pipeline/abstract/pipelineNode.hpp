@@ -1,3 +1,4 @@
+#pragma once
 #include <mutex>
 #include <opencv2/core.hpp>
 #include <atomic>
@@ -14,7 +15,7 @@ class PipelineNode{
         bool isRunning();
         bool isDependant();
         void stop();
-        virtual ~PipelineNode();
+        //virtual ~PipelineNode();
         float cost = 1;
     protected:
         virtual void processFrame();

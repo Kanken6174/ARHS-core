@@ -7,6 +7,7 @@
 
 #include <GL/glut.h>
 */
+#pragma once
 #include "../../hardware/cameras/_cam.hpp"
 #include "../../hardware/psvr/_psvr.hpp"
 #include <opencv2/imgcodecs/imgcodecs.hpp>
@@ -27,16 +28,19 @@ using namespace cv::ogl;
 using namespace psvr;
 
 /// @brief this class is used to process view logic and interaction [model]
-class UiController
+class UiController : public Observer
 {
 public:
-    UiController();
+    void Update(const std::string &message_from_subject) override;
+    UiController(psvr::Psvr* hmd);
     void selectedUp();
     void selectedDown();
     void click();
     void update();
     void openSettings();
-    vector<std::string> menuItemNames;
+    void cinemaMode();
+    void vrMode();
+    std::vector<std::string> menuItemNames;
     bool showMenu;
     bool exitCalled;
     bool runIntro;
@@ -46,4 +50,6 @@ public:
     unsigned int selectedIndex;
     map<std::string, std::function<void()>> menuItems;
     char *menutime;
+    private:
+    psvr::Psvr* _hmd;
 };

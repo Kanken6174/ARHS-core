@@ -1,3 +1,4 @@
+#pragma once
 #include <opencv2/core/core.hpp>
 #include <opencv2/core/opengl.hpp>
 #include <opencv2/highgui.hpp>

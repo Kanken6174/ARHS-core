@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles /home/kanken/code/AHRS_core/src/hardware/ihidapi//CMakeFiles/progress.marks
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/ihidapi/all
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles /home/kanken/code/AHRS_core/src/model/hardware/ihidapi//CMakeFiles/progress.marks
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/ihidapi/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/ihidapi/clean
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/ihidapi/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/ihidapi/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/ihidapi/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/ihidapi/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/ihidapi/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-hardware/ihidapi/CMakeFiles/ihidapi.dir/rule:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/ihidapi/CMakeFiles/ihidapi.dir/rule
-.PHONY : hardware/ihidapi/CMakeFiles/ihidapi.dir/rule
+model/hardware/ihidapi/CMakeFiles/ihidapi.dir/rule:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/ihidapi/CMakeFiles/ihidapi.dir/rule
+.PHONY : model/hardware/ihidapi/CMakeFiles/ihidapi.dir/rule
 
 # Convenience name for target.
-ihidapi: hardware/ihidapi/CMakeFiles/ihidapi.dir/rule
+ihidapi: model/hardware/ihidapi/CMakeFiles/ihidapi.dir/rule
 .PHONY : ihidapi
 
 # fast build rule for target.
 ihidapi/fast:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make hardware/ihidapi/CMakeFiles/ihidapi.dir/build
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make model/hardware/ihidapi/CMakeFiles/ihidapi.dir/build
 .PHONY : ihidapi/fast
 
 hidapi_functions.o: hidapi_functions.cpp.o
@@ -135,7 +135,7 @@ hidapi_functions.o: hidapi_functions.cpp.o
 
 # target to build an object file
 hidapi_functions.cpp.o:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make hardware/ihidapi/CMakeFiles/ihidapi.dir/hidapi_functions.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make model/hardware/ihidapi/CMakeFiles/ihidapi.dir/hidapi_functions.cpp.o
 .PHONY : hidapi_functions.cpp.o
 
 hidapi_functions.i: hidapi_functions.cpp.i
@@ -143,7 +143,7 @@ hidapi_functions.i: hidapi_functions.cpp.i
 
 # target to preprocess a source file
 hidapi_functions.cpp.i:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make hardware/ihidapi/CMakeFiles/ihidapi.dir/hidapi_functions.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make model/hardware/ihidapi/CMakeFiles/ihidapi.dir/hidapi_functions.cpp.i
 .PHONY : hidapi_functions.cpp.i
 
 hidapi_functions.s: hidapi_functions.cpp.s
@@ -151,7 +151,7 @@ hidapi_functions.s: hidapi_functions.cpp.s
 
 # target to generate assembly for a file
 hidapi_functions.cpp.s:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make hardware/ihidapi/CMakeFiles/ihidapi.dir/hidapi_functions.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make model/hardware/ihidapi/CMakeFiles/ihidapi.dir/hidapi_functions.cpp.s
 .PHONY : hidapi_functions.cpp.s
 
 # Help Target

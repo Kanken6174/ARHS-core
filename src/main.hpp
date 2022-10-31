@@ -8,12 +8,15 @@
 #include <future>
 #include <sched.h>
 
-#include "./hardware/hw/serial.hpp"
+#include "pipeline/pipeline.hpp"
 
-class topLevelManager{
-    public:
-    void init();
-    private:
+class topLevelManager
+{
+public:
+    topLevelManager();
+
+private:
+    Pipeline* localPipeline;
     void detectHWAndConfig();
     void setupThreads();
 };

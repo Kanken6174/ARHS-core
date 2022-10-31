@@ -3,7 +3,7 @@
 DisplayOutputNode::DisplayOutputNode(PipelineNode* predecessor, Window *managed) : _managed(managed)
 {
     previous = predecessor;
-    output = NULL;
+    //output = NULL;
     cost = 2;
 }
 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpipelineLib.a CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o CMakeFiles/pipelineLib.dir/pipeline.cpp.o
+/usr/bin/ranlib libpipelineLib.a

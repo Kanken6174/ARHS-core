@@ -130,19 +130,6 @@ prog/fast:
 .PHONY : prog/fast
 
 #=============================================================================
-# Target rules for targets named perfcheckers
-
-# Build rule for target.
-perfcheckers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers
-.PHONY : perfcheckers
-
-# fast build rule for target.
-perfcheckers/fast:
-	$(MAKE) $(MAKESILENT) -f perfcheckers/CMakeFiles/perfcheckers.dir/build.make perfcheckers/CMakeFiles/perfcheckers.dir/build
-.PHONY : perfcheckers/fast
-
-#=============================================================================
 # Target rules for targets named threadweaver
 
 # Build rule for target.
@@ -156,6 +143,19 @@ threadweaver/fast:
 .PHONY : threadweaver/fast
 
 #=============================================================================
+# Target rules for targets named perfcheckers
+
+# Build rule for target.
+perfcheckers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perfcheckers
+.PHONY : perfcheckers
+
+# fast build rule for target.
+perfcheckers/fast:
+	$(MAKE) $(MAKESILENT) -f model/perfcheckers/CMakeFiles/perfcheckers.dir/build.make model/perfcheckers/CMakeFiles/perfcheckers.dir/build
+.PHONY : perfcheckers/fast
+
+#=============================================================================
 # Target rules for targets named ihidapi
 
 # Build rule for target.
@@ -165,7 +165,7 @@ ihidapi: cmake_check_build_system
 
 # fast build rule for target.
 ihidapi/fast:
-	$(MAKE) $(MAKESILENT) -f hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make hardware/ihidapi/CMakeFiles/ihidapi.dir/build
+	$(MAKE) $(MAKESILENT) -f model/hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make model/hardware/ihidapi/CMakeFiles/ihidapi.dir/build
 .PHONY : ihidapi/fast
 
 #=============================================================================
@@ -178,7 +178,7 @@ cameras: cmake_check_build_system
 
 # fast build rule for target.
 cameras/fast:
-	$(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/build
+	$(MAKE) $(MAKESILENT) -f model/hardware/cameras/CMakeFiles/cameras.dir/build.make model/hardware/cameras/CMakeFiles/cameras.dir/build
 .PHONY : cameras/fast
 
 #=============================================================================
@@ -191,7 +191,7 @@ psvr: cmake_check_build_system
 
 # fast build rule for target.
 psvr/fast:
-	$(MAKE) $(MAKESILENT) -f hardware/psvr/CMakeFiles/psvr.dir/build.make hardware/psvr/CMakeFiles/psvr.dir/build
+	$(MAKE) $(MAKESILENT) -f model/hardware/psvr/CMakeFiles/psvr.dir/build.make model/hardware/psvr/CMakeFiles/psvr.dir/build
 .PHONY : psvr/fast
 
 #=============================================================================
@@ -204,8 +204,34 @@ hw: cmake_check_build_system
 
 # fast build rule for target.
 hw/fast:
-	$(MAKE) $(MAKESILENT) -f hardware/hw/CMakeFiles/hw.dir/build.make hardware/hw/CMakeFiles/hw.dir/build
+	$(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/build
 .PHONY : hw/fast
+
+#=============================================================================
+# Target rules for targets named controllers
+
+# Build rule for target.
+controllers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controllers
+.PHONY : controllers
+
+# fast build rule for target.
+controllers/fast:
+	$(MAKE) $(MAKESILENT) -f model/controllers/CMakeFiles/controllers.dir/build.make model/controllers/CMakeFiles/controllers.dir/build
+.PHONY : controllers/fast
+
+#=============================================================================
+# Target rules for targets named observers
+
+# Build rule for target.
+observers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 observers
+.PHONY : observers
+
+# fast build rule for target.
+observers/fast:
+	$(MAKE) $(MAKESILENT) -f model/patterns/observer/CMakeFiles/observers.dir/build.make model/patterns/observer/CMakeFiles/observers.dir/build
+.PHONY : observers/fast
 
 #=============================================================================
 # Target rules for targets named zbarLib
@@ -221,17 +247,43 @@ zbarLib/fast:
 .PHONY : zbarLib/fast
 
 #=============================================================================
-# Target rules for targets named ui
+# Target rules for targets named windows
 
 # Build rule for target.
-ui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui
-.PHONY : ui
+windows: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 windows
+.PHONY : windows
 
 # fast build rule for target.
-ui/fast:
-	$(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/build
-.PHONY : ui/fast
+windows/fast:
+	$(MAKE) $(MAKESILENT) -f model/windows/CMakeFiles/windows.dir/build.make model/windows/CMakeFiles/windows.dir/build
+.PHONY : windows/fast
+
+#=============================================================================
+# Target rules for targets named support
+
+# Build rule for target.
+support: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 support
+.PHONY : support
+
+# fast build rule for target.
+support/fast:
+	$(MAKE) $(MAKESILENT) -f ui/support/CMakeFiles/support.dir/build.make ui/support/CMakeFiles/support.dir/build
+.PHONY : support/fast
+
+#=============================================================================
+# Target rules for targets named pipelineLib
+
+# Build rule for target.
+pipelineLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pipelineLib
+.PHONY : pipelineLib
+
+# fast build rule for target.
+pipelineLib/fast:
+	$(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/build
+.PHONY : pipelineLib/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -290,13 +342,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cameras"
+	@echo "... controllers"
 	@echo "... hw"
 	@echo "... ihidapi"
+	@echo "... observers"
 	@echo "... perfcheckers"
+	@echo "... pipelineLib"
 	@echo "... prog"
 	@echo "... psvr"
+	@echo "... support"
 	@echo "... threadweaver"
-	@echo "... ui"
+	@echo "... windows"
 	@echo "... zbarLib"
 	@echo "... main.o"
 	@echo "... main.i"

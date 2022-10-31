@@ -6,7 +6,7 @@ class UiMergerNode : public PipelineNode
 public:
     UiMergerNode(PipelineNode* previous,PipelineNode* menuDrawer, UiController* backController);
 protected:
-    virtual void processFrame() override;
+    void processFrame() override;
     PipelineNode* _menuDrawer;
     UiController* _backController;
 };

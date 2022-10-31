@@ -13,8 +13,9 @@
 #include <mutex> 
 #include <chrono>
 #include <opencv2/opencv.hpp>
+#pragma once
 #include <opencv2/videoio/videoio_c.h>
-#include "../../../threadweaver/threadweaver.hpp"
+#include "./../../../threadweaver/threadweaver.hpp"
 
 using namespace std;
 using namespace cv;

@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles /home/kanken/code/AHRS_core/src/hardware/hw//CMakeFiles/progress.marks
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/hw/all
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles /home/kanken/code/AHRS_core/src/model/hardware/hw//CMakeFiles/progress.marks
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/hw/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/hw/clean
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/hw/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/hw/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/hw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/hw/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/hw/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-hardware/hw/CMakeFiles/hw.dir/rule:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/hw/CMakeFiles/hw.dir/rule
-.PHONY : hardware/hw/CMakeFiles/hw.dir/rule
+model/hardware/hw/CMakeFiles/hw.dir/rule:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/hw/CMakeFiles/hw.dir/rule
+.PHONY : model/hardware/hw/CMakeFiles/hw.dir/rule
 
 # Convenience name for target.
-hw: hardware/hw/CMakeFiles/hw.dir/rule
+hw: model/hardware/hw/CMakeFiles/hw.dir/rule
 .PHONY : hw
 
 # fast build rule for target.
 hw/fast:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/hw/CMakeFiles/hw.dir/build.make hardware/hw/CMakeFiles/hw.dir/build
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/build
 .PHONY : hw/fast
 
 serial.o: serial.cpp.o
@@ -135,7 +135,7 @@ serial.o: serial.cpp.o
 
 # target to build an object file
 serial.cpp.o:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/hw/CMakeFiles/hw.dir/build.make hardware/hw/CMakeFiles/hw.dir/serial.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.o
 .PHONY : serial.cpp.o
 
 serial.i: serial.cpp.i
@@ -143,7 +143,7 @@ serial.i: serial.cpp.i
 
 # target to preprocess a source file
 serial.cpp.i:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/hw/CMakeFiles/hw.dir/build.make hardware/hw/CMakeFiles/hw.dir/serial.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.i
 .PHONY : serial.cpp.i
 
 serial.s: serial.cpp.s
@@ -151,7 +151,7 @@ serial.s: serial.cpp.s
 
 # target to generate assembly for a file
 serial.cpp.s:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/hw/CMakeFiles/hw.dir/build.make hardware/hw/CMakeFiles/hw.dir/serial.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.s
 .PHONY : serial.cpp.s
 
 # Help Target

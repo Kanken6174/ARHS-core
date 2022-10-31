@@ -1,8 +1,5 @@
 #include "windowManager.hpp"
 #include <thread>
-namespace ui
-{
-
     // initializes the ui manager, following default values
     WindowManager::WindowManager()
     {
@@ -29,4 +26,3 @@ namespace ui
     void WindowManager::cleanup()
     {
     }
-}

@@ -223,58 +223,78 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/c++/11/bits/atomic_futex.h
  /usr/include/c++/11/bits/std_function.h
  /usr/include/c++/11/bits/std_thread.h
- /home/kanken/code/AHRS_core/src/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
- /usr/include/c++/11/thread
- /usr/include/c++/11/bits/this_thread_sleep.h
- /usr/include/c++/11/vector
- /usr/include/c++/11/bits/stl_uninitialized.h
- /usr/include/c++/11/bits/stl_vector.h
- /usr/include/c++/11/bits/stl_bvector.h
- /usr/include/c++/11/bits/vector.tcc
- /home/kanken/code/AHRS_core/src/ui/_ui.hpp
- /usr/include/c++/11/map
- /usr/include/c++/11/bits/stl_tree.h
- /usr/include/c++/11/bits/node_handle.h
- /usr/include/c++/11/bits/stl_map.h
- /usr/include/c++/11/bits/stl_multimap.h
- /usr/include/c++/11/bits/erase_if.h
- /usr/include/c++/11/functional
- /usr/include/c++/11/unordered_map
- /usr/include/c++/11/bits/hashtable.h
- /usr/include/c++/11/bits/hashtable_policy.h
- /usr/include/c++/11/bits/enable_special_members.h
- /usr/include/c++/11/bits/unordered_map.h
+ /home/kanken/code/AHRS_core/src/pipeline/pipeline.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.hpp
+ /usr/local/include/opencv4/opencv2/core.hpp
+ /usr/local/include/opencv4/opencv2/core/cvdef.h
+ /usr/local/include/opencv4/opencv2/core/version.hpp
+ /usr/local/include/opencv4/opencv2/core/hal/interface.h
+ /usr/include/c++/11/cstddef
+ /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h
+ /usr/local/include/opencv4/opencv2/core/base.hpp
+ /usr/local/include/opencv4/opencv2/opencv_modules.hpp
+ /usr/include/c++/11/climits
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
+ /usr/include/limits.h
+ /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h
+ /usr/include/linux/limits.h
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h
+ /usr/include/c++/11/algorithm
  /usr/include/c++/11/bits/stl_algo.h
  /usr/include/c++/11/bits/algorithmfwd.h
  /usr/include/c++/11/bits/stl_heap.h
  /usr/include/c++/11/bits/stl_tempbuf.h
  /usr/include/c++/11/bits/uniform_int_dist.h
- /usr/include/GL/glut.h
- /usr/include/GL/freeglut_std.h
- /usr/include/GL/gl.h
- /usr/include/GL/glext.h
- /usr/include/KHR/khrplatform.h
- /usr/include/GL/glu.h
- /home/kanken/code/AHRS_core/src/hardware/cameras/_cam.hpp
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h
+ /usr/include/c++/11/functional
+ /usr/include/c++/11/unordered_map
+ /usr/include/c++/11/bits/hashtable.h
+ /usr/include/c++/11/bits/hashtable_policy.h
+ /usr/include/c++/11/bits/enable_special_members.h
+ /usr/include/c++/11/bits/node_handle.h
+ /usr/include/c++/11/bits/unordered_map.h
+ /usr/include/c++/11/bits/erase_if.h
+ /usr/include/c++/11/vector
+ /usr/include/c++/11/bits/stl_uninitialized.h
+ /usr/include/c++/11/bits/stl_vector.h
+ /usr/include/c++/11/bits/stl_bvector.h
+ /usr/include/c++/11/bits/vector.tcc
+ /usr/include/c++/11/pstl/execution_defs.h
+ /usr/local/include/opencv4/opencv2/core/cvstd.hpp
+ /usr/include/c++/11/cstring
+ /usr/include/c++/11/cmath
+ /usr/include/math.h
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/c++/11/bits/specfun.h
+ /usr/include/c++/11/tr1/gamma.tcc
+ /usr/include/c++/11/tr1/special_function_util.h
+ /usr/include/c++/11/tr1/bessel_function.tcc
+ /usr/include/c++/11/tr1/beta_function.tcc
+ /usr/include/c++/11/tr1/ell_integral.tcc
+ /usr/include/c++/11/tr1/exp_integral.tcc
+ /usr/include/c++/11/tr1/hypergeometric.tcc
+ /usr/include/c++/11/tr1/legendre_function.tcc
+ /usr/include/c++/11/tr1/modified_bessel_func.tcc
+ /usr/include/c++/11/tr1/poly_hermite.tcc
+ /usr/include/c++/11/tr1/poly_laguerre.tcc
+ /usr/include/c++/11/tr1/riemann_zeta.tcc
+ /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/11/memory
  /usr/include/c++/11/bits/stl_raw_storage_iter.h
  /usr/include/c++/11/bits/align.h
@@ -282,12 +302,36 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/c++/11/bits/shared_ptr_atomic.h
  /usr/include/c++/11/backward/auto_ptr.h
  /usr/include/c++/11/pstl/glue_memory_defs.h
- /usr/include/c++/11/pstl/execution_defs.h
+ /usr/local/include/opencv4/opencv2/core/neon_utils.hpp
+ /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp
+ /usr/include/assert.h
+ /usr/local/include/opencv4/opencv2/core/check.hpp
+ /usr/local/include/opencv4/opencv2/core/traits.hpp
+ /usr/local/include/opencv4/opencv2/core/matx.hpp
+ /usr/local/include/opencv4/opencv2/core/saturate.hpp
+ /usr/local/include/opencv4/opencv2/core/fast_math.hpp
+ /usr/local/include/opencv4/opencv2/core/types.hpp
+ /usr/include/c++/11/cfloat
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
+ /usr/local/include/opencv4/opencv2/core/mat.hpp
+ /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
+ /usr/local/include/opencv4/opencv2/core/mat.inl.hpp
+ /usr/local/include/opencv4/opencv2/core/persistence.hpp
+ /usr/local/include/opencv4/opencv2/core/operations.hpp
+ /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp
+ /usr/include/c++/11/complex
  /usr/include/c++/11/sstream
  /usr/include/c++/11/bits/sstream.tcc
+ /usr/local/include/opencv4/opencv2/core/utility.hpp
+ /usr/local/include/opencv4/opencv2/core/optim.hpp
+ /usr/local/include/opencv4/opencv2/core/ovx.hpp
+ /usr/local/include/opencv4/opencv2/core/cvdef.h
+ /usr/include/c++/11/thread
+ /usr/include/c++/11/bits/this_thread_sleep.h
+ /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
  /usr/include/c++/11/regex
- /usr/include/c++/11/algorithm
- /usr/include/c++/11/pstl/glue_algorithm_defs.h
  /usr/include/c++/11/bitset
  /usr/include/c++/11/iterator
  /usr/include/c++/11/bits/stream_iterator.h
@@ -304,7 +348,10 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/c++/11/bits/stl_deque.h
  /usr/include/c++/11/bits/deque.tcc
  /usr/include/c++/11/bits/stl_stack.h
- /usr/include/c++/11/cstring
+ /usr/include/c++/11/map
+ /usr/include/c++/11/bits/stl_tree.h
+ /usr/include/c++/11/bits/stl_map.h
+ /usr/include/c++/11/bits/stl_multimap.h
  /usr/include/c++/11/bits/regex_constants.h
  /usr/include/c++/11/bits/regex_error.h
  /usr/include/c++/11/bits/regex_automaton.h
@@ -329,23 +376,12 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/c++/11/pstl/parallel_backend_tbb.h
  /usr/include/tbb/blocked_range.h
  /usr/include/oneapi/tbb/blocked_range.h
- /usr/include/c++/11/cstddef
  /usr/include/oneapi/tbb/detail/_range_common.h
  /usr/include/oneapi/tbb/detail/_config.h
  /usr/include/oneapi/tbb/detail/_export.h
  /usr/include/oneapi/tbb/detail/_utils.h
  /usr/include/oneapi/tbb/detail/_assert.h
  /usr/include/oneapi/tbb/detail/_machine.h
- /usr/include/c++/11/climits
- /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
- /usr/include/limits.h
- /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
- /usr/include/x86_64-linux-gnu/bits/local_lim.h
- /usr/include/linux/limits.h
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h
@@ -382,10 +418,6 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h
@@ -482,61 +514,6 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/c++/11/pstl/glue_numeric_impl.h
  /usr/include/c++/11/pstl/glue_memory_impl.h
  /usr/local/include/opencv4/opencv2/opencv.hpp
- /usr/local/include/opencv4/opencv2/opencv_modules.hpp
- /usr/local/include/opencv4/opencv2/core.hpp
- /usr/local/include/opencv4/opencv2/core/cvdef.h
- /usr/local/include/opencv4/opencv2/core/version.hpp
- /usr/local/include/opencv4/opencv2/core/hal/interface.h
- /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h
- /usr/local/include/opencv4/opencv2/core/base.hpp
- /usr/local/include/opencv4/opencv2/core/cvstd.hpp
- /usr/include/c++/11/cmath
- /usr/include/math.h
- /usr/include/x86_64-linux-gnu/bits/math-vector.h
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h
- /usr/include/c++/11/bits/specfun.h
- /usr/include/c++/11/tr1/gamma.tcc
- /usr/include/c++/11/tr1/special_function_util.h
- /usr/include/c++/11/tr1/bessel_function.tcc
- /usr/include/c++/11/tr1/beta_function.tcc
- /usr/include/c++/11/tr1/ell_integral.tcc
- /usr/include/c++/11/tr1/exp_integral.tcc
- /usr/include/c++/11/tr1/hypergeometric.tcc
- /usr/include/c++/11/tr1/legendre_function.tcc
- /usr/include/c++/11/tr1/modified_bessel_func.tcc
- /usr/include/c++/11/tr1/poly_hermite.tcc
- /usr/include/c++/11/tr1/poly_laguerre.tcc
- /usr/include/c++/11/tr1/riemann_zeta.tcc
- /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp
- /usr/local/include/opencv4/opencv2/core/neon_utils.hpp
- /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp
- /usr/include/assert.h
- /usr/local/include/opencv4/opencv2/core/check.hpp
- /usr/local/include/opencv4/opencv2/core/traits.hpp
- /usr/local/include/opencv4/opencv2/core/matx.hpp
- /usr/local/include/opencv4/opencv2/core/saturate.hpp
- /usr/local/include/opencv4/opencv2/core/fast_math.hpp
- /usr/local/include/opencv4/opencv2/core/types.hpp
- /usr/include/c++/11/cfloat
- /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
- /usr/local/include/opencv4/opencv2/core/mat.hpp
- /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
- /usr/local/include/opencv4/opencv2/core/mat.inl.hpp
- /usr/local/include/opencv4/opencv2/core/persistence.hpp
- /usr/local/include/opencv4/opencv2/core/operations.hpp
- /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp
- /usr/include/c++/11/complex
- /usr/local/include/opencv4/opencv2/core/utility.hpp
- /usr/local/include/opencv4/opencv2/core/optim.hpp
- /usr/local/include/opencv4/opencv2/core/ovx.hpp
- /usr/local/include/opencv4/opencv2/core/cvdef.h
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/features2d.hpp
  /usr/local/include/opencv4/opencv2/flann/miniflann.hpp
@@ -637,14 +614,27 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/c++/11/bits/fs_dir.h
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
- /home/kanken/code/AHRS_core/src/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/hardware/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/hardware/ihidapi/_hidapi.hpp
- /usr/local/include/hidapi/hidapi.h
- /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.hpp
+ /home/kanken/code/AHRS_core/src/model/windows/window.hpp
+ /usr/local/include/opencv4/opencv2/core/core.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
+ /usr/include/GL/glut.h
+ /usr/include/GL/freeglut_std.h
+ /usr/include/GL/gl.h
+ /usr/include/GL/glext.h
+ /usr/include/KHR/khrplatform.h
+ /usr/include/GL/glu.h
+ /home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.hpp
+ /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
+ /usr/local/include/hidapi/hidapi.h
+ /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
+ /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.hpp
 
 CMakeFiles/prog.dir/topLevelManager.cpp.o
  /home/kanken/code/AHRS_core/src/topLevelManager.cpp
@@ -868,58 +858,78 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/c++/11/bits/atomic_futex.h
  /usr/include/c++/11/bits/std_function.h
  /usr/include/c++/11/bits/std_thread.h
- /home/kanken/code/AHRS_core/src/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
- /usr/include/c++/11/thread
- /usr/include/c++/11/bits/this_thread_sleep.h
- /usr/include/c++/11/vector
- /usr/include/c++/11/bits/stl_uninitialized.h
- /usr/include/c++/11/bits/stl_vector.h
- /usr/include/c++/11/bits/stl_bvector.h
- /usr/include/c++/11/bits/vector.tcc
- /home/kanken/code/AHRS_core/src/ui/_ui.hpp
- /usr/include/c++/11/map
- /usr/include/c++/11/bits/stl_tree.h
- /usr/include/c++/11/bits/node_handle.h
- /usr/include/c++/11/bits/stl_map.h
- /usr/include/c++/11/bits/stl_multimap.h
- /usr/include/c++/11/bits/erase_if.h
- /usr/include/c++/11/functional
- /usr/include/c++/11/unordered_map
- /usr/include/c++/11/bits/hashtable.h
- /usr/include/c++/11/bits/hashtable_policy.h
- /usr/include/c++/11/bits/enable_special_members.h
- /usr/include/c++/11/bits/unordered_map.h
+ /home/kanken/code/AHRS_core/src/pipeline/pipeline.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.hpp
+ /usr/local/include/opencv4/opencv2/core.hpp
+ /usr/local/include/opencv4/opencv2/core/cvdef.h
+ /usr/local/include/opencv4/opencv2/core/version.hpp
+ /usr/local/include/opencv4/opencv2/core/hal/interface.h
+ /usr/include/c++/11/cstddef
+ /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h
+ /usr/local/include/opencv4/opencv2/core/base.hpp
+ /usr/local/include/opencv4/opencv2/opencv_modules.hpp
+ /usr/include/c++/11/climits
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
+ /usr/include/limits.h
+ /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h
+ /usr/include/linux/limits.h
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h
+ /usr/include/c++/11/algorithm
  /usr/include/c++/11/bits/stl_algo.h
  /usr/include/c++/11/bits/algorithmfwd.h
  /usr/include/c++/11/bits/stl_heap.h
  /usr/include/c++/11/bits/stl_tempbuf.h
  /usr/include/c++/11/bits/uniform_int_dist.h
- /usr/include/GL/glut.h
- /usr/include/GL/freeglut_std.h
- /usr/include/GL/gl.h
- /usr/include/GL/glext.h
- /usr/include/KHR/khrplatform.h
- /usr/include/GL/glu.h
- /home/kanken/code/AHRS_core/src/hardware/cameras/_cam.hpp
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h
+ /usr/include/c++/11/functional
+ /usr/include/c++/11/unordered_map
+ /usr/include/c++/11/bits/hashtable.h
+ /usr/include/c++/11/bits/hashtable_policy.h
+ /usr/include/c++/11/bits/enable_special_members.h
+ /usr/include/c++/11/bits/node_handle.h
+ /usr/include/c++/11/bits/unordered_map.h
+ /usr/include/c++/11/bits/erase_if.h
+ /usr/include/c++/11/vector
+ /usr/include/c++/11/bits/stl_uninitialized.h
+ /usr/include/c++/11/bits/stl_vector.h
+ /usr/include/c++/11/bits/stl_bvector.h
+ /usr/include/c++/11/bits/vector.tcc
+ /usr/include/c++/11/pstl/execution_defs.h
+ /usr/local/include/opencv4/opencv2/core/cvstd.hpp
+ /usr/include/c++/11/cstring
+ /usr/include/c++/11/cmath
+ /usr/include/math.h
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/c++/11/bits/specfun.h
+ /usr/include/c++/11/tr1/gamma.tcc
+ /usr/include/c++/11/tr1/special_function_util.h
+ /usr/include/c++/11/tr1/bessel_function.tcc
+ /usr/include/c++/11/tr1/beta_function.tcc
+ /usr/include/c++/11/tr1/ell_integral.tcc
+ /usr/include/c++/11/tr1/exp_integral.tcc
+ /usr/include/c++/11/tr1/hypergeometric.tcc
+ /usr/include/c++/11/tr1/legendre_function.tcc
+ /usr/include/c++/11/tr1/modified_bessel_func.tcc
+ /usr/include/c++/11/tr1/poly_hermite.tcc
+ /usr/include/c++/11/tr1/poly_laguerre.tcc
+ /usr/include/c++/11/tr1/riemann_zeta.tcc
+ /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/11/memory
  /usr/include/c++/11/bits/stl_raw_storage_iter.h
  /usr/include/c++/11/bits/align.h
@@ -927,12 +937,36 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/c++/11/bits/shared_ptr_atomic.h
  /usr/include/c++/11/backward/auto_ptr.h
  /usr/include/c++/11/pstl/glue_memory_defs.h
- /usr/include/c++/11/pstl/execution_defs.h
+ /usr/local/include/opencv4/opencv2/core/neon_utils.hpp
+ /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp
+ /usr/include/assert.h
+ /usr/local/include/opencv4/opencv2/core/check.hpp
+ /usr/local/include/opencv4/opencv2/core/traits.hpp
+ /usr/local/include/opencv4/opencv2/core/matx.hpp
+ /usr/local/include/opencv4/opencv2/core/saturate.hpp
+ /usr/local/include/opencv4/opencv2/core/fast_math.hpp
+ /usr/local/include/opencv4/opencv2/core/types.hpp
+ /usr/include/c++/11/cfloat
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
+ /usr/local/include/opencv4/opencv2/core/mat.hpp
+ /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
+ /usr/local/include/opencv4/opencv2/core/mat.inl.hpp
+ /usr/local/include/opencv4/opencv2/core/persistence.hpp
+ /usr/local/include/opencv4/opencv2/core/operations.hpp
+ /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp
+ /usr/include/c++/11/complex
  /usr/include/c++/11/sstream
  /usr/include/c++/11/bits/sstream.tcc
+ /usr/local/include/opencv4/opencv2/core/utility.hpp
+ /usr/local/include/opencv4/opencv2/core/optim.hpp
+ /usr/local/include/opencv4/opencv2/core/ovx.hpp
+ /usr/local/include/opencv4/opencv2/core/cvdef.h
+ /usr/include/c++/11/thread
+ /usr/include/c++/11/bits/this_thread_sleep.h
+ /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
  /usr/include/c++/11/regex
- /usr/include/c++/11/algorithm
- /usr/include/c++/11/pstl/glue_algorithm_defs.h
  /usr/include/c++/11/bitset
  /usr/include/c++/11/iterator
  /usr/include/c++/11/bits/stream_iterator.h
@@ -949,7 +983,10 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/c++/11/bits/stl_deque.h
  /usr/include/c++/11/bits/deque.tcc
  /usr/include/c++/11/bits/stl_stack.h
- /usr/include/c++/11/cstring
+ /usr/include/c++/11/map
+ /usr/include/c++/11/bits/stl_tree.h
+ /usr/include/c++/11/bits/stl_map.h
+ /usr/include/c++/11/bits/stl_multimap.h
  /usr/include/c++/11/bits/regex_constants.h
  /usr/include/c++/11/bits/regex_error.h
  /usr/include/c++/11/bits/regex_automaton.h
@@ -974,23 +1011,12 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/c++/11/pstl/parallel_backend_tbb.h
  /usr/include/tbb/blocked_range.h
  /usr/include/oneapi/tbb/blocked_range.h
- /usr/include/c++/11/cstddef
  /usr/include/oneapi/tbb/detail/_range_common.h
  /usr/include/oneapi/tbb/detail/_config.h
  /usr/include/oneapi/tbb/detail/_export.h
  /usr/include/oneapi/tbb/detail/_utils.h
  /usr/include/oneapi/tbb/detail/_assert.h
  /usr/include/oneapi/tbb/detail/_machine.h
- /usr/include/c++/11/climits
- /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
- /usr/include/limits.h
- /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
- /usr/include/x86_64-linux-gnu/bits/local_lim.h
- /usr/include/linux/limits.h
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h
@@ -1027,10 +1053,6 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h
@@ -1127,61 +1149,6 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/c++/11/pstl/glue_numeric_impl.h
  /usr/include/c++/11/pstl/glue_memory_impl.h
  /usr/local/include/opencv4/opencv2/opencv.hpp
- /usr/local/include/opencv4/opencv2/opencv_modules.hpp
- /usr/local/include/opencv4/opencv2/core.hpp
- /usr/local/include/opencv4/opencv2/core/cvdef.h
- /usr/local/include/opencv4/opencv2/core/version.hpp
- /usr/local/include/opencv4/opencv2/core/hal/interface.h
- /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h
- /usr/local/include/opencv4/opencv2/core/base.hpp
- /usr/local/include/opencv4/opencv2/core/cvstd.hpp
- /usr/include/c++/11/cmath
- /usr/include/math.h
- /usr/include/x86_64-linux-gnu/bits/math-vector.h
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h
- /usr/include/c++/11/bits/specfun.h
- /usr/include/c++/11/tr1/gamma.tcc
- /usr/include/c++/11/tr1/special_function_util.h
- /usr/include/c++/11/tr1/bessel_function.tcc
- /usr/include/c++/11/tr1/beta_function.tcc
- /usr/include/c++/11/tr1/ell_integral.tcc
- /usr/include/c++/11/tr1/exp_integral.tcc
- /usr/include/c++/11/tr1/hypergeometric.tcc
- /usr/include/c++/11/tr1/legendre_function.tcc
- /usr/include/c++/11/tr1/modified_bessel_func.tcc
- /usr/include/c++/11/tr1/poly_hermite.tcc
- /usr/include/c++/11/tr1/poly_laguerre.tcc
- /usr/include/c++/11/tr1/riemann_zeta.tcc
- /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp
- /usr/local/include/opencv4/opencv2/core/neon_utils.hpp
- /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp
- /usr/include/assert.h
- /usr/local/include/opencv4/opencv2/core/check.hpp
- /usr/local/include/opencv4/opencv2/core/traits.hpp
- /usr/local/include/opencv4/opencv2/core/matx.hpp
- /usr/local/include/opencv4/opencv2/core/saturate.hpp
- /usr/local/include/opencv4/opencv2/core/fast_math.hpp
- /usr/local/include/opencv4/opencv2/core/types.hpp
- /usr/include/c++/11/cfloat
- /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
- /usr/local/include/opencv4/opencv2/core/mat.hpp
- /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
- /usr/local/include/opencv4/opencv2/core/mat.inl.hpp
- /usr/local/include/opencv4/opencv2/core/persistence.hpp
- /usr/local/include/opencv4/opencv2/core/operations.hpp
- /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp
- /usr/include/c++/11/complex
- /usr/local/include/opencv4/opencv2/core/utility.hpp
- /usr/local/include/opencv4/opencv2/core/optim.hpp
- /usr/local/include/opencv4/opencv2/core/ovx.hpp
- /usr/local/include/opencv4/opencv2/core/cvdef.h
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/features2d.hpp
  /usr/local/include/opencv4/opencv2/flann/miniflann.hpp
@@ -1282,12 +1249,25 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/c++/11/bits/fs_dir.h
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
- /home/kanken/code/AHRS_core/src/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/hardware/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/hardware/ihidapi/_hidapi.hpp
- /usr/local/include/hidapi/hidapi.h
- /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.hpp
+ /home/kanken/code/AHRS_core/src/model/windows/window.hpp
+ /usr/local/include/opencv4/opencv2/core/core.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
+ /usr/include/GL/glut.h
+ /usr/include/GL/freeglut_std.h
+ /usr/include/GL/gl.h
+ /usr/include/GL/glext.h
+ /usr/include/KHR/khrplatform.h
+ /usr/include/GL/glu.h
+ /home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.hpp
+ /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
+ /usr/local/include/hidapi/hidapi.h
+ /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
+ /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.hpp
 

@@ -11,11 +11,10 @@
 #include <thread>
 #include <vector>
 
+#include "./../../../threadweaver/threadweaver.hpp"
 #include "../../patterns/observer/observable.hpp"
-#include "../../patterns/observer/observer.hpp"
-#include "../../threadweaver/threadweaver.hpp"
 
-class SerialPortManager : Observable
+class SerialPortManager : public Observable
 {
 public:
     SerialPortManager();

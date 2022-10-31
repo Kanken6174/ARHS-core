@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles /home/kanken/code/AHRS_core/src/hardware/cameras//CMakeFiles/progress.marks
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/cameras/all
+	cd /home/kanken/code/AHRS_core/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles /home/kanken/code/AHRS_core/src/model/hardware/cameras//CMakeFiles/progress.marks
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/cameras/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/cameras/clean
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/cameras/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/cameras/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/cameras/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/cameras/preinstall
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/cameras/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-hardware/cameras/CMakeFiles/cameras.dir/rule:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/cameras/CMakeFiles/cameras.dir/rule
-.PHONY : hardware/cameras/CMakeFiles/cameras.dir/rule
+model/hardware/cameras/CMakeFiles/cameras.dir/rule:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model/hardware/cameras/CMakeFiles/cameras.dir/rule
+.PHONY : model/hardware/cameras/CMakeFiles/cameras.dir/rule
 
 # Convenience name for target.
-cameras: hardware/cameras/CMakeFiles/cameras.dir/rule
+cameras: model/hardware/cameras/CMakeFiles/cameras.dir/rule
 .PHONY : cameras
 
 # fast build rule for target.
 cameras/fast:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/build
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/cameras/CMakeFiles/cameras.dir/build.make model/hardware/cameras/CMakeFiles/cameras.dir/build
 .PHONY : cameras/fast
 
 camEnum.o: camEnum.cpp.o
@@ -135,7 +135,7 @@ camEnum.o: camEnum.cpp.o
 
 # target to build an object file
 camEnum.cpp.o:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/camEnum.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/cameras/CMakeFiles/cameras.dir/build.make model/hardware/cameras/CMakeFiles/cameras.dir/camEnum.cpp.o
 .PHONY : camEnum.cpp.o
 
 camEnum.i: camEnum.cpp.i
@@ -143,7 +143,7 @@ camEnum.i: camEnum.cpp.i
 
 # target to preprocess a source file
 camEnum.cpp.i:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/camEnum.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/cameras/CMakeFiles/cameras.dir/build.make model/hardware/cameras/CMakeFiles/cameras.dir/camEnum.cpp.i
 .PHONY : camEnum.cpp.i
 
 camEnum.s: camEnum.cpp.s
@@ -151,7 +151,7 @@ camEnum.s: camEnum.cpp.s
 
 # target to generate assembly for a file
 camEnum.cpp.s:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/camEnum.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/cameras/CMakeFiles/cameras.dir/build.make model/hardware/cameras/CMakeFiles/cameras.dir/camEnum.cpp.s
 .PHONY : camEnum.cpp.s
 
 cameraManager.o: cameraManager.cpp.o
@@ -159,7 +159,7 @@ cameraManager.o: cameraManager.cpp.o
 
 # target to build an object file
 cameraManager.cpp.o:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/cameras/CMakeFiles/cameras.dir/build.make model/hardware/cameras/CMakeFiles/cameras.dir/cameraManager.cpp.o
 .PHONY : cameraManager.cpp.o
 
 cameraManager.i: cameraManager.cpp.i
@@ -167,7 +167,7 @@ cameraManager.i: cameraManager.cpp.i
 
 # target to preprocess a source file
 cameraManager.cpp.i:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/cameraManager.cpp.i
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/cameras/CMakeFiles/cameras.dir/build.make model/hardware/cameras/CMakeFiles/cameras.dir/cameraManager.cpp.i
 .PHONY : cameraManager.cpp.i
 
 cameraManager.s: cameraManager.cpp.s
@@ -175,7 +175,7 @@ cameraManager.s: cameraManager.cpp.s
 
 # target to generate assembly for a file
 cameraManager.cpp.s:
-	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/cameraManager.cpp.s
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f model/hardware/cameras/CMakeFiles/cameras.dir/build.make model/hardware/cameras/CMakeFiles/cameras.dir/cameraManager.cpp.s
 .PHONY : cameraManager.cpp.s
 
 # Help Target

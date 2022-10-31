@@ -1,0 +1,2 @@
+/usr/bin/ar qc libwindows.a CMakeFiles/windows.dir/window.cpp.o CMakeFiles/windows.dir/windowManager.cpp.o
+/usr/bin/ranlib libwindows.a

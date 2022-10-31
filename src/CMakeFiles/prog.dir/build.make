@@ -108,18 +108,17 @@ prog_EXTERNAL_OBJECTS =
 prog: CMakeFiles/prog.dir/main.cpp.o
 prog: CMakeFiles/prog.dir/topLevelManager.cpp.o
 prog: CMakeFiles/prog.dir/build.make
-prog: hardware/hw/libhw.a
-prog: ui/libui.a
+prog: pipeline/libpipelineLib.a
+prog: model/windows/libwindows.a
+prog: ui/support/libsupport.a
+prog: model/controllers/libcontrollers.a
 prog: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 prog: /usr/lib/x86_64-linux-gnu/libGLX.so
 prog: /usr/lib/x86_64-linux-gnu/libGLU.so
-prog: hardware/psvr/libpsvr.a
-prog: hardware/ihidapi/libihidapi.a
+prog: model/hardware/psvr/libpsvr.a
+prog: model/hardware/ihidapi/libihidapi.a
 prog: /usr/local/lib/libhidapi-hidraw.so.0.13.0
-prog: hardware/cameras/libcameras.a
-prog: threadweaver/libthreadweaver.a
-prog: perfcheckers/libperfcheckers.a
-prog: processing/zbar/libzbarLib.a
+prog: model/hardware/cameras/libcameras.a
 prog: /usr/local/lib/libopencv_gapi.so.4.6.0
 prog: /usr/local/lib/libopencv_stitching.so.4.6.0
 prog: /usr/local/lib/libopencv_aruco.so.4.6.0
@@ -173,7 +172,10 @@ prog: /usr/local/lib/libopencv_xphoto.so.4.6.0
 prog: /usr/local/lib/libopencv_photo.so.4.6.0
 prog: /usr/local/lib/libopencv_imgproc.so.4.6.0
 prog: /usr/local/lib/libopencv_core.so.4.6.0
-prog: /usr/lib/x86_64-linux-gnu/libzbar.so
+prog: model/hardware/hw/libhw.a
+prog: model/patterns/observer/libobservers.a
+prog: threadweaver/libthreadweaver.a
+prog: model/perfcheckers/libperfcheckers.a
 prog: CMakeFiles/prog.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable prog"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/prog.dir/link.txt --verbose=$(VERBOSE)

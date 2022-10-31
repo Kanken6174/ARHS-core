@@ -2,14 +2,14 @@
 
 using namespace psvr;
 
-void topLevelManager::init()
+topLevelManager::topLevelManager()
 {
     try
     {
         detectHWAndConfig();
         setupThreads();
         std::cout << "Config finished, main thread now sleeping" << endl;
-        while (!ui::UiController::exitCalled)
+        while (true)
         {
             sleep(1);
         }
@@ -20,7 +20,7 @@ void topLevelManager::init()
     }
 
     DEBUG_LOG("Exitted sleep while")
-    Threadweaver::gfxPipelineThread->join();
+    //Threadweaver::gfxPipelineThread->join();
 }
 
 void topLevelManager::detectHWAndConfig(){
@@ -34,6 +34,12 @@ void topLevelManager::detectHWAndConfig(){
 }
 
 void topLevelManager::setupThreads(){
+    localPipeline = new Pipeline();
+
+
+    #pragma region deprecated
+    {
+    /*
         // psvr::Psvr::open();
         ui::UiManager::init();
         SerialPortManager::init();
@@ -57,4 +63,7 @@ void topLevelManager::setupThreads(){
         std::thread *t2 = new std::thread(ui::UiMerger::runMerge);
         Threadweaver::stick_this_thread_to_core(t2,MERGECORE);
         Threadweaver::mergerThread = t2;
+    */
+    }
+   #pragma endregion deprecated
 }

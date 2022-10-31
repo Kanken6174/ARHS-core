@@ -25,10 +25,10 @@ void UiDrawerNode::processFrame()
             cv::putText(MenuMat, str, cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);
         }
         int mFps, uiFps, Drawfps, camFPS = 0;
-        mFps = fcheckManager::fcMergeUI.fps;
-        uiFps = fcheckManager::fcDrawMenu.fps;
-        Drawfps = fcheckManager::fcShow.fps;
-        camFPS = fcheckManager::fcCam.fps;
+        //mFps = fcheckManager::fcMergeUI.fps;
+        //uiFps = fcheckManager::fcDrawMenu.fps;
+        //Drawfps = fcheckManager::fcShow.fps;
+        //camFPS = fcheckManager::fcCam.fps;
         cv::putText(MenuMat, cv::format("Eps Ui drawer: %d", uiFps), cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);
         cv::putText(MenuMat, cv::format("Eps Ui merger: %d", mFps), cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);
         cv::putText(MenuMat, cv::format("Eps imshow: %d", Drawfps), cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);

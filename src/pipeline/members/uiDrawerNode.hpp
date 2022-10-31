@@ -5,6 +5,6 @@ class UiDrawerNode : public PipelineNode{
     public:
     UiDrawerNode();
     protected:
-    virtual void processFrame() override;
+    void processFrame() override;
     UiController* _backController;
 };

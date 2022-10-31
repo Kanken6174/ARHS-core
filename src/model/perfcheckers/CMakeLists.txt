@@ -1,6 +1,5 @@
 set(perfcheckers_source_files
     framerate.cpp
-    fcheckManager.cpp
     framerate.hpp
 )
 MESSAGE(STATUS "Building perfcheckers")

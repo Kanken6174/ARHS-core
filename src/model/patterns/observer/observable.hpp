@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <list>
 #include <string>
@@ -6,8 +7,8 @@
 class Observable {
  public:
   ~Observable(){};
-  void Attach(Observer *observer) = 0;
-  void Detach(Observer *observer) = 0;
+  void Attach(Observer *observer);
+  void Detach(Observer *observer);
   void sendMessage(std::string str);
   private:
   std::list<Observer*> list_observer_;

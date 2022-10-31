@@ -48,7 +48,7 @@ SerialPortManager::SerialPortManager()
     }
     shouldRun = false;
     std::cout << "starting hardware watcher thread" << std::endl;
-    std::thread *t = new std::thread(runPort);
+    std::thread *t = new std::thread(&SerialPortManager::runPort, this);
     std::cout << "done" << std::endl;
     Threadweaver::stick_this_thread_to_core(t, CAMCORE);
     //Threadweaver::hardwareWatcherThread = t;
