@@ -226,7 +226,7 @@ ui/CMakeFiles/ui.dir/controllers/uiController.cpp.o
  /usr/include/KHR/khrplatform.h
  /usr/include/GL/glu.h
  /usr/include/c++/11/stdlib.h
- /home/kanken/code/AHRS_core/src/cameras/_cam.hpp
+ /home/kanken/code/AHRS_core/src/hardware/cameras/_cam.hpp
  /usr/include/c++/11/memory
  /usr/include/c++/11/bits/stl_raw_storage_iter.h
  /usr/include/c++/11/bits/align.h
@@ -614,8 +614,8 @@ ui/CMakeFiles/ui.dir/controllers/uiController.cpp.o
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/ihidapi/_hidapi.hpp
+ /home/kanken/code/AHRS_core/src/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
@@ -847,7 +847,7 @@ ui/CMakeFiles/ui.dir/controllers/uiManager.cpp.o
  /usr/include/KHR/khrplatform.h
  /usr/include/GL/glu.h
  /usr/include/c++/11/stdlib.h
- /home/kanken/code/AHRS_core/src/cameras/_cam.hpp
+ /home/kanken/code/AHRS_core/src/hardware/cameras/_cam.hpp
  /usr/include/c++/11/memory
  /usr/include/c++/11/bits/stl_raw_storage_iter.h
  /usr/include/c++/11/bits/align.h
@@ -1235,8 +1235,8 @@ ui/CMakeFiles/ui.dir/controllers/uiManager.cpp.o
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/ihidapi/_hidapi.hpp
+ /home/kanken/code/AHRS_core/src/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
@@ -1468,7 +1468,7 @@ ui/CMakeFiles/ui.dir/drawer/uiDrawer.cpp.o
  /usr/include/KHR/khrplatform.h
  /usr/include/GL/glu.h
  /usr/include/c++/11/stdlib.h
- /home/kanken/code/AHRS_core/src/cameras/_cam.hpp
+ /home/kanken/code/AHRS_core/src/hardware/cameras/_cam.hpp
  /usr/include/c++/11/memory
  /usr/include/c++/11/bits/stl_raw_storage_iter.h
  /usr/include/c++/11/bits/align.h
@@ -1856,8 +1856,8 @@ ui/CMakeFiles/ui.dir/drawer/uiDrawer.cpp.o
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/ihidapi/_hidapi.hpp
+ /home/kanken/code/AHRS_core/src/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
@@ -2089,7 +2089,7 @@ ui/CMakeFiles/ui.dir/merger/uiMerger.cpp.o
  /usr/include/KHR/khrplatform.h
  /usr/include/GL/glu.h
  /usr/include/c++/11/stdlib.h
- /home/kanken/code/AHRS_core/src/cameras/_cam.hpp
+ /home/kanken/code/AHRS_core/src/hardware/cameras/_cam.hpp
  /usr/include/c++/11/memory
  /usr/include/c++/11/bits/stl_raw_storage_iter.h
  /usr/include/c++/11/bits/align.h
@@ -2477,8 +2477,8 @@ ui/CMakeFiles/ui.dir/merger/uiMerger.cpp.o
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/ihidapi/_hidapi.hpp
+ /home/kanken/code/AHRS_core/src/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
@@ -2710,7 +2710,7 @@ ui/CMakeFiles/ui.dir/support/UiSupport.cpp.o
  /usr/include/KHR/khrplatform.h
  /usr/include/GL/glu.h
  /usr/include/c++/11/stdlib.h
- /home/kanken/code/AHRS_core/src/cameras/_cam.hpp
+ /home/kanken/code/AHRS_core/src/hardware/cameras/_cam.hpp
  /usr/include/c++/11/memory
  /usr/include/c++/11/bits/stl_raw_storage_iter.h
  /usr/include/c++/11/bits/align.h
@@ -3098,8 +3098,8 @@ ui/CMakeFiles/ui.dir/support/UiSupport.cpp.o
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/ihidapi/_hidapi.hpp
+ /home/kanken/code/AHRS_core/src/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
@@ -3331,7 +3331,7 @@ ui/CMakeFiles/ui.dir/uiElements/ui.cpp.o
  /usr/include/KHR/khrplatform.h
  /usr/include/GL/glu.h
  /usr/include/c++/11/stdlib.h
- /home/kanken/code/AHRS_core/src/cameras/_cam.hpp
+ /home/kanken/code/AHRS_core/src/hardware/cameras/_cam.hpp
  /usr/include/c++/11/memory
  /usr/include/c++/11/bits/stl_raw_storage_iter.h
  /usr/include/c++/11/bits/align.h
@@ -3719,8 +3719,8 @@ ui/CMakeFiles/ui.dir/uiElements/ui.cpp.o
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/ihidapi/_hidapi.hpp
+ /home/kanken/code/AHRS_core/src/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp

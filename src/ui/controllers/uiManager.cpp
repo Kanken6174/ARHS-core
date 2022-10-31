@@ -16,9 +16,15 @@ namespace ui{
         #else
         ui::UiDrawer::drawStartupSequence();
         #endif
+        std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
+        std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
         while(!ui::UiManager::uiShouldRun){}
         while(ui::UiManager::uiShouldRun){
+            begin = std::chrono::steady_clock::now();
             u->draw();
+            end = std::chrono::steady_clock::now();
+            std::this_thread::sleep_for (std::chrono::milliseconds((1000/FPS_LIMIT_DISPLAY)-std::chrono::duration_cast<std::chrono::milliseconds>(end-begin).count()));
+            
         }
     }
 

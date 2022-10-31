@@ -29,5 +29,6 @@ target_link_libraries(ui ${GLUT_INCLUDE_DIRS})
 target_link_libraries(ui ${OpenCV_LIBS})
 target_link_libraries(ui psvr)
 target_link_libraries(ui cameras)
+target_link_libraries(ui zbarLib)
 
 MESSAGE(STATUS "Done building ui")

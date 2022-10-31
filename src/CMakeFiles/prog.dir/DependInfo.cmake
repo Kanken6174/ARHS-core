@@ -14,13 +14,14 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/kanken/code/AHRS_core/src/hw/CMakeFiles/hw.dir/DependInfo.cmake"
+  "/home/kanken/code/AHRS_core/src/hardware/hw/CMakeFiles/hw.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/ui/CMakeFiles/ui.dir/DependInfo.cmake"
-  "/home/kanken/code/AHRS_core/src/psvr/CMakeFiles/psvr.dir/DependInfo.cmake"
-  "/home/kanken/code/AHRS_core/src/ihidapi/CMakeFiles/ihidapi.dir/DependInfo.cmake"
-  "/home/kanken/code/AHRS_core/src/cameras/CMakeFiles/cameras.dir/DependInfo.cmake"
+  "/home/kanken/code/AHRS_core/src/hardware/psvr/CMakeFiles/psvr.dir/DependInfo.cmake"
+  "/home/kanken/code/AHRS_core/src/hardware/ihidapi/CMakeFiles/ihidapi.dir/DependInfo.cmake"
+  "/home/kanken/code/AHRS_core/src/hardware/cameras/CMakeFiles/cameras.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/threadweaver/CMakeFiles/threadweaver.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/perfcheckers/CMakeFiles/perfcheckers.dir/DependInfo.cmake"
+  "/home/kanken/code/AHRS_core/src/processing/zbar/CMakeFiles/zbarLib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

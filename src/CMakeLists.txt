@@ -26,11 +26,12 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 add_subdirectory(perfcheckers)
 add_subdirectory(threadweaver)
-add_subdirectory(ihidapi)
-add_subdirectory(cameras)
-add_subdirectory(psvr)
+add_subdirectory(hardware/ihidapi)
+add_subdirectory(hardware/cameras)
+add_subdirectory(hardware/psvr)
+add_subdirectory(hardware/hw)
+add_subdirectory(processing/zbar)
 add_subdirectory(ui)
-add_subdirectory(hw)
 
 set(main_source_files main.cpp main.hpp topLevelManager.cpp)
 

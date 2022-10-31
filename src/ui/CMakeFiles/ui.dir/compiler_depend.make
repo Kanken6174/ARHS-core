@@ -225,7 +225,7 @@ ui/CMakeFiles/ui.dir/controllers/uiController.cpp.o: ui/controllers/uiController
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
   /usr/include/c++/11/stdlib.h \
-  cameras/_cam.hpp \
+  hardware/cameras/_cam.hpp \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
@@ -613,8 +613,8 @@ ui/CMakeFiles/ui.dir/controllers/uiController.cpp.o: ui/controllers/uiController
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
   perfcheckers/framerate.hpp \
-  psvr/_psvr.hpp \
-  ihidapi/_hidapi.hpp \
+  hardware/psvr/_psvr.hpp \
+  hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
@@ -845,7 +845,7 @@ ui/CMakeFiles/ui.dir/controllers/uiManager.cpp.o: ui/controllers/uiManager.cpp \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
   /usr/include/c++/11/stdlib.h \
-  cameras/_cam.hpp \
+  hardware/cameras/_cam.hpp \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
@@ -1233,8 +1233,8 @@ ui/CMakeFiles/ui.dir/controllers/uiManager.cpp.o: ui/controllers/uiManager.cpp \
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
   perfcheckers/framerate.hpp \
-  psvr/_psvr.hpp \
-  ihidapi/_hidapi.hpp \
+  hardware/psvr/_psvr.hpp \
+  hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
@@ -1465,7 +1465,7 @@ ui/CMakeFiles/ui.dir/drawer/uiDrawer.cpp.o: ui/drawer/uiDrawer.cpp \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
   /usr/include/c++/11/stdlib.h \
-  cameras/_cam.hpp \
+  hardware/cameras/_cam.hpp \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
@@ -1853,8 +1853,8 @@ ui/CMakeFiles/ui.dir/drawer/uiDrawer.cpp.o: ui/drawer/uiDrawer.cpp \
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
   perfcheckers/framerate.hpp \
-  psvr/_psvr.hpp \
-  ihidapi/_hidapi.hpp \
+  hardware/psvr/_psvr.hpp \
+  hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
@@ -2085,7 +2085,7 @@ ui/CMakeFiles/ui.dir/merger/uiMerger.cpp.o: ui/merger/uiMerger.cpp \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
   /usr/include/c++/11/stdlib.h \
-  cameras/_cam.hpp \
+  hardware/cameras/_cam.hpp \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
@@ -2473,8 +2473,8 @@ ui/CMakeFiles/ui.dir/merger/uiMerger.cpp.o: ui/merger/uiMerger.cpp \
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
   perfcheckers/framerate.hpp \
-  psvr/_psvr.hpp \
-  ihidapi/_hidapi.hpp \
+  hardware/psvr/_psvr.hpp \
+  hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
@@ -2705,7 +2705,7 @@ ui/CMakeFiles/ui.dir/support/UiSupport.cpp.o: ui/support/UiSupport.cpp \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
   /usr/include/c++/11/stdlib.h \
-  cameras/_cam.hpp \
+  hardware/cameras/_cam.hpp \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
@@ -3093,8 +3093,8 @@ ui/CMakeFiles/ui.dir/support/UiSupport.cpp.o: ui/support/UiSupport.cpp \
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
   perfcheckers/framerate.hpp \
-  psvr/_psvr.hpp \
-  ihidapi/_hidapi.hpp \
+  hardware/psvr/_psvr.hpp \
+  hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
@@ -3325,7 +3325,7 @@ ui/CMakeFiles/ui.dir/uiElements/ui.cpp.o: ui/uiElements/ui.cpp \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
   /usr/include/c++/11/stdlib.h \
-  cameras/_cam.hpp \
+  hardware/cameras/_cam.hpp \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
@@ -3713,8 +3713,8 @@ ui/CMakeFiles/ui.dir/uiElements/ui.cpp.o: ui/uiElements/ui.cpp \
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
   perfcheckers/framerate.hpp \
-  psvr/_psvr.hpp \
-  ihidapi/_hidapi.hpp \
+  hardware/psvr/_psvr.hpp \
+  hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
@@ -4150,7 +4150,9 @@ ui/drawer/uiDrawer.cpp:
 
 /usr/local/include/hidapi/hidapi.h:
 
-ihidapi/_hidapi.hpp:
+hardware/ihidapi/_hidapi.hpp:
+
+hardware/psvr/_psvr.hpp:
 
 /usr/include/c++/11/bits/fs_fwd.h:
 
@@ -4230,9 +4232,11 @@ threadweaver/threadweaver.hpp:
 
 /usr/include/c++/11/memory:
 
-cameras/_cam.hpp:
+hardware/cameras/_cam.hpp:
 
-/usr/local/include/opencv4/opencv2/core/types.hpp:
+/usr/local/include/opencv4/opencv2/imgproc.hpp:
+
+/usr/include/c++/11/bits/string_view.tcc:
 
 /usr/include/c++/11/stdlib.h:
 
@@ -4445,10 +4449,6 @@ ui/controllers/uiManager.cpp:
 /usr/include/c++/11/bits/list.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
-/usr/local/include/opencv4/opencv2/imgproc.hpp:
-
-/usr/include/c++/11/bits/string_view.tcc:
 
 /usr/include/c++/11/bits/hash_bytes.h:
 
@@ -5266,8 +5266,6 @@ ui/_ui.hpp:
 
 /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
 
-psvr/_psvr.hpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
 
 /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp:
@@ -5279,6 +5277,8 @@ psvr/_psvr.hpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h:
 
 /usr/include/assert.h:
+
+/usr/local/include/opencv4/opencv2/core/types.hpp:
 
 /usr/include/c++/11/bits/stl_function.h:
 

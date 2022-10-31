@@ -10,10 +10,11 @@
 #define CAMCORE 2
 #define MERGECORE 3
 
-#define FPS_LIMIT_MERGE 160
-#define FPS_LIMIT_DRAW 160
+#define FPS_LIMIT_MERGE 60
+#define FPS_LIMIT_DRAW 30
+#define FPS_LIMIT_DISPLAY 60
 
-#define FPS_LIMIT_PSEYE 90
+#define FPS_LIMIT_PSEYE 60  //increments of 15, valid values: 0-15-30-60
 
 #define QU(x) #x
 #define QUH(x) QU(x)

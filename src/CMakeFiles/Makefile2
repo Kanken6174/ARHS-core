@@ -66,78 +66,96 @@ CMAKE_BINARY_DIR = /home/kanken/code/AHRS_core/src
 all: CMakeFiles/prog.dir/all
 all: perfcheckers/all
 all: threadweaver/all
-all: ihidapi/all
-all: cameras/all
-all: psvr/all
+all: hardware/ihidapi/all
+all: hardware/cameras/all
+all: hardware/psvr/all
+all: hardware/hw/all
+all: processing/zbar/all
 all: ui/all
-all: hw/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: perfcheckers/preinstall
 preinstall: threadweaver/preinstall
-preinstall: ihidapi/preinstall
-preinstall: cameras/preinstall
-preinstall: psvr/preinstall
+preinstall: hardware/ihidapi/preinstall
+preinstall: hardware/cameras/preinstall
+preinstall: hardware/psvr/preinstall
+preinstall: hardware/hw/preinstall
+preinstall: processing/zbar/preinstall
 preinstall: ui/preinstall
-preinstall: hw/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/prog.dir/clean
 clean: perfcheckers/clean
 clean: threadweaver/clean
-clean: ihidapi/clean
-clean: cameras/clean
-clean: psvr/clean
+clean: hardware/ihidapi/clean
+clean: hardware/cameras/clean
+clean: hardware/psvr/clean
+clean: hardware/hw/clean
+clean: processing/zbar/clean
 clean: ui/clean
-clean: hw/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory cameras
+# Directory level rules for directory hardware/cameras
 
 # Recursive "all" directory target.
-cameras/all: cameras/CMakeFiles/cameras.dir/all
-.PHONY : cameras/all
+hardware/cameras/all: hardware/cameras/CMakeFiles/cameras.dir/all
+.PHONY : hardware/cameras/all
 
 # Recursive "preinstall" directory target.
-cameras/preinstall:
-.PHONY : cameras/preinstall
+hardware/cameras/preinstall:
+.PHONY : hardware/cameras/preinstall
 
 # Recursive "clean" directory target.
-cameras/clean: cameras/CMakeFiles/cameras.dir/clean
-.PHONY : cameras/clean
+hardware/cameras/clean: hardware/cameras/CMakeFiles/cameras.dir/clean
+.PHONY : hardware/cameras/clean
 
 #=============================================================================
-# Directory level rules for directory hw
+# Directory level rules for directory hardware/hw
 
 # Recursive "all" directory target.
-hw/all: hw/CMakeFiles/hw.dir/all
-.PHONY : hw/all
+hardware/hw/all: hardware/hw/CMakeFiles/hw.dir/all
+.PHONY : hardware/hw/all
 
 # Recursive "preinstall" directory target.
-hw/preinstall:
-.PHONY : hw/preinstall
+hardware/hw/preinstall:
+.PHONY : hardware/hw/preinstall
 
 # Recursive "clean" directory target.
-hw/clean: hw/CMakeFiles/hw.dir/clean
-.PHONY : hw/clean
+hardware/hw/clean: hardware/hw/CMakeFiles/hw.dir/clean
+.PHONY : hardware/hw/clean
 
 #=============================================================================
-# Directory level rules for directory ihidapi
+# Directory level rules for directory hardware/ihidapi
 
 # Recursive "all" directory target.
-ihidapi/all: ihidapi/CMakeFiles/ihidapi.dir/all
-.PHONY : ihidapi/all
+hardware/ihidapi/all: hardware/ihidapi/CMakeFiles/ihidapi.dir/all
+.PHONY : hardware/ihidapi/all
 
 # Recursive "preinstall" directory target.
-ihidapi/preinstall:
-.PHONY : ihidapi/preinstall
+hardware/ihidapi/preinstall:
+.PHONY : hardware/ihidapi/preinstall
 
 # Recursive "clean" directory target.
-ihidapi/clean: ihidapi/CMakeFiles/ihidapi.dir/clean
-.PHONY : ihidapi/clean
+hardware/ihidapi/clean: hardware/ihidapi/CMakeFiles/ihidapi.dir/clean
+.PHONY : hardware/ihidapi/clean
+
+#=============================================================================
+# Directory level rules for directory hardware/psvr
+
+# Recursive "all" directory target.
+hardware/psvr/all: hardware/psvr/CMakeFiles/psvr.dir/all
+.PHONY : hardware/psvr/all
+
+# Recursive "preinstall" directory target.
+hardware/psvr/preinstall:
+.PHONY : hardware/psvr/preinstall
+
+# Recursive "clean" directory target.
+hardware/psvr/clean: hardware/psvr/CMakeFiles/psvr.dir/clean
+.PHONY : hardware/psvr/clean
 
 #=============================================================================
 # Directory level rules for directory perfcheckers
@@ -155,19 +173,19 @@ perfcheckers/clean: perfcheckers/CMakeFiles/perfcheckers.dir/clean
 .PHONY : perfcheckers/clean
 
 #=============================================================================
-# Directory level rules for directory psvr
+# Directory level rules for directory processing/zbar
 
 # Recursive "all" directory target.
-psvr/all: psvr/CMakeFiles/psvr.dir/all
-.PHONY : psvr/all
+processing/zbar/all: processing/zbar/CMakeFiles/zbarLib.dir/all
+.PHONY : processing/zbar/all
 
 # Recursive "preinstall" directory target.
-psvr/preinstall:
-.PHONY : psvr/preinstall
+processing/zbar/preinstall:
+.PHONY : processing/zbar/preinstall
 
 # Recursive "clean" directory target.
-psvr/clean: psvr/CMakeFiles/psvr.dir/clean
-.PHONY : psvr/clean
+processing/zbar/clean: processing/zbar/CMakeFiles/zbarLib.dir/clean
+.PHONY : processing/zbar/clean
 
 #=============================================================================
 # Directory level rules for directory threadweaver
@@ -205,11 +223,12 @@ ui/clean: ui/CMakeFiles/ui.dir/clean
 # All Build rule for target.
 CMakeFiles/prog.dir/all: perfcheckers/CMakeFiles/perfcheckers.dir/all
 CMakeFiles/prog.dir/all: threadweaver/CMakeFiles/threadweaver.dir/all
-CMakeFiles/prog.dir/all: ihidapi/CMakeFiles/ihidapi.dir/all
-CMakeFiles/prog.dir/all: cameras/CMakeFiles/cameras.dir/all
-CMakeFiles/prog.dir/all: psvr/CMakeFiles/psvr.dir/all
+CMakeFiles/prog.dir/all: hardware/ihidapi/CMakeFiles/ihidapi.dir/all
+CMakeFiles/prog.dir/all: hardware/cameras/CMakeFiles/cameras.dir/all
+CMakeFiles/prog.dir/all: hardware/psvr/CMakeFiles/psvr.dir/all
+CMakeFiles/prog.dir/all: hardware/hw/CMakeFiles/hw.dir/all
+CMakeFiles/prog.dir/all: processing/zbar/CMakeFiles/zbarLib.dir/all
 CMakeFiles/prog.dir/all: ui/CMakeFiles/ui.dir/all
-CMakeFiles/prog.dir/all: hw/CMakeFiles/hw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=11,12,13 "Built target prog"
@@ -217,7 +236,7 @@ CMakeFiles/prog.dir/all: hw/CMakeFiles/hw.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/prog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/prog.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
 .PHONY : CMakeFiles/prog.dir/rule
@@ -284,83 +303,141 @@ threadweaver/CMakeFiles/threadweaver.dir/clean:
 .PHONY : threadweaver/CMakeFiles/threadweaver.dir/clean
 
 #=============================================================================
-# Target rules for target ihidapi/CMakeFiles/ihidapi.dir
+# Target rules for target hardware/ihidapi/CMakeFiles/ihidapi.dir
 
 # All Build rule for target.
-ihidapi/CMakeFiles/ihidapi.dir/all:
-	$(MAKE) $(MAKESILENT) -f ihidapi/CMakeFiles/ihidapi.dir/build.make ihidapi/CMakeFiles/ihidapi.dir/depend
-	$(MAKE) $(MAKESILENT) -f ihidapi/CMakeFiles/ihidapi.dir/build.make ihidapi/CMakeFiles/ihidapi.dir/build
+hardware/ihidapi/CMakeFiles/ihidapi.dir/all:
+	$(MAKE) $(MAKESILENT) -f hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make hardware/ihidapi/CMakeFiles/ihidapi.dir/depend
+	$(MAKE) $(MAKESILENT) -f hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make hardware/ihidapi/CMakeFiles/ihidapi.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=6,7 "Built target ihidapi"
-.PHONY : ihidapi/CMakeFiles/ihidapi.dir/all
+.PHONY : hardware/ihidapi/CMakeFiles/ihidapi.dir/all
 
 # Build rule for subdir invocation for target.
-ihidapi/CMakeFiles/ihidapi.dir/rule: cmake_check_build_system
+hardware/ihidapi/CMakeFiles/ihidapi.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ihidapi/CMakeFiles/ihidapi.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/ihidapi/CMakeFiles/ihidapi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
-.PHONY : ihidapi/CMakeFiles/ihidapi.dir/rule
+.PHONY : hardware/ihidapi/CMakeFiles/ihidapi.dir/rule
 
 # Convenience name for target.
-ihidapi: ihidapi/CMakeFiles/ihidapi.dir/rule
+ihidapi: hardware/ihidapi/CMakeFiles/ihidapi.dir/rule
 .PHONY : ihidapi
 
 # clean rule for target.
-ihidapi/CMakeFiles/ihidapi.dir/clean:
-	$(MAKE) $(MAKESILENT) -f ihidapi/CMakeFiles/ihidapi.dir/build.make ihidapi/CMakeFiles/ihidapi.dir/clean
-.PHONY : ihidapi/CMakeFiles/ihidapi.dir/clean
+hardware/ihidapi/CMakeFiles/ihidapi.dir/clean:
+	$(MAKE) $(MAKESILENT) -f hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make hardware/ihidapi/CMakeFiles/ihidapi.dir/clean
+.PHONY : hardware/ihidapi/CMakeFiles/ihidapi.dir/clean
 
 #=============================================================================
-# Target rules for target cameras/CMakeFiles/cameras.dir
+# Target rules for target hardware/cameras/CMakeFiles/cameras.dir
 
 # All Build rule for target.
-cameras/CMakeFiles/cameras.dir/all: perfcheckers/CMakeFiles/perfcheckers.dir/all
-cameras/CMakeFiles/cameras.dir/all: threadweaver/CMakeFiles/threadweaver.dir/all
-	$(MAKE) $(MAKESILENT) -f cameras/CMakeFiles/cameras.dir/build.make cameras/CMakeFiles/cameras.dir/depend
-	$(MAKE) $(MAKESILENT) -f cameras/CMakeFiles/cameras.dir/build.make cameras/CMakeFiles/cameras.dir/build
+hardware/cameras/CMakeFiles/cameras.dir/all: perfcheckers/CMakeFiles/perfcheckers.dir/all
+hardware/cameras/CMakeFiles/cameras.dir/all: threadweaver/CMakeFiles/threadweaver.dir/all
+	$(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/depend
+	$(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=1,2,3 "Built target cameras"
-.PHONY : cameras/CMakeFiles/cameras.dir/all
+.PHONY : hardware/cameras/CMakeFiles/cameras.dir/all
 
 # Build rule for subdir invocation for target.
-cameras/CMakeFiles/cameras.dir/rule: cmake_check_build_system
+hardware/cameras/CMakeFiles/cameras.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cameras/CMakeFiles/cameras.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/cameras/CMakeFiles/cameras.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
-.PHONY : cameras/CMakeFiles/cameras.dir/rule
+.PHONY : hardware/cameras/CMakeFiles/cameras.dir/rule
 
 # Convenience name for target.
-cameras: cameras/CMakeFiles/cameras.dir/rule
+cameras: hardware/cameras/CMakeFiles/cameras.dir/rule
 .PHONY : cameras
 
 # clean rule for target.
-cameras/CMakeFiles/cameras.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cameras/CMakeFiles/cameras.dir/build.make cameras/CMakeFiles/cameras.dir/clean
-.PHONY : cameras/CMakeFiles/cameras.dir/clean
+hardware/cameras/CMakeFiles/cameras.dir/clean:
+	$(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/clean
+.PHONY : hardware/cameras/CMakeFiles/cameras.dir/clean
 
 #=============================================================================
-# Target rules for target psvr/CMakeFiles/psvr.dir
+# Target rules for target hardware/psvr/CMakeFiles/psvr.dir
 
 # All Build rule for target.
-psvr/CMakeFiles/psvr.dir/all: ihidapi/CMakeFiles/ihidapi.dir/all
-	$(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/depend
-	$(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/build
+hardware/psvr/CMakeFiles/psvr.dir/all: hardware/ihidapi/CMakeFiles/ihidapi.dir/all
+	$(MAKE) $(MAKESILENT) -f hardware/psvr/CMakeFiles/psvr.dir/build.make hardware/psvr/CMakeFiles/psvr.dir/depend
+	$(MAKE) $(MAKESILENT) -f hardware/psvr/CMakeFiles/psvr.dir/build.make hardware/psvr/CMakeFiles/psvr.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=14,15 "Built target psvr"
-.PHONY : psvr/CMakeFiles/psvr.dir/all
+.PHONY : hardware/psvr/CMakeFiles/psvr.dir/all
 
 # Build rule for subdir invocation for target.
-psvr/CMakeFiles/psvr.dir/rule: cmake_check_build_system
+hardware/psvr/CMakeFiles/psvr.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psvr/CMakeFiles/psvr.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/psvr/CMakeFiles/psvr.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
-.PHONY : psvr/CMakeFiles/psvr.dir/rule
+.PHONY : hardware/psvr/CMakeFiles/psvr.dir/rule
 
 # Convenience name for target.
-psvr: psvr/CMakeFiles/psvr.dir/rule
+psvr: hardware/psvr/CMakeFiles/psvr.dir/rule
 .PHONY : psvr
 
 # clean rule for target.
-psvr/CMakeFiles/psvr.dir/clean:
-	$(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/clean
-.PHONY : psvr/CMakeFiles/psvr.dir/clean
+hardware/psvr/CMakeFiles/psvr.dir/clean:
+	$(MAKE) $(MAKESILENT) -f hardware/psvr/CMakeFiles/psvr.dir/build.make hardware/psvr/CMakeFiles/psvr.dir/clean
+.PHONY : hardware/psvr/CMakeFiles/psvr.dir/clean
+
+#=============================================================================
+# Target rules for target hardware/hw/CMakeFiles/hw.dir
+
+# All Build rule for target.
+hardware/hw/CMakeFiles/hw.dir/all: perfcheckers/CMakeFiles/perfcheckers.dir/all
+hardware/hw/CMakeFiles/hw.dir/all: threadweaver/CMakeFiles/threadweaver.dir/all
+hardware/hw/CMakeFiles/hw.dir/all: hardware/ihidapi/CMakeFiles/ihidapi.dir/all
+hardware/hw/CMakeFiles/hw.dir/all: hardware/cameras/CMakeFiles/cameras.dir/all
+hardware/hw/CMakeFiles/hw.dir/all: hardware/psvr/CMakeFiles/psvr.dir/all
+hardware/hw/CMakeFiles/hw.dir/all: processing/zbar/CMakeFiles/zbarLib.dir/all
+hardware/hw/CMakeFiles/hw.dir/all: ui/CMakeFiles/ui.dir/all
+	$(MAKE) $(MAKESILENT) -f hardware/hw/CMakeFiles/hw.dir/build.make hardware/hw/CMakeFiles/hw.dir/depend
+	$(MAKE) $(MAKESILENT) -f hardware/hw/CMakeFiles/hw.dir/build.make hardware/hw/CMakeFiles/hw.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=4,5 "Built target hw"
+.PHONY : hardware/hw/CMakeFiles/hw.dir/all
+
+# Build rule for subdir invocation for target.
+hardware/hw/CMakeFiles/hw.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 24
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware/hw/CMakeFiles/hw.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
+.PHONY : hardware/hw/CMakeFiles/hw.dir/rule
+
+# Convenience name for target.
+hw: hardware/hw/CMakeFiles/hw.dir/rule
+.PHONY : hw
+
+# clean rule for target.
+hardware/hw/CMakeFiles/hw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f hardware/hw/CMakeFiles/hw.dir/build.make hardware/hw/CMakeFiles/hw.dir/clean
+.PHONY : hardware/hw/CMakeFiles/hw.dir/clean
+
+#=============================================================================
+# Target rules for target processing/zbar/CMakeFiles/zbarLib.dir
+
+# All Build rule for target.
+processing/zbar/CMakeFiles/zbarLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f processing/zbar/CMakeFiles/zbarLib.dir/build.make processing/zbar/CMakeFiles/zbarLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f processing/zbar/CMakeFiles/zbarLib.dir/build.make processing/zbar/CMakeFiles/zbarLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=26,27 "Built target zbarLib"
+.PHONY : processing/zbar/CMakeFiles/zbarLib.dir/all
+
+# Build rule for subdir invocation for target.
+processing/zbar/CMakeFiles/zbarLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 processing/zbar/CMakeFiles/zbarLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
+.PHONY : processing/zbar/CMakeFiles/zbarLib.dir/rule
+
+# Convenience name for target.
+zbarLib: processing/zbar/CMakeFiles/zbarLib.dir/rule
+.PHONY : zbarLib
+
+# clean rule for target.
+processing/zbar/CMakeFiles/zbarLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f processing/zbar/CMakeFiles/zbarLib.dir/build.make processing/zbar/CMakeFiles/zbarLib.dir/clean
+.PHONY : processing/zbar/CMakeFiles/zbarLib.dir/clean
 
 #=============================================================================
 # Target rules for target ui/CMakeFiles/ui.dir
@@ -368,9 +445,10 @@ psvr/CMakeFiles/psvr.dir/clean:
 # All Build rule for target.
 ui/CMakeFiles/ui.dir/all: perfcheckers/CMakeFiles/perfcheckers.dir/all
 ui/CMakeFiles/ui.dir/all: threadweaver/CMakeFiles/threadweaver.dir/all
-ui/CMakeFiles/ui.dir/all: ihidapi/CMakeFiles/ihidapi.dir/all
-ui/CMakeFiles/ui.dir/all: cameras/CMakeFiles/cameras.dir/all
-ui/CMakeFiles/ui.dir/all: psvr/CMakeFiles/psvr.dir/all
+ui/CMakeFiles/ui.dir/all: hardware/ihidapi/CMakeFiles/ihidapi.dir/all
+ui/CMakeFiles/ui.dir/all: hardware/cameras/CMakeFiles/cameras.dir/all
+ui/CMakeFiles/ui.dir/all: hardware/psvr/CMakeFiles/psvr.dir/all
+ui/CMakeFiles/ui.dir/all: processing/zbar/CMakeFiles/zbarLib.dir/all
 	$(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/depend
 	$(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=18,19,20,21,22,23,24,25 "Built target ui"
@@ -378,7 +456,7 @@ ui/CMakeFiles/ui.dir/all: psvr/CMakeFiles/psvr.dir/all
 
 # Build rule for subdir invocation for target.
 ui/CMakeFiles/ui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/CMakeFiles/ui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
 .PHONY : ui/CMakeFiles/ui.dir/rule
@@ -391,37 +469,6 @@ ui: ui/CMakeFiles/ui.dir/rule
 ui/CMakeFiles/ui.dir/clean:
 	$(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/clean
 .PHONY : ui/CMakeFiles/ui.dir/clean
-
-#=============================================================================
-# Target rules for target hw/CMakeFiles/hw.dir
-
-# All Build rule for target.
-hw/CMakeFiles/hw.dir/all: perfcheckers/CMakeFiles/perfcheckers.dir/all
-hw/CMakeFiles/hw.dir/all: threadweaver/CMakeFiles/threadweaver.dir/all
-hw/CMakeFiles/hw.dir/all: ihidapi/CMakeFiles/ihidapi.dir/all
-hw/CMakeFiles/hw.dir/all: cameras/CMakeFiles/cameras.dir/all
-hw/CMakeFiles/hw.dir/all: psvr/CMakeFiles/psvr.dir/all
-hw/CMakeFiles/hw.dir/all: ui/CMakeFiles/ui.dir/all
-	$(MAKE) $(MAKESILENT) -f hw/CMakeFiles/hw.dir/build.make hw/CMakeFiles/hw.dir/depend
-	$(MAKE) $(MAKESILENT) -f hw/CMakeFiles/hw.dir/build.make hw/CMakeFiles/hw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=4,5 "Built target hw"
-.PHONY : hw/CMakeFiles/hw.dir/all
-
-# Build rule for subdir invocation for target.
-hw/CMakeFiles/hw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 22
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw/CMakeFiles/hw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
-.PHONY : hw/CMakeFiles/hw.dir/rule
-
-# Convenience name for target.
-hw: hw/CMakeFiles/hw.dir/rule
-.PHONY : hw
-
-# clean rule for target.
-hw/CMakeFiles/hw.dir/clean:
-	$(MAKE) $(MAKESILENT) -f hw/CMakeFiles/hw.dir/build.make hw/CMakeFiles/hw.dir/clean
-.PHONY : hw/CMakeFiles/hw.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -7,8 +7,8 @@
 
 #include <GL/glut.h>
 
-#include "../cameras/_cam.hpp"
-#include "../psvr/_psvr.hpp"
+#include "../hardware/cameras/_cam.hpp"
+#include "../hardware/psvr/_psvr.hpp"
 #include <opencv2/imgcodecs/imgcodecs.hpp>
 #include <opencv2/core.hpp>
 #include <opencv2/core/opengl.hpp>

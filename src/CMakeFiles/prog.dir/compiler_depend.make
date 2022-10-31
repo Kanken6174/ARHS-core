@@ -222,7 +222,7 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/bits/atomic_futex.h \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/bits/std_thread.h \
-  hw/serial.hpp \
+  hardware/hw/serial.hpp \
   /usr/include/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
@@ -273,7 +273,7 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/include/GL/glext.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
-  cameras/_cam.hpp \
+  hardware/cameras/_cam.hpp \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
@@ -637,8 +637,8 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
   perfcheckers/framerate.hpp \
-  psvr/_psvr.hpp \
-  ihidapi/_hidapi.hpp \
+  hardware/psvr/_psvr.hpp \
+  hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
@@ -866,7 +866,7 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/c++/11/bits/atomic_futex.h \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/bits/std_thread.h \
-  hw/serial.hpp \
+  hardware/hw/serial.hpp \
   /usr/include/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
@@ -917,7 +917,7 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/GL/glext.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
-  cameras/_cam.hpp \
+  hardware/cameras/_cam.hpp \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
@@ -1281,8 +1281,8 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
   perfcheckers/framerate.hpp \
-  psvr/_psvr.hpp \
-  ihidapi/_hidapi.hpp \
+  hardware/psvr/_psvr.hpp \
+  hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
@@ -1294,7 +1294,9 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
 
 /usr/local/include/hidapi/hidapi.h:
 
-ihidapi/_hidapi.hpp:
+hardware/ihidapi/_hidapi.hpp:
+
+hardware/psvr/_psvr.hpp:
 
 /usr/include/c++/11/bits/fs_fwd.h:
 
@@ -1702,8 +1704,6 @@ threadweaver/threadweaver.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h:
 
-/usr/include/c++/11/pstl/parallel_backend_utils.h:
-
 /usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
@@ -1721,6 +1721,8 @@ threadweaver/threadweaver.hpp:
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/11/bits/regex_executor.tcc:
+
+hardware/hw/serial.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -2000,6 +2002,8 @@ main.cpp:
 
 /usr/include/c++/11/bits/string_view.tcc:
 
+hardware/cameras/_cam.hpp:
+
 /usr/include/c++/11/bits/hash_bytes.h:
 
 /usr/include/c++/11/bits/move.h:
@@ -2090,10 +2094,6 @@ perfcheckers/framerate.hpp:
 
 /usr/include/KHR/khrplatform.h:
 
-cameras/_cam.hpp:
-
-/usr/local/include/opencv4/opencv2/core/types.hpp:
-
 /usr/include/c++/11/memory:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
@@ -2163,6 +2163,8 @@ ui/_ui.hpp:
 /usr/include/c++/11/pstl/utils.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h:
+
+/usr/include/c++/11/pstl/parallel_backend_utils.h:
 
 /usr/include/tbb/blocked_range.h:
 
@@ -2500,8 +2502,6 @@ ui/_ui.hpp:
 
 /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
 
-psvr/_psvr.hpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
 
 /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp:
@@ -2514,11 +2514,11 @@ psvr/_psvr.hpp:
 
 /usr/include/assert.h:
 
+/usr/local/include/opencv4/opencv2/core/types.hpp:
+
 /usr/include/c++/11/bits/stl_function.h:
 
 /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp:
-
-hw/serial.hpp:
 
 /usr/local/include/opencv4/opencv2/core/optim.hpp:
 

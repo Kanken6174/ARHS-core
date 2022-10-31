@@ -8,7 +8,7 @@ void topLevelManager::init()
     {
         detectHWAndConfig();
         setupThreads();
-        DEBUG_LOG("Entering sleep while")
+        std::cout << "Config finished, main thread now sleeping" << endl;
         while (!ui::UiController::exitCalled)
         {
             sleep(1);

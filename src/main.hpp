@@ -8,7 +8,7 @@
 #include <future>
 #include <sched.h>
 
-#include "./hw/serial.hpp"
+#include "./hardware/hw/serial.hpp"
 
 class topLevelManager{
     public:

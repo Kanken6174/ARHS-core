@@ -223,7 +223,7 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/c++/11/bits/atomic_futex.h
  /usr/include/c++/11/bits/std_function.h
  /usr/include/c++/11/bits/std_thread.h
- /home/kanken/code/AHRS_core/src/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/hardware/hw/serial.hpp
  /usr/include/fcntl.h
  /usr/include/x86_64-linux-gnu/bits/fcntl.h
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
@@ -274,7 +274,7 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/GL/glext.h
  /usr/include/KHR/khrplatform.h
  /usr/include/GL/glu.h
- /home/kanken/code/AHRS_core/src/cameras/_cam.hpp
+ /home/kanken/code/AHRS_core/src/hardware/cameras/_cam.hpp
  /usr/include/c++/11/memory
  /usr/include/c++/11/bits/stl_raw_storage_iter.h
  /usr/include/c++/11/bits/align.h
@@ -638,8 +638,8 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/ihidapi/_hidapi.hpp
+ /home/kanken/code/AHRS_core/src/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
@@ -868,7 +868,7 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/c++/11/bits/atomic_futex.h
  /usr/include/c++/11/bits/std_function.h
  /usr/include/c++/11/bits/std_thread.h
- /home/kanken/code/AHRS_core/src/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/hardware/hw/serial.hpp
  /usr/include/fcntl.h
  /usr/include/x86_64-linux-gnu/bits/fcntl.h
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
@@ -919,7 +919,7 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/GL/glext.h
  /usr/include/KHR/khrplatform.h
  /usr/include/GL/glu.h
- /home/kanken/code/AHRS_core/src/cameras/_cam.hpp
+ /home/kanken/code/AHRS_core/src/hardware/cameras/_cam.hpp
  /usr/include/c++/11/memory
  /usr/include/c++/11/bits/stl_raw_storage_iter.h
  /usr/include/c++/11/bits/align.h
@@ -1283,8 +1283,8 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/ihidapi/_hidapi.hpp
+ /home/kanken/code/AHRS_core/src/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp

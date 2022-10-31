@@ -165,7 +165,7 @@ ihidapi: cmake_check_build_system
 
 # fast build rule for target.
 ihidapi/fast:
-	$(MAKE) $(MAKESILENT) -f ihidapi/CMakeFiles/ihidapi.dir/build.make ihidapi/CMakeFiles/ihidapi.dir/build
+	$(MAKE) $(MAKESILENT) -f hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make hardware/ihidapi/CMakeFiles/ihidapi.dir/build
 .PHONY : ihidapi/fast
 
 #=============================================================================
@@ -178,7 +178,7 @@ cameras: cmake_check_build_system
 
 # fast build rule for target.
 cameras/fast:
-	$(MAKE) $(MAKESILENT) -f cameras/CMakeFiles/cameras.dir/build.make cameras/CMakeFiles/cameras.dir/build
+	$(MAKE) $(MAKESILENT) -f hardware/cameras/CMakeFiles/cameras.dir/build.make hardware/cameras/CMakeFiles/cameras.dir/build
 .PHONY : cameras/fast
 
 #=============================================================================
@@ -191,8 +191,34 @@ psvr: cmake_check_build_system
 
 # fast build rule for target.
 psvr/fast:
-	$(MAKE) $(MAKESILENT) -f psvr/CMakeFiles/psvr.dir/build.make psvr/CMakeFiles/psvr.dir/build
+	$(MAKE) $(MAKESILENT) -f hardware/psvr/CMakeFiles/psvr.dir/build.make hardware/psvr/CMakeFiles/psvr.dir/build
 .PHONY : psvr/fast
+
+#=============================================================================
+# Target rules for targets named hw
+
+# Build rule for target.
+hw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw
+.PHONY : hw
+
+# fast build rule for target.
+hw/fast:
+	$(MAKE) $(MAKESILENT) -f hardware/hw/CMakeFiles/hw.dir/build.make hardware/hw/CMakeFiles/hw.dir/build
+.PHONY : hw/fast
+
+#=============================================================================
+# Target rules for targets named zbarLib
+
+# Build rule for target.
+zbarLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zbarLib
+.PHONY : zbarLib
+
+# fast build rule for target.
+zbarLib/fast:
+	$(MAKE) $(MAKESILENT) -f processing/zbar/CMakeFiles/zbarLib.dir/build.make processing/zbar/CMakeFiles/zbarLib.dir/build
+.PHONY : zbarLib/fast
 
 #=============================================================================
 # Target rules for targets named ui
@@ -206,19 +232,6 @@ ui: cmake_check_build_system
 ui/fast:
 	$(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/build
 .PHONY : ui/fast
-
-#=============================================================================
-# Target rules for targets named hw
-
-# Build rule for target.
-hw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw
-.PHONY : hw
-
-# fast build rule for target.
-hw/fast:
-	$(MAKE) $(MAKESILENT) -f hw/CMakeFiles/hw.dir/build.make hw/CMakeFiles/hw.dir/build
-.PHONY : hw/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -284,6 +297,7 @@ help:
 	@echo "... psvr"
 	@echo "... threadweaver"
 	@echo "... ui"
+	@echo "... zbarLib"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
