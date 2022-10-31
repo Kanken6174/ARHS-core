@@ -1,11 +1,8 @@
 #include "_psvr.hpp"
 
 namespace psvr{
-hid_device* Psvr::handle;
-bool Psvr::vrMode;
-bool Psvr::powered;
 
-void Psvr::open(){
+Psvr::Psvr(){
     int res = hid_init();
     handle = hid_func::open_device_idx(sony_vid, psvr_pid, ctrl_device_iface, 0);
 
@@ -58,10 +55,9 @@ void Psvr::cinemaMode(){
     vrMode = false;
 }
 
-void Psvr::close(){
+Psvr::~Psvr(){
     if(powered) shutdown();
     hid_close(handle);
 	int res = hid_exit();
 }
-
 }

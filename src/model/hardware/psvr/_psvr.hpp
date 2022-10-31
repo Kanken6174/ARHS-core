@@ -13,17 +13,17 @@ const unsigned char psvr_power_on[8] {0x17,0x00,0xaa,0x04,0x00,0x00,0x00,0x00};
 namespace psvr{
     class Psvr{
         public:
-        static hid_device* handle;
-        static bool vrMode;
-        static bool powered;
+        hid_device* handle;
+        bool vrMode;
+        bool powered;
 
-        static void open(); //default constructor
+        Psvr(); //default constructor
+        ~Psvr();
 
-        static void startup();
-        static void shutdown();
-        static void vrmode();
-        static void cinemaMode();
-
-        static void close();//default destructor
+        void startup();
+        void shutdown();
+        void vrmode();
+        void cinemaMode();
+        void close();//default destructor
     };
 }

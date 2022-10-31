@@ -15,4 +15,5 @@ class Threadweaver{
     static std::thread* osUiDrawerThread;
 
     static void stick_this_thread_to_core(std::thread* t,int core_id);
+    static int getCoreCount();
 };

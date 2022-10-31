@@ -1,6 +1,14 @@
 set(ui_source_files
-    ./support/UiSupport.cpp
-    ./support/UiSupport.hpp
+    ./abstract/pipelineNode.cpp
+    ./abstract/pipelineNode.hpp
+    ./members/cameraPickerNode.cpp
+    ./members/cameraPickerNode.hpp
+    ./members/displayOutputNode.cpp
+    ./members/displayOutputNode.hpp
+    ./abstract/pipelineNode.cpp
+    ./abstract/pipelineNode.hpp
+    ./abstract/pipelineNode.cpp
+    ./abstract/pipelineNode.hpp
 MESSAGE(STATUS "building ui")
 SET("OpenCV_DIR" "/usr/local/lib/")
 

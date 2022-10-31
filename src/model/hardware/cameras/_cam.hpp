@@ -14,7 +14,7 @@
 #include <chrono>
 #include <opencv2/opencv.hpp>
 #include <opencv2/videoio/videoio_c.h>
-#include "../../threadweaver/threadweaver.hpp"
+#include "../../../threadweaver/threadweaver.hpp"
 
 using namespace std;
 using namespace cv;
@@ -30,12 +30,12 @@ class camera{
 
 class cameraManager{
     public:
-    static std::vector<camera*> videoSources;
-    static std::vector<UMat> captures;
-    static std::vector<std::mutex*> accessLocks;
-    static bool runCaptureThread;
-    static int init();
-    static void runCapture();
-    static void stopCapture();
-    static void runCaptureForCamera(camera* c, uint index);
+    std::vector<camera*> videoSources;
+    std::vector<UMat> captures;
+    std::vector<std::mutex*> accessLocks;
+    bool runCaptureThread;
+    cameraManager();
+    void runCapture();
+    void stopCapture();
+    void runCaptureForCamera(camera* c, uint index);
 };

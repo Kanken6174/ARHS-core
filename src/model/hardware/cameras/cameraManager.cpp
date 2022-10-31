@@ -1,9 +1,5 @@
 #include "_cam.hpp"
 #include <signal.h>
-vector<camera*> cameraManager::videoSources;
-std::vector<UMat> cameraManager::captures;
-bool cameraManager::runCaptureThread;
-std::vector<std::mutex*> cameraManager::accessLocks;
 
 void cameraManager::runCaptureForCamera(camera* c, uint index){
     while(runCaptureThread){
@@ -31,7 +27,7 @@ void cameraManager::runCaptureForCamera(camera* c, uint index){
     }
 }
 
-int cameraManager::init(){
+cameraManager::cameraManager(){
     std::cout << "init camera manager" << endl;
     vector<std::string> cameras = listCameras();
     uint cameraIndex = 0;
@@ -66,7 +62,6 @@ int cameraManager::init(){
     }
 
     cout << "found " << std::to_string(videoSources.size()) << " valid cameras" << endl;
-    return videoSources.size();
 }
 
 void cameraManager::runCapture(){

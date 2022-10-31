@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "../perfcheckers/framerate.hpp"
+#include "../model/perfcheckers/framerate.hpp"
 
 //#define DBGMODE
 #define DBGCOMM
