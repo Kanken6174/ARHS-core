@@ -3,12 +3,14 @@
 DisplayOutputNode::DisplayOutputNode(PipelineNode* predecessor, Window *managed) : _managed(managed)
 {
     previous = predecessor;
+    isLast = true;
     //output = NULL;
     cost = 2;
 }
 
 void DisplayOutputNode::processFrame()
 {
+    DEBUG_LOG("DisplayOutputNode on thread " << localThread->get_id() << " is procesing its camera frame");
     if (!inited)
     {
 #ifdef OGLWIN

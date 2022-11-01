@@ -315,6 +315,33 @@ pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o
  /usr/include/c++/11/bits/std_thread.h
  /usr/include/c++/11/bits/this_thread_sleep.h
  /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
+ /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
+ /usr/include/unistd.h
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h
+ /usr/include/x86_64-linux-gnu/bits/environments.h
+ /usr/include/x86_64-linux-gnu/bits/confname.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+ /usr/include/linux/close_range.h
+ /usr/include/c++/11/filesystem
+ /usr/include/c++/11/bits/fs_fwd.h
+ /usr/include/c++/11/bits/fs_path.h
+ /usr/include/c++/11/locale
+ /usr/include/c++/11/bits/locale_facets_nonio.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h
+ /usr/include/libintl.h
+ /usr/include/c++/11/bits/codecvt.h
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc
+ /usr/include/c++/11/bits/locale_conv.h
+ /usr/include/c++/11/iomanip
+ /usr/include/c++/11/bits/quoted_string.h
+ /usr/include/c++/11/codecvt
+ /usr/include/c++/11/bits/fs_dir.h
+ /usr/include/c++/11/bits/fs_ops.h
+ /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
+ /usr/include/c++/11/iostream
 
 pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o
  /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.cpp
@@ -631,12 +658,18 @@ pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o
  /usr/include/c++/11/bits/std_thread.h
  /usr/include/c++/11/bits/this_thread_sleep.h
  /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
- /usr/include/c++/11/iostream
- /usr/include/c++/11/regex
- /usr/include/c++/11/bitset
- /usr/include/c++/11/iterator
- /usr/include/c++/11/bits/stream_iterator.h
+ /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
+ /usr/include/unistd.h
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h
+ /usr/include/x86_64-linux-gnu/bits/environments.h
+ /usr/include/x86_64-linux-gnu/bits/confname.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+ /usr/include/linux/close_range.h
+ /usr/include/c++/11/filesystem
+ /usr/include/c++/11/bits/fs_fwd.h
+ /usr/include/c++/11/bits/fs_path.h
  /usr/include/c++/11/locale
  /usr/include/c++/11/bits/locale_facets_nonio.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h
@@ -645,6 +678,18 @@ pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o
  /usr/include/c++/11/bits/codecvt.h
  /usr/include/c++/11/bits/locale_facets_nonio.tcc
  /usr/include/c++/11/bits/locale_conv.h
+ /usr/include/c++/11/iomanip
+ /usr/include/c++/11/bits/quoted_string.h
+ /usr/include/c++/11/codecvt
+ /usr/include/c++/11/bits/fs_dir.h
+ /usr/include/c++/11/bits/fs_ops.h
+ /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
+ /usr/include/c++/11/iostream
+ /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
+ /usr/include/c++/11/regex
+ /usr/include/c++/11/bitset
+ /usr/include/c++/11/iterator
+ /usr/include/c++/11/bits/stream_iterator.h
  /usr/include/c++/11/stack
  /usr/include/c++/11/deque
  /usr/include/c++/11/bits/stl_deque.h
@@ -859,8 +904,6 @@ pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o
  /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h
  /usr/local/include/opencv4/opencv2/flann/lsh_index.h
  /usr/local/include/opencv4/opencv2/flann/lsh_table.h
- /usr/include/c++/11/iomanip
- /usr/include/c++/11/bits/quoted_string.h
  /usr/include/c++/11/math.h
  /usr/local/include/opencv4/opencv2/flann/autotuned_index.h
  /usr/local/include/opencv4/opencv2/flann/ground_truth.h
@@ -908,22 +951,6 @@ pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/core_c.h
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
- /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
- /usr/include/unistd.h
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h
- /usr/include/x86_64-linux-gnu/bits/environments.h
- /usr/include/x86_64-linux-gnu/bits/confname.h
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
- /usr/include/linux/close_range.h
- /usr/include/c++/11/filesystem
- /usr/include/c++/11/bits/fs_fwd.h
- /usr/include/c++/11/bits/fs_path.h
- /usr/include/c++/11/codecvt
- /usr/include/c++/11/bits/fs_dir.h
- /usr/include/c++/11/bits/fs_ops.h
- /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o
  /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.cpp
@@ -1240,6 +1267,33 @@ pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o
  /usr/include/c++/11/bits/std_thread.h
  /usr/include/c++/11/bits/this_thread_sleep.h
  /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
+ /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
+ /usr/include/unistd.h
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h
+ /usr/include/x86_64-linux-gnu/bits/environments.h
+ /usr/include/x86_64-linux-gnu/bits/confname.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+ /usr/include/linux/close_range.h
+ /usr/include/c++/11/filesystem
+ /usr/include/c++/11/bits/fs_fwd.h
+ /usr/include/c++/11/bits/fs_path.h
+ /usr/include/c++/11/locale
+ /usr/include/c++/11/bits/locale_facets_nonio.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h
+ /usr/include/libintl.h
+ /usr/include/c++/11/bits/codecvt.h
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc
+ /usr/include/c++/11/bits/locale_conv.h
+ /usr/include/c++/11/iomanip
+ /usr/include/c++/11/bits/quoted_string.h
+ /usr/include/c++/11/codecvt
+ /usr/include/c++/11/bits/fs_dir.h
+ /usr/include/c++/11/bits/fs_ops.h
+ /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
+ /usr/include/c++/11/iostream
  /home/kanken/code/AHRS_core/src/model/windows/window.hpp
  /usr/local/include/opencv4/opencv2/core/core.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
@@ -1570,13 +1624,18 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o
  /usr/include/c++/11/bits/std_thread.h
  /usr/include/c++/11/bits/this_thread_sleep.h
  /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
- /usr/include/c++/11/iostream
- /usr/include/c++/11/regex
- /usr/include/c++/11/bitset
- /usr/include/c++/11/iterator
- /usr/include/c++/11/bits/stream_iterator.h
+ /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
+ /usr/include/unistd.h
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h
+ /usr/include/x86_64-linux-gnu/bits/environments.h
+ /usr/include/x86_64-linux-gnu/bits/confname.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+ /usr/include/linux/close_range.h
+ /usr/include/c++/11/filesystem
+ /usr/include/c++/11/bits/fs_fwd.h
+ /usr/include/c++/11/bits/fs_path.h
  /usr/include/c++/11/locale
  /usr/include/c++/11/bits/locale_facets_nonio.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h
@@ -1585,6 +1644,19 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o
  /usr/include/c++/11/bits/codecvt.h
  /usr/include/c++/11/bits/locale_facets_nonio.tcc
  /usr/include/c++/11/bits/locale_conv.h
+ /usr/include/c++/11/iomanip
+ /usr/include/c++/11/bits/quoted_string.h
+ /usr/include/c++/11/codecvt
+ /usr/include/c++/11/bits/fs_dir.h
+ /usr/include/c++/11/bits/fs_ops.h
+ /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
+ /usr/include/c++/11/iostream
+ /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
+ /usr/include/c++/11/regex
+ /usr/include/c++/11/bitset
+ /usr/include/c++/11/iterator
+ /usr/include/c++/11/bits/stream_iterator.h
  /usr/include/c++/11/stack
  /usr/include/c++/11/deque
  /usr/include/c++/11/bits/stl_deque.h
@@ -1799,8 +1871,6 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o
  /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h
  /usr/local/include/opencv4/opencv2/flann/lsh_index.h
  /usr/local/include/opencv4/opencv2/flann/lsh_table.h
- /usr/include/c++/11/iomanip
- /usr/include/c++/11/bits/quoted_string.h
  /usr/include/c++/11/math.h
  /usr/local/include/opencv4/opencv2/flann/autotuned_index.h
  /usr/local/include/opencv4/opencv2/flann/ground_truth.h
@@ -1848,22 +1918,6 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/core_c.h
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
- /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
- /usr/include/unistd.h
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h
- /usr/include/x86_64-linux-gnu/bits/environments.h
- /usr/include/x86_64-linux-gnu/bits/confname.h
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
- /usr/include/linux/close_range.h
- /usr/include/c++/11/filesystem
- /usr/include/c++/11/bits/fs_fwd.h
- /usr/include/c++/11/bits/fs_path.h
- /usr/include/c++/11/codecvt
- /usr/include/c++/11/bits/fs_dir.h
- /usr/include/c++/11/bits/fs_ops.h
- /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h
@@ -2189,13 +2243,18 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o
  /usr/include/c++/11/bits/std_thread.h
  /usr/include/c++/11/bits/this_thread_sleep.h
  /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
- /usr/include/c++/11/iostream
- /usr/include/c++/11/regex
- /usr/include/c++/11/bitset
- /usr/include/c++/11/iterator
- /usr/include/c++/11/bits/stream_iterator.h
+ /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
+ /usr/include/unistd.h
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h
+ /usr/include/x86_64-linux-gnu/bits/environments.h
+ /usr/include/x86_64-linux-gnu/bits/confname.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+ /usr/include/linux/close_range.h
+ /usr/include/c++/11/filesystem
+ /usr/include/c++/11/bits/fs_fwd.h
+ /usr/include/c++/11/bits/fs_path.h
  /usr/include/c++/11/locale
  /usr/include/c++/11/bits/locale_facets_nonio.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h
@@ -2204,6 +2263,19 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o
  /usr/include/c++/11/bits/codecvt.h
  /usr/include/c++/11/bits/locale_facets_nonio.tcc
  /usr/include/c++/11/bits/locale_conv.h
+ /usr/include/c++/11/iomanip
+ /usr/include/c++/11/bits/quoted_string.h
+ /usr/include/c++/11/codecvt
+ /usr/include/c++/11/bits/fs_dir.h
+ /usr/include/c++/11/bits/fs_ops.h
+ /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
+ /usr/include/c++/11/iostream
+ /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
+ /usr/include/c++/11/regex
+ /usr/include/c++/11/bitset
+ /usr/include/c++/11/iterator
+ /usr/include/c++/11/bits/stream_iterator.h
  /usr/include/c++/11/stack
  /usr/include/c++/11/deque
  /usr/include/c++/11/bits/stl_deque.h
@@ -2418,8 +2490,6 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o
  /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h
  /usr/local/include/opencv4/opencv2/flann/lsh_index.h
  /usr/local/include/opencv4/opencv2/flann/lsh_table.h
- /usr/include/c++/11/iomanip
- /usr/include/c++/11/bits/quoted_string.h
  /usr/include/c++/11/math.h
  /usr/local/include/opencv4/opencv2/flann/autotuned_index.h
  /usr/local/include/opencv4/opencv2/flann/ground_truth.h
@@ -2467,22 +2537,6 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/core_c.h
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
- /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
- /usr/include/unistd.h
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h
- /usr/include/x86_64-linux-gnu/bits/environments.h
- /usr/include/x86_64-linux-gnu/bits/confname.h
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
- /usr/include/linux/close_range.h
- /usr/include/c++/11/filesystem
- /usr/include/c++/11/bits/fs_fwd.h
- /usr/include/c++/11/bits/fs_path.h
- /usr/include/c++/11/codecvt
- /usr/include/c++/11/bits/fs_dir.h
- /usr/include/c++/11/bits/fs_ops.h
- /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h
@@ -2810,13 +2864,18 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o
  /usr/include/c++/11/bits/std_thread.h
  /usr/include/c++/11/bits/this_thread_sleep.h
  /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
- /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
- /usr/include/c++/11/iostream
- /usr/include/c++/11/regex
- /usr/include/c++/11/bitset
- /usr/include/c++/11/iterator
- /usr/include/c++/11/bits/stream_iterator.h
+ /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
+ /usr/include/unistd.h
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h
+ /usr/include/x86_64-linux-gnu/bits/environments.h
+ /usr/include/x86_64-linux-gnu/bits/confname.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+ /usr/include/linux/close_range.h
+ /usr/include/c++/11/filesystem
+ /usr/include/c++/11/bits/fs_fwd.h
+ /usr/include/c++/11/bits/fs_path.h
  /usr/include/c++/11/locale
  /usr/include/c++/11/bits/locale_facets_nonio.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h
@@ -2825,6 +2884,19 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o
  /usr/include/c++/11/bits/codecvt.h
  /usr/include/c++/11/bits/locale_facets_nonio.tcc
  /usr/include/c++/11/bits/locale_conv.h
+ /usr/include/c++/11/iomanip
+ /usr/include/c++/11/bits/quoted_string.h
+ /usr/include/c++/11/codecvt
+ /usr/include/c++/11/bits/fs_dir.h
+ /usr/include/c++/11/bits/fs_ops.h
+ /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
+ /usr/include/c++/11/iostream
+ /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
+ /usr/include/c++/11/regex
+ /usr/include/c++/11/bitset
+ /usr/include/c++/11/iterator
+ /usr/include/c++/11/bits/stream_iterator.h
  /usr/include/c++/11/stack
  /usr/include/c++/11/deque
  /usr/include/c++/11/bits/stl_deque.h
@@ -3039,8 +3111,6 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o
  /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h
  /usr/local/include/opencv4/opencv2/flann/lsh_index.h
  /usr/local/include/opencv4/opencv2/flann/lsh_table.h
- /usr/include/c++/11/iomanip
- /usr/include/c++/11/bits/quoted_string.h
  /usr/include/c++/11/math.h
  /usr/local/include/opencv4/opencv2/flann/autotuned_index.h
  /usr/local/include/opencv4/opencv2/flann/ground_truth.h
@@ -3088,22 +3158,6 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o
  /usr/local/include/opencv4/opencv2/core/core_c.h
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
- /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
- /usr/include/unistd.h
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h
- /usr/include/x86_64-linux-gnu/bits/environments.h
- /usr/include/x86_64-linux-gnu/bits/confname.h
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
- /usr/include/linux/close_range.h
- /usr/include/c++/11/filesystem
- /usr/include/c++/11/bits/fs_fwd.h
- /usr/include/c++/11/bits/fs_path.h
- /usr/include/c++/11/codecvt
- /usr/include/c++/11/bits/fs_dir.h
- /usr/include/c++/11/bits/fs_ops.h
- /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.hpp
  /home/kanken/code/AHRS_core/src/model/windows/window.hpp
  /usr/local/include/opencv4/opencv2/core/core.hpp

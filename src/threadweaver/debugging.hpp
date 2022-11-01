@@ -2,7 +2,7 @@
 #include <string>
 //#include "../model/perfcheckers/framerate.hpp"
 
-//#define DBGMODE
+#define DBGMODE
 #define DBGCOMM
 //#define OGLWIN
 #define GFXCORE 0

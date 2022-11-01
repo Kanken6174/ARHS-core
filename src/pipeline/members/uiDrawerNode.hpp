@@ -3,7 +3,7 @@
 
 class UiDrawerNode : public PipelineNode{
     public:
-    UiDrawerNode();
+    UiDrawerNode(UiController* backController);
     protected:
     void processFrame() override;
     UiController* _backController;

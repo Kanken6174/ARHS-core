@@ -328,12 +328,10 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   model/perfcheckers/framerate.hpp \
-  pipeline/members/cameraPickerNode.hpp \
-  model/hardware/cameras/_cam.hpp \
-  /usr/include/c++/11/regex \
-  /usr/include/c++/11/bitset \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
+  threadweaver/threadweaver.hpp \
+  /usr/include/c++/11/filesystem \
+  /usr/include/c++/11/bits/fs_fwd.h \
+  /usr/include/c++/11/bits/fs_path.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
@@ -342,6 +340,18 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/codecvt \
+  /usr/include/c++/11/bits/fs_dir.h \
+  /usr/include/c++/11/bits/fs_ops.h \
+  threadweaver/debugging.hpp \
+  pipeline/members/cameraPickerNode.hpp \
+  model/hardware/cameras/_cam.hpp \
+  /usr/include/c++/11/regex \
+  /usr/include/c++/11/bitset \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/stack \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
@@ -556,8 +566,6 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
   /usr/local/include/opencv4/opencv2/flann/lsh_index.h \
   /usr/local/include/opencv4/opencv2/flann/lsh_table.h \
-  /usr/include/c++/11/iomanip \
-  /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/c++/11/math.h \
   /usr/local/include/opencv4/opencv2/flann/autotuned_index.h \
   /usr/local/include/opencv4/opencv2/flann/ground_truth.h \
@@ -605,14 +613,6 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/local/include/opencv4/opencv2/core/core_c.h \
   /usr/local/include/opencv4/opencv2/core/types_c.h \
   /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
-  threadweaver/threadweaver.hpp \
-  /usr/include/c++/11/filesystem \
-  /usr/include/c++/11/bits/fs_fwd.h \
-  /usr/include/c++/11/bits/fs_path.h \
-  /usr/include/c++/11/codecvt \
-  /usr/include/c++/11/bits/fs_dir.h \
-  /usr/include/c++/11/bits/fs_ops.h \
-  threadweaver/debugging.hpp \
   pipeline/members/displayOutputNode.hpp \
   model/windows/window.hpp \
   /usr/local/include/opencv4/opencv2/core/core.hpp \
@@ -962,12 +962,10 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   model/perfcheckers/framerate.hpp \
-  pipeline/members/cameraPickerNode.hpp \
-  model/hardware/cameras/_cam.hpp \
-  /usr/include/c++/11/regex \
-  /usr/include/c++/11/bitset \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
+  threadweaver/threadweaver.hpp \
+  /usr/include/c++/11/filesystem \
+  /usr/include/c++/11/bits/fs_fwd.h \
+  /usr/include/c++/11/bits/fs_path.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
@@ -976,6 +974,18 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/codecvt \
+  /usr/include/c++/11/bits/fs_dir.h \
+  /usr/include/c++/11/bits/fs_ops.h \
+  threadweaver/debugging.hpp \
+  pipeline/members/cameraPickerNode.hpp \
+  model/hardware/cameras/_cam.hpp \
+  /usr/include/c++/11/regex \
+  /usr/include/c++/11/bitset \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/stack \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
@@ -1190,8 +1200,6 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
   /usr/local/include/opencv4/opencv2/flann/lsh_index.h \
   /usr/local/include/opencv4/opencv2/flann/lsh_table.h \
-  /usr/include/c++/11/iomanip \
-  /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/c++/11/math.h \
   /usr/local/include/opencv4/opencv2/flann/autotuned_index.h \
   /usr/local/include/opencv4/opencv2/flann/ground_truth.h \
@@ -1239,14 +1247,6 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/local/include/opencv4/opencv2/core/core_c.h \
   /usr/local/include/opencv4/opencv2/core/types_c.h \
   /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
-  threadweaver/threadweaver.hpp \
-  /usr/include/c++/11/filesystem \
-  /usr/include/c++/11/bits/fs_fwd.h \
-  /usr/include/c++/11/bits/fs_path.h \
-  /usr/include/c++/11/codecvt \
-  /usr/include/c++/11/bits/fs_dir.h \
-  /usr/include/c++/11/bits/fs_ops.h \
-  threadweaver/debugging.hpp \
   pipeline/members/displayOutputNode.hpp \
   model/windows/window.hpp \
   /usr/local/include/opencv4/opencv2/core/core.hpp \
@@ -1294,10 +1294,6 @@ model/windows/window.hpp:
 
 pipeline/members/displayOutputNode.hpp:
 
-/usr/include/c++/11/bits/fs_fwd.h:
-
-threadweaver/threadweaver.hpp:
-
 /usr/local/include/opencv4/opencv2/core/types_c.h:
 
 /usr/local/include/opencv4/opencv2/core/core_c.h:
@@ -1305,10 +1301,6 @@ threadweaver/threadweaver.hpp:
 /usr/local/include/opencv4/opencv2/video/tracking.hpp:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp:
-
-/usr/include/c++/11/filesystem:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
 
@@ -1352,9 +1344,21 @@ threadweaver/threadweaver.hpp:
 
 /usr/local/include/opencv4/opencv2/flann/autotuned_index.h:
 
-/usr/include/c++/11/bits/quoted_string.h:
-
 /usr/local/include/opencv4/opencv2/flann/lsh_table.h:
+
+/usr/local/include/opencv4/opencv2/flann/lsh_index.h:
+
+/usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h:
+
+/usr/local/include/opencv4/opencv2/flann/linear_index.h:
+
+/usr/local/include/opencv4/opencv2/flann/kmeans_index.h:
+
+/usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h:
+
+/usr/local/include/opencv4/opencv2/flann/random.h:
+
+/usr/local/include/opencv4/opencv2/flann/heap.h:
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
@@ -1375,10 +1379,6 @@ threadweaver/threadweaver.hpp:
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/c++/11/string:
-
-/usr/include/c++/11/iomanip:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
@@ -1428,6 +1428,8 @@ pipeline/pipeline.hpp:
 
 /usr/include/c++/11/debug/debug.h:
 
+threadweaver/threadweaver.hpp:
+
 /usr/include/limits.h:
 
 /usr/include/c++/11/bits/regex_compiler.tcc:
@@ -1459,6 +1461,10 @@ pipeline/pipeline.hpp:
 /usr/include/c++/11/future:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
+
+/usr/local/include/opencv4/opencv2/flann/allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/11/bits/this_thread_sleep.h:
 
@@ -1594,6 +1600,8 @@ model/hardware/cameras/_cam.hpp:
 
 /usr/include/c++/11/bits/stl_bvector.h:
 
+/usr/include/c++/11/bits/fs_fwd.h:
+
 /usr/include/c++/11/bits/invoke.h:
 
 /usr/include/tbb/parallel_scan.h:
@@ -1631,6 +1639,10 @@ model/hardware/cameras/_cam.hpp:
 /usr/local/include/opencv4/opencv2/dnn.hpp:
 
 /usr/include/c++/11/cctype:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h:
+
+/usr/include/c++/11/iomanip:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
 
@@ -1780,10 +1792,6 @@ topLevelManager.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
-threadweaver/debugging.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
 /usr/include/c++/11/bits/functexcept.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
@@ -1797,6 +1805,10 @@ threadweaver/debugging.hpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/c++/11/debug/assertions.h:
+
+/usr/local/include/opencv4/opencv2/flann/composite_index.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/c++/11/cstdio:
 
@@ -1848,8 +1860,6 @@ threadweaver/debugging.hpp:
 
 /usr/include/features.h:
 
-/usr/local/include/opencv4/opencv2/flann/kmeans_index.h:
-
 /usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
@@ -1899,8 +1909,6 @@ threadweaver/debugging.hpp:
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/asm-generic/errno-base.h:
-
-/usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
@@ -2148,13 +2156,9 @@ model/perfcheckers/framerate.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h:
 
-/usr/include/c++/11/bitset:
+/usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
 
-/usr/include/GL/gl.h:
-
-/usr/include/c++/11/bits/postypes.h:
-
-/usr/local/include/opencv4/opencv2/flann/dist.h:
+/usr/include/c++/11/filesystem:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
@@ -2169,6 +2173,32 @@ model/perfcheckers/framerate.hpp:
 /usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/c++/11/bits/quoted_string.h:
+
+/usr/include/c++/11/bits/exception_defines.h:
+
+/usr/include/oneapi/tbb/task.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h:
+
+/usr/include/c++/11/pstl/glue_memory_impl.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+threadweaver/debugging.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
+
+/usr/include/c++/11/bitset:
+
+/usr/include/GL/gl.h:
+
+/usr/include/c++/11/bits/postypes.h:
+
+/usr/local/include/opencv4/opencv2/flann/dist.h:
 
 /usr/include/c++/11/stack:
 
@@ -2248,21 +2278,11 @@ model/patterns/observer/observer.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h:
 
-/usr/include/c++/11/bits/exception_defines.h:
-
-/usr/include/oneapi/tbb/task.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h:
 
 /usr/include/c++/11/memory_resource:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/local/include/opencv4/opencv2/flann/composite_index.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h:
 
@@ -2390,10 +2410,6 @@ model/patterns/observer/observer.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16vlintrin.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h:
 
 /usr/include/linux/close_range.h:
@@ -2446,8 +2462,6 @@ model/patterns/observer/observer.hpp:
 
 /usr/include/c++/11/pstl/glue_numeric_impl.h:
 
-/usr/include/c++/11/pstl/glue_memory_impl.h:
-
 /usr/local/include/opencv4/opencv2/opencv.hpp:
 
 /usr/local/include/opencv4/opencv2/flann/config.h:
@@ -2465,8 +2479,6 @@ model/patterns/observer/observer.hpp:
 /usr/local/include/opencv4/opencv2/flann/result_set.h:
 
 /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
-
-/usr/local/include/opencv4/opencv2/flann/random.h:
 
 /usr/local/include/opencv4/opencv2/flann.hpp:
 
@@ -2493,15 +2505,3 @@ model/patterns/observer/observer.hpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h:
 
 /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h:
-
-/usr/local/include/opencv4/opencv2/flann/heap.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/local/include/opencv4/opencv2/flann/allocator.h:
-
-/usr/local/include/opencv4/opencv2/flann/linear_index.h:
-
-/usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h:
-
-/usr/local/include/opencv4/opencv2/flann/lsh_index.h:

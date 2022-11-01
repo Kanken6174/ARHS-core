@@ -3,11 +3,14 @@
 
 UiMergerNode::UiMergerNode(PipelineNode* _previous,PipelineNode* menuDrawer, UiController* backController) : _menuDrawer(menuDrawer), _backController(backController)
 {
+    isFirst = false;
+    isLast = false;
     previous = _previous;
 }
 
 void UiMergerNode::processFrame()
 {
+    DEBUG_LOG("UiMergerNode on thread " << localThread->get_id() << " is procesing its camera frame");
     cv::UMat UiMat = UiSupport::prepareUiMat();         // prepare black background 960*1080
     cv::UMat cameraFrame = previous->getOutput();
 
