@@ -21,7 +21,7 @@ void UiDrawerNode::processFrame()
         int &wd = _backController->menuSize.width;
         int &he = _backController->menuSize.height;
         unsigned int stackerIndex = 0;
-        cv::UMat MenuMat(cv::Size(wd, he), CV_8UC3, cv::Scalar(0, 0, 0));
+        cv::UMat MenuMat = cv::UMat(cv::Size(960, 1080), CV_8UC3, cv::Scalar(0, 0, 0));
         cv::rectangle(MenuMat, cv::Rect2i(0, 0, wd, he), cv::Scalar(255, 0, 0), 5, 8, 0);
         _backController->update();
         cv::putText(MenuMat, _backController->menuTitle, cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);

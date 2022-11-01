@@ -9,8 +9,14 @@ set(pipeline_src
     ./members/uiDrawerNode.hpp
     ./members/uiMergerNode.cpp
     ./members/uiMergerNode.hpp
-    ./members/subNodes/fpsCounter.hpp
+    ./members/zbarAnalysisNode.cpp
+    ./members/zbarAnalysisNode.hpp
+
+    ./members/subNodes/subNodes.hpp
     ./members/subNodes/fpsCounter.cpp
+    ./members/subNodes/staticImageOverlayer.cpp
+    ./members/subNodes/zbarOverlayer.cpp
+
     ./pipeline.cpp
     ./pipeline.hpp)
 MESSAGE(STATUS "building pipeline")
@@ -37,8 +43,6 @@ target_link_libraries(pipelineLib psvr)
 target_link_libraries(pipelineLib controllers)
 target_link_libraries(pipelineLib hw)
 target_link_libraries(pipelineLib threadweaver)
-
-#target_link_libraries(ui cameras)
-#target_link_libraries(ui zbarLib)
+target_link_libraries(pipelineLib zbarLib)
 
 MESSAGE(STATUS "Done building pipeline")

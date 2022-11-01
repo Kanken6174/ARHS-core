@@ -26,7 +26,7 @@ cv::UMat UiSupport::OverlayBlackMask(cv::UMat input, cv::UMat toOverlay, int x, 
     // return input;
     if (input.cols < toOverlay.cols || input.rows < toOverlay.rows)
     {
-        std::cerr << "Wrong size for inout file!!! overlay was bigger" << std::endl;
+        std::cerr << "Wrong size for input file!!! overlay was bigger" << std::endl;
         return input;
     }
 

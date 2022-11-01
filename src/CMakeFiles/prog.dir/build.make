@@ -119,6 +119,11 @@ prog: model/hardware/psvr/libpsvr.a
 prog: model/hardware/ihidapi/libihidapi.a
 prog: /usr/local/lib/libhidapi-hidraw.so.0.13.0
 prog: model/hardware/cameras/libcameras.a
+prog: model/hardware/hw/libhw.a
+prog: model/patterns/observer/libobservers.a
+prog: threadweaver/libthreadweaver.a
+prog: model/perfcheckers/libperfcheckers.a
+prog: processing/zbar/libzbarLib.a
 prog: /usr/local/lib/libopencv_gapi.so.4.6.0
 prog: /usr/local/lib/libopencv_stitching.so.4.6.0
 prog: /usr/local/lib/libopencv_aruco.so.4.6.0
@@ -172,10 +177,7 @@ prog: /usr/local/lib/libopencv_xphoto.so.4.6.0
 prog: /usr/local/lib/libopencv_photo.so.4.6.0
 prog: /usr/local/lib/libopencv_imgproc.so.4.6.0
 prog: /usr/local/lib/libopencv_core.so.4.6.0
-prog: model/hardware/hw/libhw.a
-prog: model/patterns/observer/libobservers.a
-prog: threadweaver/libthreadweaver.a
-prog: model/perfcheckers/libperfcheckers.a
+prog: /usr/lib/x86_64-linux-gnu/libzbar.so
 prog: CMakeFiles/prog.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable prog"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/prog.dir/link.txt --verbose=$(VERBOSE)

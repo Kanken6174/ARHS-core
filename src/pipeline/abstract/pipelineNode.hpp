@@ -33,9 +33,9 @@ class PipelineNode{
         void addSubNode(SubNode* sn);
         //virtual ~PipelineNode();
         float cost = 1;
+        std::mutex outputLock;
     protected:
         std::vector<SubNode*> subNodes;
-        std::mutex outputLock;
         cv::UMat output;
         std::atomic_bool shouldRun = false;
         std::atomic_bool disabled = false;  //if true short circuit your input to your output

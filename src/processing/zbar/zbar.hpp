@@ -14,13 +14,17 @@ typedef struct
   string type;
   string data;
   vector <cv::Point> location;
+  int originalWidth;
+  int originalHeight;
 } decodedObject;
 
 class zbarScanner{
     private:
     ImageScanner scanner = ImageScanner();
     vector<decodedObject> decodedObjects;
+    std::mutex decodedObjectsAccessLock;
     public:
     zbarScanner();
-    void decode(cv::UMat &im);
+    void decode(cv::UMat im);
+    vector<decodedObject> getFoundElements();
 };

@@ -25,6 +25,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/kanken/code/AHRS_core/src/model/patterns/observer/CMakeFiles/observers.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/threadweaver/CMakeFiles/threadweaver.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/model/perfcheckers/CMakeFiles/perfcheckers.dir/DependInfo.cmake"
+  "/home/kanken/code/AHRS_core/src/processing/zbar/CMakeFiles/zbarLib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

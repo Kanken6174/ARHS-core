@@ -226,6 +226,54 @@ members/subNodes/fpsCounter.cpp.s:
 	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.s
 .PHONY : members/subNodes/fpsCounter.cpp.s
 
+members/subNodes/staticImageOverlayer.o: members/subNodes/staticImageOverlayer.cpp.o
+.PHONY : members/subNodes/staticImageOverlayer.o
+
+# target to build an object file
+members/subNodes/staticImageOverlayer.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o
+.PHONY : members/subNodes/staticImageOverlayer.cpp.o
+
+members/subNodes/staticImageOverlayer.i: members/subNodes/staticImageOverlayer.cpp.i
+.PHONY : members/subNodes/staticImageOverlayer.i
+
+# target to preprocess a source file
+members/subNodes/staticImageOverlayer.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.i
+.PHONY : members/subNodes/staticImageOverlayer.cpp.i
+
+members/subNodes/staticImageOverlayer.s: members/subNodes/staticImageOverlayer.cpp.s
+.PHONY : members/subNodes/staticImageOverlayer.s
+
+# target to generate assembly for a file
+members/subNodes/staticImageOverlayer.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.s
+.PHONY : members/subNodes/staticImageOverlayer.cpp.s
+
+members/subNodes/zbarOverlayer.o: members/subNodes/zbarOverlayer.cpp.o
+.PHONY : members/subNodes/zbarOverlayer.o
+
+# target to build an object file
+members/subNodes/zbarOverlayer.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o
+.PHONY : members/subNodes/zbarOverlayer.cpp.o
+
+members/subNodes/zbarOverlayer.i: members/subNodes/zbarOverlayer.cpp.i
+.PHONY : members/subNodes/zbarOverlayer.i
+
+# target to preprocess a source file
+members/subNodes/zbarOverlayer.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.i
+.PHONY : members/subNodes/zbarOverlayer.cpp.i
+
+members/subNodes/zbarOverlayer.s: members/subNodes/zbarOverlayer.cpp.s
+.PHONY : members/subNodes/zbarOverlayer.s
+
+# target to generate assembly for a file
+members/subNodes/zbarOverlayer.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.s
+.PHONY : members/subNodes/zbarOverlayer.cpp.s
+
 members/uiDrawerNode.o: members/uiDrawerNode.cpp.o
 .PHONY : members/uiDrawerNode.o
 
@@ -274,6 +322,30 @@ members/uiMergerNode.cpp.s:
 	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.s
 .PHONY : members/uiMergerNode.cpp.s
 
+members/zbarAnalysisNode.o: members/zbarAnalysisNode.cpp.o
+.PHONY : members/zbarAnalysisNode.o
+
+# target to build an object file
+members/zbarAnalysisNode.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o
+.PHONY : members/zbarAnalysisNode.cpp.o
+
+members/zbarAnalysisNode.i: members/zbarAnalysisNode.cpp.i
+.PHONY : members/zbarAnalysisNode.i
+
+# target to preprocess a source file
+members/zbarAnalysisNode.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.i
+.PHONY : members/zbarAnalysisNode.cpp.i
+
+members/zbarAnalysisNode.s: members/zbarAnalysisNode.cpp.s
+.PHONY : members/zbarAnalysisNode.s
+
+# target to generate assembly for a file
+members/zbarAnalysisNode.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.s
+.PHONY : members/zbarAnalysisNode.cpp.s
+
 pipeline.o: pipeline.cpp.o
 .PHONY : pipeline.o
 
@@ -319,12 +391,21 @@ help:
 	@echo "... members/subNodes/fpsCounter.o"
 	@echo "... members/subNodes/fpsCounter.i"
 	@echo "... members/subNodes/fpsCounter.s"
+	@echo "... members/subNodes/staticImageOverlayer.o"
+	@echo "... members/subNodes/staticImageOverlayer.i"
+	@echo "... members/subNodes/staticImageOverlayer.s"
+	@echo "... members/subNodes/zbarOverlayer.o"
+	@echo "... members/subNodes/zbarOverlayer.i"
+	@echo "... members/subNodes/zbarOverlayer.s"
 	@echo "... members/uiDrawerNode.o"
 	@echo "... members/uiDrawerNode.i"
 	@echo "... members/uiDrawerNode.s"
 	@echo "... members/uiMergerNode.o"
 	@echo "... members/uiMergerNode.i"
 	@echo "... members/uiMergerNode.s"
+	@echo "... members/zbarAnalysisNode.o"
+	@echo "... members/zbarAnalysisNode.i"
+	@echo "... members/zbarAnalysisNode.s"
 	@echo "... pipeline.o"
 	@echo "... pipeline.i"
 	@echo "... pipeline.s"
