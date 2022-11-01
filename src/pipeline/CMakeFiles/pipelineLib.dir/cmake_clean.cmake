@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o.d"
   "CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o"
   "CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o.d"
+  "CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o"
+  "CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o.d"
   "CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o"
   "CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o.d"
   "CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o"

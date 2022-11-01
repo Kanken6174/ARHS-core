@@ -202,6 +202,30 @@ members/displayOutputNode.cpp.s:
 	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.s
 .PHONY : members/displayOutputNode.cpp.s
 
+members/subNodes/fpsCounter.o: members/subNodes/fpsCounter.cpp.o
+.PHONY : members/subNodes/fpsCounter.o
+
+# target to build an object file
+members/subNodes/fpsCounter.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o
+.PHONY : members/subNodes/fpsCounter.cpp.o
+
+members/subNodes/fpsCounter.i: members/subNodes/fpsCounter.cpp.i
+.PHONY : members/subNodes/fpsCounter.i
+
+# target to preprocess a source file
+members/subNodes/fpsCounter.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.i
+.PHONY : members/subNodes/fpsCounter.cpp.i
+
+members/subNodes/fpsCounter.s: members/subNodes/fpsCounter.cpp.s
+.PHONY : members/subNodes/fpsCounter.s
+
+# target to generate assembly for a file
+members/subNodes/fpsCounter.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.s
+.PHONY : members/subNodes/fpsCounter.cpp.s
+
 members/uiDrawerNode.o: members/uiDrawerNode.cpp.o
 .PHONY : members/uiDrawerNode.o
 
@@ -292,6 +316,9 @@ help:
 	@echo "... members/displayOutputNode.o"
 	@echo "... members/displayOutputNode.i"
 	@echo "... members/displayOutputNode.s"
+	@echo "... members/subNodes/fpsCounter.o"
+	@echo "... members/subNodes/fpsCounter.i"
+	@echo "... members/subNodes/fpsCounter.s"
 	@echo "... members/uiDrawerNode.o"
 	@echo "... members/uiDrawerNode.i"
 	@echo "... members/uiDrawerNode.s"

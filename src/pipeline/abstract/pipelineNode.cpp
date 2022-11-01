@@ -3,6 +3,7 @@
 PipelineNode::PipelineNode()
 {
     DEBUG_LOG("pipeline created")
+    localES = new framerateChecker();
 }
 
 bool PipelineNode::isRunning()
@@ -44,6 +45,12 @@ cv::UMat PipelineNode::getOutput()
     return output;
 }
 
+void PipelineNode::addSubNode(SubNode* sn)
+{
+    subNodes.push_back(sn);
+}
+
+
 void PipelineNode::run()
 {
     while (!shouldRun || (!isFirst && (previous == nullptr || previous->ranOnce)))
@@ -59,7 +66,7 @@ void PipelineNode::run()
         while (this->shouldRun)
         {
             begin = std::chrono::steady_clock::now();
-            localES.tickBegin();
+            localES->tickBegin();
             if (!disabled)
             {
                 this->processFrame();
@@ -67,11 +74,12 @@ void PipelineNode::run()
             else
             {
                 DEBUG_LOG("pipeline on thread " << localThread->get_id() << " is shorting its output");
+                cv::UMat data = previous->getOutput();
                 outputLock.lock();
-                output = previous->getOutput();
+                output = data;
                 outputLock.unlock();
             }
-            localES.tickUpdate();
+            localES->tickUpdate();
             end = std::chrono::steady_clock::now();
             std::this_thread::sleep_for(std::chrono::milliseconds((1000 / this->fpsLimit) - std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count()));
         }

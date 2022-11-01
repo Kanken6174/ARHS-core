@@ -9,6 +9,8 @@ set(pipeline_src
     ./members/uiDrawerNode.hpp
     ./members/uiMergerNode.cpp
     ./members/uiMergerNode.hpp
+    ./members/subNodes/fpsCounter.hpp
+    ./members/subNodes/fpsCounter.cpp
     ./pipeline.cpp
     ./pipeline.hpp)
 MESSAGE(STATUS "building pipeline")

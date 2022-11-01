@@ -9,11 +9,19 @@
 #include "../../model/perfcheckers/framerate.hpp"
 #include "../../threadweaver/threadweaver.hpp"
 
+/// @brief this class represents an unthreaded sub-node of a given node of the graphcis pipeline
+class SubNode{
+    public:
+    virtual void processFrame(cv::UMat& input, cv::Point2d& cursorPos)=0;
+    std::atomic_bool enabled = true;
+};
+
+/// @brief this class represents a threaded node of the graphics pipeline
 class PipelineNode{
     public:
         PipelineNode();
         std::atomic_int fpsLimit = 60;
-        framerateChecker localES;
+        framerateChecker* localES;
         cv::UMat getOutput();
         void run();
         bool isRunning();
@@ -21,9 +29,11 @@ class PipelineNode{
         void start();
         std::thread* joinThread();
         void setThreadToCore(int core);
+        void addSubNode(SubNode* sn);
         //virtual ~PipelineNode();
         float cost = 1;
     protected:
+        std::vector<SubNode*> subNodes;
         std::mutex outputLock;
         cv::UMat output;
         std::atomic_bool shouldRun = false;

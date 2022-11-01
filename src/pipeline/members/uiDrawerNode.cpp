@@ -30,16 +30,10 @@ void UiDrawerNode::processFrame()
             std::string str = iter->first;
             cv::putText(MenuMat, str, cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);
         }
-        int mFps, uiFps, Drawfps, camFPS = 0;
-        //mFps = fcheckManager::fcMergeUI.fps;
-        //uiFps = fcheckManager::fcDrawMenu.fps;
-        //Drawfps = fcheckManager::fcShow.fps;
-        //camFPS = fcheckManager::fcCam.fps;
-        //cv::putText(MenuMat, cv::format("Eps Ui drawer: %d", uiFps), cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);
-        //cv::putText(MenuMat, cv::format("Eps Ui merger: %d", mFps), cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);
-        //cv::putText(MenuMat, cv::format("Eps imshow: %d", Drawfps), cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);
-        //cv::putText(MenuMat, cv::format("Eps Camera 0: %d", camFPS), cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);
-
+        Point2d pc = Point2d(0,stackerIndex);
+        for (SubNode* sn : subNodes)
+            if(sn->enabled) sn->processFrame(MenuMat,pc);
+        stackerIndex = pc.y;
         cv::rectangle(MenuMat, cv::Rect2i(0, ((20 * _backController->selectedIndex) + 20) + 5, wd, 20), Scalar(200, 0, 0), 3, 8, 0);
         outputLock.lock();
         output = MenuMat;
