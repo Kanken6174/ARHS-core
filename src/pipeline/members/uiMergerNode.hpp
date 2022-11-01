@@ -5,6 +5,7 @@ class UiMergerNode : public PipelineNode
 {
 public:
     UiMergerNode(PipelineNode* previous,PipelineNode* menuDrawer, UiController* backController);
+    std::string getName() override;
 protected:
     void processFrame() override;
     PipelineNode* _menuDrawer;

@@ -25,9 +25,8 @@ void UiDrawerNode::processFrame()
         cv::rectangle(MenuMat, cv::Rect2i(0, 0, wd, he), cv::Scalar(255, 0, 0), 5, 8, 0);
         _backController->update();
         cv::putText(MenuMat, _backController->menuTitle, cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);
-        for (std::map<std::string, std::function<void()>>::iterator iter = _backController->menuItems.begin(); iter != _backController->menuItems.end(); ++iter)
+        for (String str : _backController->menuItemNames)
         {
-            std::string str = iter->first;
             cv::putText(MenuMat, str, cv::Point2i(5, stackerIndex += 20), cv::HersheyFonts::FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1, 8, false);
         }
         Point2d pc = Point2d(0,stackerIndex);
@@ -44,4 +43,8 @@ void UiDrawerNode::processFrame()
         std::cerr << "\033[1;31m caught DrawUi::drawMenu thread exception \033[0m" << std::endl;
         exit(1);
     }
+}
+
+std::string UiDrawerNode::getName(){
+    return "ui drawer";
 }

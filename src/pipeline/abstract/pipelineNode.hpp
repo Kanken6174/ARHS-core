@@ -27,6 +27,7 @@ class PipelineNode{
         bool isRunning();
         void stop();
         void start();
+        virtual std::string getName()=0;
         std::thread* joinThread();
         void setThreadToCore(int core);
         void addSubNode(SubNode* sn);

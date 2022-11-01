@@ -6,7 +6,7 @@ class DisplayOutputNode : public PipelineNode
 {
 public:
     DisplayOutputNode(PipelineNode* predecessor, Window* managed);
-
+    std::string getName() override;
 protected:
     void processFrame() override;
     bool inited = false;

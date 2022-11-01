@@ -30,3 +30,7 @@ void UiMergerNode::processFrame()
     output = finished; // write the final image to the psvr UI buffer
     outputLock.unlock();
 }
+
+std::string UiMergerNode::getName(){
+    return "ui merger";
+}

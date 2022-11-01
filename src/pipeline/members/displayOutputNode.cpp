@@ -26,3 +26,7 @@ void DisplayOutputNode::processFrame()
     _managed->drawAccess.unlock();
     _managed->draw();
 }
+
+std::string DisplayOutputNode::getName(){
+    return "display output";
+}

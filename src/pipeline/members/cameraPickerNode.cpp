@@ -19,3 +19,7 @@ void cameraPickerNode::processFrame(){
     outputLock.unlock();
     DEBUG_LOG("cameraPickerNode on thread " << localThread->get_id() << " is done picking its camera frame");
 }
+
+std::string cameraPickerNode::getName(){
+    return "camera Picker";
+}
