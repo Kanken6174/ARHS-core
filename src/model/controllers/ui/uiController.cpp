@@ -7,7 +7,7 @@ UiController::UiController(psvr::Psvr *hmd) : _hmd(hmd)
     menuSize = cv::Size2i(400, 400);
     menuPos = cv::Point2i(DEFAULT_UI_SIZE_X - menuSize.width, (DEFAULT_UI_SIZE_Y / 2) - (menuSize.height / 2)); // centered right
     selectedIndex = 0;
-    menuItemNames = {"set vr mode", "set cinema mode", "settings"};
+    menuItemNames = {"set vr mode", "set cinema mode", "settings","quit"};
     unsigned int i = 0;
     update();
     cout << "done init ui controller" << endl;
@@ -27,18 +27,23 @@ void UiController::Update(const std::string &message_from_subject)
         selectedDown();
         break;
     case '1':
+        cout << c << "1" << endl;
         click();
         break;
     case '2':
+        cout << c << "2" << endl;
         click();
         break;
     case '3':
+        cout << c << "3" << endl;
         click();
         break;
-    case '4':
+    case '0':
+        cout << c << "0" << endl;
         click();
         break;
     default:
+        cout << c << endl;
         break;
     }
 }
@@ -78,7 +83,7 @@ void UiController::vrMode()
 
 void UiController::click()
 {
-    exitCalled = true;
+    //exitCalled = true;
     // std::invoke(menuItems[menuItemNames.at(selectedIndex)]);
     switch (selectedIndex)
     {
@@ -90,6 +95,9 @@ void UiController::click()
         break;
     case 2:
     openSettings();
+        break;
+    case 3:
+    exit(0);
         break;
     default:
         break;

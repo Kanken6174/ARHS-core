@@ -7,7 +7,7 @@ ZbarAnalysisNode::ZbarAnalysisNode(PipelineNode* _previous, zbarScanner* scanner
 {
     isFirst = false;
     previous = _previous;
-    fpsLimit = 30;
+    fpsLimit = 60;
 }
 
 void ZbarAnalysisNode::processFrame()
