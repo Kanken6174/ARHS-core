@@ -4,7 +4,7 @@
 
 //#define DBGMODE
 #define DBGCOMM
-//#define OGLWIN
+#define OGLWIN
 #define GFXCORE 0
 #define DISPLAYCORE 1
 #define CAMCORE 2
@@ -15,6 +15,12 @@
 #define FPS_LIMIT_DISPLAY 60
 
 #define FPS_LIMIT_PSEYE 60  //increments of 15, valid values: 0-15-30-60
+
+#define DEFAULT_UI_WINDOW_AMOUNT 1 // 2 windows, one for each eye
+#define DEFAULT_UI_OFFSET_X 1080   // 1080
+#define DEFAULT_UI_OFFSET_Y 0
+#define DEFAULT_UI_SIZE_X 1920 // psvr is 960x1080 per eye
+#define DEFAULT_UI_SIZE_Y 1080
 
 #define QU(x) #x
 #define QUH(x) QU(x)

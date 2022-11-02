@@ -4,6 +4,7 @@
 #include <opencv2/highgui.hpp>
 #include <GL/glut.h>
 #include <mutex>
+#include "../../threadweaver/debugging.hpp"
 
 /// @brief this class represents a single window, there should only ever be one if the app is in opengl mode.
 class Window

@@ -16,12 +16,6 @@
 
 #include "../../patterns/observer/observable.hpp"
 
-#define DEFAULT_UI_WINDOW_AMOUNT 1 // 2 windows, one for each eye
-#define DEFAULT_UI_OFFSET_X 1080   // 1080
-#define DEFAULT_UI_OFFSET_Y 0
-#define DEFAULT_UI_SIZE_X 1920 // psvr is 960x1080 per eye
-#define DEFAULT_UI_SIZE_Y 1080
-
 using namespace std;
 using namespace cv;
 using namespace cv::ogl;

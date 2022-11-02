@@ -6,6 +6,7 @@ DisplayOutputNode::DisplayOutputNode(PipelineNode* predecessor, Window *managed)
     isLast = true;
     //output = NULL;
     cost = 2;
+    inited = false;
 }
 
 void DisplayOutputNode::processFrame()
@@ -14,10 +15,12 @@ void DisplayOutputNode::processFrame()
     if (!inited)
     {
 #ifdef OGLWIN
-        namedWindow(_managed->myWindow, WINDOW_OPENGL);
+        DEBUG_LOG("DisplayOutputNode on thread " << localThread->get_id() << " is creating its opengl UI");
+        cv::namedWindow(_managed->myWindow, cv::WINDOW_OPENGL);
         setWindowProperty(_managed->myWindow, cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
         cv::setOpenGlContext(_managed->myWindow);
-        moveWindow(_managed->myWindow, DEFAULT_UI_OFFSET_X + 960, DEFAULT_UI_OFFSET_Y);
+        cv::moveWindow(_managed->myWindow, DEFAULT_UI_OFFSET_X + 960, DEFAULT_UI_OFFSET_Y);
+        DEBUG_LOG("DisplayOutputNode on thread " << localThread->get_id() << " is done creating its opengl UI");
 #endif
         inited = true;
     }
