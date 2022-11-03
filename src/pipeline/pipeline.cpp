@@ -1,6 +1,5 @@
 #include "pipeline.hpp"
 #include "./../model/windows/windowManager.hpp"
-#include "../model/hardware/hw/serial.hpp"
 #include "./members/subNodes/subNodes.hpp"
 
 Pipeline::Pipeline(){
@@ -30,10 +29,11 @@ Pipeline::Pipeline(){
     nodes.push_back(new UiMergerNode(nodes.at(0),nodes.at(2),uc));
     nodes.push_back(new DisplayOutputNode(nodes.at(3), wm->managedUIs.at(0)));
 
+    nodes.at(1)->disabled = true;
+
     for(PipelineNode* pn : nodes)
         fc->addChecker(pn->getName(),pn->localES);
 
     for(PipelineNode* pn : nodes)
         pn->start();
-
 }

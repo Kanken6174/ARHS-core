@@ -13,6 +13,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o.d"
   "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/fpsCounter.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o.d"
   "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/staticImageOverlayer.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/uiMenuItem.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/uiNumberPickerItem.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiNumberPickerItem.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiNumberPickerItem.cpp.o.d"
   "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/zbarOverlayer.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o.d"
   "/home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o.d"
   "/home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o.d"
@@ -30,9 +32,9 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/kanken/code/AHRS_core/src/threadweaver/CMakeFiles/threadweaver.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/processing/zbar/CMakeFiles/zbarLib.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/model/hardware/ihidapi/CMakeFiles/ihidapi.dir/DependInfo.cmake"
+  "/home/kanken/code/AHRS_core/src/model/patterns/observer/CMakeFiles/observers.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/model/hardware/cameras/CMakeFiles/cameras.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/model/perfcheckers/CMakeFiles/perfcheckers.dir/DependInfo.cmake"
-  "/home/kanken/code/AHRS_core/src/model/patterns/observer/CMakeFiles/observers.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

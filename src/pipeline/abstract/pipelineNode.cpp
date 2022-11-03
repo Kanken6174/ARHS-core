@@ -47,6 +47,7 @@ cv::UMat PipelineNode::getOutput()
 
 void PipelineNode::addSubNode(SubNode* sn)
 {
+    const std::lock_guard<std::mutex> lock(subNodesLock);
     subNodes.push_back(sn);
 }
 
@@ -69,7 +70,9 @@ void PipelineNode::run()
             localES->tickBegin();
             if (!disabled)
             {
+                const std::lock_guard<std::mutex> lock(subNodesLock);
                 this->processFrame();
+                lock.~lock_guard();
             }
             else
             {

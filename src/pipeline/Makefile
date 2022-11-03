@@ -250,6 +250,54 @@ members/subNodes/staticImageOverlayer.cpp.s:
 	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.s
 .PHONY : members/subNodes/staticImageOverlayer.cpp.s
 
+members/subNodes/uiMenuItem.o: members/subNodes/uiMenuItem.cpp.o
+.PHONY : members/subNodes/uiMenuItem.o
+
+# target to build an object file
+members/subNodes/uiMenuItem.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o
+.PHONY : members/subNodes/uiMenuItem.cpp.o
+
+members/subNodes/uiMenuItem.i: members/subNodes/uiMenuItem.cpp.i
+.PHONY : members/subNodes/uiMenuItem.i
+
+# target to preprocess a source file
+members/subNodes/uiMenuItem.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.i
+.PHONY : members/subNodes/uiMenuItem.cpp.i
+
+members/subNodes/uiMenuItem.s: members/subNodes/uiMenuItem.cpp.s
+.PHONY : members/subNodes/uiMenuItem.s
+
+# target to generate assembly for a file
+members/subNodes/uiMenuItem.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.s
+.PHONY : members/subNodes/uiMenuItem.cpp.s
+
+members/subNodes/uiNumberPickerItem.o: members/subNodes/uiNumberPickerItem.cpp.o
+.PHONY : members/subNodes/uiNumberPickerItem.o
+
+# target to build an object file
+members/subNodes/uiNumberPickerItem.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiNumberPickerItem.cpp.o
+.PHONY : members/subNodes/uiNumberPickerItem.cpp.o
+
+members/subNodes/uiNumberPickerItem.i: members/subNodes/uiNumberPickerItem.cpp.i
+.PHONY : members/subNodes/uiNumberPickerItem.i
+
+# target to preprocess a source file
+members/subNodes/uiNumberPickerItem.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiNumberPickerItem.cpp.i
+.PHONY : members/subNodes/uiNumberPickerItem.cpp.i
+
+members/subNodes/uiNumberPickerItem.s: members/subNodes/uiNumberPickerItem.cpp.s
+.PHONY : members/subNodes/uiNumberPickerItem.s
+
+# target to generate assembly for a file
+members/subNodes/uiNumberPickerItem.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiNumberPickerItem.cpp.s
+.PHONY : members/subNodes/uiNumberPickerItem.cpp.s
+
 members/subNodes/zbarOverlayer.o: members/subNodes/zbarOverlayer.cpp.o
 .PHONY : members/subNodes/zbarOverlayer.o
 
@@ -394,6 +442,12 @@ help:
 	@echo "... members/subNodes/staticImageOverlayer.o"
 	@echo "... members/subNodes/staticImageOverlayer.i"
 	@echo "... members/subNodes/staticImageOverlayer.s"
+	@echo "... members/subNodes/uiMenuItem.o"
+	@echo "... members/subNodes/uiMenuItem.i"
+	@echo "... members/subNodes/uiMenuItem.s"
+	@echo "... members/subNodes/uiNumberPickerItem.o"
+	@echo "... members/subNodes/uiNumberPickerItem.i"
+	@echo "... members/subNodes/uiNumberPickerItem.s"
 	@echo "... members/subNodes/zbarOverlayer.o"
 	@echo "... members/subNodes/zbarOverlayer.i"
 	@echo "... members/subNodes/zbarOverlayer.s"

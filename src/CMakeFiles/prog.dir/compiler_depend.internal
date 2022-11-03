@@ -347,7 +347,7 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/c++/11/bits/fs_dir.h
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
- /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.hpp
+ /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
  /usr/include/c++/11/regex
  /usr/include/c++/11/bitset
@@ -614,12 +614,39 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/local/include/opencv4/opencv2/core/core_c.h
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
- /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.hpp
- /home/kanken/code/AHRS_core/src/model/windows/window.hpp
- /usr/local/include/opencv4/opencv2/core/core.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
+ /usr/local/include/hidapi/hidapi.h
+ /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /usr/include/fcntl.h
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
+ /usr/include/linux/falloc.h
+ /usr/include/x86_64-linux-gnu/bits/stat.h
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h
+ /usr/include/termios.h
+ /usr/include/x86_64-linux-gnu/bits/termios.h
+ /usr/include/x86_64-linux-gnu/bits/termios-struct.h
+ /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
+ /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
+ /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
+ /usr/include/x86_64-linux-gnu/bits/termios-baud.h
+ /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
+ /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
+ /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
+ /usr/include/x86_64-linux-gnu/bits/termios-misc.h
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
+ /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.hpp
+ /home/kanken/code/AHRS_core/src/model/windows/window.hpp
+ /usr/local/include/opencv4/opencv2/core/core.hpp
  /usr/include/GL/glut.h
  /usr/include/GL/freeglut_std.h
  /usr/include/GL/gl.h
@@ -628,13 +655,6 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/GL/glu.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.hpp
- /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
- /usr/local/include/hidapi/hidapi.h
- /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
- /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
- /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.hpp
 
 CMakeFiles/prog.dir/topLevelManager.cpp.o
@@ -983,7 +1003,7 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/c++/11/bits/fs_dir.h
  /usr/include/c++/11/bits/fs_ops.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
- /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.hpp
+ /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
  /usr/include/c++/11/regex
  /usr/include/c++/11/bitset
@@ -1250,12 +1270,39 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/local/include/opencv4/opencv2/core/core_c.h
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
- /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.hpp
- /home/kanken/code/AHRS_core/src/model/windows/window.hpp
- /usr/local/include/opencv4/opencv2/core/core.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
+ /usr/local/include/hidapi/hidapi.h
+ /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /usr/include/fcntl.h
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
+ /usr/include/linux/falloc.h
+ /usr/include/x86_64-linux-gnu/bits/stat.h
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h
+ /usr/include/termios.h
+ /usr/include/x86_64-linux-gnu/bits/termios.h
+ /usr/include/x86_64-linux-gnu/bits/termios-struct.h
+ /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
+ /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
+ /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
+ /usr/include/x86_64-linux-gnu/bits/termios-baud.h
+ /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
+ /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
+ /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
+ /usr/include/x86_64-linux-gnu/bits/termios-misc.h
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
+ /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.hpp
+ /home/kanken/code/AHRS_core/src/model/windows/window.hpp
+ /usr/local/include/opencv4/opencv2/core/core.hpp
  /usr/include/GL/glut.h
  /usr/include/GL/freeglut_std.h
  /usr/include/GL/gl.h
@@ -1264,12 +1311,5 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/GL/glu.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.hpp
- /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
- /usr/local/include/hidapi/hidapi.h
- /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
- /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
- /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.hpp
 

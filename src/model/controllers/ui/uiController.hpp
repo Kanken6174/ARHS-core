@@ -14,7 +14,7 @@
 #include <opencv2/core.hpp>
 #include <opencv2/core/opengl.hpp>
 
-#include "../../patterns/observer/observable.hpp"
+#include "./../../hardware/hw/serial.hpp"
 
 using namespace std;
 using namespace cv;

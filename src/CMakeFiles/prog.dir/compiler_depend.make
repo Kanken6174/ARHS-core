@@ -346,7 +346,7 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/bits/fs_dir.h \
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
-  pipeline/members/cameraPickerNode.hpp \
+  model/controllers/ui/uiController.hpp \
   model/hardware/cameras/_cam.hpp \
   /usr/include/c++/11/regex \
   /usr/include/c++/11/bitset \
@@ -613,12 +613,39 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/local/include/opencv4/opencv2/core/core_c.h \
   /usr/local/include/opencv4/opencv2/core/types_c.h \
   /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
-  pipeline/members/displayOutputNode.hpp \
-  model/windows/window.hpp \
-  /usr/local/include/opencv4/opencv2/core/core.hpp \
+  model/hardware/psvr/_psvr.hpp \
+  model/hardware/ihidapi/_hidapi.hpp \
+  /usr/local/include/hidapi/hidapi.h \
+  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
   /usr/local/include/opencv4/opencv2/core/ocl.hpp \
   /usr/include/c++/11/typeindex \
+  model/hardware/hw/serial.hpp \
+  /usr/include/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/linux/falloc.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/termios.h \
+  /usr/include/x86_64-linux-gnu/bits/termios.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
+  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
+  model/patterns/observer/observable.hpp \
+  model/patterns/observer/observer.hpp \
+  pipeline/members/cameraPickerNode.hpp \
+  pipeline/members/displayOutputNode.hpp \
+  model/windows/window.hpp \
+  /usr/local/include/opencv4/opencv2/core/core.hpp \
   /usr/include/GL/glut.h \
   /usr/include/GL/freeglut_std.h \
   /usr/include/GL/gl.h \
@@ -627,13 +654,6 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/include/GL/glu.h \
   threadweaver/debugging.hpp \
   pipeline/members/uiDrawerNode.hpp \
-  model/controllers/ui/uiController.hpp \
-  model/hardware/psvr/_psvr.hpp \
-  model/hardware/ihidapi/_hidapi.hpp \
-  /usr/local/include/hidapi/hidapi.h \
-  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
-  model/patterns/observer/observable.hpp \
-  model/patterns/observer/observer.hpp \
   pipeline/members/uiMergerNode.hpp
 
 CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
@@ -981,7 +1001,7 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/c++/11/bits/fs_dir.h \
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
-  pipeline/members/cameraPickerNode.hpp \
+  model/controllers/ui/uiController.hpp \
   model/hardware/cameras/_cam.hpp \
   /usr/include/c++/11/regex \
   /usr/include/c++/11/bitset \
@@ -1248,12 +1268,39 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/local/include/opencv4/opencv2/core/core_c.h \
   /usr/local/include/opencv4/opencv2/core/types_c.h \
   /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
-  pipeline/members/displayOutputNode.hpp \
-  model/windows/window.hpp \
-  /usr/local/include/opencv4/opencv2/core/core.hpp \
+  model/hardware/psvr/_psvr.hpp \
+  model/hardware/ihidapi/_hidapi.hpp \
+  /usr/local/include/hidapi/hidapi.h \
+  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
   /usr/local/include/opencv4/opencv2/core/ocl.hpp \
   /usr/include/c++/11/typeindex \
+  model/hardware/hw/serial.hpp \
+  /usr/include/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/linux/falloc.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/termios.h \
+  /usr/include/x86_64-linux-gnu/bits/termios.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
+  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
+  model/patterns/observer/observable.hpp \
+  model/patterns/observer/observer.hpp \
+  pipeline/members/cameraPickerNode.hpp \
+  pipeline/members/displayOutputNode.hpp \
+  model/windows/window.hpp \
+  /usr/local/include/opencv4/opencv2/core/core.hpp \
   /usr/include/GL/glut.h \
   /usr/include/GL/freeglut_std.h \
   /usr/include/GL/gl.h \
@@ -1262,27 +1309,10 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/GL/glu.h \
   threadweaver/debugging.hpp \
   pipeline/members/uiDrawerNode.hpp \
-  model/controllers/ui/uiController.hpp \
-  model/hardware/psvr/_psvr.hpp \
-  model/hardware/ihidapi/_hidapi.hpp \
-  /usr/local/include/hidapi/hidapi.h \
-  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
-  model/patterns/observer/observable.hpp \
-  model/patterns/observer/observer.hpp \
   pipeline/members/uiMergerNode.hpp
 
 
 pipeline/members/uiMergerNode.hpp:
-
-model/patterns/observer/observable.hpp:
-
-/usr/local/include/hidapi/hidapi.h:
-
-model/hardware/ihidapi/_hidapi.hpp:
-
-model/hardware/psvr/_psvr.hpp:
-
-model/controllers/ui/uiController.hpp:
 
 /usr/include/KHR/khrplatform.h:
 
@@ -1290,11 +1320,47 @@ model/controllers/ui/uiController.hpp:
 
 /usr/include/GL/glut.h:
 
-/usr/include/c++/11/typeindex:
-
 model/windows/window.hpp:
 
 pipeline/members/displayOutputNode.hpp:
+
+pipeline/members/cameraPickerNode.hpp:
+
+model/patterns/observer/observable.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-misc.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-tcflow.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-baud.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_cc.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-struct.h:
+
+/usr/include/termios.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
+
+model/hardware/hw/serial.hpp:
+
+/usr/include/c++/11/typeindex:
+
+/usr/local/include/hidapi/hidapi.h:
+
+model/hardware/ihidapi/_hidapi.hpp:
+
+model/hardware/psvr/_psvr.hpp:
 
 /usr/local/include/opencv4/opencv2/core/types_c.h:
 
@@ -1714,6 +1780,8 @@ model/hardware/cameras/_cam.hpp:
 
 /usr/include/c++/11/pstl/parallel_backend_tbb.h:
 
+/usr/include/linux/falloc.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h:
@@ -1758,13 +1826,15 @@ model/hardware/cameras/_cam.hpp:
 
 /usr/local/include/opencv4/opencv2/core.hpp:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
+/usr/include/x86_64-linux-gnu/bits/fcntl.h:
 
-pipeline/members/cameraPickerNode.hpp:
+/usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/stdio.h:
 
 /usr/include/oneapi/tbb/detail/_export.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -1858,6 +1928,8 @@ topLevelManager.cpp:
 
 /usr/include/c++/11/cstdlib:
 
+model/controllers/ui/uiController.hpp:
+
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
 /usr/include/features.h:
@@ -1938,6 +2010,8 @@ topLevelManager.cpp:
 
 /usr/include/oneapi/tbb/detail/_utils.h:
 
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/11/cstdint:
@@ -1965,6 +2039,8 @@ topLevelManager.cpp:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/wchar.h:
+
+/usr/include/fcntl.h:
 
 main.cpp:
 
@@ -2164,6 +2240,8 @@ model/perfcheckers/framerate.hpp:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
+/usr/include/x86_64-linux-gnu/bits/termios.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
@@ -2331,6 +2409,8 @@ model/patterns/observer/observer.hpp:
 /usr/include/c++/11/bits/basic_string.tcc:
 
 /usr/include/tbb/task_arena.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h:
 

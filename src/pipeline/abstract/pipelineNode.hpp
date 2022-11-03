@@ -8,6 +8,8 @@
 
 #include "../../model/perfcheckers/framerate.hpp"
 #include "../../threadweaver/threadweaver.hpp"
+#include "../../model/controllers/ui/uiController.hpp"
+
 
 /// @brief this class represents an unthreaded sub-node of a given node of the graphcis pipeline
 class SubNode{
@@ -34,11 +36,12 @@ class PipelineNode{
         //virtual ~PipelineNode();
         float cost = 1;
         std::mutex outputLock;
+        std::mutex subNodesLock;
+        std::atomic_bool disabled = false;  //if true short circuit your input to your output
     protected:
         std::vector<SubNode*> subNodes;
         cv::UMat output;
         std::atomic_bool shouldRun = false;
-        std::atomic_bool disabled = false;  //if true short circuit your input to your output
         std::atomic_bool isLast = true;     //needs to be changed by the implementing classes
         std::atomic_bool isFirst = true;    //needs to be changed by the implementing classes
         std::atomic_bool ranOnce = false;

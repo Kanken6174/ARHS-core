@@ -613,11 +613,57 @@ model/controllers/CMakeFiles/controllers.dir/ui/uiController.cpp.o: model/contro
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
   /usr/local/include/opencv4/opencv2/core/ocl.hpp \
   /usr/include/c++/11/typeindex \
+  model/hardware/hw/serial.hpp \
+  /usr/include/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/linux/falloc.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/termios.h \
+  /usr/include/x86_64-linux-gnu/bits/termios.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
+  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp
 
 
 model/patterns/observer/observable.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-misc.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-tcflow.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-baud.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_cc.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-struct.h:
+
+/usr/include/termios.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
+
+model/hardware/hw/serial.hpp:
 
 /usr/include/c++/11/typeindex:
 
@@ -710,6 +756,8 @@ threadweaver/threadweaver.hpp:
 /usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
@@ -923,6 +971,8 @@ model/hardware/cameras/_cam.hpp:
 
 /usr/include/oneapi/tbb/task_group.h:
 
+/usr/include/linux/falloc.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h:
@@ -932,6 +982,8 @@ model/hardware/cameras/_cam.hpp:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/wchar.h:
+
+/usr/include/fcntl.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h:
 
@@ -953,11 +1005,15 @@ model/hardware/cameras/_cam.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/oneapi/tbb/detail/_template_helpers.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -1006,6 +1062,8 @@ model/hardware/cameras/_cam.hpp:
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -1566,6 +1624,8 @@ model/patterns/observer/observer.hpp:
 /usr/local/include/opencv4/opencv2/flann/miniflann.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h:
 
 /usr/include/c++/11/cwchar:
 

@@ -16,6 +16,9 @@ set(pipeline_src
     ./members/subNodes/fpsCounter.cpp
     ./members/subNodes/staticImageOverlayer.cpp
     ./members/subNodes/zbarOverlayer.cpp
+    ./members/subNodes/uiMenus.hpp
+    ./members/subNodes/uiMenuItem.cpp
+    ./members/subNodes/uiNumberPickerItem.cpp
 
     ./pipeline.cpp
     ./pipeline.hpp)
@@ -44,5 +47,6 @@ target_link_libraries(pipelineLib controllers)
 target_link_libraries(pipelineLib hw)
 target_link_libraries(pipelineLib threadweaver)
 target_link_libraries(pipelineLib zbarLib)
+#target_link_libraries(pipelineLib observers)
 
 MESSAGE(STATUS "Done building pipeline")

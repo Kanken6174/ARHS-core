@@ -1,5 +1,4 @@
 #include "../abstract/pipelineNode.hpp"
-#include "../../model/controllers/ui/uiController.hpp"
 
 class UiDrawerNode : public PipelineNode{
     public:
