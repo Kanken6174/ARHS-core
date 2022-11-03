@@ -10,10 +10,12 @@
 class Window
 {
 public:
+    Window(std::string windowName);
     cv::UMat drawSurface; // Current frame
     cv::ogl::Texture2D drawTexture = cv::ogl::Texture2D();
     int id;
     std::mutex drawAccess;
     std::string myWindow;
     void draw();
+    void glInit();
 };

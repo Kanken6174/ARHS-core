@@ -321,7 +321,9 @@ model/windows/CMakeFiles/windows.dir/window.cpp.o: model/windows/window.cpp \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
   /usr/include/KHR/khrplatform.h \
-  /usr/include/GL/glu.h
+  /usr/include/GL/glu.h \
+  threadweaver/debugging.hpp \
+  /usr/include/c++/11/iostream
 
 model/windows/CMakeFiles/windows.dir/windowManager.cpp.o: model/windows/windowManager.cpp \
   /usr/include/stdc-predef.h \
@@ -645,12 +647,16 @@ model/windows/CMakeFiles/windows.dir/windowManager.cpp.o: model/windows/windowMa
   /usr/include/GL/glext.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
+  threadweaver/debugging.hpp \
+  /usr/include/c++/11/iostream \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h
 
 
 model/windows/windowManager.cpp:
+
+threadweaver/debugging.hpp:
 
 /usr/include/GL/glu.h:
 
@@ -1245,6 +1251,8 @@ model/windows/window.cpp:
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/c++/11/iostream:
 
 /usr/include/c++/11/bits/node_handle.h:
 

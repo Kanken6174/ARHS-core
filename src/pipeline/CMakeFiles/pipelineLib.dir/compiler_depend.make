@@ -1304,7 +1304,8 @@ pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o: pipeline/me
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
   /usr/include/KHR/khrplatform.h \
-  /usr/include/GL/glu.h
+  /usr/include/GL/glu.h \
+  threadweaver/debugging.hpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o: pipeline/members/subNodes/fpsCounter.cpp \
   /usr/include/stdc-predef.h \
@@ -4637,6 +4638,7 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o: pipeline/pipeline.cpp \
   /usr/include/GL/glext.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
+  threadweaver/debugging.hpp \
   pipeline/members/uiDrawerNode.hpp \
   model/controllers/ui/uiController.hpp \
   model/hardware/psvr/_psvr.hpp \

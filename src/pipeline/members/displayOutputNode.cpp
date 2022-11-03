@@ -16,10 +16,7 @@ void DisplayOutputNode::processFrame()
     {
 #ifdef OGLWIN
         DEBUG_LOG("DisplayOutputNode on thread " << localThread->get_id() << " is creating its opengl UI");
-        cv::namedWindow(_managed->myWindow, cv::WINDOW_OPENGL);
-        setWindowProperty(_managed->myWindow, cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
-        cv::setOpenGlContext(_managed->myWindow);
-        cv::moveWindow(_managed->myWindow, DEFAULT_UI_OFFSET_X + 960, DEFAULT_UI_OFFSET_Y);
+        _managed->glInit();
         DEBUG_LOG("DisplayOutputNode on thread " << localThread->get_id() << " is done creating its opengl UI");
 #endif
         inited = true;

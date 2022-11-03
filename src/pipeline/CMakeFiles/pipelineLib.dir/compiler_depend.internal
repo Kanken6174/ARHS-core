@@ -1308,6 +1308,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o
  /usr/include/GL/glext.h
  /usr/include/KHR/khrplatform.h
  /usr/include/GL/glu.h
+ /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o
  /home/kanken/code/AHRS_core/src/pipeline/members/subNodes/fpsCounter.cpp
@@ -4647,6 +4648,7 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o
  /usr/include/GL/glext.h
  /usr/include/KHR/khrplatform.h
  /usr/include/GL/glu.h
+ /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp

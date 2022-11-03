@@ -625,6 +625,7 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/include/GL/glext.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
+  threadweaver/debugging.hpp \
   pipeline/members/uiDrawerNode.hpp \
   model/controllers/ui/uiController.hpp \
   model/hardware/psvr/_psvr.hpp \
@@ -1259,6 +1260,7 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/GL/glext.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
+  threadweaver/debugging.hpp \
   pipeline/members/uiDrawerNode.hpp \
   model/controllers/ui/uiController.hpp \
   model/hardware/psvr/_psvr.hpp \
