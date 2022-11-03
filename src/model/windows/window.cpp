@@ -35,7 +35,7 @@ void Window::draw(){
    #else
       cv::imshow(this->myWindow, drawBuffer);
    #endif
-      cv::waitKey(10);
+      cv::waitKey(1);
    }
    catch(...){
       drawAccess.unlock();
