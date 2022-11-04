@@ -1,0 +1,3 @@
+/home/kanken/code/AHRS_core/src/model/hardware/ihidapi/CMakeFiles/edit_cache.dir
+/home/kanken/code/AHRS_core/src/model/hardware/ihidapi/CMakeFiles/rebuild_cache.dir
+/home/kanken/code/AHRS_core/src/model/hardware/ihidapi/CMakeFiles/ihidapi.dir

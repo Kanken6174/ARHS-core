@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.1)
 set(ihidapi_source_files
     hidapi_functions.cpp
     _hidapi.hpp

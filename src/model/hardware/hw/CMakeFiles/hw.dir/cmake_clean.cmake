@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hw.dir/serial.cpp.o"
-  "CMakeFiles/hw.dir/serial.cpp.o.d"
   "libhw.a"
   "libhw.pdb"
 )

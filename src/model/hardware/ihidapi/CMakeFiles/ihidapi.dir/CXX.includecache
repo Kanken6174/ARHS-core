@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
+hidapi/hidapi.h
+-
+iostream
+-
+
+/home/kanken/code/AHRS_core/src/model/hardware/ihidapi/hidapi_functions.cpp
+_hidapi.hpp
+/home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
+

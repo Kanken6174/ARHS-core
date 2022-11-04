@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/zbarLib.dir/zbar.cpp.o"
-  "CMakeFiles/zbarLib.dir/zbar.cpp.o.d"
   "libzbarLib.a"
   "libzbarLib.pdb"
 )

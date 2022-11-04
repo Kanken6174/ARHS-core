@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/observers.dir/observable.cpp.o"
-  "CMakeFiles/observers.dir/observable.cpp.o.d"
   "libobservers.a"
   "libobservers.pdb"
 )

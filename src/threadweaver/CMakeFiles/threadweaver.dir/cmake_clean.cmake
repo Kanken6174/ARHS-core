@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/threadweaver.dir/threadweaver.cpp.o"
-  "CMakeFiles/threadweaver.dir/threadweaver.cpp.o.d"
   "libthreadweaver.a"
   "libthreadweaver.pdb"
 )

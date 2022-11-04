@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
+iostream
+-
+string
+-
+
+/home/kanken/code/AHRS_core/src/threadweaver/threadweaver.cpp
+./threadweaver.hpp
+/home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
+
+/home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp
+thread
+-
+vector
+-
+unistd.h
+-
+filesystem
+-
+sched.h
+-
+./debugging.hpp
+/home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
+

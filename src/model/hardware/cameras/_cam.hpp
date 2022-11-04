@@ -38,5 +38,6 @@ class cameraManager{
     cameraManager();
     void runCapture();
     void stopCapture();
+    private:
     void runCaptureForCamera(camera* c, uint index);
 };

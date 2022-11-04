@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.cpp
+framerate.hpp
+/home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
+
+/home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
+ctime
+-
+atomic
+-
+

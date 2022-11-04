@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kanken/code/AHRS_core/src/model/patterns/observer/observable.cpp
+observable.hpp
+/home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
+
+/home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
+iostream
+-
+list
+-
+string
+-
+observer.hpp
+/home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
+
+/home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
+string
+-
+
