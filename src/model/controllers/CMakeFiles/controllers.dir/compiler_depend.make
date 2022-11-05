@@ -267,7 +267,10 @@ model/controllers/CMakeFiles/controllers.dir/ui/menu.cpp.o: model/controllers/ui
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
-  model/patterns/commands/commands.hpp
+  model/patterns/commands/commands.hpp \
+  /usr/include/c++/11/atomic \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h
 
 model/controllers/CMakeFiles/controllers.dir/ui/uiController.cpp.o: model/controllers/ui/uiController.cpp \
   /usr/include/stdc-predef.h \
@@ -1710,6 +1713,12 @@ model/patterns/commands/commands.hpp:
 
 /usr/include/c++/11/bits/regex_automaton.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
+
+/usr/include/c++/11/bits/atomic_base.h:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
 /usr/include/c++/11/memory:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
@@ -1729,10 +1738,6 @@ model/patterns/commands/commands.hpp:
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/11/bits/regex.h:
-
-/usr/include/c++/11/bits/atomic_base.h:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
@@ -1788,6 +1793,10 @@ model/patterns/commands/commands.hpp:
 
 /usr/include/c++/11/bits/regex_constants.h:
 
+/usr/include/c++/11/atomic:
+
+/usr/include/c++/11/bits/regex_error.h:
+
 /usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/c++/11/bits/regex_scanner.tcc:
@@ -1817,12 +1826,6 @@ model/patterns/observer/observer.hpp:
 /usr/include/oneapi/tbb/detail/_range_common.h:
 
 /usr/include/oneapi/tbb/detail/_config.h:
-
-/usr/include/c++/11/bits/regex_error.h:
-
-/usr/include/c++/11/atomic:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
 
 /usr/include/c++/11/bits/fs_dir.h:
 

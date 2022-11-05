@@ -269,6 +269,9 @@ model/controllers/CMakeFiles/controllers.dir/ui/menu.cpp.o
  /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h
  /home/kanken/code/AHRS_core/src/model/patterns/commands/commands.hpp
+ /usr/include/c++/11/atomic
+ /usr/include/c++/11/bits/atomic_base.h
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h
 
 model/controllers/CMakeFiles/controllers.dir/ui/uiController.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.cpp

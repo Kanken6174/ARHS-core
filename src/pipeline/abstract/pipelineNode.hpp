@@ -19,7 +19,7 @@ class SubNode{
 };
 
 /// @brief this class represents a threaded node of the graphics pipeline
-class PipelineNode{
+class PipelineNode : public MapObserver{
     public:
         PipelineNode();
         std::atomic_int fpsLimit = 60;
@@ -38,6 +38,10 @@ class PipelineNode{
         std::mutex outputLock;
         std::mutex subNodesLock;
         std::atomic_bool disabled = false;  //if true short circuit your input to your output
+        void Update(const std::string &key, const std::string &value) override{
+        if(key == "fpsLimit")
+            this->fpsLimit = stoi(value);
+        }
     protected:
         std::vector<SubNode*> subNodes;
         cv::UMat output;

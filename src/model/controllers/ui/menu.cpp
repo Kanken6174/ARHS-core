@@ -35,7 +35,7 @@ void Menu::selectedDown()
         switch (_items.at(selectedIndex)->getTrueType())
         {
         case NumberPickerItemT:
-            static_cast<NumberPickerItem *>(_items.at(selectedIndex))->increment();
+            static_cast<NumberPickerItem *>(_items.at(selectedIndex))->decrement();
             break;
 
         case CheckerItemT:
@@ -49,6 +49,7 @@ void Menu::selectedDown()
     }
     else
     {
+        std::cout << "not selecting, down " << selectedIndex << std::endl;
         if (selectedIndex > 0)
             --selectedIndex;
         else
@@ -62,12 +63,14 @@ void Menu::clickb2() {}
 
 void Menu::clickok()
 {
+    if(_items.size() <= 0) return;
     if (_items.at(selectedIndex) != nullptr)
     {
         switch (_items.at(selectedIndex)->getTrueType())
         {
         case NumberPickerItemT:
-            static_cast<NumberPickerItem *>(_items.at(selectedIndex))->selected = true;
+            //static_cast<NumberPickerItem *>(_items.at(selectedIndex))->selected = true;
+            selecting = true;
             break;
 
         case CheckerItemT:
@@ -78,11 +81,11 @@ void Menu::clickok()
             static_cast<menuitem *>(_items.at(selectedIndex))->navigate();
             break;
 
+        case ExectuableT:
+            static_cast<ButtonItem *>(_items.at(selectedIndex))->click();
+            break;
+
         default:
-            if (selectedIndex > 0)
-                --selectedIndex;
-            else
-                selectedIndex = _items.size() - 1;
             break;
         }
     }

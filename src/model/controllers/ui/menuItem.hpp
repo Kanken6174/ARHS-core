@@ -42,23 +42,26 @@ public:
 class NumberPickerItem : public baseItem    //menu item used to display and pick a number (increment/decrement)
 {
 protected:
-    int data;
-
+    int _data;
+    std::string _name;
+    std::string _targetValue;
 public:
-    NumberPickerItem(){type = NumberPickerItemT;}
-    void decrement(){++data; sendMessage("data", std::to_string(data));}
-    void increment(){--data; sendMessage("data", std::to_string(data));}
-    int getData(){ return data; }
+    NumberPickerItem(std::string name, std::string targetValue, int value = 0):_name(name),_targetValue(targetValue),_data(value){type = NumberPickerItemT;}
+    void decrement(){--_data; sendMessage(_targetValue, std::to_string(_data));}
+    void increment(){++_data; sendMessage(_targetValue, std::to_string(_data));}
+    int getData(){ return _data; }
+    std::string getName(){return _name;}
 };
 
 class CheckerItem : public baseItem
 {
 protected:
     bool data;
+    std::string _name;
     Command* _ifFalse;
     Command* _ifTrue;
 public:
-    CheckerItem(Command* ifFalse, Command* ifTrue): _ifFalse(ifFalse), _ifTrue(ifTrue) {type = CheckerItemT;}
+    CheckerItem(std::string name, Command* ifFalse, Command* ifTrue): _name(name),_ifFalse(ifFalse), _ifTrue(ifTrue) {type = CheckerItemT;}
     void toggle()
     {
         data = !data;
@@ -70,6 +73,8 @@ public:
     {
         return data;
     }
+
+    std::string getName(){return _name;}
 };
 
 class ButtonItem : public baseItem

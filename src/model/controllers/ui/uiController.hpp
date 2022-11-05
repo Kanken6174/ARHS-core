@@ -38,6 +38,8 @@ public:
     char *menutime;
     unsigned int selectedIndex;
     void activeMenuChange(std::string activeMenu){_activeMenu = activeMenu;}
+    Menu* getActiveMenu(){return menus[_activeMenu];}
+    Menu* getSpecificMenu(std::string name){return menus[name];}
 private:
     std::string _activeMenu = "";
     psvr::Psvr *_hmd;
@@ -52,4 +54,9 @@ class NavigateCommand : public Command{
     public:
     NavigateCommand(std::string menuName, UiController* backController) : _destination(menuName), _backController(backController){}
     void Execute() const override { _backController->activeMenuChange(_destination);}
+};
+
+class ExitAppCommand : public Command{
+    public:
+    void Execute() const override { exit(0);}
 };

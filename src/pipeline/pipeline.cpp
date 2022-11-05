@@ -31,6 +31,11 @@ Pipeline::Pipeline(){
 
     nodes.at(1)->disabled = true;
 
+    Menu* epsMenu = uc->getSpecificMenu("EPS options");
+    
+    for(int i = 0; i < nodes.size() && i < epsMenu->getItems().size(); i++)
+        epsMenu->getItems().at(i)->Attach(nodes.at(i));
+
     for(PipelineNode* pn : nodes)
         fc->addChecker(pn->getName(),pn->localES);
 
