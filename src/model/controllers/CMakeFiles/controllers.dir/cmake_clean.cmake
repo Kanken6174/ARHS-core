@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/controllers.dir/ui/menu.cpp.o"
+  "CMakeFiles/controllers.dir/ui/menu.cpp.o.d"
   "CMakeFiles/controllers.dir/ui/uiController.cpp.o"
+  "CMakeFiles/controllers.dir/ui/uiController.cpp.o.d"
   "libcontrollers.a"
   "libcontrollers.pdb"
 )

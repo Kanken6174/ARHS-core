@@ -68,7 +68,7 @@ void SerialPortManager::runPort()
         if (n > 0)
         {
             char c = read_buf[0];
-            sendMessage(std::string()+c);
+            sendMessage("",std::string()+c);
             /*
             switch (c)
             {

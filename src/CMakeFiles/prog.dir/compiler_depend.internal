@@ -614,13 +614,12 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/local/include/opencv4/opencv2/core/core_c.h
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
- /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
- /usr/local/include/hidapi/hidapi.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
+ /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
+ /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
  /usr/include/fcntl.h
  /usr/include/x86_64-linux-gnu/bits/fcntl.h
@@ -643,6 +642,10 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
+ /usr/local/include/hidapi/hidapi.h
+ /home/kanken/code/AHRS_core/src/model/patterns/commands/commands.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.hpp
  /home/kanken/code/AHRS_core/src/model/windows/window.hpp
@@ -1270,13 +1273,12 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/local/include/opencv4/opencv2/core/core_c.h
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
- /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
- /usr/local/include/hidapi/hidapi.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
+ /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
+ /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
  /usr/include/fcntl.h
  /usr/include/x86_64-linux-gnu/bits/fcntl.h
@@ -1299,6 +1301,10 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
+ /usr/local/include/hidapi/hidapi.h
+ /home/kanken/code/AHRS_core/src/model/patterns/commands/commands.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.hpp
  /home/kanken/code/AHRS_core/src/model/windows/window.hpp

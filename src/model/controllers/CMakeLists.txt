@@ -1,6 +1,9 @@
 set(controllers_source_files
     ./ui/uiController.cpp
     ./ui/uiController.cpp
+    ./ui/menuItem.hpp
+    ./ui/menu.hpp
+    ./ui/menu.cpp
 )
 MESSAGE(STATUS "building controllers")
 add_library(controllers ${controllers_source_files})

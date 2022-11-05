@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/psvr.dir/psvr.cpp.o"
+  "CMakeFiles/psvr.dir/psvr.cpp.o.d"
   "libpsvr.a"
   "libpsvr.pdb"
 )

@@ -1,27 +1,24 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o"
-  "/home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o"
-  "/home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o"
-  "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/fpsCounter.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o"
-  "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/staticImageOverlayer.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o"
-  "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/uiMenuItem.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o"
-  "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/uiNumberPickerItem.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiNumberPickerItem.cpp.o"
-  "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/zbarOverlayer.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o"
-  "/home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o"
-  "/home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o"
-  "/home/kanken/code/AHRS_core/src/pipeline/members/zbarAnalysisNode.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o"
-  "/home/kanken/code/AHRS_core/src/pipeline/pipeline.cpp" "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/include/opencv4"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/cameraPickerNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/fpsCounter.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/staticImageOverlayer.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/uiMenuItem.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/zbarOverlayer.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/zbarAnalysisNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/pipeline.cpp" "pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o.d"
   )
 
 # Targets to which this target links.

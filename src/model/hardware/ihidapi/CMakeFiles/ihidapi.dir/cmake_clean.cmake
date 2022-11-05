@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ihidapi.dir/hidapi_functions.cpp.o"
+  "CMakeFiles/ihidapi.dir/hidapi_functions.cpp.o.d"
   "libihidapi.a"
   "libihidapi.pdb"
 )

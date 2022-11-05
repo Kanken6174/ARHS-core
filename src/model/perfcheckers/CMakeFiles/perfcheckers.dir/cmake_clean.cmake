@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/perfcheckers.dir/framerate.cpp.o"
+  "CMakeFiles/perfcheckers.dir/framerate.cpp.o.d"
   "libperfcheckers.a"
   "libperfcheckers.pdb"
 )

@@ -4,12 +4,14 @@
 #include <string>
 #include "observer.hpp"
 
-class Observable {
- public:
-  ~Observable(){};
-  void Attach(Observer *observer);
-  void Detach(Observer *observer);
-  void sendMessage(std::string str);
-  private:
-  std::list<Observer*> list_observer_;
+class MapObservable
+{
+public:
+  ~MapObservable(){};
+  void Attach(MapObserver *observer);
+  void Detach(MapObserver *observer);
+  void sendMessage(std::string key, std::string value);
+
+private:
+  std::list<MapObserver *> list_observer_;
 };

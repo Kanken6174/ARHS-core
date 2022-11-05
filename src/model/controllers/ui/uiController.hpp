@@ -9,12 +9,11 @@
 */
 #pragma once
 #include "../../hardware/cameras/_cam.hpp"
-#include "../../hardware/psvr/_psvr.hpp"
 #include <opencv2/imgcodecs/imgcodecs.hpp>
 #include <opencv2/core.hpp>
 #include <opencv2/core/opengl.hpp>
 
-#include "./../../hardware/hw/serial.hpp"
+#include "menu.hpp"
 
 using namespace std;
 using namespace cv;
@@ -22,18 +21,13 @@ using namespace cv::ogl;
 using namespace psvr;
 
 /// @brief this class is used to process view logic and interaction [model]
-class UiController : public Observer
+class UiController : public MapObserver
 {
 public:
-    void Update(const std::string &message_from_subject) override;
-    UiController(psvr::Psvr* hmd);
-    void selectedUp();
-    void selectedDown();
-    void click();
+    std::map<std::string, Menu*> menus;
+    void Update(const std::string &key, const std::string &value) override;
+    UiController(psvr::Psvr *hmd);
     void update();
-    void openSettings();
-    void cinemaMode();
-    void vrMode();
     std::vector<std::string> menuItemNames;
     bool showMenu;
     bool exitCalled;
@@ -41,9 +35,21 @@ public:
     string menuTitle;
     cv::Size2i menuSize;
     cv::Point2i menuPos;
-    unsigned int selectedIndex;
-    map<std::string, std::function<void()>> menuItems;
     char *menutime;
+    unsigned int selectedIndex;
+    void activeMenuChange(std::string activeMenu){_activeMenu = activeMenu;}
+private:
+    std::string _activeMenu = "";
+    psvr::Psvr *_hmd;
+
+    void buildMenu();
+};
+
+class NavigateCommand : public Command{
     private:
-    psvr::Psvr* _hmd;
+    UiController* _backController;
+    std::string _destination;
+    public:
+    NavigateCommand(std::string menuName, UiController* backController) : _destination(menuName), _backController(backController){}
+    void Execute() const override { _backController->activeMenuChange(_destination);}
 };

@@ -10,37 +10,38 @@ UiController::UiController(psvr::Psvr *hmd) : _hmd(hmd)
     menuItemNames = {"set vr mode", "set cinema mode", "settings","quit"};
     unsigned int i = 0;
     update();
+    buildMenu();
     cout << "done init ui controller" << endl;
 }
 
-void UiController::Update(const std::string &message_from_subject)
+void UiController::Update(const std::string &key,const std::string &value)
 {
-    char c = message_from_subject[0];
+    char c = value[0];
     switch (c)
     {
     case 'U':
         cout << c << "++" << endl;
-        selectedUp();
+        menus[_activeMenu]->selectedUp();
         break;
     case 'D':
         cout << c << "--" << endl;
-        selectedDown();
+        menus[_activeMenu]->selectedDown();
         break;
-    case '1':
+    case '1':   //1
         cout << c << "1" << endl;
-        click();
+        menus[_activeMenu]->clickback();
         break;
-    case '2':
+    case '2':   //<
         cout << c << "2" << endl;
-        click();
+        menus[_activeMenu]->clickb1();
         break;
-    case '3':
+    case '3':   //>
         cout << c << "3" << endl;
-        click();
+        menus[_activeMenu]->clickb2();
         break;
-    case '0':
+    case '0':   //2
         cout << c << "0" << endl;
-        click();
+        menus[_activeMenu]->clickok();
         break;
     default:
         cout << c << endl;
@@ -55,51 +56,39 @@ void UiController::update()
     menuTitle = std::string("P-OS ") + VERSION + " " + menutime;
 }
 
-void UiController::selectedUp()
-{
-    if (selectedIndex < menuItems.size() - 1)
-        selectedIndex++;
-}
+void UiController::buildMenu(){
+    menus.clear();
+    _activeMenu = "main menu";
 
-void UiController::selectedDown()
-{
-    if (selectedIndex > 0)
-        selectedIndex--;
-}
+    Command* navigateToMain = new NavigateCommand(_activeMenu,this);
+    Menu* main = new Menu(_activeMenu,main,navigateToMain);     //it's the root so it navigates back to itself
+    menus[main->getName()] = main;
 
-void UiController::openSettings()
-{
-}
+    Menu* psvrMenu = new Menu("PSVR options",main, navigateToMain);
+    menus[psvrMenu->getName()] = psvrMenu;
 
-void UiController::cinemaMode()
-{
-    _hmd->cinemaMode();
-}
+    Command* navigateToPsvr = new NavigateCommand(psvrMenu->getName(),this);
 
-void UiController::vrMode()
-{
-    _hmd->vrmode();
-}
+    menuitem* psvrOptions = new menuitem(navigateToPsvr);
+    psvrOptions->setData("open psvr options");
 
-void UiController::click()
-{
-    //exitCalled = true;
-    // std::invoke(menuItems[menuItemNames.at(selectedIndex)]);
-    switch (selectedIndex)
-    {
-    case 0:
-    vrMode();
-        break;
-    case 1:
-    cinemaMode();
-        break;
-    case 2:
-    openSettings();
-        break;
-    case 3:
-    exit(0);
-        break;
-    default:
-        break;
-    }
+    Command* startup = new StartupCommand(_hmd);
+    Command* shutdown = new ShutdownCommand(_hmd);
+    Command* vrmode = new VrModeCommand(_hmd);
+    Command* cinemamode = new CinemaModeCommand(_hmd);
+
+    ButtonItem* startBtn = new ButtonItem(startup);
+    ButtonItem* stopBtn = new ButtonItem(shutdown);
+    ButtonItem* vrBtn = new ButtonItem(vrmode);
+    ButtonItem* cinemaBtn = new ButtonItem(cinemamode);
+
+    startBtn->setData("startup psvr");
+    stopBtn->setData("shutdown psvr");
+    vrBtn->setData("set psvr VR mode");
+    cinemaBtn->setData("set psvr Cinema mode");
+
+    psvrMenu->addItem(startBtn);
+    psvrMenu->addItem(stopBtn);
+    psvrMenu->addItem(vrBtn);
+    psvrMenu->addItem(cinemaBtn);
 }

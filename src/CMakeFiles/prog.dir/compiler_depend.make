@@ -613,13 +613,12 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/local/include/opencv4/opencv2/core/core_c.h \
   /usr/local/include/opencv4/opencv2/core/types_c.h \
   /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
-  model/hardware/psvr/_psvr.hpp \
-  model/hardware/ihidapi/_hidapi.hpp \
-  /usr/local/include/hidapi/hidapi.h \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
   /usr/local/include/opencv4/opencv2/core/ocl.hpp \
   /usr/include/c++/11/typeindex \
+  model/controllers/ui/menu.hpp \
+  model/controllers/ui/menuItem.hpp \
   model/hardware/hw/serial.hpp \
   /usr/include/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
@@ -642,6 +641,10 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/psvr/_psvr.hpp \
+  model/hardware/ihidapi/_hidapi.hpp \
+  /usr/local/include/hidapi/hidapi.h \
+  model/patterns/commands/commands.hpp \
   pipeline/members/cameraPickerNode.hpp \
   pipeline/members/displayOutputNode.hpp \
   model/windows/window.hpp \
@@ -1268,13 +1271,12 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/local/include/opencv4/opencv2/core/core_c.h \
   /usr/local/include/opencv4/opencv2/core/types_c.h \
   /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
-  model/hardware/psvr/_psvr.hpp \
-  model/hardware/ihidapi/_hidapi.hpp \
-  /usr/local/include/hidapi/hidapi.h \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
   /usr/local/include/opencv4/opencv2/core/ocl.hpp \
   /usr/include/c++/11/typeindex \
+  model/controllers/ui/menu.hpp \
+  model/controllers/ui/menuItem.hpp \
   model/hardware/hw/serial.hpp \
   /usr/include/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
@@ -1297,6 +1299,10 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/psvr/_psvr.hpp \
+  model/hardware/ihidapi/_hidapi.hpp \
+  /usr/local/include/hidapi/hidapi.h \
+  model/patterns/commands/commands.hpp \
   pipeline/members/cameraPickerNode.hpp \
   pipeline/members/displayOutputNode.hpp \
   model/windows/window.hpp \
@@ -1326,6 +1332,14 @@ pipeline/members/displayOutputNode.hpp:
 
 pipeline/members/cameraPickerNode.hpp:
 
+model/patterns/commands/commands.hpp:
+
+/usr/local/include/hidapi/hidapi.h:
+
+model/hardware/ihidapi/_hidapi.hpp:
+
+model/hardware/psvr/_psvr.hpp:
+
 model/patterns/observer/observable.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
@@ -1354,13 +1368,11 @@ model/patterns/observer/observable.hpp:
 
 model/hardware/hw/serial.hpp:
 
+model/controllers/ui/menuItem.hpp:
+
+model/controllers/ui/menu.hpp:
+
 /usr/include/c++/11/typeindex:
-
-/usr/local/include/hidapi/hidapi.h:
-
-model/hardware/ihidapi/_hidapi.hpp:
-
-model/hardware/psvr/_psvr.hpp:
 
 /usr/local/include/opencv4/opencv2/core/types_c.h:
 

@@ -18,7 +18,6 @@ set(pipeline_src
     ./members/subNodes/zbarOverlayer.cpp
     ./members/subNodes/uiMenus.hpp
     ./members/subNodes/uiMenuItem.cpp
-    ./members/subNodes/uiNumberPickerItem.cpp
 
     ./pipeline.cpp
     ./pipeline.hpp)

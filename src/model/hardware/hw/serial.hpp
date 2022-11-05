@@ -14,7 +14,7 @@
 #include "./../../../threadweaver/threadweaver.hpp"
 #include "../../patterns/observer/observable.hpp"
 
-class SerialPortManager : public Observable
+class SerialPortManager : public MapObservable
 {
 public:
     SerialPortManager();

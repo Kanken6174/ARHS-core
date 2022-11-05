@@ -183,8 +183,11 @@ model/hardware/psvr/CMakeFiles/psvr.dir/psvr.cpp.o: model/hardware/psvr/psvr.cpp
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/istream.tcc \
+  model/patterns/commands/commands.hpp
 
+
+model/patterns/commands/commands.hpp:
 
 /usr/include/c++/11/bits/istream.tcc:
 
