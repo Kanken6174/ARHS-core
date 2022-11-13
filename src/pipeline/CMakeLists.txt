@@ -11,6 +11,8 @@ set(pipeline_src
     ./members/uiMergerNode.hpp
     ./members/zbarAnalysisNode.cpp
     ./members/zbarAnalysisNode.hpp
+    ./members/videoCaptureNode.cpp
+    ./members/videoCaptureNode.hpp
 
     ./members/subNodes/subNodes.hpp
     ./members/subNodes/fpsCounter.cpp

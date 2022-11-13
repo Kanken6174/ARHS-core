@@ -659,6 +659,7 @@ CMakeFiles/prog.dir/main.cpp.o
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/videoCaptureNode.hpp
 
 CMakeFiles/prog.dir/topLevelManager.cpp.o
  /home/kanken/code/AHRS_core/src/topLevelManager.cpp
@@ -1318,4 +1319,5 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.hpp
  /home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/videoCaptureNode.hpp
 

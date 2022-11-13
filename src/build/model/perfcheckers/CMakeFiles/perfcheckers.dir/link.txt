@@ -1,0 +1,2 @@
+/usr/bin/ar qc libperfcheckers.a CMakeFiles/perfcheckers.dir/framerate.cpp.o
+/usr/bin/ranlib libperfcheckers.a

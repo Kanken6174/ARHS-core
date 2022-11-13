@@ -657,7 +657,8 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/include/GL/glu.h \
   threadweaver/debugging.hpp \
   pipeline/members/uiDrawerNode.hpp \
-  pipeline/members/uiMergerNode.hpp
+  pipeline/members/uiMergerNode.hpp \
+  pipeline/members/videoCaptureNode.hpp
 
 CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/stdc-predef.h \
@@ -1315,7 +1316,8 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/GL/glu.h \
   threadweaver/debugging.hpp \
   pipeline/members/uiDrawerNode.hpp \
-  pipeline/members/uiMergerNode.hpp
+  pipeline/members/uiMergerNode.hpp \
+  pipeline/members/videoCaptureNode.hpp
 
 
 pipeline/members/uiMergerNode.hpp:
@@ -1657,6 +1659,8 @@ model/hardware/cameras/_cam.hpp:
 /usr/include/c++/11/bits/ostream_insert.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+pipeline/members/videoCaptureNode.hpp:
 
 /usr/include/c++/11/bits/locale_classes.h:
 

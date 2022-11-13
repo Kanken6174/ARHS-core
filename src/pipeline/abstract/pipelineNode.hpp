@@ -38,6 +38,7 @@ class PipelineNode : public MapObserver{
         std::mutex outputLock;
         std::mutex subNodesLock;
         std::atomic_bool disabled = false;  //if true short circuit your input to your output
+        std::atomic_bool changed = true;    //specifies if the output has changed since last frame grab
         void Update(const std::string &key, const std::string &value) override{
         if(key == "fpsLimit")
             this->fpsLimit = stoi(value);

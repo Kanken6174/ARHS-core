@@ -42,15 +42,15 @@ void PipelineNode::start()
 cv::UMat PipelineNode::getOutput()
 {
     const std::lock_guard<std::mutex> lock(outputLock);
+    changed = false;
     return output;
 }
 
-void PipelineNode::addSubNode(SubNode* sn)
+void PipelineNode::addSubNode(SubNode *sn)
 {
     const std::lock_guard<std::mutex> lock(subNodesLock);
     subNodes.push_back(sn);
 }
-
 
 void PipelineNode::run()
 {
@@ -58,7 +58,7 @@ void PipelineNode::run()
     {                                                              // sleep until told to run and if you're not the first in your hierarchy,
         std::this_thread::sleep_for(std::chrono::milliseconds(5)); // wait for previous to be assigned
     }
-    //DEBUG_LOG("pipeline on thread " << localThread->get_id() << " exitted wait while");
+    // DEBUG_LOG("pipeline on thread " << localThread->get_id() << " exitted wait while");
     try
     {
         this->shouldRun = true;
@@ -85,6 +85,7 @@ void PipelineNode::run()
             localES->tickUpdate();
             end = std::chrono::steady_clock::now();
             std::this_thread::sleep_for(std::chrono::milliseconds((1000 / this->fpsLimit) - std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count()));
+            changed = true;
         }
         ranOnce = true;
     }

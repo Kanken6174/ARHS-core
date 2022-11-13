@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kanken/code/AHRS_core/src/pipeline/members/subNodes/zbarOverlayer.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o.d"
   "/home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o.d"
   "/home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pipeline/members/videoCaptureNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.o.d"
   "/home/kanken/code/AHRS_core/src/pipeline/members/zbarAnalysisNode.cpp" "pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o.d"
   "/home/kanken/code/AHRS_core/src/pipeline/pipeline.cpp" "pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o" "gcc" "pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o.d"
   )

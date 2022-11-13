@@ -346,6 +346,30 @@ members/uiMergerNode.cpp.s:
 	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.s
 .PHONY : members/uiMergerNode.cpp.s
 
+members/videoCaptureNode.o: members/videoCaptureNode.cpp.o
+.PHONY : members/videoCaptureNode.o
+
+# target to build an object file
+members/videoCaptureNode.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.o
+.PHONY : members/videoCaptureNode.cpp.o
+
+members/videoCaptureNode.i: members/videoCaptureNode.cpp.i
+.PHONY : members/videoCaptureNode.i
+
+# target to preprocess a source file
+members/videoCaptureNode.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.i
+.PHONY : members/videoCaptureNode.cpp.i
+
+members/videoCaptureNode.s: members/videoCaptureNode.cpp.s
+.PHONY : members/videoCaptureNode.s
+
+# target to generate assembly for a file
+members/videoCaptureNode.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.s
+.PHONY : members/videoCaptureNode.cpp.s
+
 members/zbarAnalysisNode.o: members/zbarAnalysisNode.cpp.o
 .PHONY : members/zbarAnalysisNode.o
 
@@ -430,6 +454,9 @@ help:
 	@echo "... members/uiMergerNode.o"
 	@echo "... members/uiMergerNode.i"
 	@echo "... members/uiMergerNode.s"
+	@echo "... members/videoCaptureNode.o"
+	@echo "... members/videoCaptureNode.i"
+	@echo "... members/videoCaptureNode.s"
 	@echo "... members/zbarAnalysisNode.o"
 	@echo "... members/zbarAnalysisNode.i"
 	@echo "... members/zbarAnalysisNode.s"

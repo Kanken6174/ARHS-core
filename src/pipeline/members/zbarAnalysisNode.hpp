@@ -4,7 +4,7 @@
 class ZbarAnalysisNode : public PipelineNode
 {
 public:
-    ZbarAnalysisNode(PipelineNode* previous,zbarScanner* scanner);
+    ZbarAnalysisNode(PipelineNode* _previous,zbarScanner* scanner);
     std::string getName() override;
 protected:
     void processFrame() override;

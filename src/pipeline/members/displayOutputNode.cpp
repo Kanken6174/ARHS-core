@@ -25,6 +25,9 @@ void DisplayOutputNode::processFrame()
     _managed->drawSurface = previous->getOutput();
     _managed->drawAccess.unlock();
     _managed->draw();
+    outputLock.lock();
+    output = _managed->drawSurface;
+    outputLock.unlock();
 }
 
 std::string DisplayOutputNode::getName(){

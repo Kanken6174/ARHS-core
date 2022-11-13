@@ -121,4 +121,14 @@ void UiController::buildMenu()
     fpsMenu->addItem(new NumberPickerItem("display EPS limit","fpsLimit",60));
 
 #pragma endregion fps_menu
+#pragma region video_recording_menu
+    Menu *viderecMenu = new Menu("Media capture", main, navigateToMain);
+    menus[viderecMenu->getName()] = viderecMenu;
+
+    Command *navigateTovidrec = new NavigateCommand(viderecMenu->getName(), this);
+
+    menuitem *vidrecItem = new menuitem(navigateTovidrec);
+    vidrecItem->setData("media capture");
+    main->addItem(vidrecItem);
+#pragma endregion video_recording_menu
 }

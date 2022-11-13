@@ -1,0 +1,2 @@
+/usr/bin/ar qc libobservers.a CMakeFiles/observers.dir/observable.cpp.o
+/usr/bin/ranlib libobservers.a
