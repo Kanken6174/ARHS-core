@@ -616,25 +616,26 @@ pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
@@ -1258,25 +1259,26 @@ pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
@@ -1900,25 +1902,26 @@ pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
@@ -2551,25 +2554,26 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
@@ -3208,25 +3212,26 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
@@ -3867,25 +3872,26 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
@@ -4509,25 +4515,26 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
@@ -5168,25 +5175,26 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
@@ -5810,25 +5818,26 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
@@ -6454,25 +6463,26 @@ pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
@@ -7096,25 +7106,26 @@ pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
@@ -7752,25 +7763,26 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
- /usr/include/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl.h
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
- /usr/include/linux/falloc.h
- /usr/include/x86_64-linux-gnu/bits/stat.h
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
- /usr/include/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios.h
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp

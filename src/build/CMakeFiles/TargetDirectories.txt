@@ -16,6 +16,9 @@
 /home/kanken/code/AHRS_core/src/build/model/hardware/psvr/CMakeFiles/psvr.dir
 /home/kanken/code/AHRS_core/src/build/model/hardware/psvr/CMakeFiles/edit_cache.dir
 /home/kanken/code/AHRS_core/src/build/model/hardware/psvr/CMakeFiles/rebuild_cache.dir
+/home/kanken/code/AHRS_core/src/build/model/hardware/hw/extendables/CMakeFiles/hw_ext.dir
+/home/kanken/code/AHRS_core/src/build/model/hardware/hw/extendables/CMakeFiles/edit_cache.dir
+/home/kanken/code/AHRS_core/src/build/model/hardware/hw/extendables/CMakeFiles/rebuild_cache.dir
 /home/kanken/code/AHRS_core/src/build/model/hardware/hw/CMakeFiles/hw.dir
 /home/kanken/code/AHRS_core/src/build/model/hardware/hw/CMakeFiles/edit_cache.dir
 /home/kanken/code/AHRS_core/src/build/model/hardware/hw/CMakeFiles/rebuild_cache.dir

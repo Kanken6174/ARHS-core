@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 44,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
@@ -39,7 +39,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 48,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
@@ -104,6 +104,10 @@
 		{
 			"backtrace" : 3,
 			"id" : "psvr::@ece2be6823c963226006"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "hw_ext::@7379838662f63f423f38"
 		},
 		{
 			"backtrace" : 3,
@@ -208,6 +212,10 @@
 			},
 			{
 				"fragment" : "model/hardware/hw/libhw.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "model/hardware/hw/extendables/libhw_ext.a",
 				"role" : "libraries"
 			},
 			{

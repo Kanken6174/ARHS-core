@@ -38,7 +38,7 @@ Pipeline::Pipeline()
     nodes.push_back(umn);
     nodes.push_back(don);
 
-    zban->disabled = true;  //disable the zbar node by default
+    zban->disabled = false;  //disable the zbar node by default
 
     Menu *epsMenu = uc->getSpecificMenu("EPS options"); // create menu for execution per second limits
 

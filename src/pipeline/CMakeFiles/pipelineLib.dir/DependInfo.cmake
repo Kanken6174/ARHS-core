@@ -32,6 +32,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/kanken/code/AHRS_core/src/threadweaver/CMakeFiles/threadweaver.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/processing/zbar/CMakeFiles/zbarLib.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/model/hardware/ihidapi/CMakeFiles/ihidapi.dir/DependInfo.cmake"
+  "/home/kanken/code/AHRS_core/src/model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/model/patterns/observer/CMakeFiles/observers.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/model/hardware/cameras/CMakeFiles/cameras.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/model/perfcheckers/CMakeFiles/perfcheckers.dir/DependInfo.cmake"

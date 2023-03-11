@@ -14,7 +14,7 @@
 #define FPS_LIMIT_DRAW 30
 #define FPS_LIMIT_DISPLAY 60
 
-#define FPS_LIMIT_PSEYE 60  //increments of 15, valid values: 0-15-30-60
+#define FPS_LIMIT_PSEYE 15  //increments of 15, valid values: 0-15-30-60
 
 #define DEFAULT_UI_WINDOW_AMOUNT 1 // 2 windows, one for each eye
 #define DEFAULT_UI_OFFSET_X 1080   // 1080

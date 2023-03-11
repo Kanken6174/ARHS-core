@@ -1,3 +1,5 @@
+#ifndef _COMMAND
+#define _COMMAND
 #include <iostream>
 
 /**
@@ -9,3 +11,4 @@ class Command {
   }
   virtual void Execute() const = 0;
 };
+#endif

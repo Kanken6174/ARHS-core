@@ -195,6 +195,19 @@ psvr/fast:
 .PHONY : psvr/fast
 
 #=============================================================================
+# Target rules for targets named hw_ext
+
+# Build rule for target.
+hw_ext: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw_ext
+.PHONY : hw_ext
+
+# fast build rule for target.
+hw_ext/fast:
+	$(MAKE) $(MAKESILENT) -f model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/build.make model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/build
+.PHONY : hw_ext/fast
+
+#=============================================================================
 # Target rules for targets named hw
 
 # Build rule for target.
@@ -358,6 +371,7 @@ help:
 	@echo "... commands"
 	@echo "... controllers"
 	@echo "... hw"
+	@echo "... hw_ext"
 	@echo "... ihidapi"
 	@echo "... observers"
 	@echo "... perfcheckers"

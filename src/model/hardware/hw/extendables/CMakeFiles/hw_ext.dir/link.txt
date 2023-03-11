@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhw_ext.a CMakeFiles/hw_ext.dir/DeviceTree.cpp.o
+/usr/bin/ranlib libhw_ext.a

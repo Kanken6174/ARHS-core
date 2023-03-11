@@ -120,6 +120,7 @@ prog: model/hardware/ihidapi/libihidapi.a
 prog: /usr/local/lib/libhidapi-hidraw.so.0.13.0
 prog: model/hardware/cameras/libcameras.a
 prog: model/hardware/hw/libhw.a
+prog: model/hardware/hw/extendables/libhw_ext.a
 prog: model/patterns/observer/libobservers.a
 prog: threadweaver/libthreadweaver.a
 prog: model/perfcheckers/libperfcheckers.a

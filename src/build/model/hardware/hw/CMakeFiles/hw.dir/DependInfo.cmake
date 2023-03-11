@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/kanken/code/AHRS_core/src/build/model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/build/threadweaver/CMakeFiles/threadweaver.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/build/model/patterns/observer/CMakeFiles/observers.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/build/model/perfcheckers/CMakeFiles/perfcheckers.dir/DependInfo.cmake"

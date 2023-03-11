@@ -43,9 +43,12 @@ cameraManager::cameraManager(){
             }else{
             vs.release();
             camera* cam = new camera();
-            cam->source = new VideoCapture(camID, CAP_ANY);
+            cam->source = new VideoCapture(camID, CAP_FFMPEG);
             cam->source->set(CV_CAP_PROP_FOURCC, CV_FOURCC('M', 'J', 'P', 'G'));
             cam->source->set(CV_CAP_PROP_FPS , FPS_LIMIT_PSEYE);
+            cam->source->set(CAP_PROP_FRAME_WIDTH, 1920);
+            cam->source->set(CAP_PROP_FRAME_HEIGHT, 1080);
+            
 
             cam->path = camID;
             videoSources.push_back(cam);    //valid camera added

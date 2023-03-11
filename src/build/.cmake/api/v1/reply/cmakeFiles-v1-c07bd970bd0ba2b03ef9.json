@@ -248,6 +248,9 @@
 			"path" : "model/hardware/psvr/CMakeLists.txt"
 		},
 		{
+			"path" : "model/hardware/hw/extendables/CMakeLists.txt"
+		},
+		{
 			"path" : "model/hardware/hw/CMakeLists.txt"
 		},
 		{
