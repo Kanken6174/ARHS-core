@@ -1,6 +1,7 @@
 #include "pipeline.hpp"
 #include "./../model/windows/windowManager.hpp"
 #include "./members/subNodes/subNodes.hpp"
+#include "../pluginManagement/PluginManager.hpp"
 
 Pipeline::Pipeline()
 {
@@ -61,6 +62,8 @@ Pipeline::Pipeline()
     mediaMenu->addItem(vcstartBtn);
     mediaMenu->addItem(vcstopBtn);
     mediaMenu->addItem(vcsnapBtn);
+
+    PluginManager(*this);
 
     startPipeline();
 

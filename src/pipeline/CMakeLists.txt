@@ -48,6 +48,7 @@ target_link_libraries(pipelineLib controllers)
 target_link_libraries(pipelineLib hw)
 target_link_libraries(pipelineLib threadweaver)
 target_link_libraries(pipelineLib zbarLib)
+target_link_libraries(pipelineLib PluginManager)
 #target_link_libraries(pipelineLib observers)
 
 MESSAGE(STATUS "Done building pipeline")

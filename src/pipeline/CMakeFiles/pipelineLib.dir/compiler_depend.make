@@ -7807,8 +7807,26 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o: pipeline/pipeline.cpp \
   /usr/include/zbar/Image.h \
   /usr/include/zbar/Video.h \
   /usr/include/zbar/Window.h \
-  /usr/include/zbar/Processor.h
+  /usr/include/zbar/Processor.h \
+  pluginManagement/PluginManager.hpp \
+  pluginManagement/Plugin.hpp \
+  model/hardware/hw/extendables/SerialDevice.hpp \
+  model/hardware/hw/extendables/Device.hpp \
+  model/hardware/hw/extendables/DeviceCommand.hpp \
+  model/patterns/commands/commands.hpp \
+  model/hardware/hw/serial.hpp \
+  pipeline/pipeline.hpp \
+  pipeline/members/displayOutputNode.hpp \
+  pipeline/members/uiDrawerNode.hpp \
+  pipeline/members/uiMergerNode.hpp \
+  pipeline/members/videoCaptureNode.hpp
 
+
+model/hardware/hw/extendables/DeviceCommand.hpp:
+
+model/hardware/hw/extendables/Device.hpp:
+
+pluginManagement/Plugin.hpp:
 
 pipeline/pipeline.hpp:
 
@@ -8616,6 +8634,8 @@ pipeline/abstract/pipelineNode.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
+pluginManagement/PluginManager.hpp:
+
 /usr/include/tbb/parallel_for.h:
 
 /usr/include/locale.h:
@@ -8885,6 +8905,8 @@ model/patterns/observer/observer.hpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h:
+
+model/hardware/hw/extendables/SerialDevice.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h:
 

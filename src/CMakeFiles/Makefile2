@@ -78,6 +78,7 @@ all: processing/zbar/all
 all: model/windows/all
 all: ui/support/all
 all: pipeline/all
+all: pluginManagement/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -95,6 +96,7 @@ preinstall: processing/zbar/preinstall
 preinstall: model/windows/preinstall
 preinstall: ui/support/preinstall
 preinstall: pipeline/preinstall
+preinstall: pluginManagement/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -113,6 +115,7 @@ clean: processing/zbar/clean
 clean: model/windows/clean
 clean: ui/support/clean
 clean: pipeline/clean
+clean: pluginManagement/clean
 .PHONY : clean
 
 #=============================================================================
@@ -281,6 +284,21 @@ pipeline/clean: pipeline/CMakeFiles/pipelineLib.dir/clean
 .PHONY : pipeline/clean
 
 #=============================================================================
+# Directory level rules for directory pluginManagement
+
+# Recursive "all" directory target.
+pluginManagement/all: pluginManagement/CMakeFiles/PluginManager.dir/all
+.PHONY : pluginManagement/all
+
+# Recursive "preinstall" directory target.
+pluginManagement/preinstall:
+.PHONY : pluginManagement/preinstall
+
+# Recursive "clean" directory target.
+pluginManagement/clean: pluginManagement/CMakeFiles/PluginManager.dir/clean
+.PHONY : pluginManagement/clean
+
+#=============================================================================
 # Directory level rules for directory processing/zbar
 
 # Recursive "all" directory target.
@@ -344,12 +362,12 @@ CMakeFiles/prog.dir/all: ui/support/CMakeFiles/support.dir/all
 CMakeFiles/prog.dir/all: pipeline/CMakeFiles/pipelineLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=31,32,33 "Built target prog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=34,35,36 "Built target prog"
 .PHONY : CMakeFiles/prog.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/prog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/prog.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
 .PHONY : CMakeFiles/prog.dir/rule
@@ -370,7 +388,7 @@ CMakeFiles/prog.dir/clean:
 threadweaver/CMakeFiles/threadweaver.dir/all: model/perfcheckers/CMakeFiles/perfcheckers.dir/all
 	$(MAKE) $(MAKESILENT) -f threadweaver/CMakeFiles/threadweaver.dir/build.make threadweaver/CMakeFiles/threadweaver.dir/depend
 	$(MAKE) $(MAKESILENT) -f threadweaver/CMakeFiles/threadweaver.dir/build.make threadweaver/CMakeFiles/threadweaver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=38,39 "Built target threadweaver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=41,42 "Built target threadweaver"
 .PHONY : threadweaver/CMakeFiles/threadweaver.dir/all
 
 # Build rule for subdir invocation for target.
@@ -396,7 +414,7 @@ threadweaver/CMakeFiles/threadweaver.dir/clean:
 model/perfcheckers/CMakeFiles/perfcheckers.dir/all:
 	$(MAKE) $(MAKESILENT) -f model/perfcheckers/CMakeFiles/perfcheckers.dir/build.make model/perfcheckers/CMakeFiles/perfcheckers.dir/depend
 	$(MAKE) $(MAKESILENT) -f model/perfcheckers/CMakeFiles/perfcheckers.dir/build.make model/perfcheckers/CMakeFiles/perfcheckers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=16,17 "Built target perfcheckers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=19,20 "Built target perfcheckers"
 .PHONY : model/perfcheckers/CMakeFiles/perfcheckers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -422,7 +440,7 @@ model/perfcheckers/CMakeFiles/perfcheckers.dir/clean:
 model/hardware/ihidapi/CMakeFiles/ihidapi.dir/all:
 	$(MAKE) $(MAKESILENT) -f model/hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make model/hardware/ihidapi/CMakeFiles/ihidapi.dir/depend
 	$(MAKE) $(MAKESILENT) -f model/hardware/ihidapi/CMakeFiles/ihidapi.dir/build.make model/hardware/ihidapi/CMakeFiles/ihidapi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=12,13 "Built target ihidapi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=15,16 "Built target ihidapi"
 .PHONY : model/hardware/ihidapi/CMakeFiles/ihidapi.dir/all
 
 # Build rule for subdir invocation for target.
@@ -449,7 +467,7 @@ model/hardware/cameras/CMakeFiles/cameras.dir/all: threadweaver/CMakeFiles/threa
 model/hardware/cameras/CMakeFiles/cameras.dir/all: model/perfcheckers/CMakeFiles/perfcheckers.dir/all
 	$(MAKE) $(MAKESILENT) -f model/hardware/cameras/CMakeFiles/cameras.dir/build.make model/hardware/cameras/CMakeFiles/cameras.dir/depend
 	$(MAKE) $(MAKESILENT) -f model/hardware/cameras/CMakeFiles/cameras.dir/build.make model/hardware/cameras/CMakeFiles/cameras.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=1,2,3 "Built target cameras"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=4,5,6 "Built target cameras"
 .PHONY : model/hardware/cameras/CMakeFiles/cameras.dir/all
 
 # Build rule for subdir invocation for target.
@@ -475,7 +493,7 @@ model/hardware/cameras/CMakeFiles/cameras.dir/clean:
 model/hardware/psvr/CMakeFiles/psvr.dir/all: model/hardware/ihidapi/CMakeFiles/ihidapi.dir/all
 	$(MAKE) $(MAKESILENT) -f model/hardware/psvr/CMakeFiles/psvr.dir/build.make model/hardware/psvr/CMakeFiles/psvr.dir/depend
 	$(MAKE) $(MAKESILENT) -f model/hardware/psvr/CMakeFiles/psvr.dir/build.make model/hardware/psvr/CMakeFiles/psvr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=34,35 "Built target psvr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=37,38 "Built target psvr"
 .PHONY : model/hardware/psvr/CMakeFiles/psvr.dir/all
 
 # Build rule for subdir invocation for target.
@@ -501,7 +519,7 @@ model/hardware/psvr/CMakeFiles/psvr.dir/clean:
 model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/all:
 	$(MAKE) $(MAKESILENT) -f model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/build.make model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/depend
 	$(MAKE) $(MAKESILENT) -f model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/build.make model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=10,11 "Built target hw_ext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=13,14 "Built target hw_ext"
 .PHONY : model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/all
 
 # Build rule for subdir invocation for target.
@@ -530,7 +548,7 @@ model/hardware/hw/CMakeFiles/hw.dir/all: model/hardware/hw/extendables/CMakeFile
 model/hardware/hw/CMakeFiles/hw.dir/all: model/patterns/observer/CMakeFiles/observers.dir/all
 	$(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/depend
 	$(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=8,9 "Built target hw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=11,12 "Built target hw"
 .PHONY : model/hardware/hw/CMakeFiles/hw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -563,7 +581,7 @@ model/controllers/CMakeFiles/controllers.dir/all: model/hardware/hw/CMakeFiles/h
 model/controllers/CMakeFiles/controllers.dir/all: model/patterns/observer/CMakeFiles/observers.dir/all
 	$(MAKE) $(MAKESILENT) -f model/controllers/CMakeFiles/controllers.dir/build.make model/controllers/CMakeFiles/controllers.dir/depend
 	$(MAKE) $(MAKESILENT) -f model/controllers/CMakeFiles/controllers.dir/build.make model/controllers/CMakeFiles/controllers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=5,6,7 "Built target controllers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=8,9,10 "Built target controllers"
 .PHONY : model/controllers/CMakeFiles/controllers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -589,7 +607,7 @@ model/controllers/CMakeFiles/controllers.dir/clean:
 model/patterns/observer/CMakeFiles/observers.dir/all:
 	$(MAKE) $(MAKESILENT) -f model/patterns/observer/CMakeFiles/observers.dir/build.make model/patterns/observer/CMakeFiles/observers.dir/depend
 	$(MAKE) $(MAKESILENT) -f model/patterns/observer/CMakeFiles/observers.dir/build.make model/patterns/observer/CMakeFiles/observers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=14,15 "Built target observers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=17,18 "Built target observers"
 .PHONY : model/patterns/observer/CMakeFiles/observers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -615,7 +633,7 @@ model/patterns/observer/CMakeFiles/observers.dir/clean:
 model/patterns/commands/CMakeFiles/commands.dir/all:
 	$(MAKE) $(MAKESILENT) -f model/patterns/commands/CMakeFiles/commands.dir/build.make model/patterns/commands/CMakeFiles/commands.dir/depend
 	$(MAKE) $(MAKESILENT) -f model/patterns/commands/CMakeFiles/commands.dir/build.make model/patterns/commands/CMakeFiles/commands.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=4 "Built target commands"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=7 "Built target commands"
 .PHONY : model/patterns/commands/CMakeFiles/commands.dir/all
 
 # Build rule for subdir invocation for target.
@@ -641,7 +659,7 @@ model/patterns/commands/CMakeFiles/commands.dir/clean:
 processing/zbar/CMakeFiles/zbarLib.dir/all:
 	$(MAKE) $(MAKESILENT) -f processing/zbar/CMakeFiles/zbarLib.dir/build.make processing/zbar/CMakeFiles/zbarLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f processing/zbar/CMakeFiles/zbarLib.dir/build.make processing/zbar/CMakeFiles/zbarLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=43,44 "Built target zbarLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=46,47 "Built target zbarLib"
 .PHONY : processing/zbar/CMakeFiles/zbarLib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -667,7 +685,7 @@ processing/zbar/CMakeFiles/zbarLib.dir/clean:
 model/windows/CMakeFiles/windows.dir/all:
 	$(MAKE) $(MAKESILENT) -f model/windows/CMakeFiles/windows.dir/build.make model/windows/CMakeFiles/windows.dir/depend
 	$(MAKE) $(MAKESILENT) -f model/windows/CMakeFiles/windows.dir/build.make model/windows/CMakeFiles/windows.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=40,41,42 "Built target windows"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=43,44,45 "Built target windows"
 .PHONY : model/windows/CMakeFiles/windows.dir/all
 
 # Build rule for subdir invocation for target.
@@ -693,7 +711,7 @@ model/windows/CMakeFiles/windows.dir/clean:
 ui/support/CMakeFiles/support.dir/all:
 	$(MAKE) $(MAKESILENT) -f ui/support/CMakeFiles/support.dir/build.make ui/support/CMakeFiles/support.dir/depend
 	$(MAKE) $(MAKESILENT) -f ui/support/CMakeFiles/support.dir/build.make ui/support/CMakeFiles/support.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=36,37 "Built target support"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=39,40 "Built target support"
 .PHONY : ui/support/CMakeFiles/support.dir/all
 
 # Build rule for subdir invocation for target.
@@ -716,26 +734,15 @@ ui/support/CMakeFiles/support.dir/clean:
 # Target rules for target pipeline/CMakeFiles/pipelineLib.dir
 
 # All Build rule for target.
-pipeline/CMakeFiles/pipelineLib.dir/all: threadweaver/CMakeFiles/threadweaver.dir/all
-pipeline/CMakeFiles/pipelineLib.dir/all: model/perfcheckers/CMakeFiles/perfcheckers.dir/all
-pipeline/CMakeFiles/pipelineLib.dir/all: model/hardware/ihidapi/CMakeFiles/ihidapi.dir/all
-pipeline/CMakeFiles/pipelineLib.dir/all: model/hardware/cameras/CMakeFiles/cameras.dir/all
-pipeline/CMakeFiles/pipelineLib.dir/all: model/hardware/psvr/CMakeFiles/psvr.dir/all
-pipeline/CMakeFiles/pipelineLib.dir/all: model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/all
-pipeline/CMakeFiles/pipelineLib.dir/all: model/hardware/hw/CMakeFiles/hw.dir/all
-pipeline/CMakeFiles/pipelineLib.dir/all: model/controllers/CMakeFiles/controllers.dir/all
-pipeline/CMakeFiles/pipelineLib.dir/all: model/patterns/observer/CMakeFiles/observers.dir/all
-pipeline/CMakeFiles/pipelineLib.dir/all: processing/zbar/CMakeFiles/zbarLib.dir/all
-pipeline/CMakeFiles/pipelineLib.dir/all: model/windows/CMakeFiles/windows.dir/all
-pipeline/CMakeFiles/pipelineLib.dir/all: ui/support/CMakeFiles/support.dir/all
+pipeline/CMakeFiles/pipelineLib.dir/all: pluginManagement/CMakeFiles/PluginManager.dir/all
 	$(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30 "Built target pipelineLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33 "Built target pipelineLib"
 .PHONY : pipeline/CMakeFiles/pipelineLib.dir/all
 
 # Build rule for subdir invocation for target.
 pipeline/CMakeFiles/pipelineLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pipeline/CMakeFiles/pipelineLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
 .PHONY : pipeline/CMakeFiles/pipelineLib.dir/rule
@@ -748,6 +755,43 @@ pipelineLib: pipeline/CMakeFiles/pipelineLib.dir/rule
 pipeline/CMakeFiles/pipelineLib.dir/clean:
 	$(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/clean
 .PHONY : pipeline/CMakeFiles/pipelineLib.dir/clean
+
+#=============================================================================
+# Target rules for target pluginManagement/CMakeFiles/PluginManager.dir
+
+# All Build rule for target.
+pluginManagement/CMakeFiles/PluginManager.dir/all: threadweaver/CMakeFiles/threadweaver.dir/all
+pluginManagement/CMakeFiles/PluginManager.dir/all: model/perfcheckers/CMakeFiles/perfcheckers.dir/all
+pluginManagement/CMakeFiles/PluginManager.dir/all: model/hardware/ihidapi/CMakeFiles/ihidapi.dir/all
+pluginManagement/CMakeFiles/PluginManager.dir/all: model/hardware/cameras/CMakeFiles/cameras.dir/all
+pluginManagement/CMakeFiles/PluginManager.dir/all: model/hardware/psvr/CMakeFiles/psvr.dir/all
+pluginManagement/CMakeFiles/PluginManager.dir/all: model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/all
+pluginManagement/CMakeFiles/PluginManager.dir/all: model/hardware/hw/CMakeFiles/hw.dir/all
+pluginManagement/CMakeFiles/PluginManager.dir/all: model/controllers/CMakeFiles/controllers.dir/all
+pluginManagement/CMakeFiles/PluginManager.dir/all: model/patterns/observer/CMakeFiles/observers.dir/all
+pluginManagement/CMakeFiles/PluginManager.dir/all: processing/zbar/CMakeFiles/zbarLib.dir/all
+pluginManagement/CMakeFiles/PluginManager.dir/all: model/windows/CMakeFiles/windows.dir/all
+pluginManagement/CMakeFiles/PluginManager.dir/all: ui/support/CMakeFiles/support.dir/all
+	$(MAKE) $(MAKESILENT) -f pluginManagement/CMakeFiles/PluginManager.dir/build.make pluginManagement/CMakeFiles/PluginManager.dir/depend
+	$(MAKE) $(MAKESILENT) -f pluginManagement/CMakeFiles/PluginManager.dir/build.make pluginManagement/CMakeFiles/PluginManager.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/AHRS_core/src/CMakeFiles --progress-num=1,2,3 "Built target PluginManager"
+.PHONY : pluginManagement/CMakeFiles/PluginManager.dir/all
+
+# Build rule for subdir invocation for target.
+pluginManagement/CMakeFiles/PluginManager.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 30
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pluginManagement/CMakeFiles/PluginManager.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/AHRS_core/src/CMakeFiles 0
+.PHONY : pluginManagement/CMakeFiles/PluginManager.dir/rule
+
+# Convenience name for target.
+PluginManager: pluginManagement/CMakeFiles/PluginManager.dir/rule
+.PHONY : PluginManager
+
+# clean rule for target.
+pluginManagement/CMakeFiles/PluginManager.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pluginManagement/CMakeFiles/PluginManager.dir/build.make pluginManagement/CMakeFiles/PluginManager.dir/clean
+.PHONY : pluginManagement/CMakeFiles/PluginManager.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

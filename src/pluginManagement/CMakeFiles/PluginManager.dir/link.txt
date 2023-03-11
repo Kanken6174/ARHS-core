@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPluginManager.a CMakeFiles/PluginManager.dir/PluginManager.cpp.o CMakeFiles/PluginManager.dir/Plugin.cpp.o
+/usr/bin/ranlib libPluginManager.a

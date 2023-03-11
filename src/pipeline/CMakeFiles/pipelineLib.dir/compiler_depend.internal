@@ -7820,4 +7820,16 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o
  /usr/include/zbar/Video.h
  /usr/include/zbar/Window.h
  /usr/include/zbar/Processor.h
+ /home/kanken/code/AHRS_core/src/pluginManagement/PluginManager.hpp
+ /home/kanken/code/AHRS_core/src/pluginManagement/Plugin.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/extendables/SerialDevice.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/extendables/Device.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/extendables/DeviceCommand.hpp
+ /home/kanken/code/AHRS_core/src/model/patterns/commands/commands.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/pipeline.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/displayOutputNode.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/uiDrawerNode.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/uiMergerNode.hpp
+ /home/kanken/code/AHRS_core/src/pipeline/members/videoCaptureNode.hpp
 

@@ -8,14 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kanken/code/AHRS_core/src/main.cpp" "CMakeFiles/prog.dir/main.cpp.o" "gcc" "CMakeFiles/prog.dir/main.cpp.o.d"
-  "/home/kanken/code/AHRS_core/src/topLevelManager.cpp" "CMakeFiles/prog.dir/topLevelManager.cpp.o" "gcc" "CMakeFiles/prog.dir/topLevelManager.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pluginManagement/Plugin.cpp" "pluginManagement/CMakeFiles/PluginManager.dir/Plugin.cpp.o" "gcc" "pluginManagement/CMakeFiles/PluginManager.dir/Plugin.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/pluginManagement/PluginManager.cpp" "pluginManagement/CMakeFiles/PluginManager.dir/PluginManager.cpp.o" "gcc" "pluginManagement/CMakeFiles/PluginManager.dir/PluginManager.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir/DependInfo.cmake"
-  "/home/kanken/code/AHRS_core/src/pluginManagement/CMakeFiles/PluginManager.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/model/windows/CMakeFiles/windows.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/ui/support/CMakeFiles/support.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/model/controllers/CMakeFiles/controllers.dir/DependInfo.cmake"

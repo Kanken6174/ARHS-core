@@ -43,3 +43,6 @@
 /home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/pipelineLib.dir
 /home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/edit_cache.dir
 /home/kanken/code/AHRS_core/src/pipeline/CMakeFiles/rebuild_cache.dir
+/home/kanken/code/AHRS_core/src/pluginManagement/CMakeFiles/PluginManager.dir
+/home/kanken/code/AHRS_core/src/pluginManagement/CMakeFiles/edit_cache.dir
+/home/kanken/code/AHRS_core/src/pluginManagement/CMakeFiles/rebuild_cache.dir

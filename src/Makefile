@@ -311,6 +311,19 @@ pipelineLib/fast:
 	$(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/build
 .PHONY : pipelineLib/fast
 
+#=============================================================================
+# Target rules for targets named PluginManager
+
+# Build rule for target.
+PluginManager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PluginManager
+.PHONY : PluginManager
+
+# fast build rule for target.
+PluginManager/fast:
+	$(MAKE) $(MAKESILENT) -f pluginManagement/CMakeFiles/PluginManager.dir/build.make pluginManagement/CMakeFiles/PluginManager.dir/build
+.PHONY : PluginManager/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -367,6 +380,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... PluginManager"
 	@echo "... cameras"
 	@echo "... commands"
 	@echo "... controllers"
