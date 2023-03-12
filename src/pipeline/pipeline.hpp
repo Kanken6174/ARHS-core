@@ -4,6 +4,7 @@
 #include "./members/uiDrawerNode.hpp"
 #include "./members/uiMergerNode.hpp"
 #include "./members/videoCaptureNode.hpp"
+#include "./members/pluginNode.hpp"
 
 #define PIPELINE_UI_DRAWER_NODE 3
 

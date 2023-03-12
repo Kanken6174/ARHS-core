@@ -16,6 +16,11 @@ void UiMergerNode::processFrame()
 
     if (cameraFrame.rows <= 0 || cameraFrame.cols <= 0)
         return;                                     // check for empty frame
+
+    Point2d p(0,0);
+    for (SubNode* sn : subNodes)
+        if(sn->enabled) sn->processFrame(cameraFrame,p);
+
     cameraFrame = UiSupport::resizeIn(cameraFrame); // resize the frame to the standard format
     // Copy the frame in the center of the background
     cameraFrame.copyTo(UiMat(cv::Rect((UiMat.cols / 2) - (cameraFrame.cols / 2), (UiMat.rows / 2) - (cameraFrame.rows / 2), cameraFrame.cols, cameraFrame.rows)));

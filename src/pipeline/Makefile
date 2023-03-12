@@ -202,6 +202,30 @@ members/displayOutputNode.cpp.s:
 	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.s
 .PHONY : members/displayOutputNode.cpp.s
 
+members/pluginNode.o: members/pluginNode.cpp.o
+.PHONY : members/pluginNode.o
+
+# target to build an object file
+members/pluginNode.cpp.o:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o
+.PHONY : members/pluginNode.cpp.o
+
+members/pluginNode.i: members/pluginNode.cpp.i
+.PHONY : members/pluginNode.i
+
+# target to preprocess a source file
+members/pluginNode.cpp.i:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.i
+.PHONY : members/pluginNode.cpp.i
+
+members/pluginNode.s: members/pluginNode.cpp.s
+.PHONY : members/pluginNode.s
+
+# target to generate assembly for a file
+members/pluginNode.cpp.s:
+	cd /home/kanken/code/AHRS_core/src && $(MAKE) $(MAKESILENT) -f pipeline/CMakeFiles/pipelineLib.dir/build.make pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.s
+.PHONY : members/pluginNode.cpp.s
+
 members/subNodes/fpsCounter.o: members/subNodes/fpsCounter.cpp.o
 .PHONY : members/subNodes/fpsCounter.o
 
@@ -436,6 +460,9 @@ help:
 	@echo "... members/displayOutputNode.o"
 	@echo "... members/displayOutputNode.i"
 	@echo "... members/displayOutputNode.s"
+	@echo "... members/pluginNode.o"
+	@echo "... members/pluginNode.i"
+	@echo "... members/pluginNode.s"
 	@echo "... members/subNodes/fpsCounter.o"
 	@echo "... members/subNodes/fpsCounter.i"
 	@echo "... members/subNodes/fpsCounter.s"

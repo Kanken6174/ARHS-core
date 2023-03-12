@@ -24,22 +24,27 @@ Pipeline::Pipeline()
     cameraPickerNode *cpn = new cameraPickerNode(cm);
     VideoCaptureNode *vcn = new VideoCaptureNode(cpn);
     ZbarAnalysisNode *zban = new ZbarAnalysisNode(cpn, zs);
+    zban->fpsLimit = 20;
+    PluginNode *pnode = new PluginNode(cpn);
+    pnode->fpsLimit = 16;
+
     UiDrawerNode *udn = new UiDrawerNode(uc);
         udn->addSubNode(fc);
         udn->addSubNode(sio);
         udn->addSubNode(zo);
         udn->fpsLimit = 30;
-    UiMergerNode* umn = new UiMergerNode(cpn, udn, uc);
+    UiMergerNode* umn = new UiMergerNode(pnode, udn, uc);
     DisplayOutputNode* don = new DisplayOutputNode(umn, wm->managedUIs.at(0));
 
-    nodes.push_back(cpn);
-    nodes.push_back(vcn);
-    nodes.push_back(zban);
-    nodes.push_back(udn);
-    nodes.push_back(umn);
-    nodes.push_back(don);
+    nodes.push_back(cpn);   //0
+    nodes.push_back(vcn);   //1
+    nodes.push_back(zban);  //2
+    nodes.push_back(udn);   //3
+    nodes.push_back(umn);   //4
+    nodes.push_back(don);   //5
+    nodes.push_back(pnode); //6
 
-    zban->disabled = false;  //disable the zbar node by default
+    zban->disabled = true;  //disable the zbar node by default
 
     Menu *epsMenu = uc->getSpecificMenu("EPS options"); // create menu for execution per second limits
 
@@ -63,8 +68,8 @@ Pipeline::Pipeline()
     mediaMenu->addItem(vcstopBtn);
     mediaMenu->addItem(vcsnapBtn);
 
-    PluginManager(*this);
-
+    new PluginManager(*this);   //memory leak
+    std::cout << "starting pipeline..." << std::endl;
     startPipeline();
 
     for (PipelineNode *pn : nodes)

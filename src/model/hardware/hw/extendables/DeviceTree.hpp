@@ -14,11 +14,12 @@ private:
     static std::mutex mutex_;
 
 protected:
-    std::map<__uint128_t, SerialDevice*>* serialDevices;
+    std::map<std::string, SerialDevice*>* serialDevices;
+    std::map<std::string, std::thread*> deviceThreads;
 
     DeviceTree() : serialDevices()
     {
-        serialDevices = new std::map<__uint128_t, SerialDevice*>();
+        serialDevices = new std::map<std::string, SerialDevice*>();
     }
     ~DeviceTree() {
         delete serialDevices;
@@ -30,6 +31,12 @@ public:
 
     void operator=(const DeviceTree &) = delete;
 
-    static DeviceTree *GetInstance(const std::string& value);
+    void build();
+    void run();
+    void addDevice(SerialDevice* sd){(*serialDevices)[sd->getDeviceID()] = sd;}
+
+    static void runDevice(SerialDevice* device);
+
+    static DeviceTree *GetInstance();
 };
 //#endif

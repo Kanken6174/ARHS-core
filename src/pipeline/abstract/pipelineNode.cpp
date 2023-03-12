@@ -89,8 +89,17 @@ void PipelineNode::run()
         }
         ranOnce = true;
     }
+    catch(cv::Exception e){
+        std::cout << "\033[1;31m exception caught: " << e.what() << "\033[0m" << std::endl;
+    }
+    catch(exception e)
+    {
+        std::cout << "\033[1;31m caught exception: " << e.what() <<  "\033[0m" << std::endl;
+        exit(1);
+    }
     catch (...)
     {
+        std::cout << "\033[1;31m caught unkown exception, possible memory corruption (pipelineNode)  \033[0m" << std::endl;
         exit(1);
     }
 }

@@ -13,6 +13,8 @@ set(pipeline_src
     ./members/zbarAnalysisNode.hpp
     ./members/videoCaptureNode.cpp
     ./members/videoCaptureNode.hpp
+    ./members/pluginNode.cpp
+    ./members/pluginNode.hpp
 
     ./members/subNodes/subNodes.hpp
     ./members/subNodes/fpsCounter.cpp

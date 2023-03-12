@@ -207,6 +207,9 @@ model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/DeviceTree.cpp.o: model/hard
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/atomic \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   model/hardware/hw/serial.hpp \
   /usr/include/string.h \
   /usr/include/strings.h \
@@ -340,6 +343,10 @@ threadweaver/debugging.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.h:
+
 model/hardware/hw/extendables/Device.hpp:
 
 /usr/include/pthread.h:
@@ -440,6 +447,8 @@ model/hardware/hw/extendables/Device.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
+/usr/include/c++/11/atomic:
+
 /usr/include/c++/11/array:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
@@ -521,6 +530,8 @@ model/patterns/observer/observable.hpp:
 /usr/include/c++/11/mutex:
 
 /usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/c++/11/bits/functexcept.h:
 
@@ -754,6 +765,8 @@ model/patterns/commands/commands.hpp:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
 
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
 /usr/include/c++/11/bits/basic_ios.h:
@@ -868,8 +881,6 @@ threadweaver/threadweaver.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
-/usr/include/c++/11/bits/locale_facets_nonio.h:
-
 /usr/include/c++/11/filesystem:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
@@ -879,5 +890,3 @@ threadweaver/threadweaver.hpp:
 /usr/include/c++/11/bits/stl_bvector.h:
 
 /usr/include/c++/11/bits/fs_fwd.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:

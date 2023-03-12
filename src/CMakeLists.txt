@@ -14,6 +14,12 @@ project(visnode)
 find_package(OpenCV REQUIRED)
 find_package(TBB REQUIRED)
 
+#SET(GCC_COVERAGE_COMPILE_FLAGS "-fsanitize=undefined,address")
+#SET(GCC_COVERAGE_LINK_FLAGS    "-fsanitize=undefined,address")
+
+#SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
+#SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${GCC_COVERAGE_LINK_FLAGS}")
+
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 

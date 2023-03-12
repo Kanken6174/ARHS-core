@@ -659,7 +659,8 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   threadweaver/debugging.hpp \
   pipeline/members/uiDrawerNode.hpp \
   pipeline/members/uiMergerNode.hpp \
-  pipeline/members/videoCaptureNode.hpp
+  pipeline/members/videoCaptureNode.hpp \
+  pipeline/members/pluginNode.hpp
 
 CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/stdc-predef.h \
@@ -1319,8 +1320,11 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   threadweaver/debugging.hpp \
   pipeline/members/uiDrawerNode.hpp \
   pipeline/members/uiMergerNode.hpp \
-  pipeline/members/videoCaptureNode.hpp
+  pipeline/members/videoCaptureNode.hpp \
+  pipeline/members/pluginNode.hpp
 
+
+pipeline/members/pluginNode.hpp:
 
 pipeline/members/uiMergerNode.hpp:
 

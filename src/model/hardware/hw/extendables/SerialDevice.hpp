@@ -22,10 +22,11 @@ class SerialDevice : public Device{
         unsigned int _baudrate;
         std::string lastData;
     public:
-        mn::CppLinuxSerial::SerialPort serialPort;
+        mn::CppLinuxSerial::SerialPort* serialPort;
         DeviceCommand* ic;
         SerialDevice(const std::string& serialPort) : Device("blank"), _serialPort(serialPort){}
         void getID();
+        virtual void doPortWork() = 0;
         ~SerialDevice(){
             delete ic;
         }
@@ -38,11 +39,11 @@ class IdentifiyCommand : public DeviceCommand{
         IdentifiyCommand(SerialDevice* sd) : _sd(sd){}
 
         void Execute() const override { 
-            if(_sd->serialPort.GetState() != mn::CppLinuxSerial::State::OPEN)
+            if(_sd->serialPort->GetState() != mn::CppLinuxSerial::State::OPEN)
                 return;
-            _sd->serialPort.Write("$");
+            _sd->serialPort->Write("$");
             std::string readData;
-            _sd->serialPort.Read(readData);
+            _sd->serialPort->Read(readData);
         }
 };
 #endif
