@@ -20,7 +20,7 @@ void PluginNode::processFrame()
         DEBUG_LOG("PluginNode on thread " << localThread->get_id() << " fetched camera frame");
         Point2d p(0,0);
         for (SubNode* sn : subNodes)
-            if(sn->enabled) sn->processFrame(toProcess,p);
+            if(sn->enabled) sn->doWork(toProcess,p);
         DEBUG_LOG("PluginNode on thread " << localThread->get_id() << " processed camera frame");
         outputLock.lock();
         output = toProcess; // write the final image to the psvr UI buffer

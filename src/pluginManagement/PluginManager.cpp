@@ -25,7 +25,7 @@ PluginManager::PluginManager(Pipeline& pi){
                     if(pl->loadNode != NULL){
                         std::cout << "loading plugin node\n";
                         SubNode* sn = pl->loadNode();
-                        sn->enabled = true;
+                        sn->enabled = false;
                         pi.getNodes().at(6)->addSubNode(sn);
                         std::cout << "loaded plugin node\n";
                     }

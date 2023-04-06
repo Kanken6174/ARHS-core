@@ -323,7 +323,43 @@ model/windows/CMakeFiles/windows.dir/window.cpp.o: model/windows/window.cpp \
   /usr/include/KHR/khrplatform.h \
   /usr/include/GL/glu.h \
   threadweaver/debugging.hpp \
-  /usr/include/c++/11/iostream
+  /usr/include/c++/11/iostream \
+  model/hardware/hw/inputManager.hpp \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  threadweaver/threadweaver.hpp \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/c++/11/filesystem \
+  /usr/include/c++/11/bits/fs_fwd.h \
+  /usr/include/c++/11/bits/fs_path.h \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/codecvt \
+  /usr/include/c++/11/bits/fs_dir.h \
+  /usr/include/c++/11/bits/fs_ops.h \
+  threadweaver/debugging.hpp \
+  model/patterns/observer/observable.hpp \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/list.tcc \
+  model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp
 
 model/windows/CMakeFiles/windows.dir/windowManager.cpp.o: model/windows/windowManager.cpp \
   /usr/include/stdc-predef.h \
@@ -656,6 +692,42 @@ model/windows/CMakeFiles/windows.dir/windowManager.cpp.o: model/windows/windowMa
 
 model/windows/windowManager.cpp:
 
+model/patterns/observer/observer.hpp:
+
+/usr/include/c++/11/bits/list.tcc:
+
+/usr/include/c++/11/list:
+
+/usr/include/c++/11/bits/fs_ops.h:
+
+/usr/include/c++/11/bits/fs_dir.h:
+
+/usr/include/c++/11/bits/quoted_string.h:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+
+/usr/include/libintl.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/usr/include/c++/11/filesystem:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+model/hardware/hw/inputManager.hpp:
+
 threadweaver/debugging.hpp:
 
 /usr/include/GL/glu.h:
@@ -776,6 +848,8 @@ model/windows/windowManager.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
+/usr/include/unistd.h:
+
 /usr/include/c++/11/bits/stl_algobase.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
@@ -860,6 +934,8 @@ model/windows/windowManager.hpp:
 
 /usr/include/c++/11/bits/std_function.h:
 
+model/patterns/observer/observable.hpp:
+
 /usr/include/c++/11/type_traits:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
@@ -894,6 +970,8 @@ model/windows/windowManager.hpp:
 
 /usr/include/c++/11/limits:
 
+/usr/include/c++/11/bits/fs_path.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
@@ -904,6 +982,8 @@ model/windows/windowManager.hpp:
 
 /usr/local/include/opencv4/opencv2/core/cvdef.h:
 
+/usr/include/linux/close_range.h:
+
 model/windows/window.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
@@ -912,11 +992,15 @@ model/windows/window.hpp:
 
 /usr/local/include/opencv4/opencv2/core/core.hpp:
 
+threadweaver/threadweaver.hpp:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 /usr/include/c++/11/debug/debug.h:
 
 /usr/include/features-time64.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
 
@@ -1068,6 +1152,8 @@ model/windows/window.cpp:
 
 /usr/include/c++/11/unordered_map:
 
+/usr/include/c++/11/iomanip:
+
 /usr/include/c++/11/cctype:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
@@ -1099,6 +1185,8 @@ model/windows/window.cpp:
 /usr/include/c++/11/bits/hashtable_policy.h:
 
 /usr/local/include/opencv4/opencv2/core/cvstd.hpp:
+
+/usr/include/c++/11/bits/codecvt.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 
@@ -1134,9 +1222,13 @@ model/windows/window.cpp:
 
 /usr/include/c++/11/bits/vector.tcc:
 
+/usr/include/c++/11/codecvt:
+
 /usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/string.h:
+
+/usr/include/c++/11/locale:
 
 /usr/include/ctype.h:
 
@@ -1192,11 +1284,15 @@ model/windows/window.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
 /usr/include/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/c++/11/bits/fs_fwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
@@ -1264,6 +1360,8 @@ model/windows/window.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
+/usr/include/c++/11/bits/stl_list.h:
+
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/c++/11/bits/specfun.h:
@@ -1275,6 +1373,8 @@ model/windows/window.cpp:
 /usr/include/c++/11/tr1/gamma.tcc:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
+
+model/hardware/hw/inputKeys.hpp:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 

@@ -48,8 +48,12 @@ void DeviceTree::build(){
                     if(back.find(kv.first) != std::string::npos){
                         std::cout << "uids matched! port assigned"<< std::endl;
                         (*serialDevices)[kv.first]->serialPort = serialPort;
+                        (*serialDevices)[kv.first]->enabled = true;
                         assigned = true;
                         std::cout << "assign done"<< std::endl;
+                    }else{
+                        std::cout << "device sent back uid but no match, an extension may be missing"<< std::endl;
+                        assigned = false;
                     }
                 }
 
@@ -76,7 +80,7 @@ void DeviceTree::runDevice(SerialDevice* device){
     while(device->enabled){
         if(!device->working){
             device->working = true;
-            device->doPortWork();
+            device->runPort();
         }
         std::this_thread::sleep_for(std::chrono::milliseconds(device->workDelayMs));
     }

@@ -18,7 +18,7 @@ void cameraPickerNode::processFrame(){
     _sourceManager->accessLocks[0]->unlock();
     Point2d p(0,0);
     for (SubNode* sn : subNodes)
-        if(sn->enabled) sn->processFrame(output,p);
+        if(sn->enabled) sn->doWork(output,p);
     outputLock.unlock();
     
     DEBUG_LOG("cameraPickerNode on thread " << localThread->get_id() << " is done picking its camera frame");

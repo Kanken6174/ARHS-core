@@ -23,10 +23,15 @@ class SerialDevice : public Device{
         unsigned int _baudrate;
         std::string lastData;
     public:
-        mn::CppLinuxSerial::SerialPort* serialPort;
+        mn::CppLinuxSerial::SerialPort* serialPort = nullptr;
         DeviceCommand* ic;
         SerialDevice(const std::string& serialPort) : Device("blank"), _serialPort(serialPort){}
         void getID();
+        void runPort(){
+            if(enabled){
+                doPortWork();
+            }
+        }
         virtual void doPortWork() = 0;
         ~SerialDevice(){
             delete ic;

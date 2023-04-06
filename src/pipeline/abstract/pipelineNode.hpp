@@ -14,8 +14,10 @@
 /// @brief this class represents an unthreaded sub-node of a given node of the graphcis pipeline
 class SubNode{
     public:
-    virtual void processFrame(cv::UMat& input, cv::Point2d& cursorPos)=0;
+    void doWork(cv::UMat& input, cv::Point2d& cursorPos){if(enabled){processFrame(input,cursorPos);}}
     std::atomic_bool enabled = true;
+    protected:
+    virtual void processFrame(cv::UMat& input, cv::Point2d& cursorPos)=0;
 };
 
 /// @brief this class represents a threaded node of the graphics pipeline

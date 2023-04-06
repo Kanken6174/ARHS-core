@@ -59,7 +59,7 @@ void UiDrawerNode::processFrame()
         Point2d pc = Point2d(0,stackerIndex);
         cv::rectangle(MenuMat, cv::Rect2i(0, stackerIndex+5, wd, 1), Scalar(200, 0, 0), 3, 8, 0);
         for (SubNode* sn : subNodes)
-            if(sn->enabled) sn->processFrame(MenuMat,pc);
+            if(sn->enabled) sn->doWork(MenuMat,pc);
         outputLock.lock();
         output = MenuMat;
         outputLock.unlock();

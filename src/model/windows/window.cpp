@@ -1,5 +1,5 @@
 #include "window.hpp"
-
+#include "../hardware/hw/inputManager.hpp"
 void glDrawTextureCallback(void* userdata)
 {
    cv::ogl::Texture2D* texObj = static_cast<cv::ogl::Texture2D*>(userdata);
@@ -35,7 +35,10 @@ void Window::draw(){
    #else
       cv::imshow(this->myWindow, drawBuffer);
    #endif
-      cv::waitKey(1);
+      int key = cv::waitKey(1);
+      if (key >= 0) {
+        InputManager::GetInstance()->sendinput(key, InputTypes::KEYBOARD);
+    }
    }
    catch(...){
       drawAccess.unlock();

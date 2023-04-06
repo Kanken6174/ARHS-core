@@ -19,7 +19,7 @@ void UiMergerNode::processFrame()
 
     Point2d p(0,0);
     for (SubNode* sn : subNodes)
-        if(sn->enabled) sn->processFrame(cameraFrame,p);
+        if(sn->enabled) sn->doWork(cameraFrame,p);
 
     cameraFrame = UiSupport::resizeIn(cameraFrame); // resize the frame to the standard format
     // Copy the frame in the center of the background

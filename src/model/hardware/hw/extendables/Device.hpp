@@ -9,7 +9,7 @@ class Device{
         std::string _displayName;
         std::map<std::string, DeviceCommand*>* _commands = new std::map<std::string, DeviceCommand*>();
     public:
-        std::atomic_bool enabled = true;
+        std::atomic_bool enabled = false;
         std::atomic_bool working = false;
         std::atomic_int workDelayMs = 60;
         inline Device(const std::string& tagidentifier) : _tagidentifier(tagidentifier){}
