@@ -69,28 +69,28 @@ include model/hardware/hw/CMakeFiles/hw.dir/progress.make
 # Include the compile flags for this target's objects.
 include model/hardware/hw/CMakeFiles/hw.dir/flags.make
 
-model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.o: model/hardware/hw/CMakeFiles/hw.dir/flags.make
-model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.o: ../model/hardware/hw/serial.cpp
-model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.o: model/hardware/hw/CMakeFiles/hw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.o"
-	cd /home/kanken/code/AHRS_core/src/build/model/hardware/hw && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.o -MF CMakeFiles/hw.dir/serial.cpp.o.d -o CMakeFiles/hw.dir/serial.cpp.o -c /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.cpp
+model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.o: model/hardware/hw/CMakeFiles/hw.dir/flags.make
+model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.o: ../model/hardware/hw/inputManager.cpp
+model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.o: model/hardware/hw/CMakeFiles/hw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/build/model/hardware/hw && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.o -MF CMakeFiles/hw.dir/inputManager.cpp.o.d -o CMakeFiles/hw.dir/inputManager.cpp.o -c /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.cpp
 
-model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw.dir/serial.cpp.i"
-	cd /home/kanken/code/AHRS_core/src/build/model/hardware/hw && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.cpp > CMakeFiles/hw.dir/serial.cpp.i
+model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw.dir/inputManager.cpp.i"
+	cd /home/kanken/code/AHRS_core/src/build/model/hardware/hw && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.cpp > CMakeFiles/hw.dir/inputManager.cpp.i
 
-model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw.dir/serial.cpp.s"
-	cd /home/kanken/code/AHRS_core/src/build/model/hardware/hw && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.cpp -o CMakeFiles/hw.dir/serial.cpp.s
+model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw.dir/inputManager.cpp.s"
+	cd /home/kanken/code/AHRS_core/src/build/model/hardware/hw && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.cpp -o CMakeFiles/hw.dir/inputManager.cpp.s
 
 # Object files for target hw
 hw_OBJECTS = \
-"CMakeFiles/hw.dir/serial.cpp.o"
+"CMakeFiles/hw.dir/inputManager.cpp.o"
 
 # External object files for target hw
 hw_EXTERNAL_OBJECTS =
 
-model/hardware/hw/libhw.a: model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.o
+model/hardware/hw/libhw.a: model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.o
 model/hardware/hw/libhw.a: model/hardware/hw/CMakeFiles/hw.dir/build.make
 model/hardware/hw/libhw.a: model/hardware/hw/CMakeFiles/hw.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libhw.a"

@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/kanken/code/AHRS_core/src/build/pipeline/CMakeFiles/pipelineLib.dir/DependInfo.cmake"
+  "/home/kanken/code/AHRS_core/src/build/pluginManagement/CMakeFiles/PluginManager.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/build/model/windows/CMakeFiles/windows.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/build/ui/support/CMakeFiles/support.dir/DependInfo.cmake"
   "/home/kanken/code/AHRS_core/src/build/model/controllers/CMakeFiles/controllers.dir/DependInfo.cmake"

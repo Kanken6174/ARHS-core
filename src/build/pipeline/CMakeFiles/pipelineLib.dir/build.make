@@ -167,10 +167,24 @@ pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.s"
 	cd /home/kanken/code/AHRS_core/src/build/pipeline && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/pipeline/members/videoCaptureNode.cpp -o CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.s
 
+pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
+pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o: ../pipeline/members/pluginNode.cpp
+pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o"
+	cd /home/kanken/code/AHRS_core/src/build/pipeline && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o -MF CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o.d -o CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/members/pluginNode.cpp
+
+pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.i"
+	cd /home/kanken/code/AHRS_core/src/build/pipeline && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/AHRS_core/src/pipeline/members/pluginNode.cpp > CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.i
+
+pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.s"
+	cd /home/kanken/code/AHRS_core/src/build/pipeline && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/AHRS_core/src/pipeline/members/pluginNode.cpp -o CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.s
+
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o: ../pipeline/members/subNodes/fpsCounter.cpp
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o"
 	cd /home/kanken/code/AHRS_core/src/build/pipeline && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o -MF CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o.d -o CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/members/subNodes/fpsCounter.cpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.i: cmake_force
@@ -184,7 +198,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.s: cmake_for
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o: ../pipeline/members/subNodes/staticImageOverlayer.cpp
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o"
 	cd /home/kanken/code/AHRS_core/src/build/pipeline && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o -MF CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o.d -o CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/members/subNodes/staticImageOverlayer.cpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.i: cmake_force
@@ -198,7 +212,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.s:
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o: ../pipeline/members/subNodes/zbarOverlayer.cpp
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o"
 	cd /home/kanken/code/AHRS_core/src/build/pipeline && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o -MF CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o.d -o CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/members/subNodes/zbarOverlayer.cpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.i: cmake_force
@@ -212,7 +226,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.s: cmake_
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o: ../pipeline/members/subNodes/uiMenuItem.cpp
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o"
 	cd /home/kanken/code/AHRS_core/src/build/pipeline && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o -MF CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o.d -o CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/members/subNodes/uiMenuItem.cpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.i: cmake_force
@@ -226,7 +240,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.s: cmake_for
 pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/flags.make
 pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o: ../pipeline/pipeline.cpp
 pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o: pipeline/CMakeFiles/pipelineLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o"
 	cd /home/kanken/code/AHRS_core/src/build/pipeline && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o -MF CMakeFiles/pipelineLib.dir/pipeline.cpp.o.d -o CMakeFiles/pipelineLib.dir/pipeline.cpp.o -c /home/kanken/code/AHRS_core/src/pipeline/pipeline.cpp
 
 pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.i: cmake_force
@@ -246,6 +260,7 @@ pipelineLib_OBJECTS = \
 "CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o" \
 "CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o" \
 "CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.o" \
+"CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o" \
 "CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o" \
 "CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o" \
 "CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o" \
@@ -262,6 +277,7 @@ pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerN
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.o
+pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o
@@ -269,7 +285,7 @@ pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/build.make
 pipeline/libpipelineLib.a: pipeline/CMakeFiles/pipelineLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libpipelineLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/AHRS_core/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libpipelineLib.a"
 	cd /home/kanken/code/AHRS_core/src/build/pipeline && $(CMAKE_COMMAND) -P CMakeFiles/pipelineLib.dir/cmake_clean_target.cmake
 	cd /home/kanken/code/AHRS_core/src/build/pipeline && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pipelineLib.dir/link.txt --verbose=$(VERBOSE)
 

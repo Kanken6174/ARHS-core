@@ -130,29 +130,29 @@ hw/fast:
 	cd /home/kanken/code/AHRS_core/src/build && $(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/build
 .PHONY : hw/fast
 
-serial.o: serial.cpp.o
-.PHONY : serial.o
+inputManager.o: inputManager.cpp.o
+.PHONY : inputManager.o
 
 # target to build an object file
-serial.cpp.o:
-	cd /home/kanken/code/AHRS_core/src/build && $(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.o
-.PHONY : serial.cpp.o
+inputManager.cpp.o:
+	cd /home/kanken/code/AHRS_core/src/build && $(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.o
+.PHONY : inputManager.cpp.o
 
-serial.i: serial.cpp.i
-.PHONY : serial.i
+inputManager.i: inputManager.cpp.i
+.PHONY : inputManager.i
 
 # target to preprocess a source file
-serial.cpp.i:
-	cd /home/kanken/code/AHRS_core/src/build && $(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.i
-.PHONY : serial.cpp.i
+inputManager.cpp.i:
+	cd /home/kanken/code/AHRS_core/src/build && $(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.i
+.PHONY : inputManager.cpp.i
 
-serial.s: serial.cpp.s
-.PHONY : serial.s
+inputManager.s: inputManager.cpp.s
+.PHONY : inputManager.s
 
 # target to generate assembly for a file
-serial.cpp.s:
-	cd /home/kanken/code/AHRS_core/src/build && $(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.s
-.PHONY : serial.cpp.s
+inputManager.cpp.s:
+	cd /home/kanken/code/AHRS_core/src/build && $(MAKE) $(MAKESILENT) -f model/hardware/hw/CMakeFiles/hw.dir/build.make model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.s
+.PHONY : inputManager.cpp.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hw"
-	@echo "... serial.o"
-	@echo "... serial.i"
-	@echo "... serial.s"
+	@echo "... inputManager.o"
+	@echo "... inputManager.i"
+	@echo "... inputManager.s"
 .PHONY : help
 
 

@@ -10,7 +10,7 @@ Pipeline::Pipeline()
     cm->runCapture();
     psvr::Psvr *hmd = new psvr::Psvr();
     UiController *uc = new UiController(hmd);
-    SerialPortManager *sp = new SerialPortManager();
+    InputManager *sp = new InputManager();
 
     sp->Attach(uc);
 

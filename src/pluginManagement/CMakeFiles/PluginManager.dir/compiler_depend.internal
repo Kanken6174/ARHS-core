@@ -237,7 +237,7 @@ pluginManagement/CMakeFiles/PluginManager.dir/Plugin.cpp.o
  /usr/include/c++/11/atomic
  /usr/include/c++/11/bits/atomic_base.h
  /usr/include/c++/11/bits/atomic_lockfree_defines.h
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/include/string.h
  /usr/include/strings.h
  /usr/include/c++/11/thread
@@ -536,7 +536,7 @@ pluginManagement/CMakeFiles/PluginManager.dir/PluginManager.cpp.o
  /usr/include/c++/11/atomic
  /usr/include/c++/11/bits/atomic_base.h
  /usr/include/c++/11/bits/atomic_lockfree_defines.h
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/include/string.h
  /usr/include/strings.h
  /usr/include/c++/11/thread
@@ -943,7 +943,7 @@ pluginManagement/CMakeFiles/PluginManager.dir/PluginManager.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp
  /usr/local/include/hidapi/hidapi.h

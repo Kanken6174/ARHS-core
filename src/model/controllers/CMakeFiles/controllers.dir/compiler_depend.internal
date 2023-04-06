@@ -155,7 +155,7 @@ model/controllers/CMakeFiles/controllers.dir/ui/menu.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h
  /usr/include/c++/11/bits/charconv.h
  /usr/include/c++/11/bits/basic_string.tcc
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/include/string.h
  /usr/include/strings.h
  /usr/include/c++/11/thread
@@ -886,7 +886,7 @@ model/controllers/CMakeFiles/controllers.dir/ui/uiController.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h

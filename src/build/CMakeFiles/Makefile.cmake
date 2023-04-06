@@ -22,6 +22,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../model/perfcheckers/CMakeLists.txt"
   "../model/windows/CMakeLists.txt"
   "../pipeline/CMakeLists.txt"
+  "../pluginManagement/CMakeLists.txt"
   "../processing/zbar/CMakeLists.txt"
   "../threadweaver/CMakeLists.txt"
   "../ui/support/CMakeLists.txt"
@@ -90,6 +91,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "model/windows/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ui/support/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pipeline/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "pluginManagement/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -109,4 +111,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "model/windows/CMakeFiles/windows.dir/DependInfo.cmake"
   "ui/support/CMakeFiles/support.dir/DependInfo.cmake"
   "pipeline/CMakeFiles/pipelineLib.dir/DependInfo.cmake"
+  "pluginManagement/CMakeFiles/PluginManager.dir/DependInfo.cmake"
   )

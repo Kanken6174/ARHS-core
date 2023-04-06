@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kanken/code/AHRS_core/src/model/hardware/hw/serial.cpp" "model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.o" "gcc" "model/hardware/hw/CMakeFiles/hw.dir/serial.cpp.o.d"
+  "/home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.cpp" "model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.o" "gcc" "model/hardware/hw/CMakeFiles/hw.dir/inputManager.cpp.o.d"
   )
 
 # Targets to which this target links.

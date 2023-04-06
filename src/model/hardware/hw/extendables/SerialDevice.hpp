@@ -2,7 +2,8 @@
 #define _SERIAL_DEVICE_
 
 #include "./Device.hpp"
-#include "../serial.hpp"
+#include "../inputManager.hpp"
+#include <CppLinuxSerial/SerialPort.hpp>
 
 #include <stdio.h>
 #include <string.h>

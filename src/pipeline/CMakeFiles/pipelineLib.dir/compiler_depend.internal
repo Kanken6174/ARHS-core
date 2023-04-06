@@ -615,7 +615,7 @@ pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -1258,7 +1258,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -1901,7 +1901,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -2553,7 +2553,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -3196,7 +3196,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -3854,7 +3854,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -4514,7 +4514,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -5157,7 +5157,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -5817,7 +5817,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -6460,7 +6460,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -7105,7 +7105,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -7748,7 +7748,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -8405,7 +8405,7 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -8470,5 +8470,5 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o
  /home/kanken/code/AHRS_core/src/model/hardware/hw/extendables/Device.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/extendables/DeviceCommand.hpp
  /home/kanken/code/AHRS_core/src/model/patterns/commands/commands.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
 

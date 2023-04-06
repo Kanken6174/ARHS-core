@@ -620,7 +620,7 @@ CMakeFiles/prog.dir/main.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -1282,7 +1282,7 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o
  /usr/include/c++/11/typeindex
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp
- /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
+ /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp
  /usr/local/include/CppLinuxSerial/SerialPort.hpp
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h

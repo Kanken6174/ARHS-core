@@ -109,6 +109,9 @@ prog: CMakeFiles/prog.dir/main.cpp.o
 prog: CMakeFiles/prog.dir/topLevelManager.cpp.o
 prog: CMakeFiles/prog.dir/build.make
 prog: pipeline/libpipelineLib.a
+prog: pluginManagement/libPluginManager.a
+prog: pipeline/libpipelineLib.a
+prog: pluginManagement/libPluginManager.a
 prog: model/windows/libwindows.a
 prog: ui/support/libsupport.a
 prog: model/controllers/libcontrollers.a

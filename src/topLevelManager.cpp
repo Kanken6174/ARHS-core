@@ -42,7 +42,7 @@ void topLevelManager::setupThreads(){
     /*
         // psvr::Psvr::open();
         ui::UiManager::init();
-        SerialPortManager::init();
+        InputManager::init();
         std::future<int> fobj = std::async(cameraManager::init); // asynchronous camera manager start
         ui::UiController::init();
         ui::UiController::runIntro = true;

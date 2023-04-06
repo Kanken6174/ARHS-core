@@ -619,7 +619,7 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -1280,7 +1280,7 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -1380,7 +1380,7 @@ model/patterns/observer/observable.hpp:
 
 /usr/include/c++/11/fstream:
 
-model/hardware/hw/serial.hpp:
+model/hardware/hw/inputManager.hpp:
 
 model/controllers/ui/menuItem.hpp:
 

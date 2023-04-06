@@ -154,7 +154,7 @@ model/controllers/CMakeFiles/controllers.dir/ui/menu.cpp.o: model/controllers/ui
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/c++/11/thread \
@@ -884,7 +884,7 @@ model/controllers/CMakeFiles/controllers.dir/ui/uiController.cpp.o: model/contro
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -1204,6 +1204,8 @@ model/hardware/ihidapi/_hidapi.hpp:
 /usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+model/hardware/hw/inputManager.hpp:
 
 /usr/include/c++/11/bits/unique_ptr.h:
 
@@ -1556,8 +1558,6 @@ model/patterns/observer/observable.hpp:
 /usr/include/c++/11/iomanip:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
-
-model/hardware/hw/serial.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -2111,9 +2111,9 @@ model/controllers/ui/menu.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
 /usr/include/oneapi/tbb/blocked_range.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 

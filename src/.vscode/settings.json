@@ -71,7 +71,9 @@
         "cfenv": "cpp",
         "cinttypes": "cpp",
         "typeindex": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "optional": "cpp",
+        "variant": "cpp"
     },
     "cmake.configureOnOpen": true
 }

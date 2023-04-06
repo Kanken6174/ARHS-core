@@ -1,0 +1,188 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "pluginManagement/libPluginManager.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"pluginManagement/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 27,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -Ofast -fPIC"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/usr/local/include/opencv4"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				1,
+				3
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "threadweaver::@c7368952ba8127deadb8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "perfcheckers::@501d29f7c800db3c807e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ihidapi::@19a4cf7360e32c169c78"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cameras::@3a9ebc01f2eace455cbc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "psvr::@ece2be6823c963226006"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "hw_ext::@7379838662f63f423f38"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "hw::@03567a4ea8faa535b1a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "controllers::@cdd6841292f4b61bf49a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "observers::@71a22631bf659dcec043"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "zbarLib::@621fc8d0333ad9bde6b1"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "windows::@2d38797009bf847d6ff0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "support::@1405d3370a9f595ecd7f"
+		}
+	],
+	"id" : "PluginManager::@f4fb5e2c1782bbd6f630",
+	"name" : "PluginManager",
+	"nameOnDisk" : "libPluginManager.a",
+	"paths" : 
+	{
+		"build" : "pluginManagement",
+		"source" : "pluginManagement"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "pluginManagement/PluginManager.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "pluginManagement/PluginManager.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "pluginManagement/Plugin.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "pluginManagement/Plugin.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

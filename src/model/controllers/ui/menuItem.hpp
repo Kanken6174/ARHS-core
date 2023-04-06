@@ -1,5 +1,5 @@
 #include <string>
-#include "./../../hardware/hw/serial.hpp"   //used to include the observer patter? eh...
+#include "./../../hardware/hw/inputManager.hpp"   //used to include the observer patter? eh...
 #include "../../hardware/psvr/_psvr.hpp"    //used to include the command patter... eh²
 #include <atomic>
 

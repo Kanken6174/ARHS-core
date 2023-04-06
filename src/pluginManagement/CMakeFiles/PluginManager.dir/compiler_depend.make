@@ -236,7 +236,7 @@ pluginManagement/CMakeFiles/PluginManager.dir/Plugin.cpp.o: pluginManagement/Plu
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/c++/11/thread \
@@ -534,7 +534,7 @@ pluginManagement/CMakeFiles/PluginManager.dir/PluginManager.cpp.o: pluginManagem
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/c++/11/thread \
@@ -941,7 +941,7 @@ pluginManagement/CMakeFiles/PluginManager.dir/PluginManager.cpp.o: pluginManagem
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -1140,6 +1140,8 @@ model/controllers/ui/menu.hpp:
 /usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/c++/11/pstl/memory_impl.h:
+
+model/hardware/hw/inputManager.hpp:
 
 /usr/include/c++/11/bits/erase_if.h:
 
@@ -1677,8 +1679,6 @@ model/perfcheckers/framerate.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
-model/hardware/hw/serial.hpp:
-
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/c++/11/regex:
@@ -1953,6 +1953,12 @@ pipeline/abstract/pipelineNode.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
+/usr/include/oneapi/tbb/blocked_range.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
 /usr/include/c++/11/bits/specfun.h:
 
 /usr/include/c++/11/tr1/special_function_util.h:
@@ -2066,12 +2072,6 @@ model/patterns/observer/observer.hpp:
 /usr/include/c++/11/pstl/parallel_backend_utils.h:
 
 /usr/include/tbb/blocked_range.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/oneapi/tbb/blocked_range.h:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
 

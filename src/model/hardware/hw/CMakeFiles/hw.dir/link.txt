@@ -1,2 +1,2 @@
-/usr/bin/ar qc libhw.a CMakeFiles/hw.dir/serial.cpp.o
+/usr/bin/ar qc libhw.a CMakeFiles/hw.dir/inputManager.cpp.o
 /usr/bin/ranlib libhw.a

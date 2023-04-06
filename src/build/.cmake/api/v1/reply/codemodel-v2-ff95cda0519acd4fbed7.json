@@ -1,0 +1,438 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "threadweaver",
+					"jsonFile" : "directory-threadweaver-Debug-55a274bc258bb0441922.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "threadweaver",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "model/perfcheckers",
+					"jsonFile" : "directory-model.perfcheckers-Debug-35586eb7d07a1c8d27c7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "model/perfcheckers",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "model/hardware/ihidapi",
+					"jsonFile" : "directory-model.hardware.ihidapi-Debug-63ed32ed345032e0c1ea.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "model/hardware/ihidapi",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "model/hardware/cameras",
+					"jsonFile" : "directory-model.hardware.cameras-Debug-b1c076e06753ca0b823d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "model/hardware/cameras",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "model/hardware/psvr",
+					"jsonFile" : "directory-model.hardware.psvr-Debug-6d8ad02793c2b5e5d4e1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "model/hardware/psvr",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "model/hardware/hw/extendables",
+					"jsonFile" : "directory-model.hardware.hw.extendables-Debug-723f6a7eb1abc85a54c9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "model/hardware/hw/extendables",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "model/hardware/hw",
+					"jsonFile" : "directory-model.hardware.hw-Debug-c2ef41be6c106f0e4cee.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "model/hardware/hw",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "model/controllers",
+					"jsonFile" : "directory-model.controllers-Debug-216307937f5e4fb7fcc3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "model/controllers",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "model/patterns/observer",
+					"jsonFile" : "directory-model.patterns.observer-Debug-c81c20f622619f7862fb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "model/patterns/observer",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "model/patterns/commands",
+					"jsonFile" : "directory-model.patterns.commands-Debug-ef8e4306567421a87317.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "model/patterns/commands",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "processing/zbar",
+					"jsonFile" : "directory-processing.zbar-Debug-632d4528c3246d9eee57.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "processing/zbar",
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"build" : "model/windows",
+					"jsonFile" : "directory-model.windows-Debug-a3f6569ba34740cbff29.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "model/windows",
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"build" : "ui/support",
+					"jsonFile" : "directory-ui.support-Debug-1706f36b67a20330a983.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "ui/support",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "pipeline",
+					"jsonFile" : "directory-pipeline-Debug-e74ad31e85be27eb96ee.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "pipeline",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "pluginManagement",
+					"jsonFile" : "directory-pluginManagement-Debug-2577b41773f841a68f0d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "pluginManagement",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					],
+					"name" : "visnode",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 15,
+					"id" : "PluginManager::@f4fb5e2c1782bbd6f630",
+					"jsonFile" : "target-PluginManager-Debug-a9a14d6fad667c3a0129.json",
+					"name" : "PluginManager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "cameras::@3a9ebc01f2eace455cbc",
+					"jsonFile" : "target-cameras-Debug-12c9bf105db6a7dc95b1.json",
+					"name" : "cameras",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "commands::@807bb440297ae6695783",
+					"jsonFile" : "target-commands-Debug-f3735aad6f7231ca946c.json",
+					"name" : "commands",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "controllers::@cdd6841292f4b61bf49a",
+					"jsonFile" : "target-controllers-Debug-dd415f905a2b9e2bc060.json",
+					"name" : "controllers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "hw::@03567a4ea8faa535b1a7",
+					"jsonFile" : "target-hw-Debug-6940b23c72ed0f1c1d8e.json",
+					"name" : "hw",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "hw_ext::@7379838662f63f423f38",
+					"jsonFile" : "target-hw_ext-Debug-8000531e815bbfd6b2cd.json",
+					"name" : "hw_ext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ihidapi::@19a4cf7360e32c169c78",
+					"jsonFile" : "target-ihidapi-Debug-9117f8f20ea23964d396.json",
+					"name" : "ihidapi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "observers::@71a22631bf659dcec043",
+					"jsonFile" : "target-observers-Debug-cb8c74215ea4404a07aa.json",
+					"name" : "observers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "perfcheckers::@501d29f7c800db3c807e",
+					"jsonFile" : "target-perfcheckers-Debug-e3c712c3b0bd952861f0.json",
+					"name" : "perfcheckers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "pipelineLib::@ed5be71de260fadc02b1",
+					"jsonFile" : "target-pipelineLib-Debug-687ba0aa79df8347c657.json",
+					"name" : "pipelineLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "prog::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-prog-Debug-e7af6fc9680f4799249c.json",
+					"name" : "prog",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "psvr::@ece2be6823c963226006",
+					"jsonFile" : "target-psvr-Debug-b1638863c1b018f75d5e.json",
+					"name" : "psvr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "support::@1405d3370a9f595ecd7f",
+					"jsonFile" : "target-support-Debug-1f187ad6d53046cf39f0.json",
+					"name" : "support",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "threadweaver::@c7368952ba8127deadb8",
+					"jsonFile" : "target-threadweaver-Debug-974791ba00983e35d332.json",
+					"name" : "threadweaver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "windows::@2d38797009bf847d6ff0",
+					"jsonFile" : "target-windows-Debug-05217f511472107fb042.json",
+					"name" : "windows",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "zbarLib::@621fc8d0333ad9bde6b1",
+					"jsonFile" : "target-zbarLib-Debug-8d8ccb1e1c5bb5f26e19.json",
+					"name" : "zbarLib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kanken/code/AHRS_core/src/build",
+		"source" : "/home/kanken/code/AHRS_core/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

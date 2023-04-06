@@ -614,7 +614,7 @@ pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o: pipeline/abstra
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -1256,7 +1256,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o: pipeline/mem
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -1898,7 +1898,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o: pipeline/me
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -2549,7 +2549,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o: pipeline/members/p
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -3191,7 +3191,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o: pipeline/
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -3848,7 +3848,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o:
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -4507,7 +4507,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o: pipeline/
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -5149,7 +5149,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o: pipeli
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -5808,7 +5808,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o: pipeline/members
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -6450,7 +6450,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o: pipeline/members
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -7094,7 +7094,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.o: pipeline/mem
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -7736,7 +7736,7 @@ pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o: pipeline/mem
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -8392,7 +8392,7 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o: pipeline/pipeline.cpp \
   /usr/include/c++/11/typeindex \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
-  model/hardware/hw/serial.hpp \
+  model/hardware/hw/inputManager.hpp \
   /usr/local/include/CppLinuxSerial/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -8457,7 +8457,7 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o: pipeline/pipeline.cpp \
   model/hardware/hw/extendables/Device.hpp \
   model/hardware/hw/extendables/DeviceCommand.hpp \
   model/patterns/commands/commands.hpp \
-  model/hardware/hw/serial.hpp
+  model/hardware/hw/inputManager.hpp
 
 
 model/hardware/hw/extendables/DeviceCommand.hpp:
@@ -8556,7 +8556,7 @@ model/patterns/observer/observable.hpp:
 
 /usr/include/c++/11/fstream:
 
-model/hardware/hw/serial.hpp:
+model/hardware/hw/inputManager.hpp:
 
 model/controllers/ui/menuItem.hpp:
 

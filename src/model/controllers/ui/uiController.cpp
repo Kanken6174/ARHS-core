@@ -16,36 +16,40 @@ UiController::UiController(psvr::Psvr *hmd) : _hmd(hmd)
 
 void UiController::Update(const std::string &key, const std::string &value)
 {
-    char c = value[0];
-    switch (c)
+    unsigned int ukey;
+    unsigned int uvalue;
+    try{ ukey = std::stoul(key);}catch(Exception e){}
+    if((InputTypes)ukey != InputTypes::KEYBOARD) return;
+    try{ uvalue = std::stoul(value);}catch(Exception e){}
+    switch ((KeyboardKeyCode)uvalue)
     {
-    case 'U':
+    case KeyboardKeyCode::UP_ARROW:
         DEBUG_LOG(c << "++");
         menus[_activeMenu]->selectedUp();
         break;
-    case 'D':
+    case KeyboardKeyCode::DOWN_ARROW:
         DEBUG_LOG(c << "--");
         cout << _activeMenu << endl;
         menus[_activeMenu]->selectedDown();
         break;
-    case '1': // 1
+    case KeyboardKeyCode::LEFT_ARROW: // 1
         DEBUG_LOG(c << "1");
         menus[_activeMenu]->clickback();
         break;
-    case '2': //<
+    case KeyboardKeyCode::NUM_0: //<
         DEBUG_LOG(c << "2");
         menus[_activeMenu]->clickb1();
         break;
-    case '3': //>
+    case KeyboardKeyCode::NUM_1: //>
         DEBUG_LOG(c << "3");
         menus[_activeMenu]->clickb2();
         break;
-    case '0': // 2
+    case KeyboardKeyCode::RIGHT_ARROW: // 2
         DEBUG_LOG(c << "0");
         menus[_activeMenu]->clickok();
         break;
     default:
-        cout << c << endl;
+        cout << uvalue << endl;
         break;
     }
 }
