@@ -620,28 +620,9 @@ CMakeFiles/prog.dir/main.cpp.o: main.cpp \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -1281,28 +1262,9 @@ CMakeFiles/prog.dir/topLevelManager.cpp.o: topLevelManager.cpp \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -1330,6 +1292,8 @@ pipeline/members/uiMergerNode.hpp:
 
 /usr/include/KHR/khrplatform.h:
 
+/usr/include/GL/glext.h:
+
 /usr/include/GL/glut.h:
 
 model/windows/window.hpp:
@@ -1346,39 +1310,9 @@ model/hardware/ihidapi/_hidapi.hpp:
 
 model/hardware/psvr/_psvr.hpp:
 
+model/hardware/hw/inputKeys.hpp:
+
 model/patterns/observer/observable.hpp:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/asm/termbits.h:
-
-/usr/include/asm-generic/ioctl.h:
-
-/usr/include/linux/ioctl.h:
-
-/usr/include/GL/glext.h:
-
-/usr/include/asm-generic/ioctls.h:
-
-/usr/include/x86_64-linux-gnu/asm/ioctls.h:
-
-/usr/include/c++/11/bits/fstream.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
-
-/usr/include/c++/11/fstream:
 
 model/hardware/hw/inputManager.hpp:
 
@@ -1423,8 +1357,6 @@ model/controllers/ui/menu.hpp:
 /usr/local/include/opencv4/opencv2/stitching.hpp:
 
 /usr/local/include/opencv4/opencv2/photo.hpp:
-
-/usr/include/x86_64-linux-gnu/asm/ioctl.h:
 
 /usr/local/include/opencv4/opencv2/objdetect/face.hpp:
 
@@ -1678,8 +1610,6 @@ pipeline/members/videoCaptureNode.hpp:
 
 /usr/include/c++/11/bits/locale_classes.h:
 
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
-
 /usr/local/include/opencv4/opencv2/features2d.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
@@ -1826,8 +1756,6 @@ pipeline/members/videoCaptureNode.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/local/include/CppLinuxSerial/SerialPort.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/local/include/opencv4/opencv2/opencv_modules.hpp:
@@ -1929,8 +1857,6 @@ topLevelManager.cpp:
 /usr/include/ctype.h:
 
 /usr/include/c++/11/locale:
-
-/usr/local/include/CppLinuxSerial/Exception.hpp:
 
 /usr/include/c++/11/bits/unique_ptr.h:
 
@@ -2469,8 +2395,6 @@ model/patterns/observer/observer.hpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h:
-
-/usr/include/asm-generic/termbits.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h:
 

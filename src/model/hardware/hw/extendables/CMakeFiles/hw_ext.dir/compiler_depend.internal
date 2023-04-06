@@ -262,6 +262,26 @@ model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/DeviceTree.cpp.o
  /usr/include/c++/11/bits/list.tcc
  /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/hw/inputKeys.hpp
+ /usr/local/include/CppLinuxSerial/SerialPort.hpp
+ /usr/include/c++/11/fstream
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h
+ /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/termbits.h
+ /usr/include/asm-generic/termbits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/local/include/CppLinuxSerial/Exception.hpp
  /usr/include/c++/11/iterator
  /usr/include/c++/11/bits/stream_iterator.h
  /usr/include/c++/11/algorithm

@@ -10,7 +10,7 @@ Pipeline::Pipeline()
     cm->runCapture();
     psvr::Psvr *hmd = new psvr::Psvr();
     UiController *uc = new UiController(hmd);
-    InputManager *sp = new InputManager();
+    InputManager *sp = InputManager::GetInstance();
 
     sp->Attach(uc);
 

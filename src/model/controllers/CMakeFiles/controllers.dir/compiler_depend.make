@@ -183,53 +183,12 @@ model/controllers/CMakeFiles/controllers.dir/ui/menu.cpp.o: model/controllers/ui
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/bits/ios_base.h \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/mutex \
   /usr/include/c++/11/system_error \
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
   /usr/include/c++/11/stdexcept \
-  /usr/include/c++/11/streambuf \
-  /usr/include/c++/11/bits/streambuf.tcc \
-  /usr/include/c++/11/bits/basic_ios.h \
-  /usr/include/c++/11/bits/locale_facets.h \
-  /usr/include/c++/11/cwctype \
-  /usr/include/wctype.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
-  /usr/include/c++/11/bits/streambuf_iterator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
-  /usr/include/c++/11/bits/locale_facets.tcc \
-  /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/bits/ostream.tcc \
-  /usr/include/c++/11/bits/istream.tcc \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
-  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h \
   threadweaver/threadweaver.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -243,14 +202,37 @@ model/controllers/CMakeFiles/controllers.dir/ui/menu.cpp.o: model/controllers/ui
   /usr/include/c++/11/bits/fs_fwd.h \
   /usr/include/c++/11/bits/fs_path.h \
   /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
   /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/iomanip \
   /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/codecvt \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr.h \
@@ -260,11 +242,13 @@ model/controllers/CMakeFiles/controllers.dir/ui/menu.cpp.o: model/controllers/ui
   /usr/include/c++/11/bits/fs_dir.h \
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
+  /usr/include/c++/11/iostream \
   model/patterns/observer/observable.hpp \
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/list.tcc \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -885,28 +869,9 @@ model/controllers/CMakeFiles/controllers.dir/ui/uiController.cpp.o: model/contro
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -951,6 +916,8 @@ model/controllers/CMakeFiles/controllers.dir/ui/uiController.cpp.o: model/contro
 
 /usr/local/include/opencv4/opencv2/photo.hpp:
 
+/usr/local/include/opencv4/opencv2/objdetect/face.hpp:
+
 /usr/local/include/opencv4/opencv2/objdetect.hpp:
 
 /usr/local/include/opencv4/opencv2/ml.hpp:
@@ -985,47 +952,93 @@ model/controllers/CMakeFiles/controllers.dir/ui/uiController.cpp.o: model/contro
 
 /usr/include/c++/11/bits/stl_set.h:
 
-/usr/local/include/opencv4/opencv2/flann/result_set.h:
+model/controllers/ui/uiController.hpp:
 
-/usr/local/include/opencv4/opencv2/flann/nn_index.h:
+/usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp:
 
-/usr/local/include/opencv4/opencv2/flann/saving.h:
+/usr/include/c++/11/cstdlib:
 
-/usr/local/include/opencv4/opencv2/flann/any.h:
+model/controllers/ui/uiController.cpp:
 
-/usr/local/include/opencv4/opencv2/flann/params.h:
+/usr/include/c++/11/backward/binders.h:
 
-/usr/local/include/opencv4/opencv2/flann/matrix.h:
+model/patterns/commands/commands.hpp:
 
-/usr/local/include/opencv4/opencv2/flann.hpp:
+/usr/include/c++/11/bits/regex_automaton.h:
 
-/usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
+model/hardware/hw/inputKeys.hpp:
 
-/usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp:
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
-/usr/local/include/opencv4/opencv2/dnn/layer.hpp:
+/usr/include/c++/11/bits/stl_list.h:
 
-/usr/local/include/opencv4/opencv2/dnn/dict.hpp:
+model/patterns/observer/observable.hpp:
 
-/usr/local/include/opencv4/opencv2/dnn/version.hpp:
+/usr/include/c++/11/type_traits:
 
-/usr/local/include/opencv4/opencv2/core/async.hpp:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h:
 
-/usr/local/include/opencv4/opencv2/dnn/dnn.hpp:
+/usr/include/c++/11/pstl/glue_memory_impl.h:
 
-/usr/local/include/opencv4/opencv2/dnn.hpp:
+/usr/local/include/opencv4/opencv2/core/cuda_types.hpp:
 
-/usr/local/include/opencv4/opencv2/flann/config.h:
+/usr/include/c++/11/bits/istream.tcc:
+
+/usr/include/c++/11/bits/regex_scanner.h:
+
+/usr/include/oneapi/tbb/detail/_assert.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
+/usr/include/c++/11/istream:
+
+/usr/include/c++/11/sstream:
 
 /usr/include/c++/11/bits/quoted_string.h:
 
 /usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/c++/11/bits/basic_ios.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 
 /usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
+
+/usr/local/include/opencv4/opencv2/flann/allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
+/usr/include/c++/11/pstl/memory_impl.h:
+
+/usr/local/include/opencv4/opencv2/flann/kdtree_index.h:
+
+/usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/c++/11/cwctype:
+
+/usr/include/c++/11/bits/exception.h:
+
+model/hardware/cameras/_cam.hpp:
+
+/usr/include/c++/11/bits/locale_classes.h:
+
+/usr/local/include/opencv4/opencv2/features2d.hpp:
 
 /usr/include/c++/11/bits/fs_fwd.h:
 
@@ -1059,87 +1072,19 @@ threadweaver/threadweaver.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
-/usr/include/asm-generic/bitsperlong.h:
+model/hardware/ihidapi/_hidapi.hpp:
 
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+/usr/include/c++/11/ratio:
 
-/usr/include/linux/posix_types.h:
+/usr/include/c++/11/thread:
 
-/usr/include/c++/11/bits/unordered_map.h:
+/usr/include/c++/11/bits/unique_lock.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
-
-/usr/include/x86_64-linux-gnu/asm/termbits.h:
-
-/usr/include/oneapi/tbb/tbb_allocator.h:
-
-/usr/include/linux/ioctl.h:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
-
-/usr/include/asm-generic/ioctls.h:
-
-/usr/include/c++/11/sstream:
-
-/usr/include/c++/11/bits/fstream.tcc:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/c++/11/pstl/glue_algorithm_impl.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
-
-/usr/local/include/opencv4/opencv2/core/cuda_types.hpp:
-
-/usr/include/c++/11/bits/istream.tcc:
-
-/usr/include/c++/11/bits/regex_scanner.h:
-
-/usr/include/oneapi/tbb/detail/_assert.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/c++/11/bits/locale_facets.tcc:
-
-/usr/local/include/opencv4/opencv2/flann/allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/c++/11/cwctype:
-
-/usr/include/c++/11/bits/exception.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-/usr/include/c++/11/bits/basic_ios.h:
-
-/usr/include/c++/11/bits/uniform_int_dist.h:
-
-/usr/include/c++/11/pstl/memory_impl.h:
+/usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/c++/11/stdexcept:
 
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
-
-model/hardware/cameras/_cam.hpp:
-
-/usr/include/c++/11/bits/locale_classes.h:
-
-/usr/local/include/opencv4/opencv2/flann/kdtree_index.h:
-
-/usr/include/c++/11/bits/ios_base.h:
-
-/usr/include/c++/11/istream:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -1163,21 +1108,11 @@ model/hardware/cameras/_cam.hpp:
 
 /usr/include/c++/11/limits:
 
-/usr/include/c++/11/ratio:
-
-/usr/include/c++/11/thread:
-
-model/hardware/ihidapi/_hidapi.hpp:
-
 /usr/include/c++/11/ostream:
 
+/usr/include/c++/11/bits/unique_ptr.h:
+
 /usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/c++/11/bits/uses_allocator.h:
-
-/usr/include/c++/11/bits/unique_lock.h:
 
 /usr/include/c++/11/array:
 
@@ -1206,10 +1141,6 @@ model/hardware/ihidapi/_hidapi.hpp:
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 model/hardware/hw/inputManager.hpp:
-
-/usr/include/c++/11/bits/unique_ptr.h:
-
-/usr/local/include/CppLinuxSerial/Exception.hpp:
 
 /usr/include/asm-generic/errno.h:
 
@@ -1246,10 +1177,6 @@ model/hardware/hw/inputManager.hpp:
 /usr/include/alloca.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h:
-
-/usr/local/include/opencv4/opencv2/flann/flann_base.hpp:
-
-/usr/include/c++/11/bits/fs_path.h:
 
 /usr/include/c++/11/bits/shared_ptr.h:
 
@@ -1290,6 +1217,8 @@ model/hardware/hw/inputManager.hpp:
 /usr/include/oneapi/tbb/detail/_template_helpers.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
@@ -1353,6 +1282,8 @@ model/hardware/hw/inputManager.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+model/hardware/psvr/_psvr.hpp:
+
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
@@ -1362,6 +1293,10 @@ model/hardware/hw/inputManager.hpp:
 /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h:
 
 /usr/include/c++/11/pstl/parallel_impl.h:
+
+/usr/include/c++/11/bits/std_mutex.h:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
@@ -1382,6 +1317,12 @@ model/hardware/hw/inputManager.hpp:
 /usr/include/tbb/parallel_scan.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/c++/11/bits/uses_allocator_args.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/11/ext/string_conversions.h:
 
 /usr/include/c++/11/bits/regex_automaton.tcc:
 
@@ -1406,6 +1347,14 @@ model/controllers/ui/menu.hpp:
 model/controllers/ui/menuItem.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+threadweaver/debugging.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
@@ -1433,31 +1382,17 @@ model/controllers/ui/menuItem.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
+/usr/local/include/opencv4/opencv2/dnn/version.hpp:
+
 /usr/include/c++/11/bits/memoryfwd.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h:
 
 /usr/include/oneapi/tbb/detail/_utils.h:
 
-/usr/include/x86_64-linux-gnu/asm/ioctls.h:
-
-/usr/include/c++/11/tr1/exp_integral.tcc:
-
 /usr/include/features.h:
 
-/usr/local/include/opencv4/opencv2/objdetect/face.hpp:
-
-/usr/include/x86_64-linux-gnu/asm/ioctl.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-/usr/local/include/opencv4/opencv2/features2d.hpp:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -1472,12 +1407,6 @@ model/controllers/ui/menuItem.hpp:
 /usr/include/c++/11/execution:
 
 /usr/include/c++/11/pstl/execution_impl.h:
-
-/usr/include/c++/11/type_traits:
-
-model/patterns/observer/observable.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h:
 
 /usr/include/c++/11/ext/type_traits.h:
 
@@ -1501,6 +1430,8 @@ model/patterns/observer/observable.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
+/usr/local/include/opencv4/opencv2/flann/saving.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h:
 
 /usr/include/c++/11/bits/stl_algobase.h:
@@ -1519,9 +1450,13 @@ model/patterns/observer/observable.hpp:
 
 /usr/include/c++/11/streambuf:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
-/usr/local/include/CppLinuxSerial/SerialPort.hpp:
+/usr/include/c++/11/bits/functexcept.h:
+
+/usr/include/c++/11/bits/list.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/local/include/opencv4/opencv2/flann/dist.h:
 
@@ -1538,6 +1473,8 @@ model/patterns/observer/observable.hpp:
 /usr/include/c++/11/bits/hash_bytes.h:
 
 /usr/include/c++/11/tuple:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
@@ -1570,12 +1507,6 @@ model/patterns/observer/observable.hpp:
 /usr/local/include/opencv4/opencv2/core/traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
-
-/usr/include/c++/11/backward/binders.h:
-
-model/controllers/ui/uiController.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
@@ -1629,17 +1560,17 @@ model/controllers/ui/uiController.cpp:
 
 /usr/include/pthread.h:
 
+/usr/local/include/hidapi/hidapi.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
 /usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
 /usr/include/c++/11/ext/atomicity.h:
 
-/usr/local/include/opencv4/opencv2/core/affine.hpp:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+/usr/include/c++/11/mutex:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
@@ -1657,23 +1588,13 @@ model/controllers/ui/uiController.cpp:
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
-/usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp:
-
-/usr/include/c++/11/cstdlib:
-
-model/controllers/ui/uiController.hpp:
-
 /usr/include/strings.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
-/usr/include/c++/11/fstream:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
-
-/usr/include/asm-generic/ioctl.h:
 
 /usr/include/c++/11/bits/functional_hash.h:
 
@@ -1693,51 +1614,15 @@ model/controllers/ui/uiController.hpp:
 
 /usr/local/include/opencv4/opencv2/core/saturate.hpp:
 
-/usr/include/oneapi/tbb/partitioner.h:
-
-/usr/include/c++/11/bits/fs_ops.h:
-
-/usr/include/c++/11/pstl/glue_memory_impl.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-threadweaver/debugging.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
-
-/usr/include/c++/11/bits/uses_allocator_args.h:
-
-/usr/include/c++/11/bits/stl_list.h:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
-/usr/include/c++/11/bits/list.tcc:
-
-model/hardware/psvr/_psvr.hpp:
-
-/usr/local/include/hidapi/hidapi.h:
-
-model/patterns/commands/commands.hpp:
-
-/usr/include/c++/11/bits/regex_automaton.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
-
-/usr/include/c++/11/bits/atomic_base.h:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
 /usr/include/c++/11/memory:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
 /usr/include/c++/11/bits/align.h:
+
+/usr/local/include/opencv4/opencv2/flann/any.h:
 
 /usr/include/c++/11/bit:
 
@@ -1767,9 +1652,15 @@ model/patterns/commands/commands.hpp:
 
 /usr/include/c++/11/unordered_map:
 
+/usr/local/include/opencv4/opencv2/dnn.hpp:
+
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
 
 /usr/include/c++/11/bitset:
 
@@ -1788,6 +1679,8 @@ model/patterns/commands/commands.hpp:
 /usr/include/oneapi/tbb/parallel_scan.h:
 
 /usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/oneapi/tbb/tbb_allocator.h:
 
 /usr/include/c++/11/bits/stl_multimap.h:
 
@@ -1895,10 +1788,6 @@ model/patterns/observer/observer.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h:
 
-/usr/local/include/opencv4/opencv2/flann/general.h:
-
-/usr/local/include/opencv4/opencv2/calib3d.hpp:
-
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h:
@@ -1920,6 +1809,12 @@ model/patterns/observer/observer.hpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/c++/11/bits/std_function.h:
+
+/usr/local/include/opencv4/opencv2/core/affine.hpp:
 
 /usr/include/c++/11/list:
 
@@ -1970,8 +1865,6 @@ model/patterns/observer/observer.hpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h:
-
-/usr/include/asm-generic/termbits.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h:
 
@@ -2055,15 +1948,15 @@ model/controllers/ui/menu.cpp:
 
 /usr/include/oneapi/tbb/version.h:
 
+/usr/local/include/opencv4/opencv2/flann/nn_index.h:
+
 /usr/include/oneapi/tbb/detail/_small_object_pool.h:
 
 /usr/include/oneapi/tbb/profiling.h:
 
-/usr/include/c++/11/mutex:
+/usr/include/c++/11/bits/fs_ops.h:
 
-/usr/include/c++/11/bits/std_mutex.h:
-
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
+/usr/include/oneapi/tbb/partitioner.h:
 
 /usr/include/oneapi/tbb/detail/_aligned_space.h:
 
@@ -2088,6 +1981,8 @@ model/controllers/ui/menu.cpp:
 /usr/include/tbb/task.h:
 
 /usr/include/c++/11/numeric:
+
+/usr/include/c++/11/pstl/glue_algorithm_impl.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
@@ -2127,6 +2022,8 @@ model/controllers/ui/menu.cpp:
 
 /usr/include/c++/11/tr1/ell_integral.tcc:
 
+/usr/include/c++/11/tr1/exp_integral.tcc:
+
 /usr/include/c++/11/tr1/hypergeometric.tcc:
 
 /usr/local/include/opencv4/opencv2/core/persistence.hpp:
@@ -2158,3 +2055,33 @@ model/controllers/ui/menu.cpp:
 /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp:
 
 /usr/local/include/opencv4/opencv2/core/optim.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/config.h:
+
+/usr/local/include/opencv4/opencv2/dnn/dnn.hpp:
+
+/usr/local/include/opencv4/opencv2/core/async.hpp:
+
+/usr/local/include/opencv4/opencv2/dnn/dict.hpp:
+
+/usr/local/include/opencv4/opencv2/dnn/layer.hpp:
+
+/usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/result_set.h:
+
+/usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
+
+/usr/local/include/opencv4/opencv2/flann.hpp:
+
+/usr/include/c++/11/bits/fs_path.h:
+
+/usr/local/include/opencv4/opencv2/flann/flann_base.hpp:
+
+/usr/local/include/opencv4/opencv2/calib3d.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/general.h:
+
+/usr/local/include/opencv4/opencv2/flann/matrix.h:
+
+/usr/local/include/opencv4/opencv2/flann/params.h:

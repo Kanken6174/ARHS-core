@@ -615,28 +615,9 @@ pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o: pipeline/abstra
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -1257,28 +1238,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o: pipeline/mem
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -1899,28 +1861,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o: pipeline/me
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -2550,28 +2493,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o: pipeline/members/p
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -3192,28 +3116,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/fpsCounter.cpp.o: pipeline/
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -3849,28 +3754,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/staticImageOverlayer.cpp.o:
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -4508,28 +4394,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o: pipeline/
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -5150,28 +5017,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/zbarOverlayer.cpp.o: pipeli
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -5809,28 +5657,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o: pipeline/members
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -6451,28 +6280,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o: pipeline/members
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -7095,28 +6905,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.o: pipeline/mem
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -7737,28 +7528,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o: pipeline/mem
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -8393,28 +8165,9 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o: pipeline/pipeline.cpp \
   model/controllers/ui/menu.hpp \
   model/controllers/ui/menuItem.hpp \
   model/hardware/hw/inputManager.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
   model/patterns/observer/observable.hpp \
   model/patterns/observer/observer.hpp \
+  model/hardware/hw/inputKeys.hpp \
   model/hardware/psvr/_psvr.hpp \
   model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -8457,8 +8210,56 @@ pipeline/CMakeFiles/pipelineLib.dir/pipeline.cpp.o: pipeline/pipeline.cpp \
   model/hardware/hw/extendables/Device.hpp \
   model/hardware/hw/extendables/DeviceCommand.hpp \
   model/patterns/commands/commands.hpp \
-  model/hardware/hw/inputManager.hpp
+  model/hardware/hw/inputManager.hpp \
+  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+  /usr/include/asm-generic/ioctls.h \
+  /usr/include/linux/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/termbits.h \
+  /usr/include/asm-generic/termbits.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/local/include/CppLinuxSerial/Exception.hpp
 
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/asm/termbits.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/x86_64-linux-gnu/asm/ioctls.h:
+
+/usr/include/c++/11/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/c++/11/fstream:
 
 model/hardware/hw/extendables/DeviceCommand.hpp:
 
@@ -8504,6 +8305,10 @@ pipeline/members/pluginNode.hpp:
 
 /usr/include/KHR/khrplatform.h:
 
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/GL/glext.h:
+
 /usr/include/GL/glut.h:
 
 model/windows/window.hpp:
@@ -8522,39 +8327,9 @@ model/hardware/ihidapi/_hidapi.hpp:
 
 model/hardware/psvr/_psvr.hpp:
 
+model/hardware/hw/inputKeys.hpp:
+
 model/patterns/observer/observable.hpp:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/asm/termbits.h:
-
-/usr/include/asm-generic/ioctl.h:
-
-/usr/include/linux/ioctl.h:
-
-/usr/include/GL/glext.h:
-
-/usr/include/asm-generic/ioctls.h:
-
-/usr/include/x86_64-linux-gnu/asm/ioctls.h:
-
-/usr/include/c++/11/bits/fstream.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
-
-/usr/include/c++/11/fstream:
 
 model/hardware/hw/inputManager.hpp:
 

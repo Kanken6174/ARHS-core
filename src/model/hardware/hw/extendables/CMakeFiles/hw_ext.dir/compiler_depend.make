@@ -261,6 +261,26 @@ model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/DeviceTree.cpp.o: model/hard
   /usr/include/c++/11/bits/list.tcc \
   model/patterns/observer/observer.hpp \
   model/hardware/hw/inputKeys.hpp \
+  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+  /usr/include/asm-generic/ioctls.h \
+  /usr/include/linux/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/termbits.h \
+  /usr/include/asm-generic/termbits.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/local/include/CppLinuxSerial/Exception.hpp \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/algorithm \
@@ -280,17 +300,11 @@ model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/DeviceTree.cpp.o: model/hard
   /usr/include/c++/11/pstl/execution_defs.h
 
 
-/usr/include/c++/11/bits/unordered_map.h:
-
 /usr/include/c++/11/bits/hashtable_policy.h:
 
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/unordered_map:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
 
 /usr/include/c++/11/pstl/execution_defs.h:
 
@@ -301,6 +315,40 @@ model/hardware/hw/extendables/CMakeFiles/hw_ext.dir/DeviceTree.cpp.o: model/hard
 /usr/include/c++/11/algorithm:
 
 /usr/include/c++/11/bits/stream_iterator.h:
+
+/usr/local/include/CppLinuxSerial/Exception.hpp:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/include/asm-generic/termbits.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/c++/11/bits/std_function.h:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/x86_64-linux-gnu/asm/ioctls.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/c++/11/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/c++/11/fstream:
+
+/usr/local/include/CppLinuxSerial/SerialPort.hpp:
 
 model/patterns/observer/observer.hpp:
 
@@ -317,6 +365,8 @@ model/hardware/hw/extendables/Device.hpp:
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
 /usr/include/c++/11/backward/binders.h:
 
@@ -419,6 +469,8 @@ model/hardware/hw/extendables/Device.hpp:
 /usr/include/c++/11/ctime:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+
+/usr/include/x86_64-linux-gnu/asm/ioctl.h:
 
 /usr/include/c++/11/bits/functexcept.h:
 
@@ -556,6 +608,8 @@ model/hardware/hw/extendables/DeviceTree.hpp:
 
 /usr/include/c++/11/list:
 
+/usr/include/asm-generic/bitsperlong.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/11/bits/concept_check.h:
@@ -626,6 +680,8 @@ threadweaver/debugging.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
@@ -695,6 +751,8 @@ model/hardware/hw/extendables/DeviceCommand.hpp:
 /usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/c++/11/bits/unique_lock.h:
+
+/usr/include/x86_64-linux-gnu/asm/termbits.h:
 
 /usr/include/c++/11/bits/stl_map.h:
 
@@ -769,6 +827,8 @@ model/hardware/hw/inputManager.hpp:
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/11/bits/std_thread.h:
+
+/usr/include/linux/stddef.h:
 
 /usr/include/c++/11/bits/refwrap.h:
 
