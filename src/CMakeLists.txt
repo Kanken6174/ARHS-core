@@ -46,6 +46,7 @@ add_subdirectory(model/windows)
 add_subdirectory(ui/support)
 add_subdirectory(pipeline)
 add_subdirectory(pluginManagement)
+add_subdirectory(graphics)
 
 set(main_source_files main.cpp main.hpp topLevelManager.cpp)
 

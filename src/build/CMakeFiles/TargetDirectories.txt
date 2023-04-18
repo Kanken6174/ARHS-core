@@ -46,3 +46,6 @@
 /home/kanken/code/AHRS_core/src/build/pluginManagement/CMakeFiles/PluginManager.dir
 /home/kanken/code/AHRS_core/src/build/pluginManagement/CMakeFiles/edit_cache.dir
 /home/kanken/code/AHRS_core/src/build/pluginManagement/CMakeFiles/rebuild_cache.dir
+/home/kanken/code/AHRS_core/src/build/graphics/CMakeFiles/GFXLib.dir
+/home/kanken/code/AHRS_core/src/build/graphics/CMakeFiles/edit_cache.dir
+/home/kanken/code/AHRS_core/src/build/graphics/CMakeFiles/rebuild_cache.dir

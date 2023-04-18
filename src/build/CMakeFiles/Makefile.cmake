@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "../graphics/CMakeLists.txt"
   "../model/controllers/CMakeLists.txt"
   "../model/hardware/cameras/CMakeLists.txt"
   "../model/hardware/hw/CMakeLists.txt"
@@ -92,6 +93,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ui/support/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pipeline/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pluginManagement/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "graphics/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -112,4 +114,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "ui/support/CMakeFiles/support.dir/DependInfo.cmake"
   "pipeline/CMakeFiles/pipelineLib.dir/DependInfo.cmake"
   "pluginManagement/CMakeFiles/PluginManager.dir/DependInfo.cmake"
+  "graphics/CMakeFiles/GFXLib.dir/DependInfo.cmake"
   )

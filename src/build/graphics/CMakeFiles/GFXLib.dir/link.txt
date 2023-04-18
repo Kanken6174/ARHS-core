@@ -1,0 +1,2 @@
+/usr/bin/ar qc libGFXLib.a 
+/usr/bin/ranlib libGFXLib.a

@@ -324,6 +324,19 @@ PluginManager/fast:
 	$(MAKE) $(MAKESILENT) -f pluginManagement/CMakeFiles/PluginManager.dir/build.make pluginManagement/CMakeFiles/PluginManager.dir/build
 .PHONY : PluginManager/fast
 
+#=============================================================================
+# Target rules for targets named GFXLib
+
+# Build rule for target.
+GFXLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GFXLib
+.PHONY : GFXLib
+
+# fast build rule for target.
+GFXLib/fast:
+	$(MAKE) $(MAKESILENT) -f graphics/CMakeFiles/GFXLib.dir/build.make graphics/CMakeFiles/GFXLib.dir/build
+.PHONY : GFXLib/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -380,6 +393,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... GFXLib"
 	@echo "... PluginManager"
 	@echo "... cameras"
 	@echo "... commands"

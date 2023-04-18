@@ -22,7 +22,8 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -33,7 +34,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						10
+						11
 					]
 				},
 				{
@@ -48,7 +49,7 @@
 					"source" : "threadweaver",
 					"targetIndexes" : 
 					[
-						13
+						14
 					]
 				},
 				{
@@ -63,7 +64,7 @@
 					"source" : "model/perfcheckers",
 					"targetIndexes" : 
 					[
-						8
+						9
 					]
 				},
 				{
@@ -78,7 +79,7 @@
 					"source" : "model/hardware/ihidapi",
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				},
 				{
@@ -93,7 +94,7 @@
 					"source" : "model/hardware/cameras",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -108,7 +109,7 @@
 					"source" : "model/hardware/psvr",
 					"targetIndexes" : 
 					[
-						11
+						12
 					]
 				},
 				{
@@ -123,7 +124,7 @@
 					"source" : "model/hardware/hw/extendables",
 					"targetIndexes" : 
 					[
-						5
+						6
 					]
 				},
 				{
@@ -138,7 +139,7 @@
 					"source" : "model/hardware/hw",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -153,7 +154,7 @@
 					"source" : "model/controllers",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -168,7 +169,7 @@
 					"source" : "model/patterns/observer",
 					"targetIndexes" : 
 					[
-						7
+						8
 					]
 				},
 				{
@@ -183,7 +184,7 @@
 					"source" : "model/patterns/commands",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -198,7 +199,7 @@
 					"source" : "processing/zbar",
 					"targetIndexes" : 
 					[
-						15
+						16
 					]
 				},
 				{
@@ -213,7 +214,7 @@
 					"source" : "model/windows",
 					"targetIndexes" : 
 					[
-						14
+						15
 					]
 				},
 				{
@@ -228,7 +229,7 @@
 					"source" : "ui/support",
 					"targetIndexes" : 
 					[
-						12
+						13
 					]
 				},
 				{
@@ -243,7 +244,7 @@
 					"source" : "pipeline",
 					"targetIndexes" : 
 					[
-						9
+						10
 					]
 				},
 				{
@@ -256,6 +257,21 @@
 					"parentIndex" : 0,
 					"projectIndex" : 0,
 					"source" : "pluginManagement",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "graphics",
+					"jsonFile" : "directory-graphics-Debug-cfad82a9484b3a41fe77.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "graphics",
 					"targetIndexes" : 
 					[
 						0
@@ -283,7 +299,8 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16
 					],
 					"name" : "visnode",
 					"targetIndexes" : 
@@ -303,12 +320,20 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 16,
+					"id" : "GFXLib::@708b9b26fb9b6631b242",
+					"jsonFile" : "target-GFXLib-Debug-54fc91c56523bdbec509.json",
+					"name" : "GFXLib",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 15,
 					"id" : "PluginManager::@f4fb5e2c1782bbd6f630",
@@ -382,7 +407,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "prog::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-prog-Debug-e7af6fc9680f4799249c.json",
+					"jsonFile" : "target-prog-Debug-3f760aa7b46a14d1c98a.json",
 					"name" : "prog",
 					"projectIndex" : 0
 				},
