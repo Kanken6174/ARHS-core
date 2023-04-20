@@ -11,12 +11,10 @@ set(flying_window_src
 
 MESSAGE(STATUS "Building Graphics")
 
-#set(FreeType_DIR "/path/to/freetype/install/dir")
-
 find_package(OpenCV REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
-#find_package(FreeType REQUIRED)
+find_package(FreeType2 REQUIRED)
 
 include_directories(
     ${OPENGL_INCLUDE_DIRS}

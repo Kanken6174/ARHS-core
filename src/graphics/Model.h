@@ -3,12 +3,12 @@
 
 #include <vector>
 #include <string>
+#include <GL/glew.h>
 #include <assimp/Importer.hpp>
 #include <assimp/scene.h>
 #include <assimp/postprocess.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include <GL/glew.h>
 
 #include "Shader.h" // Include your custom Shader class
 #include "Mesh.h"   // Include your custom Mesh class

@@ -610,6 +610,9 @@ pipeline/CMakeFiles/pipelineLib.dir/abstract/pipelineNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /usr/include/GL/glew.h
+ /usr/include/GL/glu.h
+ /usr/include/GL/gl.h
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
@@ -1234,6 +1237,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/cameraPickerNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /usr/include/GL/glew.h
+ /usr/include/GL/glu.h
+ /usr/include/GL/gl.h
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
@@ -1858,6 +1864,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /usr/include/GL/glew.h
+ /usr/include/GL/glu.h
+ /usr/include/GL/gl.h
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
@@ -1875,10 +1884,6 @@ pipeline/CMakeFiles/pipelineLib.dir/members/displayOutputNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/core.hpp
  /usr/include/GL/glut.h
  /usr/include/GL/freeglut_std.h
- /usr/include/GL/gl.h
- /usr/include/GL/glext.h
- /usr/include/KHR/khrplatform.h
- /usr/include/GL/glu.h
  /home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp
 
 pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o
@@ -2491,6 +2496,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/pluginNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /usr/include/GL/glew.h
+ /usr/include/GL/glu.h
+ /usr/include/GL/gl.h
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
@@ -4395,6 +4403,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/subNodes/uiMenuItem.cpp.o
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /usr/include/GL/glew.h
+ /usr/include/GL/glu.h
+ /usr/include/GL/gl.h
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
@@ -5660,6 +5671,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiDrawerNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /usr/include/GL/glew.h
+ /usr/include/GL/glu.h
+ /usr/include/GL/gl.h
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
@@ -6284,6 +6298,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/uiMergerNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /usr/include/GL/glew.h
+ /usr/include/GL/glu.h
+ /usr/include/GL/gl.h
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
@@ -6910,6 +6927,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/videoCaptureNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /usr/include/GL/glew.h
+ /usr/include/GL/glu.h
+ /usr/include/GL/gl.h
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex
@@ -7534,6 +7554,9 @@ pipeline/CMakeFiles/pipelineLib.dir/members/zbarAnalysisNode.cpp.o
  /usr/local/include/opencv4/opencv2/core/types_c.h
  /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
  /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+ /usr/include/GL/glew.h
+ /usr/include/GL/glu.h
+ /usr/include/GL/gl.h
  /usr/local/include/opencv4/opencv2/core/opengl.hpp
  /usr/local/include/opencv4/opencv2/core/ocl.hpp
  /usr/include/c++/11/typeindex

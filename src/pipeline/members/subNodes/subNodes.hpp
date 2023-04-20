@@ -1,5 +1,7 @@
 #include "../../abstract/pipelineNode.hpp"
 #include "../zbarAnalysisNode.hpp"
+#include "../../../graphics/Camera.h"
+#include "../../../graphics/FlyingWindow.h"
 #include <map>
 
 class FpsCounter : public SubNode
@@ -28,4 +30,17 @@ public:
     void processFrame(cv::UMat &input, cv::Point2d &cursorPos) override;
 protected:
     zbarScanner* localScanner;
+};
+
+class OpenglTestRenderer : public SubNode
+{
+public:
+    OpenglTestRenderer();
+    void processFrame(cv::UMat &input, cv::Point2d &cursorPos) override;
+protected:
+    FlyingWindow* subject;
+    void setup();
+    Camera camera;
+    Model model1;
+    Model model2;
 };

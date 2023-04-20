@@ -941,6 +941,9 @@ pluginManagement/CMakeFiles/PluginManager.dir/PluginManager.cpp.o: pluginManagem
   /usr/local/include/opencv4/opencv2/core/types_c.h \
   /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
+  /usr/include/GL/glew.h \
+  /usr/include/GL/glu.h \
+  /usr/include/GL/gl.h \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
   /usr/local/include/opencv4/opencv2/core/ocl.hpp \
   /usr/include/c++/11/typeindex \
@@ -957,10 +960,6 @@ pluginManagement/CMakeFiles/PluginManager.dir/PluginManager.cpp.o: pluginManagem
   /usr/local/include/opencv4/opencv2/core/core.hpp \
   /usr/include/GL/glut.h \
   /usr/include/GL/freeglut_std.h \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glext.h \
-  /usr/include/KHR/khrplatform.h \
-  /usr/include/GL/glu.h \
   threadweaver/debugging.hpp \
   pipeline/members/uiDrawerNode.hpp \
   pipeline/members/uiMergerNode.hpp \
@@ -975,8 +974,6 @@ model/hardware/hw/extendables/DeviceTree.hpp:
 pipeline/members/pluginNode.hpp:
 
 pipeline/members/uiMergerNode.hpp:
-
-/usr/include/KHR/khrplatform.h:
 
 /usr/include/GL/glut.h:
 
@@ -1077,6 +1074,8 @@ model/controllers/ui/menu.hpp:
 /usr/local/include/opencv4/opencv2/flann/matrix.h:
 
 /usr/local/include/opencv4/opencv2/flann.hpp:
+
+/usr/include/GL/glew.h:
 
 /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
 
@@ -1829,8 +1828,6 @@ model/controllers/ui/uiController.hpp:
 /usr/include/x86_64-linux-gnu/asm/ioctls.h:
 
 /usr/include/c++/11/tr1/exp_integral.tcc:
-
-/usr/include/GL/glext.h:
 
 /usr/include/asm-generic/ioctls.h:
 

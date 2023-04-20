@@ -863,6 +863,9 @@ model/controllers/CMakeFiles/controllers.dir/ui/uiController.cpp.o: model/contro
   /usr/include/c++/11/bits/fs_ops.h \
   threadweaver/debugging.hpp \
   /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp \
+  /usr/include/GL/glew.h \
+  /usr/include/GL/glu.h \
+  /usr/include/GL/gl.h \
   /usr/local/include/opencv4/opencv2/core/opengl.hpp \
   /usr/local/include/opencv4/opencv2/core/ocl.hpp \
   /usr/include/c++/11/typeindex \
@@ -1458,6 +1461,8 @@ threadweaver/debugging.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
+/usr/include/GL/gl.h:
+
 /usr/local/include/opencv4/opencv2/flann/dist.h:
 
 /usr/include/c++/11/bits/postypes.h:
@@ -1960,6 +1965,8 @@ model/controllers/ui/menu.cpp:
 
 /usr/include/oneapi/tbb/detail/_aligned_space.h:
 
+/usr/include/GL/glu.h:
+
 /usr/include/oneapi/tbb/cache_aligned_allocator.h:
 
 /usr/include/c++/11/shared_mutex:
@@ -2069,6 +2076,8 @@ model/controllers/ui/menu.cpp:
 /usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp:
 
 /usr/local/include/opencv4/opencv2/flann/result_set.h:
+
+/usr/include/GL/glew.h:
 
 /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
 

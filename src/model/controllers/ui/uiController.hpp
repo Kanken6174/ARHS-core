@@ -11,6 +11,7 @@
 #include "../../hardware/cameras/_cam.hpp"
 #include <opencv2/imgcodecs/imgcodecs.hpp>
 #include <opencv2/core.hpp>
+#include <GL/glew.h>
 #include <opencv2/core/opengl.hpp>
 
 #include "menu.hpp"
